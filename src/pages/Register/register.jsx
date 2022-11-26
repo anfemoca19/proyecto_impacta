@@ -1,0 +1,80 @@
+import "./register.css";
+import logo from "../../imagenes/logo-en-blanco.png";
+import LongButton from "../../components/button/longButton";
+import { Link } from "react-router-dom";
+
+export default function Register() {
+  return (
+    <section className="container-login">
+      <img src={logo} alt="logo" className="img-logo" />
+      <form>
+        <p className="tittle">Crear cuenta</p>
+        <div clas="form-outline ">
+          <input
+            type="text"
+            id="form2Example1"
+            className="form-control style-input"
+            placeholder="Nombre Completo"
+          />
+        </div>
+
+        <div clas="form-outline ">
+          <input
+            type="text"
+            id="form2Example1"
+            className="form-control style-input"
+            placeholder="Empresa"
+          />
+        </div>
+
+        <div clas="form-outline ">
+          <input
+            type="number"
+            id="form2Example1"
+            className="form-control style-input"
+            placeholder="Telefono"
+          />
+        </div>
+
+        <div clas="form-outline ">
+          <input
+            type="email"
+            id="form2Example1"
+            className="form-control style-input"
+            placeholder="Email"
+          />
+        </div>
+
+        <div className="form-outline ">
+          <input
+            type="password"
+            id="form2Example2"
+            className="form-control style-input"
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div className="form-outline mb-4">
+          <input
+            type="password"
+            id="form2Example2"
+            className="form-control style-input"
+            placeholder="Confirmar contraseña"
+          />
+        </div>
+
+        <LongButton labelText="Crear cuenta" name="iniciar_seccion" />
+
+        <div className="d-sm-flex">
+          {/* <button className="border_button" name="crear_cuenta">
+            Ya tengo cuenta
+          </button> */}
+          <Link to="/login" className="border_button">
+            {" "}
+            Ya tengo cuenta{" "}
+          </Link>
+        </div>
+      </form>
+    </section>
+  );
+}

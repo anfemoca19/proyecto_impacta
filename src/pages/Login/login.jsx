@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <section className="container-login">
       <img src={logo} alt="logo" className="img-logo" />
-      <form>
+      <form className="form-login">
         <p className="tittle">Inicia Sesión</p>
         <div clas="form-outline mb-">
           <input
@@ -49,16 +49,15 @@ export default function Login() {
           </div>
         </div>
 
-        <div className="d-sm-flex">
-          <Link to="/register" className="border_button">
+        <div className="container-btn-footer">
+          <Link to="/register" className="border-button-login">
             {" "}
             Crear Cuenta
           </Link>
-          <div className="col">
-            <button className="border_button" name="">
-              Olvido su contraseña?
-            </button>
-          </div>
+
+          <Link to="/forgotPass" className="border-button-login" name="">
+            ¿Olvido su contraseña?
+          </Link>
         </div>
       </form>
     </section>

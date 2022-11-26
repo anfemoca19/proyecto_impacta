@@ -21,54 +21,30 @@ body {
   width: 260px;
 }
 
-form {
+.form-forgot {
   box-shadow: 0px 6px 36px 14px #4c0ba2b4;
   border-color: #7929e2;
   margin-top: 30px;
   width: 360px;
-  height: 500px;
+  height: 320px;
   background-color: white;
   border-radius: 10px;
   padding: 40px;
 }
 
-.tittle {
+.tittle-style {
   color: #7929e2;
   margin-bottom: 10px;
+  font-weight: bold;
+}
+.parrafo-style {
+  color: #7929e2;
 }
 
 .style-input {
   border: 2px solid #7929e2;
   border-radius: 10px;
   margin-top: 5px;
+  margin-bottom: 10px;
   color: black;
-}
-
-.check-color {
-  cursor: pointer;
-  border: 2px solid #7929e2;
-  appearance: none;
-}
-.check-color:checked {
-  background-color: #7929e2;
-  border-color: #7929e2;
-}
-
-.color-text-check {
-  color: #7929e2;
-}
-
-.border-button-register {
-  color: #7929e2;
-  border: none;
-  box-shadow: 0px 6px 36px 14px rgba(154, 152, 152, 0.575);
-  border-radius: 2px;
-  font-size: 12px;
-  height: 20px;
-  width: auto;
-  background-color: white;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  text-align: center;
 }

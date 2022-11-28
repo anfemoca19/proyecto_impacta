@@ -1,11 +1,13 @@
 import "./forgotPass.css";
 import logo from "../../imagenes/logo-en-blanco.png";
-import LongButton from "../../components/button/longButton";
+import LongButton from "../../components/Button/longButton";
 import { Link } from "react-router-dom";
 
 export default function ForgotPass() {
   return (
     <section className="container-login">
+      <div className="imagen-fondo"></div>
+
       <img src={logo} alt="logo" className="img-logo" />
       <form className="form-forgot">
         <p className="tittle-style">¿Olvido su contraseña?</p>

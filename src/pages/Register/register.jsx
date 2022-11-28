@@ -1,6 +1,6 @@
 import "./register.css";
 import logo from "../../imagenes/logo-en-blanco.png";
-import LongButton from "../../components/button/longButton";
+import LongButton from "../../components/Button/longButton";
 import { Link } from "react-router-dom";
 
 export default function Register() {

@@ -1,0 +1,21 @@
+.container-account {
+  display: flex;
+  background-color: #7929e2;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+}
+
+.container-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row-reverse;
+  color: white;
+}
+
+.container-elements h1 {
+  color: white;
+  margin-right: 22px;
+}

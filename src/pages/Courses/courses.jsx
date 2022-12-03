@@ -4,18 +4,18 @@ import Categorias from "../../components/Categories/categories";
 import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Navbar from "../../components/Navbar/navbar";
-import "./dashboart.css";
-
-export default function Dashboard() {
+import "../Configuration/configuration.css";
+export default function Courses() {
   return (
     <>
+      {" "}
       <Header />
-      <div className="container-fluid divider-top">
+      <div className="container">
         <div className="row">
-          <div className="col-2 divider-right">
+          <div className="col">
             <Navbar />
           </div>
-          <div className="col-6 container-dos divider-right">
+          <div className="col-5 container-dos">
             <div className="container-promedio background-color "></div>
             <div className="container-acountUser">
               <div className="background-color  container-element">
@@ -49,7 +49,7 @@ export default function Dashboard() {
               <img src="https://iconos8.es/icon/368/subir" alt="" />
             </div>
           </div>
-          <div class="col-4 container-tres">
+          <div class="col container-tres">
             {" "}
             <Calendar />
             <AccountUser />

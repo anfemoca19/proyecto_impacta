@@ -5,9 +5,8 @@ body {
   text-decoration: none;
   border: none;
   outline: none;
-  background-image: url("../src/imagenes/fondo-login.png");
+  /* background-image: url("../src/imagenes/fondo-login.png"); */
   /* justify-content: center; */
   align-items: center;
-  display: flex;
   font-family: "Montserrat", sans-serif;
 }

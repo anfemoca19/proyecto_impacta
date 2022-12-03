@@ -1,0 +1,15 @@
+.icon-style {
+  height: 35px;
+  border-radius: 10px;
+}
+
+.link-style {
+  font-size: 18px;
+  display: inline-block;
+}
+
+nav:hover {
+  background-color: #4c0ba2b4;
+  border-radius: 3px;
+  height: 50px;
+}

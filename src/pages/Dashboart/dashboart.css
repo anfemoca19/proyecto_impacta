@@ -1,1 +1,65 @@
+.container-dos {
+  display: grid;
+}
+.container-tres {
+  display: grid;
+}
+.container-graph {
+  display: flex;
+  background-color: #7929e2;
+  flex-direction: column;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+  height: 100px;
+}
+.background-color {
+  background-color: #f9f9f9;
+}
 
+.container-promedio {
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container-acountUser {
+  /* display: flex; */
+  justify-content: space-between;
+  height: 150px;
+  margin-bottom: 15px;
+}
+.container-element {
+  margin-top: 20px;
+  height: 80px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-size: 9px;
+  margin-bottom: 15px;
+}
+
+.container-progres {
+  /* background-color: red; */
+  height: 150px;
+  border-radius: 5px;
+}
+.container-activate {
+  margin-top: 15px;
+  background-color: #7929e2;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  height: 50px;
+  justify-content: flex-end;
+}
+
+.divider-right {
+  border-right: 1px solid #eee;
+}
+.divider-top {
+  border-top: 1px solid #eee;
+}
+.divider-bottom {
+  border-bottom: 1px solid #eee;
+}

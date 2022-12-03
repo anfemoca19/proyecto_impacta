@@ -1,6 +1,6 @@
 import "./login.css";
 import logo from "../../imagenes/logo-en-blanco.png";
-import LongButton from "../../components/Button/longButton";
+import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 
 export default function Login() {
@@ -27,7 +27,7 @@ export default function Login() {
           />
         </div>
 
-        <LongButton labelText="Iniciar sección" name="iniciar_seccion" />
+        <Button labelText="Iniciar sección" name="iniciar_seccion" />
 
         <div className="row mb-4">
           <div className="col justify-content-center">

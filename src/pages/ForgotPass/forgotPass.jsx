@@ -1,6 +1,6 @@
 import "./forgotPass.css";
 import logo from "../../imagenes/logo-en-blanco.png";
-import LongButton from "../../components/Button/longButton";
+import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 
 export default function ForgotPass() {
@@ -24,7 +24,7 @@ export default function ForgotPass() {
           />
         </div>
 
-        <LongButton labelText="Iniciar sección" name="iniciar_seccion" />
+        <Button labelText="Iniciar sección" name="iniciar_seccion" />
       </form>
     </section>
   );

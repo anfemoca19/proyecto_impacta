@@ -1,11 +1,5 @@
-.container-header {
-  display: flex;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.277);
-  height: 100px;
-}
 .container-logo {
   display: flex;
-  border-right: 1px solid rgba(128, 128, 128, 0.277);
   justify-content: center;
 }
 .logo {
@@ -38,7 +32,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 1px solid rgba(128, 128, 128, 0.277);
 }
 
 .container-search {

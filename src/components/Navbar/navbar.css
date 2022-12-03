@@ -1,15 +1,50 @@
-.icon-style {
-  height: 35px;
-  border-radius: 10px;
-}
-
-.link-style {
-  font-size: 18px;
-  display: inline-block;
-}
-
-nav:hover {
-  background-color: #4c0ba2b4;
+.nav-icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
   border-radius: 3px;
-  height: 50px;
+  background-image: url("../../imagenes/icono-menu-1-fondo-blanco.png");
+}
+.nav-icon,
+.nav-item .nav-link:hover > .nav-icon {
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.icon-config {
+  background-image: url("../../imagenes/icono-menu-2-fondo-blanco.png");
+}
+.icon-user {
+  background-image: url("../../imagenes/icono-menu-3-fondo-blanco.png");
+}
+.icon-course {
+  background-image: url("../../imagenes/icono-menu-5-fondo-blanco.png");
+}
+.nav-item {
+  list-style: none;
+}
+.nav-item .nav-link {
+  display: flex;
+  padding: 0;
+  gap: 5px;
+  color: #333;
+  font-weight: bold;
+  border-radius: 3px;
+  align-items: center;
+}
+.nav-item .nav-link:hover {
+  color: white;
+  background-color: #4c0ba2b4;
+}
+.nav-item .nav-link:hover > .nav-icon {
+  background-image: url("../../imagenes/icono-menu-1-fondo-color.png");
+}
+.nav-item .nav-link:hover > .icon-config {
+  background-image: url("../../imagenes/icono-menu-2-fondo-color.png");
+}
+.nav-item .nav-link:hover > .icon-user {
+  background-image: url("../../imagenes/icono-menu-3-fondo-color.png");
+}
+.nav-item .nav-link:hover > .icon-course {
+  background-image: url("../../imagenes/icono-menu-5-fondo-color.png");
 }

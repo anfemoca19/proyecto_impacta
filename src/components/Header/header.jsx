@@ -6,10 +6,10 @@ export default function Header() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-2 container-logo divider-right">
+        <div className="col-2 container-logo divider-right p-2">
           <img className="logo" src={logo} alt="logo" />
         </div>
-        <div className="col-6 divider-right">
+        <div className="col-6 divider-right p-2 d-flex align-items-center">
           <div className="container-data-user">
             <div className="container-foto-perfil">
               <img className="foto-perfil" src={foto_perfil} alt="" />
@@ -17,7 +17,7 @@ export default function Header() {
             <span>Nombre Administrador / Nombre empresa</span>
           </div>
         </div>
-        <div className="col-4 container-pricipal-search">
+        <div className="col-4 container-pricipal-search p-2">
           <div className="container-search">
             <img className="icon-search" src={Icon_sarch} alt="icon-sarch" />
             <input className="input-search" type="text" placeholder="Buscar" />

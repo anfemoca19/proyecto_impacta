@@ -12,7 +12,7 @@ export default function Dashboard() {
       <Header />
       <div className="container-fluid divider-top">
         <div className="row">
-          <div className="col-2 divider-right">
+          <div className="col-2 divider-right p-4">
             <Navbar />
           </div>
           <div className="col-6 container-dos divider-right">

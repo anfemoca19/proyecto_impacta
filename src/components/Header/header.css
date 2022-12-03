@@ -4,16 +4,16 @@
 }
 .logo {
   height: 70px;
-  margin-top: 13px;
 }
 .container-data-user {
   background-color: #4c0ba2b4;
-  display: flex;
   border-radius: 10px;
-  padding: 10px;
-  margin-top: 13px;
   font-size: 14px;
   color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 .container-foto-perfil {
@@ -36,7 +36,7 @@
 
 .container-search {
   display: flex;
-  background-color: #f7f6fe;
+  background-color: #eee;
   border-radius: 5px;
   margin-right: 5px;
   align-items: center;
@@ -51,7 +51,9 @@
   border: none;
   margin-right: 5px;
   font-size: 12px;
-  background-color: #f7f6fe;
-  color: black;
-  height: auto;
+  color: #333;
+  background-color: #eee;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
 }

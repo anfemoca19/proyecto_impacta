@@ -8,56 +8,53 @@ import "../Configuration/configuration.css";
 export default function Courses() {
   return (
     <>
-      {" "}
       <Header />
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <Navbar />
-          </div>
-          <div className="col-5 container-dos">
-            <div className="container-promedio background-color "></div>
-            <div className="container-acountUser">
-              <div className="background-color  container-element">
-                <div className="row">
-                  <div className="col-5">
-                    <img src="" alt="" />
-                    aca
-                  </div>
-                  <div className="col-5">aca</div>
-                  <div className="col-5">aca</div>
-                </div>
-                <span>Usuarios activos</span>
-              </div>
-              <div className="background-color  container-element">
-                <div className="row">
-                  <div className="col-5">
-                    <img src="" alt="" />
-                    imagen
-                  </div>
-                  <div className="col-5">aca</div>
-                  <div className="col-5">aca</div>
-                </div>
-                <span>Usuarios activos la ultima semana</span>
-              </div>
-            </div>
-            <div className="container-progres background-color "></div>
-            <div className="container-activate">
-              <span>
-                Da click aquí para comenzar el proceso de activar tus usuarios
-              </span>
-              <img src="https://iconos8.es/icon/368/subir" alt="" />
-            </div>
-          </div>
-          <div class="col container-tres">
-            {" "}
+      <Layout
+        navBar={<Navbar />}
+        sideBar={
+          <>
             <Calendar />
             <AccountUser />
             <Categorias />
             <GraphUsers />
+          </>
+        }
+      >
+        <div className="">
+          <div className="container-promedio background-color "></div>
+          <div className="container-acountUser">
+            <div className="background-color  container-element">
+              <div className="row">
+                <div className="col-5">
+                  <img src="" alt="" />
+                  aca
+                </div>
+                <div className="col-5">aca</div>
+                <div className="col-5">aca</div>
+              </div>
+              <span>Usuarios activos</span>
+            </div>
+            <div className="background-color  container-element">
+              <div className="row">
+                <div className="col-5">
+                  <img src="" alt="" />
+                  imagen
+                </div>
+                <div className="col-5">aca</div>
+                <div className="col-5">aca</div>
+              </div>
+              <span>Usuarios activos la ultima semana</span>
+            </div>
+          </div>
+          <div className="container-progres background-color "></div>
+          <div className="container-activate">
+            <span>
+              Da click aquí para comenzar el proceso de activar tus usuarios
+            </span>
+            <img src="https://iconos8.es/icon/368/subir" alt="" />
           </div>
         </div>
-      </div>
+      </Layout>
     </>
   );
 }

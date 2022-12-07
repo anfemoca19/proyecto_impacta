@@ -89,7 +89,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="container-activate d-flex justify-content-between align-items-center ps-4 pe-4 mt-5">
+          <div className="container-activate d-flex justify-content-between align-items-center ps-4 pe-4 mt-5 rounded">
             <span>
               Da click aquí para comenzar el proceso de activar tus usuarios
             </span>

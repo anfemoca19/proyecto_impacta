@@ -14,13 +14,8 @@ export default function Calendar() {
   };
 
   return (
-    <h1
-      className={clsx("mb-3", styles.calendar, styles.john, {
-        [styles.purple]: showPurple,
-      })}
-    >
+    <h1 className={clsx("mb-5", "mt-5", "rounded", styles.calendar)}>
       Aca va el calendario
-      <button onClick={onShowPurple}>show purple</button>
     </h1>
   );
 }

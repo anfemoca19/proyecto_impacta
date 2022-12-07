@@ -28,9 +28,9 @@ export default function Dashboard() {
         }
       >
         <div className="">
-          <div className="container-promedio background-color "></div>
-          <div className="container-fluid d-flex justify-content-between  align-items-center">
-            <div className="background-color  col text-center rounded container-acountUser">
+          <div className="container-promedio background-color rounded"></div>
+          <div className="container-fluid d-flex justify-content-between  align-items-center mt-5">
+            <div className="background-color  col-5 text-center container-acountUser rounded ">
               <div className="row ">
                 <div className="col-4 d-flex justify-content-center align-items-center">
                   <img className="user-icon" src={usuarios_icon} alt="" />
@@ -44,7 +44,7 @@ export default function Dashboard() {
               </div>
               <span className="style-text">Usuarios activos</span>
             </div>
-            <div className="background-color  col text-center rounded container-acountUser">
+            <div className="background-color  col-5 text-center container-acountUser rounded ">
               <div className="row">
                 <div className="col-4 d-flex justify-content-center align-items-center">
                   <img className="user-icon" src={usuarios_icon} alt="" />
@@ -61,27 +61,35 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
-          <div className=" container-fluid d-flex justify-content-between  align-items-center background-color mt-3">
+          <div className="container-consumo container-fluid d-flex justify-content-between  align-items-center background-color mt-5 rounded ">
             <div className="container d-flex">
               <div>
-                <img src={violet_porcentaje} alt="" />
+                <img
+                  className="style-circle-chart "
+                  src={violet_porcentaje}
+                  alt=""
+                />
               </div>
               <div>
-                <img src={violet_porcentaje} alt="" />
+                <img
+                  className="style-circle-chart "
+                  src={violet_porcentaje}
+                  alt=""
+                />
               </div>
             </div>
             <div className="row">
-              <div className="row">
-                <span className="circle-violet"></span>
+              <div className=" container-fluid d-flex justify-content-between  align-items-center">
+                <span className="circle-violet me-3"></span>
                 <span>Consumo promedio de contenido por usuario</span>
               </div>
-              <div className="row ">
-                <span className="circle-green"></span>
-                <span> total de contenido consumido por la empresa</span>
+              <div className="container-fluid d-flex justify-content-between  align-items-center ">
+                <span className="circle-green me-3"></span>
+                <span> Total de contenido consumido por la empresa</span>
               </div>
             </div>
           </div>
-          <div className="container-activate d-flex justify-content-between align-items-center ps-4 pe-4">
+          <div className="container-activate d-flex justify-content-between align-items-center ps-4 pe-4 mt-5">
             <span>
               Da click aquí para comenzar el proceso de activar tus usuarios
             </span>

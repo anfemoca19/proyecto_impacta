@@ -61,8 +61,8 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
-          <div className=" background-color mt-2">
-            <div>
+          <div className=" container-fluid d-flex justify-content-between  align-items-center background-color mt-3">
+            <div className="container d-flex">
               <div>
                 <img src={violet_porcentaje} alt="" />
               </div>

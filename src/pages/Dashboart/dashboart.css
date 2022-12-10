@@ -19,7 +19,7 @@
 }
 
 .container-promedio {
-  height: 200px;
+  height: 350px;
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
@@ -28,14 +28,17 @@
 .container-acountUser {
   height: 100px;
 }
+
 .style-text {
   color: #7929e2;
   font-size: 13px;
 }
+
 .style-number {
   color: #abc821;
   font-size: 50px;
 }
+
 .user-icon {
   height: 30px;
 }
@@ -43,11 +46,13 @@
 /* container consumo */
 
 .container-consumo {
-  height: 180px;
+  height: 280px;
 }
+
 .style-circle-chart {
   height: 100px;
 }
+
 .circle-violet {
   background: #7929e2;
   border-radius: 50%;
@@ -71,6 +76,7 @@
   height: 60px;
   justify-content: flex-end;
 }
+
 .icon-upload {
   height: 40px;
 }
@@ -78,9 +84,11 @@
 .divider-right {
   border-right: 1px solid #eee;
 }
+
 .divider-top {
   border-top: 1px solid #eee;
 }
+
 .divider-bottom {
   border-bottom: 1px solid #eee;
 }

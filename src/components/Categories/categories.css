@@ -1,0 +1,53 @@
+.title_style {
+  color: #7929e2;
+  font-size: 13px;
+}
+.style_icon {
+  height: 100px;
+  box-shadow: 0px 6px 36px 14px #e6e6e800;
+}
+.icon_nutricion_blanco {
+  background-image: url("../../imagenes/icono-categoria-nutricion-blanco.png");
+}
+.icon_estilo_vida_blanco {
+  background-image: url("../../imagenes/icono-categoria-estilo-de-vida-blanco.png");
+}
+.icon_actividad_fisica_blanco {
+  background-image: url("../../imagenes/icono-categoria-actividad-fisica-blanco.png");
+}
+.icon_yoga_blanco {
+  background-image: url("../../imagenes/icono-categoria-yoga-blanco.png");
+}
+.icon_inteligencia_blanco {
+  background-image: url("../../imagenes/icono-categoria-actividad-fisica-blanco.png");
+}
+.icon_finanzas_blanco {
+  background-image: url("../../imagenes/icono-categoria-actividad-fisica-blanco.png");
+}
+
+.container-icon :hover {
+  background-color: #2c1868;
+}
+.nav-link:hover {
+  color: white;
+  background-color: #2c1868;
+}
+
+.container-icon :hover > icon_nutricion_blanco {
+  background-image: url("../../imagenes/icono-categoria-nutricion-color.png");
+}
+.container-icon :hover > icon_estilo_vida_blanco {
+  background-image: url("../../imagenes/icono-categoria-estilo-de-vida-color.png");
+}
+.container-icon:hover > icon_actividad_fisica_blanco {
+  background-image: url("../../imagenes/icono-categoria-actividad-fisica-color.png");
+}
+.container-icon:hover > icon_yoga_blanco {
+  background-image: url("../../imagenes/icono-categoria-yoga-color.png");
+}
+.container-icon:hover > icon_inteligencia_blanco {
+  background-image: url("../../imagenes/icono-categoria-actividad-fisica-color.png");
+}
+.container-icon:hover > icon_finanzas_blanco {
+  background-image: url("../../imagenes/icono-categoria-actividad-fisica-color.png");
+}

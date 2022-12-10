@@ -5,7 +5,13 @@ import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
+import InputText from "../../components/UI/InputText/inputText";
+import Input from "../../components/UI/Input/input";
+
 import "../Configuration/configuration.css";
+import { Link } from "react-router-dom";
+import Button from "../../components/UI/Button";
+
 export default function Configruation() {
   return (
     <>
@@ -23,94 +29,74 @@ export default function Configruation() {
         }
       >
         <div className="">
-          <span>Perfil de la empresa</span>
-          <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                Perfil
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Personalización
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Estilos login
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Estilos Administracón</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Estilos Academica</a>
-            </li>
-          </ul>
-          <div className="container-promedio background-color ">
-            <div class="mb-3">
-              <label class="btn" type="text">
-                Nombres de la empresa<span>*</span>
-              </label>
-              <input type="text" class="styles-input" />
-            </div>
-            <div class="mb-3">
-              <label class="btn" type="text">
-                Nombre del encargado <span>*</span>
-              </label>
-              <input type="text" class="styles-input" />
-            </div>
-            <div class="mb-3">
-              <label class="btn" type="text">
-                Cargo del encargado<span>*</span>
-              </label>
-              <input type="text" class="styles-input" />
-            </div>
-            <div class="mb-3">
-              <label class="btn" type="text">
-                Email del encargado<span>*</span>
-              </label>
-              <input type="text" class="styles-input" />
-            </div>
-            <div class="mb-3">
-              <label class="btn" type="text">
-                Telefono del encargado<span>*</span>
-              </label>
-              <input type="text" class="styles-input" />
-            </div>
-            <button>Actualizar </button>
+          <div className="nav container-fluid  ">
+            <span className="style-title">Perfil de la empresa</span>
+
+            <ul className="nav justify-content-center nav-pills  nav-fill mb-5">
+              <li className="nav-item">
+                <Link className="nav-link" to="/configuration">
+                  Perfil
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/personalization">
+                  Personalización
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">
+                  Estilos login
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link ">Estilos Administracón</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link ">Estilos Academica</Link>
+              </li>
+            </ul>
           </div>
-          <div className="container-acountUser">
-            <div className="background-color  container-element">
-              <div className="row">
-                <div className="col-5">
-                  <img src="" alt="" />
-                  aca
-                </div>
-                <div className="col-5">aca</div>
-                <div className="col-5">aca</div>
+
+          <div className="p-4 box-container mb-5 container-fluid">
+            <div className="row">
+              <div className="col-4 grid-container">
+                {/* Create a label component and then send the className to custom its height */}
+                {/* 
+                  <Label className="companyLabel"></Label>
+                  companyLabel {
+                    height: 30px
+                  }
+                */}
+                <label htmlFor="password">
+                  Contrasena actual<span>*</span>
+                </label>
+                <label htmlFor="password">Contrasena actual*</label>
+                <label htmlFor="password">Contrasena actual</label>
               </div>
-              <span>Usuarios activos</span>
-            </div>
-            <div className="background-color  container-element">
-              <div className="row">
-                <div className="col-5">
-                  <img src="" alt="" />
-                  imagen
-                </div>
-                <div className="col-5">aca</div>
-                <div className="col-5">aca</div>
+              <div className="col-8 grid-container">
+                <Input id="password" placeHolder="Contraseña actual" />
+                <Input placeHolder="Nueva contraseña" />
+                <Input placeHolder="Confirme contraseña" />
               </div>
-              <span>Usuarios activos la ultima semana</span>
+              <div className="col-12 mt-3">
+                <Button>Actualizar</Button>
+              </div>
             </div>
           </div>
-          <div className="container-progres background-color "></div>
-          <div className="container-progres background-color "></div>
-          <div className="container-activate">
-            <span>
-              Da click aquí para comenzar el proceso de activar tus usuarios
-            </span>
-            <img src="https://iconos8.es/icon/368/subir" alt="" />
+          <span className="style-title-actualice mt-5">
+            Actualice su contraseña
+          </span>
+          <p>Asegure su cuenta con una contraseña fuerte</p>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="container box-container p-4 col-5">
+                <Input placeHolder="Contraseña actual" />
+                <Input placeHolder="Nueva contraseña" />
+                <Input placeHolder="Confirme contraseña" />
+                <Button className="mt-3">Iniciar Session</Button>
+              </div>
+              <div className="col-7"></div>
+            </div>
           </div>
         </div>
       </Layout>

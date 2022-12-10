@@ -27,7 +27,7 @@ export default function Login() {
           />
         </div>
 
-        <Button labelText="Iniciar sección" name="iniciar_seccion" />
+        <Button name="iniciar_seccion">Iniciar sesión</Button>
 
         <div className="row mb-4">
           <div className="col justify-content-center">

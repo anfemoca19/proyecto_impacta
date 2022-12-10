@@ -1,9 +1,17 @@
-import "./longButton.css";
+import "./Button.scss";
+import clsx from "clsx";
 
-export default function Button(props) {
+export default function Button({ children, typeButton, className, ...props }) {
   return (
-    <button type="button" className="btn mb-4 btn-style">
-      {props.labelText}
+    <button
+      type="button"
+      className={clsx("btn btn-style", className, {
+        "btn-primary": typeButton === "primary",
+        "btn-secondary": typeButton === "secondary",
+      })}
+      {...props}
+    >
+      {children}
     </button>
   );
 }

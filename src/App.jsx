@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboart/dashboart";
 import ForgotPass from "./pages/ForgotPass/forgotPass";
 import Login from "./pages/Login/login";
 import NotFound from "./pages/NotFount/NotFound";
+import Personalization from "./pages/Personalization/personalization";
 import Register from "./pages/Register/register";
 import Users from "./pages/Users/users";
 
@@ -12,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/personalization" element={<Personalization />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/users" element={<Users />} />
         <Route path="/configuration" element={<Configruation />} />

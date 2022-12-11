@@ -89,13 +89,13 @@ export default function Configruation() {
           <p>Asegure su cuenta con una contraseña fuerte</p>
           <div className="container-fluid">
             <div className="row">
-              <div className="container box-container p-4 col-5">
+              <div className="container box-container p-4 col-6">
                 <Input placeHolder="Contraseña actual" />
                 <Input placeHolder="Nueva contraseña" />
                 <Input placeHolder="Confirme contraseña" />
                 <Button className="mt-3">Iniciar Session</Button>
               </div>
-              <div className="col-7"></div>
+              <div className="col-6"></div>
             </div>
           </div>
         </div>

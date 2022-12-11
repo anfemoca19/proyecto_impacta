@@ -5,7 +5,7 @@ import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
-import "../Configuration/configuration.css";
+
 export default function Courses() {
   return (
     <>

@@ -1,3 +1,5 @@
+import clsx from "clsx";
+import "../Configuration/configuration.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/calendar";
 import Categorias from "../../components/Categories/categories";
@@ -6,7 +8,6 @@ import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Input from "../../components/UI/Input/input";
-import "../Configuration/configuration.css";
 import { Link } from "react-router-dom";
 import Button from "../../components/UI/Button";
 import Label from "../../components/UI/Label";
@@ -27,31 +28,32 @@ export default function Configruation() {
           </>
         }
       >
-        <div className="">
+        <div className="container-fluid ">
+          <span className="style-title ">Perfil de la empresa</span>
           <div className="nav container-fluid  ">
-            <span className="style-title">Perfil de la empresa</span>
-
-            <ul className="nav justify-content-center nav-pills  nav-fill mb-5">
-              <li className="nav-item">
-                <Link className="nav-link" to="/configuration">
+            <ul className="nav  mb-4 mt-3">
+              <li className="nav-item text-center">
+                <Link className={clsx("style-nav", {})} to="/configuration">
                   Perfil
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/personalization">
+                <Link className={clsx("style-nav", {})} to="/personalization">
                   Personalización
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="#">
+                <Link className={clsx("style-nav", {})} to="#">
                   Estilos login
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ">Estilos Administracón</Link>
+                <Link className={clsx("style-nav", {})}>
+                  Estilos Administracón
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link ">Estilos Academica</Link>
+                <Link className={clsx("style-nav", {})}>Estilos Academica</Link>
               </li>
             </ul>
           </div>

@@ -5,8 +5,6 @@ import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
-import InputText from "../../components/UI/InputText/inputText";
-import Input from "../../components/UI/Input/input";
 
 import "../Personalization/personalization.css";
 import { Link } from "react-router-dom";

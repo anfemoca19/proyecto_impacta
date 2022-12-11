@@ -1,4 +1,4 @@
-import "../Input/input.css";
+import "../Input/input.scss";
 
 export default function Input(props) {
   let selectClass = props.selectClass ? ` ${props.selectClass}` : "";

@@ -5,12 +5,11 @@ import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
-import InputText from "../../components/UI/InputText/inputText";
 import Input from "../../components/UI/Input/input";
-
 import "../Configuration/configuration.css";
 import { Link } from "react-router-dom";
 import Button from "../../components/UI/Button";
+import Label from "../../components/UI/Label";
 
 export default function Configruation() {
   return (
@@ -59,7 +58,7 @@ export default function Configruation() {
 
           <div className="p-4 box-container mb-5 container-fluid">
             <div className="row">
-              <div className="col-4 grid-container">
+              <div className="col-5 grid-container">
                 {/* Create a label component and then send the className to custom its height */}
                 {/* 
                   <Label className="companyLabel"></Label>
@@ -67,16 +66,29 @@ export default function Configruation() {
                     height: 30px
                   }
                 */}
-                <label htmlFor="password">
-                  Contrasena actual<span>*</span>
-                </label>
-                <label htmlFor="password">Contrasena actual*</label>
-                <label htmlFor="password">Contrasena actual</label>
+                <Label htmlFor="nombre_empresa">
+                  Nombre de la empresa <span className="style-asterik">*</span>
+                </Label>
+                <Label htmlFor="nombre_encargadp">
+                  Nombre de la empresa <span className="style-asterik">*</span>
+                </Label>
+                <Label htmlFor="telefono_encargado">
+                  Cargo del encargado <span className="style-asterik">*</span>
+                </Label>
+                <Label htmlFor="telefono_encargado">
+                  Email del encargado <span className="style-asterik">*</span>
+                </Label>
+                <Label htmlFor="telefono_encargado">
+                  Telefono del encargado{" "}
+                  <span className="style-asterik">*</span>
+                </Label>
               </div>
-              <div className="col-8 grid-container">
-                <Input id="password" placeHolder="Contraseña actual" />
-                <Input placeHolder="Nueva contraseña" />
-                <Input placeHolder="Confirme contraseña" />
+              <div className="col-6 grid-container">
+                <Input id="password" />
+                <Input />
+                <Input />
+                <Input />
+                <Input id="telefono_encargado" />
               </div>
               <div className="col-12 mt-3">
                 <Button>Actualizar</Button>

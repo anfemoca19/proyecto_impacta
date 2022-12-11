@@ -31,7 +31,7 @@ export default function Configruation() {
         <div className="container-fluid ">
           <span className="style-title ">Perfil de la empresa</span>
           <div className="nav container-fluid  ">
-            <ul className="nav  mb-4 mt-3">
+            <ul className="nav  mb-3 mt-3">
               <li className="nav-item text-center">
                 <Link className={clsx("style-nav", {})} to="/configuration">
                   Perfil

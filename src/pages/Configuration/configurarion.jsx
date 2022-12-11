@@ -83,10 +83,14 @@ export default function Configruation() {
               </div>
             </div>
           </div>
-          <span className="style-title-actualice mt-5">
-            Actualice su contraseña
-          </span>
-          <p>Asegure su cuenta con una contraseña fuerte</p>
+          <div className="container-fluid mb-5">
+            <span className="style-title-actualice mt-5 mb-5">
+              Actualice su contraseña
+            </span>
+            <p className="mt-3 style-title-pass">
+              Asegure su cuenta con una contraseña fuerte
+            </p>
+          </div>
           <div className="container-fluid">
             <div className="row">
               <div className="container box-container p-4 col-6">

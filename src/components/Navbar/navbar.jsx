@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Navbar/navbar.css";
+import "../Navbar/navbar.scss";
 
 export default function Navbar() {
   return (
@@ -26,7 +26,7 @@ export default function Navbar() {
       </li>
 
       <li class="nav-item mb-2">
-        <Link class="nav-link fs-6 mb-0 h1 link-style">
+        <Link class="nav-link fs-6 mb-0 h1 link-style" to="/courses">
           <span className="nav-icon icon-course" />
           <span>Cursos</span>
         </Link>

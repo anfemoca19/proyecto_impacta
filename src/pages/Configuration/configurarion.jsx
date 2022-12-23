@@ -86,11 +86,11 @@ export default function Configruation() {
                 </Label>
               </div>
               <div className="col-6 grid-container">
-                <Input id="password" />
-                <Input />
-                <Input />
-                <Input />
-                <Input id="telefono_encargado" />
+                <Input id="password " className={"mb-2"} />
+                <Input className={"mb-2"} />
+                <Input className={"mb-2"} />
+                <Input className={"mb-2"} />
+                <Input id="telefono_encargado" className={"mb-2"} />
               </div>
               <div className="col-12 mt-3">
                 <Button>Actualizar</Button>
@@ -108,8 +108,8 @@ export default function Configruation() {
           <div className="container-fluid">
             <div className="row">
               <div className="container box-container p-4 col-6">
-                <Input placeHolder="Contraseña actual" />
-                <Input placeHolder="Nueva contraseña" />
+                <Input placeHolder="Contraseña actual " className={"mb-2"} />
+                <Input placeHolder="Nueva contraseña" className={"mb-2"} />
                 <Input placeHolder="Confirme contraseña" />
                 <Button className="mt-3">Iniciar Session</Button>
               </div>

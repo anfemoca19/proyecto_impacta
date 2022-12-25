@@ -8,6 +8,7 @@ import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Input from "../../components/UI/Input/input";
+import Star from "../../components/Star/Star";
 
 export default function Courses() {
   return (
@@ -77,7 +78,7 @@ export default function Courses() {
           <div className="row row-cols-1 row-cols-md-3 g-4">
             <div className="col">
               <div className="card">
-                <div className="container-style">
+                <div className="container-imag-card">
                   {" "}
                   <img src="..." className="card-img-top" alt="..." />
                 </div>
@@ -87,8 +88,7 @@ export default function Courses() {
                     Nutricón Consciente
                   </h5>
                   <p className="card-text">Por: Maria Isabel Valderrama</p>
-                  <Input type="radio"></Input>
-                  <label htmlFor=""></label>
+                  <Star></Star>
                 </div>
               </div>
             </div>

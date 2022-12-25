@@ -33,7 +33,7 @@ export default function Users() {
           </>
         }
       >
-        <div class="container">
+        <div className="container">
           <div>
             <div className="row mt-3">
               <div className="col-4  d-flex container-anadir-usuario align-items-center ">
@@ -83,103 +83,51 @@ export default function Users() {
               </div>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
-            <div class="col ">
+          <div className="row row-cols-1 row-cols-md-2 g-4 mt-3">
+            <div className="col ">
               {" "}
               <div className="card box-container">
-                <div class="row no-gutters">
-                  <div class="left col-md-4">
+                <div className="row no-gutters">
+                  <div className="left col-md-4">
                     <img
                       src={user_img}
                       alt="foto-perfil"
                       className="img-perfil-style"
                     />
                   </div>
-                  <div class="right col-md-4 mb-3">
+                  <div className="right col-md-4 mb-3">
                     <span className="style-span">Gerente</span>
                     <span className="style-span">Nombre Apellido</span>
                     <span className="style-span">jhondoe@tueempresa.com</span>
                     <span className="style-span">3005552455</span>
                     <span className="style-span">30 años</span>
                   </div>
-                  <div class="right col-md-4 style-timepo-acomulado">
+                  <div className="right col-md-4 style-timepo-acomulado">
                     <span className="circle-green ">algo va a qui </span>
                     <span className="style-span">Tiempo acumoluado</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col ">
+            <div className="col ">
               {" "}
               <div className="card box-container">
-                <div class="row no-gutters">
-                  <div class="left col-md-4">
+                <div className="row no-gutters">
+                  <div className="left col-md-4">
                     <img
                       src={user_img}
                       alt="foto-perfil"
                       className="img-perfil-style"
                     />
                   </div>
-                  <div class="right col-md-4 mb-3">
+                  <div className="right col-md-4 mb-3">
                     <span className="style-span">Gerente</span>
                     <span className="style-span">Nombre Apellido</span>
                     <span className="style-span">jhondoe@tueempresa.com</span>
                     <span className="style-span">3005552455</span>
                     <span className="style-span">30 años</span>
                   </div>
-                  <div class="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col ">
-              {" "}
-              <div className="card box-container">
-                <div class="row no-gutters">
-                  <div class="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div class="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div class="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              {" "}
-              <div className="card box-container">
-                <div class="row no-gutters">
-                  <div class="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div class="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div class="right col-md-4 style-timepo-acomulado">
+                  <div className="right col-md-4 style-timepo-acomulado">
                     <span className="circle-green ">algo va a qui </span>
                     <span className="style-span">Tiempo acumoluado</span>
                   </div>
@@ -187,51 +135,103 @@ export default function Users() {
               </div>
             </div>
           </div>
-          <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col ">
+          <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div className="col ">
               {" "}
               <div className="card box-container">
-                <div class="row no-gutters">
-                  <div class="left col-md-4">
+                <div className="row no-gutters">
+                  <div className="left col-md-4">
                     <img
                       src={user_img}
                       alt="foto-perfil"
                       className="img-perfil-style"
                     />
                   </div>
-                  <div class="right col-md-4 mb-3">
+                  <div className="right col-md-4 mb-3">
                     <span className="style-span">Gerente</span>
                     <span className="style-span">Nombre Apellido</span>
                     <span className="style-span">jhondoe@tueempresa.com</span>
                     <span className="style-span">3005552455</span>
                     <span className="style-span">30 años</span>
                   </div>
-                  <div class="right col-md-4 style-timepo-acomulado">
+                  <div className="right col-md-4 style-timepo-acomulado">
                     <span className="circle-green ">algo va a qui </span>
                     <span className="style-span">Tiempo acumoluado</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col ">
+            <div className="col ">
               {" "}
               <div className="card box-container">
-                <div class="row no-gutters">
-                  <div class="left col-md-4">
+                <div className="row no-gutters">
+                  <div className="left col-md-4">
                     <img
                       src={user_img}
                       alt="foto-perfil"
                       className="img-perfil-style"
                     />
                   </div>
-                  <div class="right col-md-4 mb-3">
+                  <div className="right col-md-4 mb-3">
                     <span className="style-span">Gerente</span>
                     <span className="style-span">Nombre Apellido</span>
                     <span className="style-span">jhondoe@tueempresa.com</span>
                     <span className="style-span">3005552455</span>
                     <span className="style-span">30 años</span>
                   </div>
-                  <div class="right col-md-4 style-timepo-acomulado">
+                  <div className="right col-md-4 style-timepo-acomulado">
+                    <span className="circle-green ">algo va a qui </span>
+                    <span className="style-span">Tiempo acumoluado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div className="col ">
+              {" "}
+              <div className="card box-container">
+                <div className="row no-gutters">
+                  <div className="left col-md-4">
+                    <img
+                      src={user_img}
+                      alt="foto-perfil"
+                      className="img-perfil-style"
+                    />
+                  </div>
+                  <div className="right col-md-4 mb-3">
+                    <span className="style-span">Gerente</span>
+                    <span className="style-span">Nombre Apellido</span>
+                    <span className="style-span">jhondoe@tueempresa.com</span>
+                    <span className="style-span">3005552455</span>
+                    <span className="style-span">30 años</span>
+                  </div>
+                  <div className="right col-md-4 style-timepo-acomulado">
+                    <span className="circle-green ">algo va a qui </span>
+                    <span className="style-span">Tiempo acumoluado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col ">
+              {" "}
+              <div className="card box-container">
+                <div className="row no-gutters">
+                  <div className="left col-md-4">
+                    <img
+                      src={user_img}
+                      alt="foto-perfil"
+                      className="img-perfil-style"
+                    />
+                  </div>
+                  <div className="right col-md-4 mb-3">
+                    <span className="style-span">Gerente</span>
+                    <span className="style-span">Nombre Apellido</span>
+                    <span className="style-span">jhondoe@tueempresa.com</span>
+                    <span className="style-span">3005552455</span>
+                    <span className="style-span">30 años</span>
+                  </div>
+                  <div className="right col-md-4 style-timepo-acomulado">
                     <span className="circle-green ">algo va a qui </span>
                     <span className="style-span">Tiempo acumoluado</span>
                   </div>

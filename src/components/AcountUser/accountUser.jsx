@@ -3,10 +3,10 @@ import usuarios_icon from "../../imagenes/icono-usuarios-nuevos-registrados.png"
 
 export default function AccountUser() {
   return (
-    <div class="container-fluid container-account rounded text-center">
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="">
-          <h1 class="">200</h1>
+    <div className="container-fluid container-account rounded text-center">
+      <div className="container d-flex justify-content-between align-items-center">
+        <div className="">
+          <h1 className="">200</h1>
         </div>
         <div>
           <img
@@ -16,7 +16,7 @@ export default function AccountUser() {
           />
         </div>
       </div>
-      <div class="col">
+      <div className="col">
         <p>Usuarios nuevos registrados</p>
       </div>
     </div>

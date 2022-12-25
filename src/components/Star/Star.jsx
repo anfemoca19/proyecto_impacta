@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
-import Input from "../UI/Input/input";
+
 import "../Star/Star.scss";
 
 export default function Star() {
-  let allStart = document.querySelectorAll("stat");
+  let allStart = document.querySelectorAll(".star");
+  console.log(allStart, "hola");
 
   allStart.forEach((star, i) => {
     star.onclick = () => {
@@ -13,8 +14,9 @@ export default function Star() {
       console.log(i);
     };
   });
+
   return (
-    <div className="d-flex">
+    <div className="d-flex container-fluid">
       <button className="btn-start star" id="one-star">
         <FontAwesomeIcon icon={faStar} className="star-style" />
       </button>

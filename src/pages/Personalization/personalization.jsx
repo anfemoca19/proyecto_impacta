@@ -14,8 +14,14 @@ import Input from "../../components/UI/Input/input";
 
 import icon_user_logo from "../../imagenes/icono-editar-logo.png";
 import icon_camera from "../../imagenes/icono-arrastra-una-imagen.png";
+import { useState } from "react";
 
 export default function Personalization() {
+  const [colorValue, setColorValue] = useState("#000");
+  const onChangeColorPicker = (event) => {
+    const value = event.target.value;
+    setColorValue(value);
+  };
   return (
     <>
       {" "}
@@ -112,8 +118,18 @@ export default function Personalization() {
           <div className="p-4 box-container mb-5 container-fluid p-4">
             <div className="row">
               <div className="container-arrastra">
-                <div>
-                  <span>Elege un color para el login</span>
+                <div className="row p-3">
+                  <label for="favcolor" className="mb-2">
+                    Elige un color para el login
+                  </label>
+                  <input
+                    type="color"
+                    id="favcolor"
+                    name="favcolor"
+                    value={colorValue}
+                    onChange={onChangeColorPicker}
+                    className="input-select-color"
+                  ></input>
                 </div>
                 <div className="col-5 mt-3"></div>
               </div>

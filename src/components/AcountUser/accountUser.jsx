@@ -1,4 +1,4 @@
-import "../AcountUser/accountUser.css";
+import "../AcountUser/accountUser.scss";
 import usuarios_icon from "../../imagenes/icono-usuarios-nuevos-registrados.png";
 
 export default function AccountUser() {

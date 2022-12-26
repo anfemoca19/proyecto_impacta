@@ -1,13 +1,3 @@
-// import {
-//   LineChart,
-//   Line,
-//   XAxis,
-//   YAxis,
-//   CartesianGrid,
-//   Tooltip,
-//   Legend,
-//   Area,
-// } from "recharts";
 import {
   AreaChart,
   Area,
@@ -18,6 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import "./dashboart.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/calendar";
 import Categorias from "../../components/Categories/categories";
@@ -29,7 +20,6 @@ import upload from "../../imagenes/icono-carga-de-archivos.png";
 import usuarios_icon from "../../imagenes/icono-usuarios-activos.png";
 import violet_porcentaje from "../../imagenes/violet-porcentaje.png";
 
-import "./dashboart.css";
 import Layout from "../../components/Layout";
 const data = [
   { name: "Page A", area1: 4000, area2: 2400 },

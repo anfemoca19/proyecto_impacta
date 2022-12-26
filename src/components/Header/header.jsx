@@ -1,4 +1,4 @@
-import "./header.css";
+import "./header.scss";
 import Icon_search from "../../imagenes/icono-buscador.png";
 import Logo from "../../imagenes/logo-en-color.png";
 import Foto_perfil from "../../imagenes/foto-perfil.jpg";

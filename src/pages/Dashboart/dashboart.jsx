@@ -1,3 +1,23 @@
+// import {
+//   LineChart,
+//   Line,
+//   XAxis,
+//   YAxis,
+//   CartesianGrid,
+//   Tooltip,
+//   Legend,
+//   Area,
+// } from "recharts";
+import {
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/calendar";
 import Categorias from "../../components/Categories/categories";
@@ -11,7 +31,15 @@ import violet_porcentaje from "../../imagenes/violet-porcentaje.png";
 
 import "./dashboart.css";
 import Layout from "../../components/Layout";
-
+const data = [
+  { name: "Page A", area1: 4000, area2: 2400 },
+  { name: "Page B", area1: 3000, area2: 1398 },
+  { name: "Page C", area1: 2000, area2: 9800 },
+  { name: "Page D", area1: 2780, area2: 3908 },
+  { name: "Page E", area1: 1890, area2: 4800 },
+  { name: "Page F", area1: 2390, area2: 3800 },
+  { name: "Page G", area1: 3490, area2: 4300 },
+];
 export default function Dashboard() {
   return (
     <>
@@ -28,7 +56,34 @@ export default function Dashboard() {
         }
       >
         <div className="">
-          <div className="container-promedio background-color rounded"></div>
+          <div className="container-promedio background-color rounded">
+            <ResponsiveContainer width="100%" height="100%">
+              <AreaChart
+                width={500}
+                height={300}
+                data={data}
+                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              >
+                <XAxis dataKey="name" />
+                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" />
+                <Tooltip />
+                <Legend />
+                <Area
+                  type="monotone"
+                  dataKey="area1"
+                  stroke="#8884d8"
+                  fill="#8884d8"
+                />
+                <Area
+                  type="monotone"
+                  dataKey="area2"
+                  stroke="#82ca9d"
+                  fill="#82ca9d"
+                />
+              </AreaChart>
+            </ResponsiveContainer>
+          </div>
           <div className="container-fluid d-flex justify-content-between  align-items-center mt-5">
             <div className="background-color  col-5 text-center container-acountUser rounded ">
               <div className="row ">

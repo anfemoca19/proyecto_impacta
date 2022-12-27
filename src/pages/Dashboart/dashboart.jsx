@@ -22,13 +22,18 @@ import violet_porcentaje from "../../imagenes/violet-porcentaje.png";
 
 import Layout from "../../components/Layout";
 const data = [
-  { name: "Page A", area1: 4000, area2: 2400 },
-  { name: "Page B", area1: 3000, area2: 1398 },
-  { name: "Page C", area1: 2000, area2: 9800 },
-  { name: "Page D", area1: 2780, area2: 3908 },
-  { name: "Page E", area1: 1890, area2: 4800 },
-  { name: "Page F", area1: 2390, area2: 3800 },
-  { name: "Page G", area1: 3490, area2: 4300 },
+  { name: "ENE", area1: 4000, area2: 2400 },
+  { name: "FEB", area1: 3000, area2: 1398 },
+  { name: "MAR", area1: 2000, area2: 2800 },
+  { name: "ABR", area1: 2780, area2: 2908 },
+  { name: "MAY", area1: 3890, area2: 2800 },
+  { name: "JUN", area1: 2390, area2: 1300 },
+  { name: "JUL", area1: 3490, area2: 1300 },
+  { name: "AGO", area1: 3290, area2: 2700 },
+  { name: "SEP", area1: 3490, area2: 2300 },
+  { name: "OCT", area1: 3490, area2: 1800 },
+  { name: "NOV", area1: 2490, area2: 2300 },
+  { name: "DIC", area1: 5490, area2: 2300 },
 ];
 export default function Dashboard() {
   return (
@@ -46,7 +51,17 @@ export default function Dashboard() {
         }
       >
         <div className="">
-          <div className="container-promedio background-color rounded">
+          <div className="container-fluid background-color rounded p-3">
+            <div className="d-flex">
+              <div>
+                <span className="circle-violet"></span>
+                <span>Colaboradores</span>
+              </div>
+              <div>
+                <span className="circle-green"></span>
+                <span>Cursos</span>
+              </div>
+            </div>
             <ResponsiveContainer width="100%" height="100%">
               <AreaChart
                 width={500}
@@ -56,20 +71,20 @@ export default function Dashboard() {
               >
                 <XAxis dataKey="name" />
                 <YAxis />
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid />
                 <Tooltip />
                 <Legend />
                 <Area
                   type="monotone"
                   dataKey="area1"
-                  stroke="#8884d8"
-                  fill="#8884d8"
+                  stroke="abc821"
+                  fill="#abc821"
                 />
                 <Area
                   type="monotone"
                   dataKey="area2"
-                  stroke="#82ca9d"
-                  fill="#82ca9d"
+                  stroke="#7929e2"
+                  fill="#7929e2"
                 />
               </AreaChart>
             </ResponsiveContainer>

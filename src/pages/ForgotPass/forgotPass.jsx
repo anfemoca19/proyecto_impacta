@@ -1,7 +1,6 @@
 import "./forgotPass.scss";
 import logo from "../../imagenes/logo-en-blanco.png";
 import Button from "../../components/UI/Button";
-import { Link } from "react-router-dom";
 
 export default function ForgotPass() {
   return (

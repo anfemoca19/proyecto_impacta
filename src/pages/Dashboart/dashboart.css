@@ -18,7 +18,12 @@
   box-shadow: 0px 6px 36px 14px #e6e6e8b4;
 }
 
-
+.container-promedio {
+  height: 350px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
 
 .container-acountUser {
   height: 100px;

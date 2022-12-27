@@ -21,6 +21,7 @@ import usuarios_icon from "../../imagenes/icono-usuarios-activos.png";
 import violet_porcentaje from "../../imagenes/violet-porcentaje.png";
 
 import Layout from "../../components/Layout";
+import CircleColor from "../../components/CircleColor/Circle";
 const data = [
   { name: "ENE", area1: 4000, area2: 2400 },
   { name: "FEB", area1: 3000, area2: 1398 },
@@ -51,43 +52,50 @@ export default function Dashboard() {
         }
       >
         <div className="">
-          <div className="container-fluid background-color rounded p-3">
-            <div className="d-flex">
-              <div>
-                <span className="circle-violet"></span>
-                <span>Colaboradores</span>
-              </div>
-              <div>
-                <span className="circle-green"></span>
-                <span>Cursos</span>
-              </div>
+          <div className="container-fluid background-color rounded p-4">
+            <div className="mb-3">
+              <span className="style-title-chart">
+                Promedio de entrenamientos cursados
+              </span>
             </div>
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart
-                width={500}
-                height={300}
-                data={data}
-                margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
-              >
-                <XAxis dataKey="name" />
-                <YAxis />
-                <CartesianGrid />
-                <Tooltip />
-                <Legend />
-                <Area
-                  type="monotone"
-                  dataKey="area1"
-                  stroke="abc821"
-                  fill="#abc821"
-                />
-                <Area
-                  type="monotone"
-                  dataKey="area2"
-                  stroke="#7929e2"
-                  fill="#7929e2"
-                />
-              </AreaChart>
-            </ResponsiveContainer>
+            <div className="border-color-container">
+              <div className="d-flex mt-2 mb-1">
+                <div className="d-flex align-items-center justify-content-between me-3 ms-3">
+                  <CircleColor className="circle-violet-sm me-2 " />
+                  <span>Colaboradores</span>
+                </div>
+                <div className="d-flex align-items-center justify-content-between me-2">
+                  <CircleColor className="circle-green-sm me-2 " />
+                  <span>Cursos</span>
+                </div>
+              </div>
+              <ResponsiveContainer width="100%" height="100%">
+                <AreaChart
+                  width={500}
+                  height={300}
+                  data={data}
+                  margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+                >
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <CartesianGrid />
+                  <Tooltip />
+                  <Legend />
+                  <Area
+                    type="monotone"
+                    dataKey="area1"
+                    stroke="abc821"
+                    fill="#abc821"
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="area2"
+                    stroke="#7929e2"
+                    fill="#7929e2"
+                  />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
           </div>
           <div className="container-fluid d-flex justify-content-between  align-items-center mt-5">
             <div className="background-color  col-5 text-center container-acountUser rounded ">
@@ -140,11 +148,11 @@ export default function Dashboard() {
             </div>
             <div className="row">
               <div className=" container-fluid d-flex justify-content-between  align-items-center">
-                <span className="circle-violet me-3"></span>
+                <CircleColor className="circle-violet m-3 " />
                 <span>Consumo promedio de contenido por usuario</span>
               </div>
               <div className="container-fluid d-flex justify-content-between  align-items-center ">
-                <span className="circle-green me-3"></span>
+                <CircleColor className="circle-green m-3" />
                 <span> Total de contenido consumido por la empresa</span>
               </div>
             </div>

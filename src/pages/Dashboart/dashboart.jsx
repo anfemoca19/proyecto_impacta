@@ -15,13 +15,13 @@ import Categorias from "../../components/Categories/categories";
 import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Navbar from "../../components/Navbar/navbar";
-
 import upload from "../../imagenes/icono-carga-de-archivos.png";
 import usuarios_icon from "../../imagenes/icono-usuarios-activos.png";
 import violet_porcentaje from "../../imagenes/violet-porcentaje.png";
-
 import Layout from "../../components/Layout";
 import CircleColor from "../../components/CircleColor/Circle";
+import ChartPie from "../../components/ChartPie/ChartPie";
+
 const data = [
   { name: "ENE", area1: 4000, area2: 2400 },
   { name: "FEB", area1: 3000, area2: 1398 },
@@ -36,6 +36,16 @@ const data = [
   { name: "NOV", area1: 2490, area2: 2300 },
   { name: "DIC", area1: 5490, area2: 2300 },
 ];
+
+const dataActiveUsers = [
+  { name: "Group C", value: 300 },
+  { name: "Group D", value: 200 },
+];
+const dataActiveUsersLast = [
+  { name: "Group C", value: 300 },
+  { name: "Group D", value: 200 },
+];
+
 export default function Dashboard() {
   return (
     <>
@@ -84,7 +94,7 @@ export default function Dashboard() {
                   <Area
                     type="monotone"
                     dataKey="area1"
-                    stroke="abc821"
+                    stroke="#abc821"
                     fill="#abc821"
                   />
                   <Area
@@ -106,9 +116,7 @@ export default function Dashboard() {
                 <div className="col-4 d-flex justify-content-center align-items-center">
                   <span className="style-number">70</span>
                 </div>
-                <div className="col-4 d-flex justify-content-center align-items-center">
-                  <span className="circle-violet"></span>
-                </div>
+                <div className="col-4 d-flex justify-content-center align-items-center"></div>
               </div>
               <span className="style-text">Usuarios activos</span>
             </div>
@@ -121,7 +129,7 @@ export default function Dashboard() {
                   <span className="style-number">70</span>
                 </div>
                 <div className="col-4 d-flex justify-content-center align-items-center">
-                  <span className="circle-violet"></span>
+                  {/* <ChartPie data={dataActiveUsersLast} /> */}
                 </div>
               </div>
               <span className="style-text">
@@ -149,11 +157,16 @@ export default function Dashboard() {
             <div className="row">
               <div className=" container-fluid d-flex justify-content-between  align-items-center">
                 <CircleColor className="circle-violet m-3 " />
-                <span>Consumo promedio de contenido por usuario</span>
+                <span className="styele-text">
+                  Consumo promedio de contenido por usuario
+                </span>
               </div>
               <div className="container-fluid d-flex justify-content-between  align-items-center ">
                 <CircleColor className="circle-green m-3" />
-                <span> Total de contenido consumido por la empresa</span>
+                <span className="styele-text">
+                  {" "}
+                  Total de contenido consumido por la empresa
+                </span>
               </div>
             </div>
           </div>

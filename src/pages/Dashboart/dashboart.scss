@@ -1,6 +1,7 @@
 .container-dos {
   display: grid;
 }
+
 .container-tres {
   display: grid;
 }
@@ -9,8 +10,9 @@
   color: #7929e2;
   font-size: 14px;
 }
+
 .border-color-container{
-  border: 2px solid #7929e2;
+  border: 1px solid #7929e2;
   border-radius: 5px;
   height: 300px;
 }
@@ -49,6 +51,9 @@
 
 .style-circle-chart {
   height: 100px;
+}
+.styele-text{
+  font-size: 14px;
 }
 
 

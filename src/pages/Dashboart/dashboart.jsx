@@ -10,14 +10,13 @@ import {
 } from "recharts";
 import "./dashboart.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
-import Calendar from "../../components/Calendar/calendar";
+import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
 import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Navbar from "../../components/Navbar/navbar";
 import upload from "../../imagenes/icono-carga-de-archivos.png";
 import usuarios_icon from "../../imagenes/icono-usuarios-activos.png";
-import violet_porcentaje from "../../imagenes/violet-porcentaje.png";
 import Layout from "../../components/Layout";
 import CircleColor from "../../components/CircleColor/Circle";
 import ChartPie from "../../components/ChartPie/ChartPie";

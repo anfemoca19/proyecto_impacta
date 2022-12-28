@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import "../Configuration/configuration.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
-import Calendar from "../../components/Calendar/calendar";
+import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
 import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";

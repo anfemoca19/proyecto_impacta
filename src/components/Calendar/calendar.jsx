@@ -1,21 +1,24 @@
-import clsx from "clsx";
 import { useState } from "react";
-import styles from "./calendar.module.scss";
+import CalendarLibrary from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+import "./Calendar.scss";
 
-// Example of using module with sass
-// className={clsx(styles.calendar, styles.john, {
-//   [styles.purple]: showPurple,
-// })}
 export default function Calendar() {
-  const [showPurple, setShowPurple] = useState(false);
-
-  const onShowPurple = () => {
-    setShowPurple(!showPurple);
-  };
-
+  const [date, setDate] = useState(new Date());
   return (
-    <h1 className={clsx("mb-5", "mt-5", "rounded", styles.calendar)}>
-      Aca va el calendario
-    </h1>
+    <div className="container-fluid calendar mb-5 mt-4 rounded p-3">
+      <CalendarLibrary
+        onChange={setDate}
+        value={date}
+        // nextLabel="month>>"
+        nextAriaLabel="Ir al próximo mes"
+        next2Label=""
+        next2AriaLabel="Ir al próximo año"
+        // prevLabel="< <mes"
+        prevAriaLabel="Ir al mes anterior"
+        prev2Label=""
+        prev2AriaLabel="Ir al año anterior"
+      />
+    </div>
   );
 }

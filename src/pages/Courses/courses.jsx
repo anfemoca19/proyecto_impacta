@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import "../Courses/courses.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
-import Calendar from "../../components/Calendar/calendar";
+import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
 import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
-import Input from "../../components/UI/Input/input";
 import Star from "../../components/Star/Star";
 
 export default function Courses() {

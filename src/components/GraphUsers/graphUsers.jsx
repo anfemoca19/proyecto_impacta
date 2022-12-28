@@ -48,7 +48,7 @@ const CustomTooltip = ({ active, payload }) => {
 };
 export default function GraphUsers() {
   return (
-    <div className="container d-flex justify-content-between align-items-center rounded container-account mb-3 p-3">
+    <div className="container d-flex justify-content-between align-items-center rounded container-account-graph mb-3 p-3">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={400}

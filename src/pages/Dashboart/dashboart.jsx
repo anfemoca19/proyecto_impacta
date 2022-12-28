@@ -23,18 +23,18 @@ import CircleColor from "../../components/CircleColor/Circle";
 import ChartPie from "../../components/ChartPie/ChartPie";
 
 const data = [
-  { name: "ENE", area1: 4000, area2: 2400 },
-  { name: "FEB", area1: 3000, area2: 1398 },
-  { name: "MAR", area1: 2000, area2: 2800 },
-  { name: "ABR", area1: 2780, area2: 2908 },
-  { name: "MAY", area1: 3890, area2: 2800 },
-  { name: "JUN", area1: 2390, area2: 1300 },
-  { name: "JUL", area1: 3490, area2: 1300 },
-  { name: "AGO", area1: 3290, area2: 2700 },
-  { name: "SEP", area1: 3490, area2: 2300 },
-  { name: "OCT", area1: 3490, area2: 1800 },
-  { name: "NOV", area1: 2490, area2: 2300 },
-  { name: "DIC", area1: 5490, area2: 2300 },
+  { name: "ENE", colaboradores: 4000, cursos: 2400 },
+  { name: "MAR", colaboradores: 2000, cursos: 2800 },
+  { name: "FEB", colaboradores: 3000, cursos: 1398 },
+  { name: "ABR", colaboradores: 2780, cursos: 2908 },
+  { name: "MAY", colaboradores: 3890, cursos: 2800 },
+  { name: "JUN", colaboradores: 2390, cursos: 1300 },
+  { name: "JUL", colaboradores: 3490, cursos: 1300 },
+  { name: "AGO", colaboradores: 3290, cursos: 2700 },
+  { name: "SEP", colaboradores: 3490, cursos: 2300 },
+  { name: "OCT", colaboradores: 3490, cursos: 1800 },
+  { name: "NOV", colaboradores: 2490, cursos: 2300 },
+  { name: "DIC", colaboradores: 5490, cursos: 2300 },
 ];
 
 const dataActiveUsers = [
@@ -68,7 +68,7 @@ export default function Dashboard() {
                 Promedio de entrenamientos cursados
               </span>
             </div>
-            <div className="border-color-container">
+            <div className="border-color-container mb-5">
               <div className="d-flex mt-2 mb-1">
                 <div className="d-flex align-items-center justify-content-between me-3 ms-3">
                   <CircleColor className="circle-violet-sm me-2 " />
@@ -88,18 +88,18 @@ export default function Dashboard() {
                 >
                   <XAxis dataKey="name" />
                   <YAxis />
-                  <CartesianGrid />
+                  <CartesianGrid stroke="#7929e2" />
                   <Tooltip />
                   <Legend />
                   <Area
                     type="monotone"
-                    dataKey="area1"
+                    dataKey="colaboradores"
                     stroke="#abc821"
                     fill="#abc821"
                   />
                   <Area
                     type="monotone"
-                    dataKey="area2"
+                    dataKey="cursos"
                     stroke="#7929e2"
                     fill="#7929e2"
                   />
@@ -109,28 +109,28 @@ export default function Dashboard() {
           </div>
           <div className="container-fluid d-flex justify-content-between  align-items-center mt-5">
             <div className="background-color  col-5 text-center container-acountUser rounded ">
-              <div className="row ">
-                <div className="col-4 d-flex justify-content-center align-items-center">
-                  <img className="user-icon" src={usuarios_icon} alt="" />
-                </div>
-                <div className="col-4 d-flex justify-content-center align-items-center">
-                  <span className="style-number">70</span>
-                </div>
-                <div className="col-4 d-flex justify-content-center align-items-center"></div>
+              <div className="style-container-user">
+                <img className="user-icon" src={usuarios_icon} alt="" />
+                <span className="style-number">70</span>
+                <ChartPie
+                  percentage="70"
+                  color="#7929e2"
+                  size="50px"
+                  remainingColor="#abc821"
+                />
               </div>
               <span className="style-text">Usuarios activos</span>
             </div>
             <div className="background-color  col-5 text-center container-acountUser rounded ">
-              <div className="row">
-                <div className="col-4 d-flex justify-content-center align-items-center">
-                  <img className="user-icon" src={usuarios_icon} alt="" />
-                </div>
-                <div className="col-4 d-flex justify-content-center align-items-center">
-                  <span className="style-number">70</span>
-                </div>
-                <div className="col-4 d-flex justify-content-center align-items-center">
-                  {/* <ChartPie data={dataActiveUsersLast} /> */}
-                </div>
+              <div className="style-container-user">
+                <img className="user-icon" src={usuarios_icon} alt="" />
+                <span className="style-number">70</span>
+                <ChartPie
+                  percentage="70"
+                  color="#abc821"
+                  size="50px"
+                  remainingColor="#7929e2"
+                />
               </div>
               <span className="style-text">
                 Usuarios activos la ultima semana
@@ -138,21 +138,19 @@ export default function Dashboard() {
             </div>
           </div>
           <div className="container-consumo container-fluid d-flex justify-content-between  align-items-center background-color mt-5 rounded ">
-            <div className="container d-flex">
-              <div>
-                <img
-                  className="style-circle-chart "
-                  src={violet_porcentaje}
-                  alt=""
-                />
-              </div>
-              <div>
-                <img
-                  className="style-circle-chart "
-                  src={violet_porcentaje}
-                  alt=""
-                />
-              </div>
+            <div className=" col-6 style-container-pieChart">
+              <ChartPie
+                percentage="60"
+                color="#7929e2"
+                size="150px"
+                remainingColor="black"
+              />
+              <ChartPie
+                percentage="50"
+                color="#abc821"
+                size="150px"
+                remainingColor="black"
+              />
             </div>
             <div className="row">
               <div className=" container-fluid d-flex justify-content-between  align-items-center">

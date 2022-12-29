@@ -69,6 +69,12 @@
   color: white;
   height: 60px;
   justify-content: flex-end;
+  &:hover{
+    background-color: #abc821;
+  }
+}
+.style-upload-link{
+  color: #f9f9f9;
 }
 
 .icon-upload {

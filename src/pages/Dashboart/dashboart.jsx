@@ -20,6 +20,7 @@ import usuarios_icon from "../../imagenes/icono-usuarios-activos.png";
 import Layout from "../../components/Layout";
 import CircleColor from "../../components/CircleColor/Circle";
 import ChartPie from "../../components/ChartPie/ChartPie";
+import { Link } from "react-router-dom";
 
 const data = [
   { name: "ENE", colaboradores: 4000, cursos: 2400 },
@@ -89,7 +90,7 @@ export default function Dashboard() {
                   <YAxis />
                   <CartesianGrid stroke="#7929e2" />
                   <Tooltip />
-                  <Legend />
+                  {/* <Legend /> */}
                   <Area
                     type="monotone"
                     dataKey="colaboradores"
@@ -167,11 +168,16 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className="container-activate d-flex justify-content-between align-items-center ps-4 pe-4 mt-5 rounded">
-            <span>
-              Da click aquí para comenzar el proceso de activar tus usuarios
-            </span>
-            <img className="icon-upload" src={upload} alt="icon-upload" />
+          <div className="container-activate d-flex  align-items-center ps-4 pe-4 mt-5 rounded">
+            <Link
+              className="container-fluid text-center justify-content-between align-items-center  style-upload-link d-flex"
+              to=""
+            >
+              <span>
+                Da click aquí para comenzar el proceso de activar tus usuarios
+              </span>
+              <img className="icon-upload" src={upload} alt="icon-upload" />
+            </Link>
           </div>
         </div>
       </Layout>

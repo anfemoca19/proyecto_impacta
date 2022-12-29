@@ -30,9 +30,9 @@ export default function Configruation() {
       >
         <div className="container-fluid ">
           <span className="style-title ">Perfil de la empresa</span>
-          <div className="nav container-fluid  ">
-            <ul className="nav  mb-3 mt-3">
-              <li className="nav-item text-center">
+          <div className="container-fluid d-flex ">
+            <ul className="nav navbar-nav mb-3 mt-3">
+              <li className="nav-item ">
                 <Link className={clsx("style-nav", {})} to="/configuration">
                   Perfil
                 </Link>
@@ -68,11 +68,11 @@ export default function Configruation() {
                     height: 30px
                   }
                 */}
-                <Label htmlFor="nombre_empresa">
+                <Label htmlFor="nombre_empresa ">
                   Nombre de la empresa <span className="style-asterik">*</span>
                 </Label>
                 <Label htmlFor="nombre_encargadp">
-                  Nombre de la empresa <span className="style-asterik">*</span>
+                  Nombre del encargado<span className="style-asterik">*</span>
                 </Label>
                 <Label htmlFor="telefono_encargado">
                   Cargo del encargado <span className="style-asterik">*</span>
@@ -86,11 +86,17 @@ export default function Configruation() {
                 </Label>
               </div>
               <div className="col-6 grid-container">
-                <Input id="password " className={"mb-2"} />
-                <Input className={"mb-2"} />
-                <Input className={"mb-2"} />
-                <Input className={"mb-2"} />
-                <Input id="telefono_encargado" className={"mb-2"} />
+                <Input
+                  id="password "
+                  className="mb-2 input-data-configuration"
+                />
+                <Input className="mb-2 input-data-configuration" />
+                <Input className="mb-2 input-data-configuration" />
+                <Input className="mb-2 input-data-configuration" />
+                <Input
+                  id="telefono_encargado"
+                  className="mb-2 input-data-configuration"
+                />
               </div>
               <div className="col-12 mt-3">
                 <Button>Actualizar</Button>
@@ -108,9 +114,18 @@ export default function Configruation() {
           <div className="container-fluid">
             <div className="row">
               <div className="container box-container p-4 col-6">
-                <Input placeHolder="Contraseña actual " className={"mb-2"} />
-                <Input placeHolder="Nueva contraseña" className={"mb-2"} />
-                <Input placeHolder="Confirme contraseña" />
+                <Input
+                  placeHolder="Contraseña actual "
+                  className="mb-2 input-data-configuration"
+                />
+                <Input
+                  placeHolder="Nueva contraseña"
+                  className="mb-2 input-data-configuration"
+                />
+                <Input
+                  placeHolder="Confirme contraseña"
+                  className="mb-2 input-data-configuration"
+                />
                 <Button className="mt-3">Iniciar Session</Button>
               </div>
               <div className="col-6"></div>

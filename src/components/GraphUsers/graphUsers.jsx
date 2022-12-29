@@ -58,7 +58,7 @@ export default function GraphUsers() {
           </span>
         </div>
 
-        <div className=" style-graph-colaboradores d-flex align-items-center  me-3 ms-3">
+        <div className=" style-graph-colaboradores d-flex align-items-center  ">
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
               width={400}

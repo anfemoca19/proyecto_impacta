@@ -1,7 +1,12 @@
 .title-style {
   color: #7929e2;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
 }
+a{
+  text-decoration: none;
+}
+
 .style-icon {
   height: 100px;
   display: block;
@@ -10,7 +15,9 @@
   background-position: center center;
   background-size: cover;
 }
+
 .icon-nutricion-blanco {
+  height: 100px;
   background-image: url("../../imagenes/icono-categoria-nutricion-blanco.png");
   &:hover {
     background-image: url("../../imagenes/icono-categoria-nutricion-color.png");

@@ -4,50 +4,51 @@ import { Link } from "react-router-dom";
 export default function Categorias() {
   return (
     <>
-      <div className="container  mb-5 mt-5">
+      <div className="container-fluid  mb-4 mt-5">
         <span className="title-style">Categorias</span>
-
-        <div className="row mt-3">
-          <div className="col text-center style-container container-icon">
-            <Link className="nav-link">
+        <div className="row mt-2">
+          <div className="col text-center ">
+            <Link className="">
               <span className="rounded style-icon icon-nutricion-blanco" />
-              <h6 className="card-subtitle mb-2 text-muted">Nutricón</h6>
+              <span className="card-subtitle text-muted mt-5">Nutricón</span>
             </Link>
           </div>
-          <div className="col text-cente container-icon">
-            <Link className="nav-link">
+          <div className="col text-cente">
+            <Link className="">
               <span className="rounded style-icon icon-estilo-vida-blanco " />
-              <h6 className="card-subtitle mb-2 text-muted">Estilo de vida</h6>
+              <span className="card-subtitle text-muted mt-2">
+                Estilo de vida
+              </span>
             </Link>
           </div>
-          <div className="col text-center container-icon">
-            <Link className="nav-link">
-              <span className="rounded style-icon icon-actividad-fisica-blanco" />
-              <h6 className="card-subtitle mb-2 text-muted">
+          <div className="col text-center">
+            <Link className="">
+              <span className="rounded style-icon icon-actividad-fisica-blanco " />
+              <span className="card-subtitle text-muted mt-2">
                 Actividad fisica
-              </h6>
+              </span>
             </Link>
           </div>
         </div>
-        <div className="row">
-          <div className="col text-center container-icon">
-            <Link className="nav-link" to="">
+        <div className="row mt-3">
+          <div className="col text-center">
+            <Link className="" to="">
               <span className="rounded style-icon icon-yoga-blanco" />
-              <h6 className="card-subtitle mb-2 text-muted">Yoga</h6>
+              <span className="card-subtitle  text-muted mt-2">Yoga</span>
             </Link>
           </div>
-          <div className="col text-center container-icon">
-            <Link className="nav-link" to="">
+          <div className="col text-center">
+            <Link className="" to="">
               <span className="rounded style-icon icon-inteligencia-blanco" />
-              <h6 className="card-subtitle mb-2 text-muted">
+              <span className="card-subtitle  text-muted mt-2">
                 Inteligencia emocional
-              </h6>
+              </span>
             </Link>
           </div>
-          <div className="col text-center container-icon">
-            <Link className="nav-link" to="">
+          <div className="col text-center">
+            <Link className="" to="">
               <span className="rounded style-icon icon-finanzas-blanco" />
-              <h6 className="card-subtitle mb-2 text-muted">Finanzas</h6>
+              <span className="card-subtitle  text-muted mt-2">Finanzas</span>
             </Link>
           </div>
         </div>

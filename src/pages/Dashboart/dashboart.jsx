@@ -63,13 +63,13 @@ export default function Dashboard() {
       >
         <div className="">
           <div className="container-fluid background-color rounded p-4">
-            <div className="mb-3">
+            <div className="mb-3 mt-3">
               <span className="style-title-chart">
                 Promedio de entrenamientos cursados
               </span>
             </div>
             <div className="border-color-container mb-5">
-              <div className="d-flex mt-2 mb-1">
+              <div className="d-flex mt-2 mb-4">
                 <div className="d-flex align-items-center justify-content-between me-3 ms-3">
                   <CircleColor className="circle-violet-sm me-2 " />
                   <span>Colaboradores</span>
@@ -107,7 +107,10 @@ export default function Dashboard() {
               </ResponsiveContainer>
             </div>
           </div>
-          <div className="container-fluid d-flex justify-content-between  align-items-center mt-5">
+          <div
+            className="container-fluid d-flex justify-content-between  align-items-center mt-5 mb-5
+          "
+          >
             <div className="background-color  col-5 text-center container-acountUser rounded ">
               <div className="style-container-user">
                 <img className="user-icon" src={usuarios_icon} alt="" />

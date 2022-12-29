@@ -54,7 +54,7 @@ export default function Dashboard() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser />
+            <AccountUser dataNumber={200} />
             <Categorias />
             <GraphUsers />
           </>

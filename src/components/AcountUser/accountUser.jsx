@@ -2,6 +2,7 @@ import "../AcountUser/accountUser.scss";
 import usuarios_icon from "../../imagenes/icono-usuarios-nuevos-registrados.png";
 
 export default function AccountUser({ dataNumber }) {
+  console.log("hola", dataNumber);
   return (
     <div className="container-fluid container-account rounded text-center">
       <div className="container-fluid style-container-nubmer-icon">

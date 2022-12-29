@@ -45,7 +45,7 @@ const dataActiveUsersLast = [
   { name: "Group C", value: 300 },
   { name: "Group D", value: 200 },
 ];
-
+let dataUserResgitrados = ["200"];
 export default function Dashboard() {
   return (
     <>
@@ -55,7 +55,7 @@ export default function Dashboard() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser dataNumber={200} />
+            <AccountUser dataNumber={dataUserResgitrados} />
             <Categorias />
             <GraphUsers />
           </>

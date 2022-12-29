@@ -11,6 +11,7 @@ import Input from "../../components/UI/Input/input";
 import { Link } from "react-router-dom";
 import Button from "../../components/UI/Button";
 import Label from "../../components/UI/Label";
+import Menu from "../../components/Menu/Menu";
 
 export default function Configruation() {
   return (
@@ -30,33 +31,7 @@ export default function Configruation() {
       >
         <div className="container-fluid ">
           <span className="style-title ">Perfil de la empresa</span>
-          <div className="container-fluid d-flex ">
-            <ul className="nav navbar-nav mb-3 mt-3">
-              <li className="nav-item ">
-                <Link className={clsx("style-nav", {})} to="/configuration">
-                  Perfil
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={clsx("style-nav", {})} to="/personalization">
-                  Personalización
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={clsx("style-nav", {})} to="#">
-                  Estilos login
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={clsx("style-nav", {})}>
-                  Estilos Administracón
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className={clsx("style-nav", {})}>Estilos Academica</Link>
-              </li>
-            </ul>
-          </div>
+          <Menu />
 
           <div className="p-4 box-container mb-5 container-fluid">
             <div className="row">
@@ -115,15 +90,15 @@ export default function Configruation() {
             <div className="row">
               <div className="container box-container p-4 col-6">
                 <Input
-                  placeHolder="Contraseña actual "
+                  placeholder="Contraseña actual "
                   className="mb-2 input-data-configuration"
                 />
                 <Input
-                  placeHolder="Nueva contraseña"
+                  placeholder="Nueva contraseña"
                   className="mb-2 input-data-configuration"
                 />
                 <Input
-                  placeHolder="Confirme contraseña"
+                  placeholder="Confirme contraseña"
                   className="mb-2 input-data-configuration"
                 />
                 <Button className="mt-3">Iniciar Session</Button>

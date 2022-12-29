@@ -2,6 +2,7 @@
   color: #7929e2;
   font-size: 15px;
 }
+
 .styles-input {
   border-radius: 5px;
   border: 2px solid #7929e2;
@@ -17,6 +18,7 @@
   align-items: center;
 }
 
+//estilos para cambiar contraseña
 .box-container {
   background-color: #f3f2f2;
   box-shadow: 3px 3px 19px 0px rgb(228, 228, 228);
@@ -30,23 +32,12 @@
 .style-asterik {
   color: #7929e2;
 }
-.style-nav{
-  color: black;
-  text-decoration: none;
-  background-color: #ABC821;
-  padding: 1px;
-  border-radius: 3px;
-  font-size: 15px;
-  &:hover{
-    background-color: #7929e2;
-    color: white;
-  }
-}
 
-.container-arrastra{
-  border-radius: 5px;
-  background-color: white;
-  border-width: 2px;
-  border-style: dashed;
-  border-color: #8080801f;
-}
+
+// .container-arrastra{
+//   border-radius: 5px;
+//   background-color: white;
+//   border-width: 2px;
+//   border-style: dashed;
+//   border-color: #8080801f;
+// }

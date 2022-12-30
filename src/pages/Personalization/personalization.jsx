@@ -18,14 +18,29 @@ import { useState } from "react";
 import Menu from "../../components/Menu/Menu";
 
 export default function Personalization() {
-  const [colorValue, setColorValue] = useState("#000");
+  const [colorValue, setColorValue] = useState("#ffff");
+  const [ImageSelectedPrevious, setImageSelectedPrevious] = useState(null);
+
   const onChangeColorPicker = (event) => {
     const value = event.target.value;
     setColorValue(value);
   };
+
+  const changeImage = (e) => {
+    console.log(e.target.files);
+    if (e.target.files[0] !== undefined) {
+      const reader = new FileReader();
+      reader.readAsDataURL(e.target.files[0]);
+      reader.onload = (e) => {
+        e.preventDefault();
+        setImageSelectedPrevious(e.target.result); // le damos el binario de la imagen para mostrarla en pantalla
+      };
+    }
+  };
   return (
     <>
       {" "}
+      .,.
       <Header />
       <Layout
         navBar={<Navbar />}
@@ -41,7 +56,7 @@ export default function Personalization() {
         <div className="container-fluid ">
           <span className="style-title ">Perfil de la empresa</span>
           <Menu />
-          <div className="p-4 mb-5 container-fluid line-divider-boton">
+          <div className="p-4 mb-5 container-fluid line-divider-boton text-center">
             <div className="row">
               <div className=" grid-container">
                 <span className="style-title-logos">Logos e imágenes</span>
@@ -67,16 +82,30 @@ export default function Personalization() {
           </div>
           <div className="p-4 box-container mb-5 container-fluid p-4">
             <div className="row">
-              <div className="container-arrastra">
-                <div>
-                  <span>Editar imagen Background del login</span>
+              <div className="container-bacgraund mt-3 p-4">
+                <span className="mt-3">Editar imagen Background del login</span>
+                <div className=" d-flex image-upload-wrap mt-4">
+                  <input
+                    className="file-upload-input"
+                    type="file"
+                    name=""
+                    id=""
+                    multiple
+                    onChange={(e) => {
+                      changeImage(e);
+                    }}
+                  />
                 </div>
-                <div className="col-5 mt-3">
-                  <img src={icon_camera} alt="" />
+                <div className=" d-flex col-5 mt-3">
+                  <img
+                    src={icon_camera}
+                    alt="icon-photo"
+                    className="icon-photo"
+                  />
                   <div>
-                    <div>
+                    <div className="ms-3 mb-4">
                       <span>Arrastra una imagen hasta aqui o</span>
-                      <span>sube un archivo</span>
+                      <input type="file" className="style-input-upload" />
                     </div>
                   </div>
                 </div>
@@ -91,9 +120,9 @@ export default function Personalization() {
           </div>
           <div className="p-4 box-container mb-5 container-fluid p-4">
             <div className="row">
-              <div className="container-arrastra">
+              <div className="container-bacgraund">
                 <div className="row p-3">
-                  <label for="favcolor" className="mb-2">
+                  <label htmlFor="favcolor" className="mb-2">
                     Elige un color para el login
                   </label>
                   <input

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/proyecto_impacta/static/css/main.5678bf2d.css",
+    "main.js": "/proyecto_impacta/static/js/main.fd875be4.js",
+    "static/media/foto-perfil.jpg": "/proyecto_impacta/static/media/foto-perfil.c17e0967dd9ff22c8805.jpg",
+    "index.html": "/proyecto_impacta/index.html",
+    "main.5678bf2d.css.map": "/proyecto_impacta/static/css/main.5678bf2d.css.map",
+    "main.fd875be4.js.map": "/proyecto_impacta/static/js/main.fd875be4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5678bf2d.css",
+    "static/js/main.fd875be4.js"
+  ]
+}

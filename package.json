@@ -2,7 +2,7 @@
   "name": "proyecto-impacta",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anfemoca19.github.io/proyecto_Impacta/",
+  "homepage": "https://anfemoca19.github.io/proyecto_impacta/",
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",

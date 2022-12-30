@@ -1,6 +1,6 @@
-import "./register.css";
+import "./register.scss";
 import logo from "../../imagenes/logo-en-blanco.png";
-import LongButton from "../../components/button/longButton";
+import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 
 export default function Register() {
@@ -63,13 +63,10 @@ export default function Register() {
           />
         </div>
 
-        <LongButton labelText="Crear cuenta" name="iniciar_seccion" />
+        <Button labelText="Crear cuenta" name="iniciar_seccion" />
 
         <div className="d-sm-flex">
-          {/* <button className="border_button" name="crear_cuenta">
-            Ya tengo cuenta
-          </button> */}
-          <Link to="/login" className="border_button">
+          <Link to="/login" className="border-button-register">
             {" "}
             Ya tengo cuenta{" "}
           </Link>

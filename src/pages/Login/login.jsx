@@ -1,13 +1,13 @@
-import "./login.css";
+import "./login.scss";
 import logo from "../../imagenes/logo-en-blanco.png";
-import LongButton from "../../components/button/longButton";
+import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
     <section className="container-login">
       <img src={logo} alt="logo" className="img-logo" />
-      <form>
+      <form className="form-login">
         <p className="tittle">Inicia Sesión</p>
         <div clas="form-outline mb-">
           <input
@@ -27,7 +27,7 @@ export default function Login() {
           />
         </div>
 
-        <LongButton labelText="Iniciar sección" name="iniciar_seccion" />
+        <Button name="iniciar_seccion">Iniciar sesión</Button>
 
         <div className="row mb-4">
           <div className="col justify-content-center">
@@ -49,16 +49,15 @@ export default function Login() {
           </div>
         </div>
 
-        <div className="d-sm-flex">
-          <Link to="/register" className="border_button">
+        <div className="container-btn-footer">
+          <Link to="/register" className="border-button-login">
             {" "}
             Crear Cuenta
           </Link>
-          <div className="col">
-            <button className="border_button" name="">
-              Olvido su contraseña?
-            </button>
-          </div>
+
+          <Link to="/forgotPass" className="border-button-login" name="">
+            ¿Olvido su contraseña?
+          </Link>
         </div>
       </form>
     </section>

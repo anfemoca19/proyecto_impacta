@@ -60,7 +60,7 @@ export default function Configruation() {
                   <span className="style-asterik">*</span>
                 </Label>
               </div>
-              <div className="col-6 grid-container">
+              <div className="col-7 grid-container">
                 <Input
                   id="password "
                   className="mb-2 input-data-configuration"

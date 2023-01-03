@@ -6,6 +6,7 @@ import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
+import DragAndDrop from "../../components/UI/DragAndDrop";
 
 import "../Personalization/personalization.scss";
 import { Link } from "react-router-dom";
@@ -20,6 +21,7 @@ import Menu from "../../components/Menu/Menu";
 export default function Personalization() {
   const [colorValue, setColorValue] = useState("#ffff");
   const [ImageSelectedPrevious, setImageSelectedPrevious] = useState(null);
+  const [dragfiles, setDragFiles] = useState([]);
 
   const onChangeColorPicker = (event) => {
     const value = event.target.value;
@@ -37,6 +39,17 @@ export default function Personalization() {
       };
     }
   };
+
+  const handleDrop = (files) => {
+    let fileList = [];
+    for (let i = 0; i < files.length; i++) {
+      if (!files[i].name) return;
+      fileList.push(files[i].name);
+    }
+
+    setDragFiles((prevState) => [...prevState, fileList]);
+  };
+
   return (
     <>
       {" "}
@@ -84,17 +97,14 @@ export default function Personalization() {
             <div className="row">
               <div className="container-bacgraund mt-3 p-4">
                 <span className="mt-3">Editar imagen Background del login</span>
-                <div className=" d-flex image-upload-wrap mt-4">
-                  <input
-                    className="file-upload-input"
-                    type="file"
-                    name=""
-                    id=""
-                    multiple
-                    onChange={(e) => {
-                      changeImage(e);
-                    }}
-                  />
+
+                <div className="d-flex image-upload-wrap mt-4">
+                  <DragAndDrop handleDrop={handleDrop} />
+                </div>
+                <div>
+                  {dragfiles.map((file, i) => (
+                    <div key={i}>{file}</div>
+                  ))}
                 </div>
                 <div className=" d-flex col-5 mt-3">
                   <img

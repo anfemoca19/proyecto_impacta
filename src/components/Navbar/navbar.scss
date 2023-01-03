@@ -22,6 +22,24 @@
 }
 .nav-item {
   list-style: none;
+  &.active {
+    a {
+      color: #fff;
+      background-color: #4b209e;
+    }
+    .nav-link .nav-icon {
+      background-image: url("../../imagenes/icono-menu-1-fondo-color.png");
+    }
+    .nav-link .icon-config {
+      background-image: url("../../imagenes/icono-menu-2-fondo-color.png");
+    }
+    .nav-link .icon-user {
+      background-image: url("../../imagenes/icono-menu-3-fondo-color.png");
+    }
+    .nav-link .icon-course {
+      background-image: url("../../imagenes/icono-menu-5-fondo-color.png");
+    }
+  }
 }
 .nav-item .nav-link {
   display: flex;

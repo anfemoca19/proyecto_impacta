@@ -5,7 +5,7 @@ export default function Input({ children, typeInput, className, ...props }) {
   let selectClass = props.selectClass ? ` ${props.selectClass}` : "";
 
   return (
-    <div className={"d-flex"}>
+    <div>
       <input
         className={clsx(className, {
           "input-primary": typeInput === "primary",

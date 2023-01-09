@@ -1,0 +1,31 @@
+.container-DragAndDrop {
+  height: 100px; 
+  width: 250px;
+}
+
+
+//Stilos para el dragandDrop
+.style-cointaner-upload{
+  border: dashed grey 4px;
+  background-color: rgba(255,255,255,.8);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 9999px;
+}
+.style-title-upload{
+  position: absolute;
+  top: 25%;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  color: grey;
+  font-size: 36px;
+}
+//Stulos para seleccionar imagen
+
+.text-color{
+  color: #7929e2;
+}

@@ -1,0 +1,31 @@
+
+
+.inputfile {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+  }
+
+
+.iborrainputfile {
+	font-size:16px; 
+}
+
+.inputfile + label {
+  color: #7929e2;
+  cursor: pointer;
+  color: #7929e2;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.inputfile-4:focus + label,
+.inputfile-4.has-focus + label,
+.inputfile-4 + label:hover {
+  color: #abc821;
+}
+
+
+.linea-abajo{
+  text-decoration-line: underline
+}

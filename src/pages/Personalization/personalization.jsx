@@ -11,12 +11,13 @@ import DragAndDrop from "../../components/UI/DragAndDrop";
 import "../Personalization/personalization.scss";
 import { Link } from "react-router-dom";
 import Button from "../../components/UI/Button";
-import Input from "../../components/UI/Input/input";
 
 import icon_user_logo from "../../imagenes/icono-editar-logo.png";
 import icon_camera from "../../imagenes/icono-arrastra-una-imagen.png";
 import { useState } from "react";
 import Menu from "../../components/Menu/Menu";
+import UploadInput from "../../components/UI/UploadInput/UploadInput";
+import Label from "../../components/UI/Label/Label";
 
 export default function Personalization() {
   const [colorValue, setColorValue] = useState("#ffff");
@@ -28,19 +29,8 @@ export default function Personalization() {
     setColorValue(value);
   };
 
-  const changeImage = (e) => {
-    console.log(e.target.files);
-    if (e.target.files[0] !== undefined) {
-      const reader = new FileReader();
-      reader.readAsDataURL(e.target.files[0]);
-      reader.onload = (e) => {
-        e.preventDefault();
-        setImageSelectedPrevious(e.target.result); // le damos el binario de la imagen para mostrarla en pantalla
-      };
-    }
-  };
-
   const handleDrop = (files) => {
+    debugger;
     let fileList = [];
     for (let i = 0; i < files.length; i++) {
       if (!files[i].name) return;
@@ -48,6 +38,11 @@ export default function Personalization() {
     }
 
     setDragFiles((prevState) => [...prevState, fileList]);
+  };
+
+  const cancelUpload = (e) => {
+    if (e.target.name === "btnDeleteImg") setDragFiles([]);
+    if (e.target.name === "btnDeleteColor") setColorValue("#ffff");
   };
 
   return (
@@ -75,15 +70,41 @@ export default function Personalization() {
                 <span className="style-title-logos">Logos e imágenes</span>
               </div>
             </div>
-            <div className="row">
+            <div className="row mt-3">
               <div className=" grid-container">
-                <span>Editar logo</span>
-                <img className="style-img-perfil" src={icon_user_logo} alt="" />
+                <div>
+                  <span>Editar logo</span>
+                </div>
+                <div className="mt-3">
+                  <img
+                    className="style-img-perfil"
+                    src={icon_user_logo}
+                    alt=""
+                    id="img-perfil"
+                  />
+                </div>
               </div>
             </div>
             <div className="row">
-              <div className=" grid-container">
-                <Input type="file" />
+              <div className=" grid-container mt-3 ">
+                <div className="container-input">
+                  <UploadInput
+                    className={"iborrainputfile"}
+                    handleDrop={handleDrop}
+                  >
+                    Selecionar una imagen
+                  </UploadInput>
+                </div>
+                {/* <div>
+                  <DragAndDrop handleDrop={handleDrop} className="text-color">
+                    Selecionar una imagen
+                  </DragAndDrop>
+                </div>
+                <div>
+                  {dragfiles.map((file, i) => (
+                    <div key={i}>{file}</div>
+                  ))}
+                </div> */}
                 <span>Tamaño sugerido (1500px por 250px)</span>
               </div>
             </div>
@@ -97,7 +118,6 @@ export default function Personalization() {
             <div className="row">
               <div className="container-bacgraund mt-3 p-4">
                 <span className="mt-3">Editar imagen Background del login</span>
-
                 <div className="d-flex image-upload-wrap mt-4">
                   <DragAndDrop handleDrop={handleDrop} />
                 </div>
@@ -112,10 +132,15 @@ export default function Personalization() {
                     alt="icon-photo"
                     className="icon-photo"
                   />
-                  <div>
-                    <div className="ms-3 mb-4">
+                  <div className="d-flex">
+                    <div className=" container-upload-img ms-3">
                       <span>Arrastra una imagen hasta aqui o</span>
-                      <input type="file" className="style-input-upload" />
+                      <UploadInput
+                        className={"iborrainputfile linea-abajo"}
+                        handleDrop={handleDrop}
+                      >
+                        sube un archivo
+                      </UploadInput>
                     </div>
                   </div>
                 </div>
@@ -124,7 +149,14 @@ export default function Personalization() {
                 <Button>Guardar</Button>
               </div>
               <div className="col-5 mt-3">
-                <Button>Eliminar</Button>
+                <Button
+                  name="btnDeleteImg"
+                  onClick={(e) => {
+                    cancelUpload(e);
+                  }}
+                >
+                  Eliminar
+                </Button>
               </div>
             </div>
           </div>
@@ -132,9 +164,7 @@ export default function Personalization() {
             <div className="row">
               <div className="container-bacgraund">
                 <div className="row p-3">
-                  <label htmlFor="favcolor" className="mb-2">
-                    Elige un color para el login
-                  </label>
+                  <Label className="mb-2">Elige un color para el login</Label>
                   <input
                     type="color"
                     id="favcolor"
@@ -150,7 +180,14 @@ export default function Personalization() {
                 <Button>Guardar</Button>
               </div>
               <div className="col-5 mt-3">
-                <Button>Eliminar</Button>
+                <Button
+                  name="btnDeleteColor"
+                  onClick={(e) => {
+                    cancelUpload(e);
+                  }}
+                >
+                  Eliminar
+                </Button>
               </div>
             </div>
           </div>

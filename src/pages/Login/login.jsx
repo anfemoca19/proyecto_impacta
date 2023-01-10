@@ -2,19 +2,22 @@ import "./login.scss";
 import logo from "../../imagenes/logo-en-blanco.png";
 import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
+import LoginLayout from "../../components/LoginLayout/LoginLayout";
 
 export default function Login() {
   return (
     <section className="container-login">
+      {/* <LoginLayout /> */}
       <img src={logo} alt="logo" className="img-logo" />
       <form className="form-login">
-        <p className="tittle">Inicia Sesión</p>
+        <span className="tittle">Inicia Sesión</span>
         <div clas="form-outline mb-">
           <input
             type="email"
             id="form2Example1"
             className="form-control border-input"
             placeholder="Email"
+            required
           />
         </div>
 
@@ -24,13 +27,14 @@ export default function Login() {
             id="form2Example2"
             className="form-control border-input"
             placeholder="Contraseña"
+            required
           />
         </div>
 
         <Button name="iniciar_seccion">Iniciar sesión</Button>
 
-        <div className="row mb-4">
-          <div className="col justify-content-center">
+        <div className="row mb-4 mt-5 form-group">
+          <div className="col justify-content-center ">
             <div className="form-check">
               <input
                 className="form-check-input check-color"
@@ -39,7 +43,7 @@ export default function Login() {
                 id="form2Example31"
               />
               <label
-                className="form-check-label color-text-check "
+                className="form-check-label color-text-check  "
                 for="form2Example31"
               >
                 {" "}
@@ -49,7 +53,7 @@ export default function Login() {
           </div>
         </div>
 
-        <div className="container-btn-footer">
+        <div className="container-btn-footer form-group">
           <Link to="/register" className="border-button-login">
             {" "}
             Crear Cuenta

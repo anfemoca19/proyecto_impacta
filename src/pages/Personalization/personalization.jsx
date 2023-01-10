@@ -44,6 +44,9 @@ export default function Personalization() {
     if (e.target.name === "btnDeleteImg") setDragFiles([]);
     if (e.target.name === "btnDeleteColor") setColorValue("#ffff");
   };
+  const saveImgBackground = (e) => {
+    console.log(dragfiles);
+  };
 
   return (
     <>
@@ -146,7 +149,14 @@ export default function Personalization() {
                 </div>
               </div>
               <div className="col-5 mt-3">
-                <Button>Guardar</Button>
+                <Button
+                  name="btnSaveImg"
+                  onClick={(e) => {
+                    saveImgBackground(e);
+                  }}
+                >
+                  Guardar
+                </Button>
               </div>
               <div className="col-5 mt-3">
                 <Button

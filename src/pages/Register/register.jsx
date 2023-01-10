@@ -1,19 +1,20 @@
-import "./register.scss";
+import styles from "./register.module.scss";
 import logo from "../../imagenes/logo-en-blanco.png";
 import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
 
 export default function Register() {
   return (
     <section className="container-login">
-      <img src={logo} alt="logo" className="img-logo" />
+      <img src={logo} alt="logo" className={styles["img-logo"]} />
       <form>
-        <p className="tittle">Crear cuenta</p>
+        <p className={styles["title"]}>Crear cuenta</p>
         <div clas="form-outline ">
           <input
             type="text"
-            id="form2Example1"
-            className="form-control style-input"
+            id="nombre_completo"
+            className={clsx("form-control", styles["style-input"])}
             placeholder="Nombre Completo"
           />
         </div>
@@ -21,8 +22,8 @@ export default function Register() {
         <div clas="form-outline ">
           <input
             type="text"
-            id="form2Example1"
-            className="form-control style-input"
+            id="empresa"
+            className={clsx("form-control", styles["style-input"])}
             placeholder="Empresa"
           />
         </div>
@@ -30,8 +31,8 @@ export default function Register() {
         <div clas="form-outline ">
           <input
             type="number"
-            id="form2Example1"
-            className="form-control style-input"
+            id="telefono"
+            className={clsx("form-control", styles["style-input"])}
             placeholder="Telefono"
           />
         </div>
@@ -39,8 +40,8 @@ export default function Register() {
         <div clas="form-outline ">
           <input
             type="email"
-            id="form2Example1"
-            className="form-control style-input"
+            id="email"
+            className={clsx("form-control", styles["style-input"])}
             placeholder="Email"
           />
         </div>
@@ -48,8 +49,8 @@ export default function Register() {
         <div className="form-outline ">
           <input
             type="password"
-            id="form2Example2"
-            className="form-control style-input"
+            id="contrasena"
+            className={clsx("form-control", styles["style-input"])}
             placeholder="Contraseña"
           />
         </div>
@@ -57,16 +58,18 @@ export default function Register() {
         <div className="form-outline mb-4">
           <input
             type="password"
-            id="form2Example2"
-            className="form-control style-input"
+            id="confirmar_contrasena"
+            className={clsx("form-control", styles["style-input"])}
             placeholder="Confirmar contraseña"
           />
         </div>
 
-        <Button labelText="Crear cuenta" name="iniciar_seccion" />
+        <Button labelText="Crear cuenta" name="iniciar_seccion">
+          Crear cuenta
+        </Button>
 
-        <div className="d-sm-flex">
-          <Link to="/login" className="border-button-register">
+        <div className="d-sm-flex mt-4">
+          <Link to="/login" className={styles["border-button-register"]}>
             {" "}
             Ya tengo cuenta{" "}
           </Link>

@@ -3,7 +3,7 @@
 @media only screen and  (max-width: 480px) {
 
   .container-login {
-    margin-top: 40px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -80,7 +80,7 @@
 // /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and  (min-width: 480px)  {
   .container-login {
-    margin: 50px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
     display: flex;

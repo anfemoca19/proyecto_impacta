@@ -1,10 +1,6 @@
 import fondo from "./../../imagenes/fondo-login.png";
-import "./LoginLayout.scss";
+import styles from "./LoginLayout.module.scss";
 
-export default function LoginLayout() {
-  return (
-    <div className="">
-      <div className="hola"></div>
-    </div>
-  );
+export default function LoginLayout({ children }) {
+  return <div className={styles["backgroun-img"]}>{children}</div>;
 }

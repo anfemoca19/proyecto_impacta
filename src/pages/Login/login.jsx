@@ -1,21 +1,22 @@
-import "./login.scss";
+import styles from "./login.module.scss";
 import logo from "../../imagenes/logo-en-blanco.png";
 import Button from "../../components/UI/Button";
 import { Link } from "react-router-dom";
 import LoginLayout from "../../components/LoginLayout/LoginLayout";
+import clsx from "clsx";
 
 export default function Login() {
   return (
-    <section className="container-login">
+    <section className={styles["container-login"]}>
       {/* <LoginLayout /> */}
-      <img src={logo} alt="logo" className="img-logo" />
-      <form className="form-login">
-        <span className="tittle">Inicia Sesión</span>
+      <img src={logo} alt="logo" className={styles["img-logo"]} />
+      <form className={styles["form-login"]}>
+        <span className={styles["tittle"]}>Inicia Sesión</span>
         <div clas="form-outline mb-">
           <input
             type="email"
             id="form2Example1"
-            className="form-control border-input"
+            className={clsx("form-control", styles["border-input"])}
             placeholder="Email"
             required
           />
@@ -25,7 +26,7 @@ export default function Login() {
           <input
             type="password"
             id="form2Example2"
-            className="form-control border-input"
+            className={clsx("form-control", styles["border-input"])}
             placeholder="Contraseña"
             required
           />
@@ -37,13 +38,13 @@ export default function Login() {
           <div className="col justify-content-center ">
             <div className="form-check">
               <input
-                className="form-check-input check-color"
+                className={clsx("form-check-input", styles["check-color"])}
                 type="checkbox"
                 value=""
                 id="form2Example31"
               />
               <label
-                className="form-check-label color-text-check  "
+                className={clsx("form-check-label", styles["color-text-check"])}
                 for="form2Example31"
               >
                 {" "}
@@ -53,13 +54,21 @@ export default function Login() {
           </div>
         </div>
 
-        <div className="container-btn-footer form-group">
-          <Link to="/register" className="border-button-login">
+        <div className={clsx("form-group", styles["container-btn-footer"])}>
+          <Link
+            to="/register"
+            className={clsx(styles["border-button-login"])}
+            name="register"
+          >
             {" "}
             Crear Cuenta
           </Link>
 
-          <Link to="/forgotPass" className="border-button-login" name="">
+          <Link
+            to="/forgotPass"
+            className={clsx(styles["border-button-login"])}
+            name="forgot-pass"
+          >
             ¿Olvido su contraseña?
           </Link>
         </div>

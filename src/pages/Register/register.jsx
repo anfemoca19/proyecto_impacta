@@ -6,9 +6,9 @@ import clsx from "clsx";
 
 export default function Register() {
   return (
-    <section className="container-login">
+    <section className={styles["container-register"]}>
       <img src={logo} alt="logo" className={styles["img-logo"]} />
-      <form>
+      <form className={styles["form-register"]}>
         <p className={styles["title"]}>Crear cuenta</p>
         <div clas="form-outline ">
           <input

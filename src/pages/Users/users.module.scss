@@ -1,0 +1,34 @@
+
+.container-anadir-usuario{
+  background-color: #7929e2;
+  border-radius: 50px;
+}
+.icon-menu-style{
+  height: 10px;
+}
+.container-menu{
+  display: flex;
+  gap: 10px;
+}
+
+
+.container-styles-nextPage{
+  background-color:#7929e2;
+  border-radius:6px;
+  &:hover{
+    color: white;
+    background-color: #6f27cd;
+  }
+}
+
+.icon-arrow{
+  height: 25px;
+}
+.btn-img{
+  height: 20px;
+}
+
+
+.icon-anadir-user{
+  height: 20px;
+}

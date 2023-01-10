@@ -1,4 +1,4 @@
-import "../Users/users.scss";
+import styles from "./users.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
@@ -17,6 +17,52 @@ import icon_boton_siguiente from "../../imagenes/icono-boton-siguiente.png";
 import icon_plus_user from "../../imagenes/icono-anadir-usuarios.png";
 import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
 import { Link } from "react-router-dom";
+import CardUserData from "../../components/PerfiluserComponent/PerfilUserComponent";
+
+const userData = [
+  {
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+];
 
 export default function Users() {
   return (
@@ -35,32 +81,39 @@ export default function Users() {
       >
         <div className="container">
           <div>
-            <div className="row mt-3">
-              <div className="col-4  d-flex container-anadir-usuario align-items-center ">
+            <div className="row mt-3 align-items-center">
+              <div
+                className={clsx(
+                  "col-3  d-flex align-items-center",
+                  styles["container-anadir-usuario"]
+                )}
+              >
                 <Button className={"btn-cuartary"}> Añadir usuario </Button>
                 <img
-                  className="icon-anadir-user"
+                  className={clsx(styles["icon-anadir-user"])}
                   src={icon_plus_user}
                   alt="icono-mas"
                 />
               </div>
-              <div className="col-8  d-flex  align-items-center ">
-                <div className="nav container-fluid  ">
-                  <ul className="nav  mb-3 mt-3">
-                    <li className="nav-item text-center">
+              <div className="col-9  d-flex  align-items-center ">
+                <div className={clsx(styles["container-menu"])}>
+                  <ul
+                    className={clsx("nav  mb-3 mt-3", styles["container-menu"])}
+                  >
+                    <li className={clsx("nav-item text-center", {})}>
                       <Link
                         className={clsx("style-nav", {})}
                         to="/configuration"
                       >
                         <img
-                          className="icon-menu-style"
+                          className={clsx("me-2", styles["icon-menu-style"])}
                           src={icon_menu}
                           alt=""
                         />
                         Todos los usuarios
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className={clsx("nav-item text-center", {})}>
                       <Link
                         className={clsx("style-nav", {})}
                         to="/personalization"
@@ -68,12 +121,12 @@ export default function Users() {
                         Referidos
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className={clsx("nav-item text-center", {})}>
                       <Link className={clsx("style-nav", {})} to="#">
                         Familiares
                       </Link>
                     </li>
-                    <li className="nav-item">
+                    <li className={clsx("nav-item text-center", {})}>
                       <Link className={clsx("style-nav", {})}>
                         Empresariales
                       </Link>
@@ -84,183 +137,47 @@ export default function Users() {
             </div>
           </div>
           <div className="row row-cols-1 row-cols-md-2 g-4 mt-3">
-            <div className="col ">
-              {" "}
-              <div className="card box-container">
-                <div className="row no-gutters">
-                  <div className="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div className="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div className="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col ">
-              {" "}
-              <div className="card box-container">
-                <div className="row no-gutters">
-                  <div className="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div className="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div className="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {userData.map((user) => {
+              return <CardUserData imagenPerfil={user_img} userData={user} />;
+            })}
           </div>
-          <div className="row row-cols-1 row-cols-md-2 g-4">
-            <div className="col ">
-              {" "}
-              <div className="card box-container">
-                <div className="row no-gutters">
-                  <div className="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div className="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div className="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col ">
-              {" "}
-              <div className="card box-container">
-                <div className="row no-gutters">
-                  <div className="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div className="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div className="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row row-cols-1 row-cols-md-2 g-4">
-            <div className="col ">
-              {" "}
-              <div className="card box-container">
-                <div className="row no-gutters">
-                  <div className="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div className="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div className="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col ">
-              {" "}
-              <div className="card box-container">
-                <div className="row no-gutters">
-                  <div className="left col-md-4">
-                    <img
-                      src={user_img}
-                      alt="foto-perfil"
-                      className="img-perfil-style"
-                    />
-                  </div>
-                  <div className="right col-md-4 mb-3">
-                    <span className="style-span">Gerente</span>
-                    <span className="style-span">Nombre Apellido</span>
-                    <span className="style-span">jhondoe@tueempresa.com</span>
-                    <span className="style-span">3005552455</span>
-                    <span className="style-span">30 años</span>
-                  </div>
-                  <div className="right col-md-4 style-timepo-acomulado">
-                    <span className="circle-green ">algo va a qui </span>
-                    <span className="style-span">Tiempo acumoluado</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className=" container-fluid d-flex ">
+          <div className={clsx("container-fluid d-flex mt-4", {})}>
             {" "}
-            <div className="col-4"></div>
-            <div className="col-4 ">
-              <dir className=" d-flex container-styles-nextPage mr-2">
+            <div className={clsx("col-4", {})}></div>
+            <div className={clsx("col-4 ", {})}>
+              <div
+                className={clsx(
+                  " d-flex mr-2 align-items-center",
+                  styles["container-styles-nextPage"]
+                )}
+              >
                 <Button className="btn-terciary">Siguiente pagina</Button>
-                <img src={arrow_icon} alt="" className="icon-arrow" />
-              </dir>
+                <img
+                  src={arrow_icon}
+                  alt=""
+                  className={clsx(styles["icon-arrow"])}
+                />
+              </div>
             </div>
-            <div className="col-4 d-flex">
-              <div className="col-3">
+            <div className={clsx("col-4 d-flex ", {})}>
+              <div className={clsx("col-3", {})}>
                 <span>Pagina</span>
               </div>
-              <div className="co-3">
+              <div className={clsx("col-3", {})}>
                 <Input className={"input-page"} />
               </div>
-              <div className="col-3">
+              <div className={clsx("col-3", {})}>
                 <span>de </span>
               </div>
-              <div className="col-3 d-flex">
-                <img className="btn-img" src={icon_boton_anterior} />
-                <img className="btn-img" src={icon_boton_siguiente} />
+              <div className={clsx("col-3 d-flex", {})}>
+                <img
+                  className={clsx("col-4", styles["btn-img"])}
+                  src={icon_boton_anterior}
+                />
+                <img
+                  className={clsx("col-4", styles["btn-img"])}
+                  src={icon_boton_siguiente}
+                />
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ export default function Input({ children, typeInput, className, ...props }) {
   return (
     <div>
       <input
-        className={clsx(className, {
+        className={clsx("class-basic", className, {
           "input-primary": typeInput === "primary",
           "input-secondary": typeInput === "secondary",
         })}

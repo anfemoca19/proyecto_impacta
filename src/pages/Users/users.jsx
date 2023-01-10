@@ -14,6 +14,7 @@ import arrow_icon from "../../imagenes/icono-siguiente.png";
 import user_img from "../../imagenes/foto-perfil.jpg";
 import icon_boton_anterior from "../../imagenes/icono-boton-anterior.png";
 import icon_boton_siguiente from "../../imagenes/icono-boton-siguiente.png";
+import Icon_search from "../../imagenes/icono-buscador.png";
 import icon_plus_user from "../../imagenes/icono-anadir-usuarios.png";
 import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
 import { Link } from "react-router-dom";
@@ -81,6 +82,26 @@ export default function Users() {
       >
         <div className="container">
           <div>
+            <div
+              className={clsx(
+                "p-2 col-4 ",
+                styles["container-pricipal-search"]
+              )}
+            >
+              <div className={clsx(styles["container-search"])}>
+                <img
+                  className={clsx(styles["icon-search"])}
+                  src={Icon_search}
+                  alt="icon-sarch"
+                />
+                {/* <input className="input-search" type="text" placeholder="Buscar" /> */}
+                <Input
+                  className={clsx("border-0", styles["input-search"])}
+                  type="text"
+                  placeholder="Buscar"
+                ></Input>
+              </div>
+            </div>
             <div className="row mt-3 align-items-center">
               <div
                 className={clsx(
@@ -155,7 +176,7 @@ export default function Users() {
                 <img
                   src={arrow_icon}
                   alt=""
-                  className={clsx(styles["icon-arrow"])}
+                  className={clsx("me-3", styles["icon-arrow"])}
                 />
               </div>
             </div>
@@ -167,7 +188,7 @@ export default function Users() {
                 <Input className={"input-page"} />
               </div>
               <div className={clsx("col-3", {})}>
-                <span>de </span>
+                <span>de{userData.length}</span>
               </div>
               <div className={clsx("col-3 d-flex", {})}>
                 <img

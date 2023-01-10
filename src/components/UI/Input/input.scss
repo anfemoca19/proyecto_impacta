@@ -1,9 +1,11 @@
+
+.class-basic{
+  outline: none;
+}
 .styles-input {
   border-radius: 5px;
   border: 2px solid #7929e2;
 }
-
-
 
 .inputText {
   width: 100%;
@@ -17,6 +19,16 @@
 }
 
 
+.input-search-header {
+  border: none;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #333;
+  background-color: #eee;
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+}
 .input-search {
   border: none;
   margin-right: 5px;

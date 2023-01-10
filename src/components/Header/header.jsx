@@ -23,7 +23,7 @@ export default function Header() {
             <img className="icon-search" src={Icon_search} alt="icon-sarch" />
             {/* <input className="input-search" type="text" placeholder="Buscar" /> */}
             <Input
-              className="input-search border-0"
+              className="input-search-header border-0"
               type="text"
               placeholder="Buscar"
             ></Input>

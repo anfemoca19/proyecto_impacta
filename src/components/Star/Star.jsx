@@ -6,7 +6,6 @@ import "../Star/Star.scss";
 
 export default function Star() {
   let allStart = document.querySelectorAll(".star");
-  console.log(allStart, "hola");
 
   allStart.forEach((star, i) => {
     star.onclick = () => {
@@ -16,7 +15,7 @@ export default function Star() {
   });
 
   return (
-    <div className="d-flex container-fluid">
+    <div className="stars">
       <button className="btn-start star" id="one-star">
         <FontAwesomeIcon icon={faStar} className="star-style" />
       </button>

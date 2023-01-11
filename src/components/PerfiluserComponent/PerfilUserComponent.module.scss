@@ -3,19 +3,54 @@
   box-shadow: 3px 3px 19px 0px rgb(228, 228, 228);
   border-radius: 5px;
 }
+.imgProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardInfo {
+  font-size: 12px;
+  padding: 0;
+}
+.infoWrap {
+  margin-top: 15px;
+}
 .img-perfil-style{
   border-radius: 100%;
-  height: 100px;
-  width: 100px;
-  margin-right: 5px;
+  height: 70px;
+  width: 70px;
   border: 3px solid #abc821;
 }
-
+.wrapTime {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.textEllipsis {
+  text-overflow: ellipsis;
+  max-width: 70px;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+}
 .style-tiempo-acomulado{
   background-color: #4c0ba2b4;
   border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
-.style-span{
+.style-span {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+}
+.textTime{
+  margin-top: 5px;
   font-size: 10px;
   color: #f3f2f2;
+  display: block;
+  font-size: 12px;
 }

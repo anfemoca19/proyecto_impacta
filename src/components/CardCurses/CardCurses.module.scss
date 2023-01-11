@@ -1,0 +1,30 @@
+.card {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.title {
+  color: #6f27cd;
+  font-size: 16px;
+}
+.card-text {
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+.container-imag-card {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+}
+.footer {
+  display: flex;
+  gap: 5px;
+  .button {
+    padding: 5px;
+    border-radius: 50em;
+    &.secondary {
+      color: #6f27cd;
+      background-color: white;
+      border:1px solid #6f27cd;
+    }
+  }
+}

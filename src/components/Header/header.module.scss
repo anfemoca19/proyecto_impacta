@@ -2,11 +2,14 @@
   display: flex;
   justify-content: center;
 }
+.divider-right {
+  border-right: 1px solid #eee;
+}
 .logo {
   height: 70px;
 }
 .container-data-user {
-  background-color: #4c0ba2b4;
+  background-color: #7929e2;
   border-radius: 10px;
   font-size: 14px;
   color: white;

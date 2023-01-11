@@ -88,7 +88,7 @@ export default function Dashboard() {
                 >
                   <XAxis dataKey="name" />
                   <YAxis />
-                  <CartesianGrid stroke="#7929e2" />
+                  <CartesianGrid stroke="#ebebebeb" />
                   <Tooltip />
                   {/* <Legend /> */}
                   <Area

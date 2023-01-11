@@ -14,8 +14,12 @@
 
 .react-calendar button {
   margin: 0;
-  border: 1px solid #7929e2;
+  // border: 1px solid #7929e2;
+  background-color: white;
+  // border: 1px solid #ebebeb;
+  color: #959696;
   outline: none;
+  border-radius: 8px;
   // margin: 1px 8px 1px 1px;
 }
 .react-calendar__navigation {
@@ -80,7 +84,8 @@
     &:hover,
     &:focus {
       // background: #7929e2;
-      background: #abc821;
+      // background: #abc821;
+      background: #afdb00;
       font-weight: bold;
       color: #fff;
     }

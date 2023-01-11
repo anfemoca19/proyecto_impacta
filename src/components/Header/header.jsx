@@ -10,21 +10,10 @@ export default function Header() {
   return (
     <div className={clsx("container-fluid")}>
       <div className={clsx("row")}>
-        <div
-          className={clsx(
-            "col-2 p-2",
-            styles["container-logo"]
-            // styles["divider-right"]
-          )}
-        >
+        <div className={clsx("col-2 p-2", styles["container-logo"])}>
           <img className={clsx(styles.logo)} src={Logo} alt="logo" />
         </div>
-        <div
-          className={clsx(
-            "col-6 p-2 d-flex align-items-center"
-            // styles["divider-right"]
-          )}
-        >
+        <div className={clsx("col-6 p-2 d-flex align-items-center")}>
           <div className={clsx(styles["container-data-user"])}>
             <div className={clsx(styles["container-foto-perfil"])}>
               <img

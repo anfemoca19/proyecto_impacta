@@ -1,60 +1,211 @@
-.container-logo {
-  display: flex;
-  justify-content: center;
+
+//estilos para mobil
+@media only screen and  (max-width: 480px) {
+  .container-web{
+    display: none;
+  }
+  .contianer-tablet{
+    display: none;
+  }
+  .contianer-mobile{
+    display: flex;
+  }
+  .container-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    height: 50px;
+  }
+  .container-data-user {
+    display: none;
+  }
+
+  //input search
+  .container-pricipal-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-search {
+    display: flex;
+    background-color: #f9fafb ;
+    border-radius: 10px;
+
+    align-items: center;
+    height: 40px;
+
+  }
+  .icon-search {
+    margin-left: 5px;
+    height: 25px;
+  }
+
+  .input-search {
+    border: none;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #333;
+    background-color: #f9fafb ;
+    padding: 5px;
+    border-radius: 3px;
+    width: 80px;
+  }
+
+  //Menu hamburguesa
+  .container-menu-hamburguesa{
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-hamburger{
+    height: 40px;
+    &.active {
+        background-image: url("../../imagenes/icono-hamburguesa-gris.png");
+      }
+  }
 }
 
-.logo {
-  height: 70px;
-}
-.container-data-user {
-  background-color: #7929e2;
-  border-radius: 10px;
-  font-size: 14px;
-  color: white;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 10px;
+//estilos para tablet
+
+@media only screen and  (min-width:480px) and (max-width:1000px){
+  .contianer-tablet{
+    display: flex;
+  }
+  .container-web{
+    display: none;
+  }
+  .contianer-mobile{
+    display: none;
+  }
+  .container-logo {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    height: 80px;
+  }
+  .container-data-user {
+    display: none;
+  }
+
+  //input search
+  .container-pricipal-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-search {
+    display: flex;
+    background-color: #f9fafb ;
+    border-radius: 10px;
+
+    align-items: center;
+    height: 40px;
+
+  }
+  .icon-search {
+    margin-left: 5px;
+    height: 25px;
+  }
+
+  .input-search {
+    border: none;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #333;
+    background-color: #f9fafb ;
+    padding: 5px;
+    border-radius: 3px;
+    width: 80px;
+  }
+
+  //Menu hamburguesa
+  .container-menu-hamburguesa{
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-hamburger{
+    height: 60px;
+    &.active {
+        background-image: url("../../imagenes/icono-hamburguesa-gris.png");
+      }
+  }
 }
 
-.container-foto-perfil {
-  margin-right: 10px;
-}
+@media only screen and (min-width: 1000px) {
+  //Stilos logo
+  .contianer-mobile{
+    display: none;
+  }
+  .contianer-tablet{
+    display: none;
+  }
+    .container-logo {
+      display: flex;
+      justify-content: center;
+    }
 
-.foto-perfil {
-  border-radius: 100%;
-  height: 50px;
-  width: 50px;
-  margin-right: 5px;
-  border: 3px solid #abc821;
-}
+    .logo {
+      height: 70px;
+    }
 
-.container-pricipal-search {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+    //Estilos nombre admon
+    .container-data-user {
+      background-color: #7929e2;
+      border-radius: 10px;
+      font-size: 20px;
+      color: white;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
 
-.container-search {
-  display: flex;
-  background-color: #eee;
-  border-radius: 5px;
-  margin-right: 5px;
-  align-items: center;
-  height: 35px;
-  /* width: 100%; */
-}
-.icon-search {
-  margin-left: 5px;
-  height: 25px;
-}
+    .container-foto-perfil {
+      margin-left: 50px;
+      margin-right: 20px;
+    }
 
-.input-search {
-  border: none;
-  margin-right: 5px;
-  font-size: 12px;
-  color: #333;
-  background-color: #eee;
-  padding: 5px;
-  border-radius: 3px;
-}
+    .foto-perfil {
+      border-radius: 100%;
+      height: 55px;
+      width: 55px;
+      margin-right: 5px;
+      border: 3px solid #abc821;
+    }
+
+    //Estilos input search
+    .container-pricipal-search {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .container-search {
+      display: flex;
+      background-color: #f9fafb ;
+      border-radius: 10px;
+      margin-right: 5px;
+      align-items: center;
+      height: 40px;
+      /* width: 100%; */
+    }
+    .icon-search {
+      margin-left: 5px;
+      height: 25px;
+    }
+
+    .input-search {
+      border: none;
+      margin-right: 5px;
+      font-size: 12px;
+      color: #333;
+      background-color: #f9fafb ;
+      padding: 5px;
+      border-radius: 3px;
+    }
+  }

@@ -62,7 +62,7 @@ export default function Dashboard() {
         }
       >
         <div className="">
-          <div className="container-fluid background-color rounded p-4">
+          <div className="container-fluid background-color  p-4">
             <div className="mb-3 mt-3">
               <span className="style-title-chart">
                 Promedio de entrenamientos cursados
@@ -86,22 +86,33 @@ export default function Dashboard() {
                   data={data}
                   margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                 >
-                  <XAxis dataKey="name" />
-                  <YAxis />
+                  <XAxis
+                    dataKey="name"
+                    tickLine="blue"
+                    tick={{ stroke: "#7929e2", strokeWidth: 1 }}
+                    padding={{ left: 3, right: 1 }}
+                  />
+                  <YAxis
+                    tick={{ stroke: "#7929e2", strokeWidth: 1 }}
+                    padding={{ bottom: 6 }}
+                  />
                   <CartesianGrid stroke="#ebebebeb" />
                   <Tooltip />
                   {/* <Legend /> */}
                   <Area
                     type="monotone"
                     dataKey="colaboradores"
-                    stroke="#abc821"
-                    fill="#abc821"
+                    stroke="#afdb00"
+                    fill="#afdb00"
+                    fillOpacity={1}
+                    re
                   />
                   <Area
                     type="monotone"
                     dataKey="cursos"
                     stroke="#7929e2"
                     fill="#7929e2"
+                    fillOpacity={1}
                   />
                 </AreaChart>
               </ResponsiveContainer>

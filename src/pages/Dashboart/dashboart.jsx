@@ -8,7 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import "./dashboart.scss";
+import styles from "./dashboart.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
@@ -21,6 +21,7 @@ import Layout from "../../components/Layout";
 import CircleColor from "../../components/CircleColor/Circle";
 import ChartPie from "../../components/ChartPie/ChartPie";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
 
 const data = [
   { name: "ENE", colaboradores: 4000, cursos: 2400 },
@@ -62,20 +63,30 @@ export default function Dashboard() {
         }
       >
         <div className="">
-          <div className="container-fluid background-color  p-4">
-            <div className="mb-3 mt-3">
-              <span className="style-title-chart">
+          <div
+            className={clsx("container-fluid p-4", styles["background-color"])}
+          >
+            <div className={clsx("mb-3 mt-3")}>
+              <span className={clsx(styles["style-title-chart"])}>
                 Promedio de entrenamientos cursados
               </span>
             </div>
-            <div className="border-color-container mb-5">
-              <div className="d-flex mt-2 mb-4">
-                <div className="d-flex align-items-center justify-content-between me-3 ms-3">
-                  <CircleColor className="circle-violet-sm me-2 " />
+            <div className={clsx("mb-5", styles["border-color-container"])}>
+              <div className={clsx("d-flex mt-2 mb-4")}>
+                <div
+                  className={clsx(
+                    "d-flex align-items-center justify-content-between me-3 ms-3"
+                  )}
+                >
+                  <CircleColor className={clsx("me-2", "circle-violet-sm")} />
                   <span>Colaboradores</span>
                 </div>
-                <div className="d-flex align-items-center justify-content-between me-2">
-                  <CircleColor className="circle-green-sm me-2 " />
+                <div
+                  className={clsx(
+                    "d-flex align-items-center justify-content-between me-2"
+                  )}
+                >
+                  <CircleColor className={clsx("me-2", "circle-green-sm")} />
                   <span>Cursos</span>
                 </div>
               </div>
@@ -119,13 +130,24 @@ export default function Dashboard() {
             </div>
           </div>
           <div
-            className="container-fluid d-flex justify-content-between  align-items-center mt-5 mb-5
-          "
+            className={clsx(
+              "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5"
+            )}
           >
-            <div className="background-color  col-5 text-center container-acountUser rounded ">
-              <div className="style-container-user">
-                <img className="user-icon" src={usuarios_icon} alt="" />
-                <span className="style-number">70</span>
+            <div
+              className={clsx(
+                "col-5 text-center",
+                styles["background-color"],
+                styles["container-acountUser"]
+              )}
+            >
+              <div className={clsx(styles["style-container-user"])}>
+                <img
+                  className={clsx(styles["user-icon"])}
+                  src={usuarios_icon}
+                  alt=""
+                />
+                <span className={clsx(styles["style-number"])}>70</span>
                 <ChartPie
                   percentage="70"
                   color="#7929e2"
@@ -133,12 +155,24 @@ export default function Dashboard() {
                   remainingColor="#abc821"
                 />
               </div>
-              <span className="style-text">Usuarios activos</span>
+              <span className={clsx(styles["style-text"])}>
+                Usuarios activos
+              </span>
             </div>
-            <div className="background-color  col-5 text-center container-acountUser rounded ">
-              <div className="style-container-user">
-                <img className="user-icon" src={usuarios_icon} alt="" />
-                <span className="style-number">70</span>
+            <div
+              className={clsx(
+                "col-5 text-center",
+                styles["background-color"],
+                styles["container-acountUser"]
+              )}
+            >
+              <div className={clsx(styles["style-container-user"])}>
+                <img
+                  className={clsx(styles["user-icon"])}
+                  src={usuarios_icon}
+                  alt=""
+                />
+                <span className={clsx(styles["style-number"])}>70</span>
                 <ChartPie
                   percentage="70"
                   color="#abc821"
@@ -146,13 +180,19 @@ export default function Dashboard() {
                   remainingColor="#7929e2"
                 />
               </div>
-              <span className="style-text">
+              <span className={clsx(styles["style-text"])}>
                 Usuarios activos la ultima semana
               </span>
             </div>
           </div>
-          <div className="container-consumo container-fluid d-flex justify-content-between  align-items-center background-color mt-5 rounded ">
-            <div className=" col-6 style-container-pieChart">
+          <div
+            className={clsx(
+              "container-fluid d-flex justify-content-between  align-items-center mt-5",
+              styles["container-consumo"],
+              styles["background-color"]
+            )}
+          >
+            <div className={clsx("col-6", styles["style-container-pieChart"])}>
               <ChartPie
                 percentage="60"
                 color="#7929e2"
@@ -167,30 +207,51 @@ export default function Dashboard() {
               />
             </div>
             <div className="row">
-              <div className=" container-fluid d-flex justify-content-between  align-items-center">
-                <CircleColor className="circle-violet m-3 " />
-                <span className="styele-text">
+              <div
+                className={clsx(
+                  "container-fluid d-flex justify-content-between  align-items-center"
+                )}
+              >
+                <CircleColor className={clsx("circle-violet m-3")} />
+                <span className={clsx(styles["style-text"])}>
                   Consumo promedio de contenido por usuario
                 </span>
               </div>
-              <div className="container-fluid d-flex justify-content-between  align-items-center ">
-                <CircleColor className="circle-green m-3" />
-                <span className="styele-text">
+              <div
+                className={clsx(
+                  "container-fluid d-flex justify-content-between align-items-center"
+                )}
+              >
+                <CircleColor className={clsx("circle-green m-3")} />
+                <span className={clsx(styles["style-text"])}>
                   {" "}
                   Total de contenido consumido por la empresa
                 </span>
               </div>
             </div>
           </div>
-          <div className="container-activate d-flex  align-items-center ps-4 pe-4 mt-5 rounded">
+          <div
+            className={clsx(
+              "d-flex  align-items-center ps-4 pe-4 mt-5",
+              styles["container-activate"]
+            )}
+          >
             <Link
-              className="container-fluid text-center justify-content-between align-items-center  style-upload-link d-flex"
+              className={clsx(
+                "container-fluid text-center justify-content-between align-items-center d-flex",
+                styles["style-upload-lin"]
+              )}
               to=""
             >
               <span>
                 Da click aquí para comenzar el proceso de activar tus usuarios
               </span>
-              <img className="icon-upload" src={upload} alt="icon-upload" />
+              <img
+                // className="icon-upload"
+                className={clsx(styles["icon-upload"])}
+                src={upload}
+                alt="icon-upload"
+              />
             </Link>
           </div>
         </div>

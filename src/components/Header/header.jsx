@@ -95,6 +95,7 @@ export default function Header() {
           />
         </div>
       </div>
+
       {/* tablet */}
       <div className={clsx(styles["contianer-tablet"])}>
         <div className={clsx("col-4 p-2", styles["container-logo"])}>

@@ -129,9 +129,11 @@ export default function Dashboard() {
               </ResponsiveContainer>
             </div>
           </div>
+          {/* WEB */}
           <div
             className={clsx(
-              "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5"
+              "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
+              styles["container-web"]
             )}
           >
             <div
@@ -185,11 +187,131 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
+          {/* mobile */}
+          <div
+            className={clsx(
+              "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
+              styles["container-mobile"]
+            )}
+          >
+            <div
+              className={clsx(
+                "col-5 text-center",
+                styles["background-color"],
+                styles["container-acountUser"]
+              )}
+            >
+              <div className={clsx(styles["style-container-user"])}>
+                <img
+                  className={clsx(styles["user-icon"])}
+                  src={usuarios_icon}
+                  alt=""
+                />
+                <span className={clsx(styles["style-number"])}>70</span>
+                <ChartPie
+                  percentage="70"
+                  color="#7929e2"
+                  size="25px"
+                  remainingColor="#abc821"
+                />
+              </div>
+              <span className={clsx(styles["style-text"])}>
+                Usuarios activos
+              </span>
+            </div>
+            <div
+              className={clsx(
+                "col-5 text-center",
+                styles["background-color"],
+                styles["container-acountUser"]
+              )}
+            >
+              <div className={clsx(styles["style-container-user"])}>
+                <img
+                  className={clsx(styles["user-icon"])}
+                  src={usuarios_icon}
+                  alt=""
+                />
+                <span className={clsx(styles["style-number"])}>70</span>
+                <ChartPie
+                  percentage="70"
+                  color="#abc821"
+                  size="25px"
+                  remainingColor="#7929e2"
+                />
+              </div>
+              <span className={clsx(styles["style-text"])}>
+                Usuarios activos la ultima semana
+              </span>
+            </div>
+          </div>
+          {/*  */}
+
+          {/* tablet */}
+          <div
+            className={clsx(
+              "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
+              styles["container-tablet"]
+            )}
+          >
+            <div
+              className={clsx(
+                "col-5 text-center",
+                styles["background-color"],
+                styles["container-acountUser"]
+              )}
+            >
+              <div className={clsx(styles["style-container-user"])}>
+                <img
+                  className={clsx(styles["user-icon"])}
+                  src={usuarios_icon}
+                  alt=""
+                />
+                <span className={clsx(styles["style-number"])}>70</span>
+                <ChartPie
+                  percentage="70"
+                  color="#7929e2"
+                  size="25px"
+                  remainingColor="#abc821"
+                />
+              </div>
+              <span className={clsx(styles["style-text"])}>
+                Usuarios activos
+              </span>
+            </div>
+            <div
+              className={clsx(
+                "col-5 text-center",
+                styles["background-color"],
+                styles["container-acountUser"]
+              )}
+            >
+              <div className={clsx(styles["style-container-user"])}>
+                <img
+                  className={clsx(styles["user-icon"])}
+                  src={usuarios_icon}
+                  alt=""
+                />
+                <span className={clsx(styles["style-number"])}>70</span>
+                <ChartPie
+                  percentage="70"
+                  color="#abc821"
+                  size="25px"
+                  remainingColor="#7929e2"
+                />
+              </div>
+              <span className={clsx(styles["style-text"])}>
+                Usuarios activos la ultima semana
+              </span>
+            </div>
+          </div>
+          {/*  */}
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
-              styles["background-color"]
+              styles["background-color"],
+              styles["contianer-circleCahrt-web"]
             )}
           >
             <div className={clsx("col-6", styles["style-container-pieChart"])}>
@@ -230,6 +352,53 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+          {/* mobile pieChart */}
+          <div
+            className={clsx(
+              "container-fluid d-flex justify-content-between  align-items-center mt-5",
+              styles["container-consumo"],
+              styles["background-color"],
+              styles["contianer-circleCahrt-mobile"]
+            )}
+          >
+            <div className={clsx("col-6", styles["style-container-pieChart"])}>
+              <ChartPie
+                percentage="60"
+                color="#7929e2"
+                size="90px"
+                remainingColor="black"
+              />
+              <ChartPie
+                percentage="50"
+                color="#abc821"
+                size="90px"
+                remainingColor="black"
+              />
+            </div>
+            <div className="row me-4">
+              <div
+                className={clsx(
+                  "container-fluid d-flex justify-content-between  align-items-center"
+                )}
+              >
+                <CircleColor className={clsx("circle-violet m-3")} />
+                <span className={clsx(styles["style-text"])}>
+                  Consumo promedio de contenido por usuario
+                </span>
+              </div>
+              <div
+                className={clsx(
+                  "container-fluid d-flex justify-content-between align-items-center"
+                )}
+              >
+                <CircleColor className={clsx("circle-green m-3")} />
+                <span className={clsx(styles["style-text"])}>
+                  {" "}
+                  Total de contenido consumido por la empresa
+                </span>
+              </div>
+            </div>
+          </div>
           <div
             className={clsx(
               "d-flex  align-items-center ps-4 pe-4 mt-5",
@@ -239,7 +408,7 @@ export default function Dashboard() {
             <Link
               className={clsx(
                 "container-fluid text-center justify-content-between align-items-center d-flex",
-                styles["style-upload-lin"]
+                styles["style-upload-link"]
               )}
               to=""
             >

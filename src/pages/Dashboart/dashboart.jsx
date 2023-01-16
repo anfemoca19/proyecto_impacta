@@ -64,7 +64,7 @@ export default function Dashboard() {
       >
         <div className="">
           <div
-            className={clsx("container-fluid p-4", styles["background-color"])}
+            className={clsx("container-fluid p-4", styles["styles-background"])}
           >
             <div className={clsx("mb-3 mt-3")}>
               <span className={clsx(styles["style-title-chart"])}>
@@ -139,7 +139,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["background-color"],
+                styles["styles-background"],
                 styles["container-acountUser"]
               )}
             >
@@ -154,7 +154,7 @@ export default function Dashboard() {
                   percentage="70"
                   color="#7929e2"
                   size="50px"
-                  remainingColor="#abc821"
+                  remainingColor="#afdb00"
                 />
               </div>
               <span className={clsx(styles["style-text"])}>
@@ -164,7 +164,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["background-color"],
+                styles["styles-background"],
                 styles["container-acountUser"]
               )}
             >
@@ -177,7 +177,7 @@ export default function Dashboard() {
                 <span className={clsx(styles["style-number"])}>70</span>
                 <ChartPie
                   percentage="70"
-                  color="#abc821"
+                  color="#afdb00"
                   size="50px"
                   remainingColor="#7929e2"
                 />
@@ -197,7 +197,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["background-color"],
+                styles["styles-background"],
                 styles["container-acountUser"]
               )}
             >
@@ -212,7 +212,7 @@ export default function Dashboard() {
                   percentage="70"
                   color="#7929e2"
                   size="25px"
-                  remainingColor="#abc821"
+                  remainingColor="#afdb00"
                 />
               </div>
               <span className={clsx(styles["style-text"])}>
@@ -222,7 +222,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["background-color"],
+                styles["styles-background"],
                 styles["container-acountUser"]
               )}
             >
@@ -235,7 +235,7 @@ export default function Dashboard() {
                 <span className={clsx(styles["style-number"])}>70</span>
                 <ChartPie
                   percentage="70"
-                  color="#abc821"
+                  color="#afdb00"
                   size="25px"
                   remainingColor="#7929e2"
                 />
@@ -257,7 +257,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["background-color"],
+                styles["styles-background"],
                 styles["container-acountUser"]
               )}
             >
@@ -282,7 +282,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["background-color"],
+                styles["styles-background"],
                 styles["container-acountUser"]
               )}
             >
@@ -310,7 +310,7 @@ export default function Dashboard() {
             className={clsx(
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
-              styles["background-color"],
+              styles["styles-background"],
               styles["contianer-circleCahrt-web"]
             )}
           >
@@ -323,7 +323,7 @@ export default function Dashboard() {
               />
               <ChartPie
                 percentage="50"
-                color="#abc821"
+                color="#afdb00"
                 size="150px"
                 remainingColor="black"
               />
@@ -357,7 +357,7 @@ export default function Dashboard() {
             className={clsx(
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
-              styles["background-color"],
+              styles["styles-background"],
               styles["contianer-circleCahrt-mobile"]
             )}
           >
@@ -370,7 +370,7 @@ export default function Dashboard() {
               />
               <ChartPie
                 percentage="50"
-                color="#abc821"
+                color="#afdb00"
                 size="90px"
                 remainingColor="black"
               />

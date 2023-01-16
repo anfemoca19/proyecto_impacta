@@ -6,8 +6,10 @@
   .contianer-tablet{
     display: none;
   }
-
-
+  .contianer-mobile{
+    display: flex;
+  }
+  
   .style-title-chart{
     color: #7929e2;
     font-size: 14px;
@@ -18,7 +20,7 @@
     padding: 10px;;
   }
 
-  .background-color {
+  .styles-background {
     border-radius: 30px;
     background-color: #f9fafb;
     box-shadow: 0px 6px 36px 14px #e6e6e8b4;
@@ -35,7 +37,7 @@
   }
 
   .style-number {
-    color: #abc821;
+    color: #afdb00;
     font-size: 30px;
     font-weight: bold;
   } 
@@ -88,7 +90,8 @@
     gap: 5px;
     justify-content: flex-end;
     &:hover{
-      background-color: #abc821;
+      background-color: #afdb00;
+      color: white;
     }
   }
 
@@ -123,7 +126,7 @@
 //     padding: 20px;;
 //   }
 
-//   .background-color {
+//   .styles-background{
 //     border-radius: 30px;
 //     background-color: #f9fafb;
 //     box-shadow: 0px 6px 36px 14px #e6e6e8b4;
@@ -140,7 +143,7 @@
 //   }
 
 //   .style-number {
-//     color: #abc821;
+//     color: #afdb00;
 //     font-size: 50px;
 //     font-weight: bold;
 //   } 
@@ -227,7 +230,7 @@
     padding: 20px;;
   }
 
-  .background-color {
+  .styles-background {
     border-radius: 30px;
     background-color: #f9fafb;
     box-shadow: 0px 6px 36px 14px #e6e6e8b4;
@@ -244,7 +247,7 @@
   }
 
   .style-number {
-    color: #abc821;
+    color: #afdb00;
     font-size: 50px;
     font-weight: bold;
   } 

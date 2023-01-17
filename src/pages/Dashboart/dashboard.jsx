@@ -5,10 +5,9 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
-import styles from "./dashboart.module.scss";
+import styles from "./dashboard.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
@@ -139,7 +138,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["styles-background"],
+                styles["styles-background-active"],
                 styles["container-acountUser"]
               )}
             >
@@ -153,7 +152,7 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#7929e2"
-                  size="50px"
+                  size="60px"
                   remainingColor="#afdb00"
                 />
               </div>
@@ -164,7 +163,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["styles-background"],
+                styles["styles-background-active"],
                 styles["container-acountUser"]
               )}
             >
@@ -178,7 +177,7 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#afdb00"
-                  size="50px"
+                  size="60px"
                   remainingColor="#7929e2"
                 />
               </div>
@@ -187,17 +186,17 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
-          {/* mobile */}
+
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
-              styles["container-mobile"]
+              styles["hola"]
             )}
           >
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["styles-background"],
+                styles["styles-background-active"],
                 styles["container-acountUser"]
               )}
             >
@@ -211,7 +210,7 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#7929e2"
-                  size="25px"
+                  size="60px"
                   remainingColor="#afdb00"
                 />
               </div>
@@ -222,7 +221,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["styles-background"],
+                styles["styles-background-active"],
                 styles["container-acountUser"]
               )}
             >
@@ -236,7 +235,7 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#afdb00"
-                  size="25px"
+                  size="60px"
                   remainingColor="#7929e2"
                 />
               </div>
@@ -245,9 +244,6 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
-          {/*  */}
-
-          {/* tablet */}
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
@@ -257,7 +253,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["styles-background"],
+                styles["styles-background-active"],
                 styles["container-acountUser"]
               )}
             >
@@ -271,8 +267,8 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#7929e2"
-                  size="25px"
-                  remainingColor="#abc821"
+                  size="60px"
+                  remainingColor="#afdb00"
                 />
               </div>
               <span className={clsx(styles["style-text"])}>
@@ -282,7 +278,7 @@ export default function Dashboard() {
             <div
               className={clsx(
                 "col-5 text-center",
-                styles["styles-background"],
+                styles["styles-background-active"],
                 styles["container-acountUser"]
               )}
             >
@@ -295,8 +291,8 @@ export default function Dashboard() {
                 <span className={clsx(styles["style-number"])}>70</span>
                 <ChartPie
                   percentage="70"
-                  color="#abc821"
-                  size="25px"
+                  color="#afdb00"
+                  size="60px"
                   remainingColor="#7929e2"
                 />
               </div>
@@ -305,7 +301,8 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
-          {/*  */}
+
+          {/* piecharweb */}
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between  align-items-center mt-5",

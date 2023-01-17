@@ -13,6 +13,8 @@ import Button from "../../components/UI/Button";
 import Label from "../../components/UI/Label";
 import Menu from "../../components/Menu/Menu";
 
+let dataUserResgitrados = ["200"];
+
 export default function Configruation() {
   return (
     <>
@@ -23,7 +25,7 @@ export default function Configruation() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser />
+            <AccountUser dataNumber={dataUserResgitrados} />
             <Categorias />
             <GraphUsers />
           </>

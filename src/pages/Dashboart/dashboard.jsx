@@ -190,7 +190,7 @@ export default function Dashboard() {
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
-              styles["hola"]
+              styles["container-mobile"]
             )}
           >
             <div
@@ -210,7 +210,7 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#7929e2"
-                  size="60px"
+                  size="30px"
                   remainingColor="#afdb00"
                 />
               </div>
@@ -235,7 +235,7 @@ export default function Dashboard() {
                 <ChartPie
                   percentage="70"
                   color="#afdb00"
-                  size="60px"
+                  size="30px"
                   remainingColor="#7929e2"
                 />
               </div>
@@ -244,6 +244,7 @@ export default function Dashboard() {
               </span>
             </div>
           </div>
+
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between align-items-center mt-5 mb-5",
@@ -308,7 +309,7 @@ export default function Dashboard() {
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
               styles["styles-background"],
-              styles["contianer-circleCahrt-web"]
+              styles["container-circleCahrt-web"]
             )}
           >
             <div className={clsx("col-6", styles["style-container-pieChart"])}>
@@ -349,13 +350,13 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          {/* mobile pieChart */}
+          {/* tablet pieChart */}
           <div
             className={clsx(
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
               styles["styles-background"],
-              styles["contianer-circleCahrt-mobile"]
+              styles["container-circleCahrt-tablet"]
             )}
           >
             <div className={clsx("col-6", styles["style-container-pieChart"])}>
@@ -369,6 +370,53 @@ export default function Dashboard() {
                 percentage="50"
                 color="#afdb00"
                 size="90px"
+                remainingColor="black"
+              />
+            </div>
+            <div className="row me-4">
+              <div
+                className={clsx(
+                  "container-fluid d-flex justify-content-between  align-items-center"
+                )}
+              >
+                <CircleColor className={clsx("circle-violet m-3")} />
+                <span className={clsx(styles["style-text"])}>
+                  Consumo promedio de contenido por usuario
+                </span>
+              </div>
+              <div
+                className={clsx(
+                  "container-fluid d-flex justify-content-between align-items-center"
+                )}
+              >
+                <CircleColor className={clsx("circle-green m-3")} />
+                <span className={clsx(styles["style-text"])}>
+                  {" "}
+                  Total de contenido consumido por la empresa
+                </span>
+              </div>
+            </div>
+          </div>
+          {/* mobile tablet */}
+          <div
+            className={clsx(
+              "container-fluid d-flex justify-content-between  align-items-center mt-5",
+              styles["container-consumo"],
+              styles["styles-background"],
+              styles["container-circleCahrt-mobile"]
+            )}
+          >
+            <div className={clsx("col-6", styles["style-container-pieChart"])}>
+              <ChartPie
+                percentage="60"
+                color="#7929e2"
+                size="60px"
+                remainingColor="black"
+              />
+              <ChartPie
+                percentage="50"
+                color="#afdb00"
+                size="60px"
                 remainingColor="black"
               />
             </div>

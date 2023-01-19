@@ -1,9 +1,12 @@
 .container-account-graph {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #7929e2;
   color: white;
   border-radius: 10px;
   height: 300px;
 }
+
 .style-graph-colaboradores{
   width: 204px;
   height: 169px;

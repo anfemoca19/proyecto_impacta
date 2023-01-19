@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/proyecto_impacta/static/css/main.5678bf2d.css",
-    "main.js": "/proyecto_impacta/static/js/main.fd875be4.js",
+    "main.css": "/proyecto_impacta/static/css/main.94cd46ae.css",
+    "main.js": "/proyecto_impacta/static/js/main.16a9e896.js",
     "static/media/foto-perfil.jpg": "/proyecto_impacta/static/media/foto-perfil.c17e0967dd9ff22c8805.jpg",
+    "static/media/fondo-login.png": "/proyecto_impacta/static/media/fondo-login.be81cf0b6de922f0319e.png",
     "index.html": "/proyecto_impacta/index.html",
-    "main.5678bf2d.css.map": "/proyecto_impacta/static/css/main.5678bf2d.css.map",
-    "main.fd875be4.js.map": "/proyecto_impacta/static/js/main.fd875be4.js.map"
+    "main.94cd46ae.css.map": "/proyecto_impacta/static/css/main.94cd46ae.css.map",
+    "main.16a9e896.js.map": "/proyecto_impacta/static/js/main.16a9e896.js.map"
   },
   "entrypoints": [
-    "static/css/main.5678bf2d.css",
-    "static/js/main.fd875be4.js"
+    "static/css/main.94cd46ae.css",
+    "static/js/main.16a9e896.js"
   ]
 }

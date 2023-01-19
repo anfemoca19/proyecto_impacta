@@ -77,7 +77,7 @@ export default function Dashboard() {
                     "d-flex align-items-center justify-content-between me-3 ms-3"
                   )}
                 >
-                  <CircleColor className={clsx("me-2", "circle-violet-sm")} />
+                  <CircleColor className={clsx("me-2", "circle-violet")} />
                   <span>Colaboradores</span>
                 </div>
                 <div
@@ -85,7 +85,7 @@ export default function Dashboard() {
                     "d-flex align-items-center justify-content-between me-2"
                   )}
                 >
-                  <CircleColor className={clsx("me-2", "circle-green-sm")} />
+                  <CircleColor className={clsx("me-2", "circle-green")} />
                   <span>Cursos</span>
                 </div>
               </div>

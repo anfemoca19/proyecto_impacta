@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import {
   LineChart,
   Line,
@@ -9,21 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import CircleColor from "../CircleColor/Circle";
-import "../GraphUsers/graphUsers.scss";
-
-/**
- * const dataCard = [{name: 'john', description: 'pipe', tel: '12'}, {name: 'yoli', description: 'yolisti'}]
- * {dataCard.map(card => {
- *  return <Card info={card} />
- * })}
- *
- * const Card = ({info}) => {
- *  const {name, description} = info
- *  return (
- *   <div>{name}</div>
- *  )
- * }
- */
+import styles from "../GraphUsers/graphUsers.module.scss";
 
 const data = [
   { line1: 4000, line2: 2400 },
@@ -49,20 +36,30 @@ const CustomTooltip = ({ active, payload }) => {
 };
 export default function GraphUsers() {
   return (
-    <div className="container-fluid d-flex align-items-center rounded container-account-graph mb-3 p-3">
-      <div className="row ">
-        <div className=" d-flex mb-3  me-3 ms-3">
-          <CircleColor className="circle-blue-sm me-2 " />
-          <span className="style-font-chart">
+    <div
+      className={clsx(
+        "container-fluid d-flex align-items-center mb-3 p-3",
+        styles["container-account-graph"]
+      )}
+    >
+      <div className={clsx("row")}>
+        <div className={clsx("d-flex mb-3")}>
+          <CircleColor className={clsx("me-2", "circle-blue-sm")} />
+          <span className={clsx(styles["style-font-chart"])}>
             Usuarios activos en la plataforma
           </span>
         </div>
 
-        <div className=" style-graph-colaboradores d-flex align-items-center  ">
+        <div
+          className={clsx(
+            "d-flex align-items-center",
+            styles["style-graph-colaboradores"]
+          )}
+        >
           <ResponsiveContainer width="100%" height="100%">
             <LineChart
               width={400}
-              height={200}
+              height={150}
               data={data}
               margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
             >
@@ -71,7 +68,6 @@ export default function GraphUsers() {
               <CartesianGrid stroke="#fff" strokeDashoffset="5 5" />
               <Tooltip content={<CustomTooltip />} />
               {/* <Legend wrapperStyle={{ fontSize: "10px" }} /> */}
-
               <Line
                 type="monotone"
                 dataKey="line1"
@@ -91,9 +87,10 @@ export default function GraphUsers() {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <div className="  d-flex  me-3 ms-3">
-          <CircleColor className="circle-green-sm me-2 " />
-          <span className="style-font-chart">
+
+        <div className={clsx("d-flex text-center align-item-center")}>
+          <CircleColor className={clsx("me-2", "circle-green-sm")} />
+          <span className={clsx(styles["style-font-chart"])}>
             Tiempo de actividad de usuarios en la plataforma
           </span>
         </div>

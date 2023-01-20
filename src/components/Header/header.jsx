@@ -10,15 +10,22 @@ import { USER_PERMISSIONS } from "../../constants/user_const";
 
 export default function Header() {
   return (
-    <div className={clsx("container-fluid mt-3")}>
-      <div className={clsx("row", styles["container-web"])}>
+    <div className={clsx("container-fluid mt-2")}>
+      <div
+        className={clsx(
+          "row",
+          styles["container-web"],
+          styles["container-mobile"],
+          styles["container-tablet"]
+        )}
+      >
         <div className={clsx("col-2 p-2", styles["container-logo"])}>
           <img className={clsx(styles.logo)} src={Logo} alt="logo" />
         </div>
         <div
           className={clsx(
             "col-8 p-4 d-flex align-items-center",
-            styles["container-"]
+            styles["container-user"]
           )}
         >
           {!USER_PERMISSIONS.isAdmin && (
@@ -62,10 +69,26 @@ export default function Header() {
             ></Input>
           </div>
         </div>
+        <div
+          className={clsx("col-4 p-2 ", styles["container-menu-hamburguesa"])}
+        >
+          <button
+            className={clsx(styles["style-button-hamburguer"])}
+            onClick={() => {
+              console.log("menu");
+            }}
+          >
+            <img
+              src={icon_hamburguer}
+              alt="icon-hamburguer"
+              className={clsx(styles["icon-hamburger"])}
+            />
+          </button>
+        </div>
       </div>
 
       {/* mobile */}
-      <div className={clsx(styles["contianer-mobile"])}>
+      {/* <div className={clsx(styles["contianer-mobile"])}>
         <div className={clsx("col-4 p-2", styles["container-logo"])}>
           <img className={clsx(styles.logo)} src={Logo} alt="logo" />
         </div>
@@ -88,16 +111,23 @@ export default function Header() {
         <div
           className={clsx("col-4 p-2 ", styles["container-menu-hamburguesa"])}
         >
-          <img
-            src={icon_hamburguer}
-            alt="icon-hamburguer"
-            className={clsx(styles["icon-hamburger"])}
-          />
+          <button
+            className={clsx(styles["style-button-hamburguer"])}
+            onClick={() => {
+              console.log("menu");
+            }}
+          >
+            <img
+              src={icon_hamburguer}
+              alt="icon-hamburguer"
+              className={clsx(styles["icon-hamburger"])}
+            />
+          </button>
         </div>
-      </div>
+      </div> */}
 
       {/* tablet */}
-      <div className={clsx(styles["contianer-tablet"])}>
+      {/* <div className={clsx(styles["contianer-tablet"])}>
         <div className={clsx("col-4 p-2", styles["container-logo"])}>
           <img className={clsx(styles.logo)} src={Logo} alt="logo" />
         </div>
@@ -126,7 +156,7 @@ export default function Header() {
             className={clsx(styles["icon-hamburger"])}
           />
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 }

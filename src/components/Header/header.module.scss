@@ -1,19 +1,23 @@
 
 //estilos para mobile
 @media only screen and  (max-width: 480px) {
-  .container-web{
-    display: none;
+ .container-mobile{
+    display: flex !important;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
   }
-  .contianer-tablet{
-    display: none;
+
+  .container-user{
+    display: none !important;
   }
-  .contianer-mobile{
-    display: flex;
-  }
+
   .container-logo {
     display: flex;
     justify-content: center;
   }
+
   .logo {
     height: 50px;
   }
@@ -23,7 +27,7 @@
 
   //input search
   .container-pricipal-search {
-    display: flex;
+    display: flex ;
     flex-direction: column;
     justify-content: center;
   }
@@ -54,10 +58,13 @@
 
   //Menu hamburguesa
   .container-menu-hamburguesa{
-    display: flex;
+    display: flex !important;
     justify-content: center;
   }
-
+  .style-button-hamburguer{
+    border: none;
+    background-color: white;
+  }
   .icon-hamburger{
     height: 40px;
     &.active {
@@ -69,24 +76,27 @@
 //estilos para tablet
 
 @media only screen and  (min-width:480px) and (max-width:1000px){
-  .contianer-tablet{
-    display: flex;
+  
+  .container-tablet
+  {
+    display: flex !important;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
   }
-  .container-web{
-    display: none;
-  }
-  .contianer-mobile{
-    display: none;
-  }
+
   .container-logo {
     display: flex;
     justify-content: center;
   }
+
   .logo {
     height: 80px;
   }
-  .container-data-user {
-    display: none;
+
+  .container-user{
+    display: none !important;
   }
 
   //input search
@@ -100,10 +110,9 @@
     display: flex;
     background-color: #f9fafb ;
     border-radius: 10px;
-
     align-items: center;
-    height: 40px;
-
+    height: 50px;
+    width: 200px;
   }
   .icon-search {
     margin-left: 5px;
@@ -123,10 +132,13 @@
 
   //Menu hamburguesa
   .container-menu-hamburguesa{
-    display: flex;
+    display: flex !important;
     justify-content: center;
   }
-
+  .style-button-hamburguer{
+    border: none;
+    background-color: white;
+  }
   .icon-hamburger{
     height: 60px;
     &.active {
@@ -137,12 +149,12 @@
 
 @media only screen and (min-width: 1000px) {
   //Stilos logo
-  .contianer-mobile{
-    display: none;
-  }
-  .contianer-tablet{
-    display: none;
-  }
+  // .contianer-mobile{
+  //   display: none;
+  // }
+  // .contianer-tablet{
+  //   display: none;
+  // }
     .container-logo {
       display: flex;
       justify-content: center;
@@ -206,5 +218,8 @@
       background-color: #f9fafb ;
       padding: 5px;
       border-radius: 3px;
+    }
+    .container-menu-hamburguesa{
+      display: none;
     }
   }

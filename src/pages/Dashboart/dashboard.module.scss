@@ -58,15 +58,15 @@
     height: 230px;
   }
 
-  .contianer-circleCahrt-mobile{
+  .container-circleChart-mobile{
     display: flex !important;
-    height: 170px;
   }
-
-  .contianer-circleCahrt-web{
+  .container-circleChart-tablet{
     display: none !important;
   }
-
+  .container-circleChart-web{
+    display: none !important;
+  }
   .style-circle-chart {
     height: 100px;
   }
@@ -193,14 +193,14 @@
   }
 
 
-  .container-circleCahrt-web{
+  .container-circleChart-web{
     display: none !important;
   }
-  .container-circleCahrt-mobile{
+  .container-circleChart-mobile{
     display: none !important;
   }
   
-  .container-circleCahrt-tablet{
+  .container-circleChart-tablet{
     display: none;
   }
 

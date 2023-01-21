@@ -309,7 +309,7 @@ export default function Dashboard() {
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
               styles["styles-background"],
-              styles["container-circleCahrt-web"]
+              styles["container-circleChart-web"]
             )}
           >
             <div className={clsx("col-6", styles["style-container-pieChart"])}>
@@ -356,7 +356,7 @@ export default function Dashboard() {
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
               styles["styles-background"],
-              styles["container-circleCahrt-tablet"]
+              styles["container-circleChart-tablet"]
             )}
           >
             <div className={clsx("col-6", styles["style-container-pieChart"])}>
@@ -403,7 +403,7 @@ export default function Dashboard() {
               "container-fluid d-flex justify-content-between  align-items-center mt-5",
               styles["container-consumo"],
               styles["styles-background"],
-              styles["container-circleCahrt-mobile"]
+              styles["container-circleChart-mobile"]
             )}
           >
             <div className={clsx("col-6", styles["style-container-pieChart"])}>

@@ -12,7 +12,6 @@ export default function Navbar({ className }) {
   const location = useLocation();
 
   let changeText = () => {
-    debugger;
     myRef.current.style.display = "flex";
   };
 

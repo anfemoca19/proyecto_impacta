@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import "../Configuration/configuration.scss";
+import styles from "../Configuration/configuration.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
@@ -31,81 +31,119 @@ export default function Configruation() {
           </>
         }
       >
-        <div className="container-fluid ">
-          <span className="style-title ">Perfil de la empresa</span>
+        <div className={clsx("container-fluid ")}>
+          <span className={clsx(styles["style-title"])}>
+            Perfil de la empresa
+          </span>
           <Menu />
 
-          <div className="p-4 box-container mb-5 container-fluid">
-            <div className="row">
-              <div className="col-5 grid-container">
-                {/* Create a label component and then send the className to custom its height */}
-                {/* 
-                  <Label className="companyLabel"></Label>
-                  companyLabel {
-                    height: 30px
-                  }
-                */}
+          <div
+            className={clsx(
+              "container-fluid p-4 mb-5",
+              styles["box-container"]
+            )}
+          >
+            <div className={clsx("row")}>
+              <div className={clsx("col-5", styles["grid-container"])}>
                 <Label htmlFor="nombre_empresa ">
-                  Nombre de la empresa <span className="style-asterik">*</span>
+                  Nombre de la empresa{" "}
+                  <span className={clsx(styles["style-asterik"])}>*</span>
                 </Label>
                 <Label htmlFor="nombre_encargadp">
-                  Nombre del encargado<span className="style-asterik">*</span>
+                  Nombre del encargado
+                  <span className={clsx(styles["style-asterik"])}>*</span>
                 </Label>
                 <Label htmlFor="telefono_encargado">
-                  Cargo del encargado <span className="style-asterik">*</span>
+                  Cargo del encargado{" "}
+                  <span className={clsx(styles["style-asterik"])}>*</span>
                 </Label>
                 <Label htmlFor="telefono_encargado">
-                  Email del encargado <span className="style-asterik">*</span>
+                  Email del encargado{" "}
+                  <span className={clsx(styles["style-asterik"])}>*</span>
                 </Label>
                 <Label htmlFor="telefono_encargado">
                   Telefono del encargado{" "}
-                  <span className="style-asterik">*</span>
+                  <span className={clsx(styles["style-asterik"])}>*</span>
                 </Label>
               </div>
-              <div className="col-7 grid-container">
+              <div className={clsx("col-7", styles["grid-container"])}>
                 <Input
                   id="password "
                   className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2 ", styles["input-data-configuration"])}
                 />
-                <Input className="mb-2 input-data-configuration" />
-                <Input className="mb-2 input-data-configuration" />
-                <Input className="mb-2 input-data-configuration" />
+                <Input
+                  className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2", styles["input-data-configuration"])}
+                />
+                <Input
+                  className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2", styles["input-data-configuration"])}
+                />
+                <Input
+                  className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2", styles["input-data-configuration"])}
+                />
                 <Input
                   id="telefono_encargado"
                   className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
               </div>
-              <div className="col-12 mt-3">
+              <div
+                // className="col-12 mt-3"
+                className={clsx("col-12 mt-3")}
+              >
                 <Button>Actualizar</Button>
               </div>
             </div>
           </div>
-          <div className="container-fluid mb-5">
-            <span className="style-title-actualice mt-5 mb-5">
+          <div
+            // className="container-fluid mb-5"
+            className={clsx("container-fluid mb-5")}
+          >
+            <span
+              // className="style-title-actualice mt-5 mb-5"
+              className={clsx("mt-5 mb-5", styles["style-title-actualice"])}
+            >
               Actualice su contraseña
             </span>
-            <p className="mt-3 style-title-pass">
+            <p
+              // className="mt-3 style-title-pass"
+              className={clsx("mb-3", styles["style-title-pass"])}
+            >
               Asegure su cuenta con una contraseña fuerte
             </p>
           </div>
-          <div className="container-fluid">
-            <div className="row">
-              <div className="container box-container p-4 col-6">
+          <div
+            // className="container-fluid"
+            className={clsx("container-fluid")}
+          >
+            <div className={clsx("row")}>
+              <div
+                // className="container box-container p-4 col-6"
+                className={clsx("container p-4 col-6", styles["box-container"])}
+              >
                 <Input
                   placeholder="Contraseña actual "
                   className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
                 <Input
                   placeholder="Nueva contraseña"
                   className="mb-2 input-data-configuration"
+                  // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
                 <Input
                   placeholder="Confirme contraseña"
                   className="mb-2 input-data-configuration"
                 />
-                <Button className="mt-3">Iniciar Session</Button>
+                <Button className={clsx("mt-3 mb-3")}>Iniciar Session</Button>
               </div>
-              <div className="col-6"></div>
+              <div
+                // className="col-6"
+                className={clsx("col-6")}
+              ></div>
             </div>
           </div>
         </div>

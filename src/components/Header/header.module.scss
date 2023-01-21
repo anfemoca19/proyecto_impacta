@@ -65,12 +65,19 @@
     border: none;
     background-color: white;
   }
+
   .icon-hamburger{
     height: 40px;
     &.active {
         background-image: url("../../imagenes/icono-hamburguesa-gris.png");
       }
   }
+
+  // menuNav
+  // .container-menu-nav{
+  //   display: none !important;
+  // }
+
 }
 
 //estilos para tablet
@@ -145,16 +152,15 @@
         background-image: url("../../imagenes/icono-hamburguesa-gris.png");
       }
   }
+
+    // menuNav
+    // .container-menu-nav{
+    //   display: none !important;
+    // }
 }
 
 @media only screen and (min-width: 1000px) {
-  //Stilos logo
-  // .contianer-mobile{
-  //   display: none;
-  // }
-  // .contianer-tablet{
-  //   display: none;
-  // }
+
     .container-logo {
       display: flex;
       justify-content: center;
@@ -220,6 +226,9 @@
       border-radius: 3px;
     }
     .container-menu-hamburguesa{
+      display: none;
+    }
+    .container-menu-nav{
       display: none;
     }
   }

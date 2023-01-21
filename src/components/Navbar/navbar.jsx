@@ -1,70 +1,112 @@
 import clsx from "clsx";
+import { useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // CONSTANTS
 import { USER_PERMISSIONS } from "../../constants/user_const";
 
-import "../Navbar/navbar.scss";
+import styles from "../Navbar/navbar.module.scss";
 
-export default function Navbar() {
+export default function Navbar({ className }) {
+  const myRef = useRef(null);
   const location = useLocation();
-  console.log("location", location);
+
+  let changeText = () => {
+    debugger;
+    myRef.current.style.display = "flex";
+  };
+
   return (
-    <ul className="ps-0">
+    <ul className={clsx("ps-0", styles["menu-mobile"])}>
       <li
-        className={clsx("nav-item mb-2", {
+        className={clsx(" mb-2", styles["nav-item"], {
           active: location.pathname === "/dashboard",
         })}
       >
-        <Link className="nav-link fs-6" to="/dashboard">
-          <span className="nav-icon"></span>
-          <span>Inicio</span>
+        <Link
+          className={clsx("fs-6 mb-0 h1", styles["nav-link"])}
+          to="/dashboard"
+          onClick={() => {
+            changeText();
+          }}
+        >
+          <span className={clsx(styles["nav-icon"])}></span>
+          <span ref={myRef} className={clsx(styles["text-menu"])}>
+            Inicio
+          </span>
         </Link>
       </li>
-
       <li
-        className={clsx("nav-item mb-2", {
+        className={clsx("mb-2", styles["nav-item"], {
           active: location.pathname === "/configuration",
         })}
       >
-        <Link className="nav-link fs-6 mb-0 h1 link-style" to="/configuration">
-          <span className="nav-icon icon-config" />
-          <span>Configuración</span>
+        <Link
+          className={clsx(
+            "fs-6 mb-0 h1",
+            styles["nav-link"],
+            styles["link-style"]
+          )}
+          to="/configuration"
+        >
+          <span className={clsx(styles["nav-icon"], styles["icon-config"])} />
+          <span ref={myRef} className={clsx(styles["text-menu"])}>
+            Configuración
+          </span>
         </Link>
       </li>
 
       <li
-        className={clsx("nav-item mb-2", {
+        className={clsx("mb-2", styles["nav-item"], {
           active: location.pathname === "/users",
         })}
       >
-        <Link className="nav-link fs-6 link-style" to="/users">
-          <span className="nav-icon icon-user" />
-          <span>Usuarios</span>
+        <Link
+          className={clsx("fs-6 ", styles["nav-link"], styles["link-style"])}
+          to="/users"
+        >
+          <span className={clsx(styles["nav-icon"], styles["icon-user"])} />
+          <span ref={myRef} className={clsx(styles["text-menu"])}>
+            Usuarios
+          </span>
         </Link>
       </li>
 
       {USER_PERMISSIONS.isAdmin && (
         <li
-          className={clsx("nav-item mb-2", {
+          className={clsx("mb-2", styles["nav-item"], {
             active: location.pathname === "/categories",
           })}
         >
-          <Link className="nav-link fs-6 link-style" to="/categories">
-            <span className="nav-icon icon-user" />
-            <span>Categories</span>
+          <Link
+            className={clsx("fs-6 ", styles["nav-link"], styles["link-style"])}
+            to="#"
+          >
+            <span
+              className={clsx(styles["nav-icon"], styles["icon-categories"])}
+            />
+            <span ref={myRef} className={clsx(styles["text-menu"])}>
+              Categories
+            </span>
           </Link>
         </li>
       )}
 
       <li
-        className={clsx("nav-item mb-2", {
+        className={clsx("mb-2", styles["nav-item"], {
           active: location.pathname === "/courses",
         })}
       >
-        <Link className="nav-link fs-6 mb-0 h1 link-style" to="/courses">
-          <span className="nav-icon icon-course" />
-          <span>Cursos</span>
+        <Link
+          className={clsx(
+            "fs-6 mb-0 h1",
+            styles["nav-link"],
+            styles["link-style"]
+          )}
+          to="/courses"
+        >
+          <span className={clsx(styles["nav-icon"], styles["icon-course"])} />
+          <span className={clsx(styles["text-menu"])}>Cursos</span>
         </Link>
       </li>
     </ul>

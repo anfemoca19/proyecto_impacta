@@ -1,3 +1,3 @@
 export const USER_PERMISSIONS = {
-  isAdmin: false,
+  isAdmin: true,
 }

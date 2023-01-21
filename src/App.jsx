@@ -20,8 +20,8 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/forgotPass" element={<ForgotPass />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
         <Route path="/*" element={<NotFound />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" />
       </Routes>
     </BrowserRouter>

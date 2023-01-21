@@ -7,8 +7,17 @@ import Foto_perfil from "../../imagenes/foto-perfil.jpg";
 import Input from "../UI/Input/input";
 import clsx from "clsx";
 import { USER_PERMISSIONS } from "../../constants/user_const";
+import Navbar from "../Navbar/navbar";
+import { useRef, useState } from "react";
 
 export default function Header() {
+  const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const [styleContainerNav, setStyleContainerNav] = useState(" menu-mobile");
+
+  let menuHamburguer = () => {
+    setIsActiveMenu(!isActiveMenu);
+  };
+
   return (
     <div className={clsx("container-fluid mt-2")}>
       <div
@@ -74,8 +83,8 @@ export default function Header() {
         >
           <button
             className={clsx(styles["style-button-hamburguer"])}
-            onClick={() => {
-              console.log("menu");
+            onClick={(e) => {
+              menuHamburguer();
             }}
           >
             <img
@@ -86,6 +95,14 @@ export default function Header() {
           </button>
         </div>
       </div>
+      {!isActiveMenu && (
+        <div
+          className={clsx("mt-4", styles["container-menu-nav"])}
+          id="container-menu-nav"
+        >
+          <Navbar className={clsx(styleContainerNav)} />
+        </div>
+      )}
 
       {/* mobile */}
       {/* <div className={clsx(styles["contianer-mobile"])}>

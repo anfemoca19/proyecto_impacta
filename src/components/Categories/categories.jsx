@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import clsx from "clsx";
 
 export default function Categorias({ className }) {
-  console.log(className);
   return (
     <>
       <div className={clsx("mt-5 mb-4", styles["styles-background"])}>

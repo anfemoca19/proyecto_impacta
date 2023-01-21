@@ -1,7 +1,8 @@
 .calendar {
   background-color: #f9fafb ;
   border-radius: 10px;
-  box-shadow: 0px 6px 36px 14px #e6e6e8b4;
+  // box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+  box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%)
 }
 
 .react-calendar__month-view__days__day--neighboringMonth{
@@ -56,12 +57,12 @@
 
 // titulos dias
 .react-calendar__month-view__weekdays__weekday{
-  font-size: 10px;
+  font-size: 8px;
   padding: 0px;
 }
 
 .react-calendar__month-view__days{
-  margin: 1px 1px 1px 1px;
+  margin: 1px -5px 1px -10px;
   font-size: 10px;
 }
 

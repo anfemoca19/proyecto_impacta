@@ -16,15 +16,19 @@ export default function Menu() {
           </Link>
         </li>
         <li className="nav-item">
-          <Link className={clsx("style-nav", {})} to="#">
+          <Link className={clsx("style-nav", {})} to="/styleLogin">
             Estilos login
           </Link>
         </li>
         <li className="nav-item">
-          <Link className={clsx("style-nav", {})}>Estilos Administracón</Link>
+          <Link className={clsx("style-nav", {})} to="/styleAdmin">
+            Estilos Administracón
+          </Link>
         </li>
         <li className="nav-item">
-          <Link className={clsx("style-nav", {})}>Estilos Academica</Link>
+          <Link className={clsx("style-nav", {})} to="/styleAcademia">
+            Estilos Academia
+          </Link>
         </li>
       </ul>
     </nav>

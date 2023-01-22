@@ -1,0 +1,109 @@
+
+@media only screen and (max-width: 480px) {
+  .style-title {
+    color: #7929e2;
+    font-size: 15px;
+  }
+
+  .style-title-actualice {
+    color: #7929e2;
+    font-size: 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    align-items: center;
+  }
+
+  //estilos para cambiar contraseña
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+  }
+
+  .style-title-pass {
+    font-size: 10px;
+  }
+
+  .style-asterik {
+    color: #7929e2;
+  }
+
+}
+
+// Tablet
+@media only screen and  (min-width:481px) and (max-width:1000px){
+  .style-title {
+    color: #7929e2;
+    font-size: 15px;
+  }
+
+
+  .style-title-actualice {
+    color: #7929e2;
+    font-size: 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    align-items: center;
+  }
+
+  //estilos para cambiar contraseña
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+  }
+
+  .style-title-pass {
+    font-size: 10px;
+  }
+
+  .style-asterik {
+    color: #7929e2;
+  }
+
+}
+
+// WEB
+@media only screen and (min-width: 1000px) {
+  .style-title {
+    color: #7929e2;
+    font-size: 15px;
+  }
+
+  .styles-input {
+    border-radius: 5px;
+    border: 2px solid #7929e2;
+  }
+
+  .style-title-actualice {
+    color: #7929e2;
+    font-size: 16px;
+  }
+
+  .grid-container {
+    display: grid;
+    align-items: center;
+  }
+
+  //estilos para cambiar contraseña
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+  }
+
+  .style-title-pass {
+    font-size: 13px;
+  }
+
+  .style-asterik {
+    color: #7929e2;
+  }
+
+}

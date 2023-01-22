@@ -8,8 +8,7 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import DragAndDrop from "../../components/UI/DragAndDrop";
 
-import "../Personalization/personalization.scss";
-import { Link } from "react-router-dom";
+import styles from "../Personalization/personalization.module.scss";
 import Button from "../../components/UI/Button";
 
 import icon_user_logo from "../../imagenes/icono-editar-logo.png";
@@ -30,7 +29,6 @@ export default function Personalization() {
   };
 
   const handleDrop = (files) => {
-    debugger;
     let fileList = [];
     for (let i = 0; i < files.length; i++) {
       if (!files[i].name) return;
@@ -64,23 +62,49 @@ export default function Personalization() {
           </>
         }
       >
-        <div className="container-fluid ">
-          <span className="style-title ">Perfil de la empresa</span>
+        <div className={clsx("container-fluid", {})}>
+          <span className={clsx("container-fluid", styles["style-title"])}>
+            Perfil de la empresa
+          </span>
           <Menu />
-          <div className="p-4 mb-5 container-fluid line-divider-boton text-center">
-            <div className="row">
-              <div className=" grid-container">
-                <span className="style-title-logos">Logos e imágenes</span>
+          <div
+            // className="p-4 mb-5 container-fluid line-divider-boton text-center"
+            className={clsx(
+              "container-fluid p-4 mb-5 text-center",
+              styles["line-divider-boton"]
+            )}
+          >
+            <div className={clsx("row", {})}>
+              <div
+                // className=" grid-container"
+                className={clsx("grid-containe", {})}
+              >
+                <span
+                  // className="style-title-logos"
+                  className={clsx(styles["style-title-logos"])}
+                >
+                  Logos e imágenes
+                </span>
               </div>
             </div>
-            <div className="row mt-3">
-              <div className=" grid-container">
+            <div
+              // className="row mt-3"
+              className={clsx("row mt-3", {})}
+            >
+              <div
+                // className=" grid-container"
+                className={clsx("grid-containe", {})}
+              >
                 <div>
                   <span>Editar logo</span>
                 </div>
-                <div className="mt-3">
+                <div
+                  // className="mt-3"
+                  className={clsx("mt-3", {})}
+                >
                   <img
-                    className="style-img-perfil"
+                    // className="style-img-perfil"
+                    className={clsx(styles["style-img-perfil"])}
                     src={icon_user_logo}
                     alt=""
                     id="img-perfil"
@@ -88,40 +112,57 @@ export default function Personalization() {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className=" grid-container mt-3 ">
-                <div className="container-input">
+            <div
+              // className="row
+              className={clsx("row")}
+            >
+              <div
+                // className=" grid-container mt-3 "
+                className={clsx("grid-containe mt-3", {})}
+              >
+                <div
+                  // className="container-input"
+                  className={clsx(styles["container-input"])}
+                >
                   <UploadInput
                     className={"iborrainputfile"}
+                    // className={clsx(styles.iborrainputfile)}
                     handleDrop={handleDrop}
                   >
                     Selecionar una imagen
                   </UploadInput>
                 </div>
-                {/* <div>
-                  <DragAndDrop handleDrop={handleDrop} className="text-color">
-                    Selecionar una imagen
-                  </DragAndDrop>
-                </div>
-                <div>
-                  {dragfiles.map((file, i) => (
-                    <div key={i}>{file}</div>
-                  ))}
-                </div> */}
                 <span>Tamaño sugerido (1500px por 250px)</span>
               </div>
             </div>
-            <div className="row">
-              <div className="col-12 mt-3">
+            <div className={clsx("row")}>
+              <div
+                // className="col-12 mt-3"
+                className={clsx("col-12 mt-3")}
+              >
                 <Button>Guardar</Button>
               </div>
             </div>
           </div>
-          <div className="p-4 box-container mb-5 container-fluid p-4">
-            <div className="row">
-              <div className="container-bacgraund mt-3 p-4">
-                <span className="mt-3">Editar imagen Background del login</span>
-                <div className="d-flex image-upload-wrap mt-4">
+          <div
+            // className="p-4 box-container mb-5 container-fluid p-4"
+            className={clsx("p-4 box-container mb-5 container-fluid p-4")}
+          >
+            <div className={clsx("row")}>
+              <div
+                // className="container-backgraund mt-3 p-4"
+                className={clsx("mt-3 p-4", styles["container-backgraund"])}
+              >
+                <span
+                  // className="mt-3"
+                  className={clsx("mt-3")}
+                >
+                  Editar imagen Background del login
+                </span>
+                <div
+                  // className="d-flex image-upload-wrap mt-4"
+                  className={clsx("mt-4 d-flex", styles["image-upload-wrap"])}
+                >
                   <DragAndDrop handleDrop={handleDrop} />
                 </div>
                 <div>
@@ -129,17 +170,32 @@ export default function Personalization() {
                     <div key={i}>{file}</div>
                   ))}
                 </div>
-                <div className=" d-flex col-5 mt-3">
+                <div
+                  // className=" d-flex col-5 mt-3"
+                  className={clsx("d-flex col-5 mt-3")}
+                >
                   <img
                     src={icon_camera}
                     alt="icon-photo"
-                    className="icon-photo"
+                    // className="icon-photo"
+                    className={clsx(styles["icon-photo"])}
                   />
-                  <div className="d-flex">
-                    <div className=" container-upload-img ms-3">
+                  <div
+                    // className="d-flex"
+                    className={clsx("d-flex")}
+                  >
+                    <div
+                      // className=" container-upload-img ms-3"
+                      className={clsx("ms-3", styles["container-upload-img"])}
+                    >
                       <span>Arrastra una imagen hasta aqui o</span>
                       <UploadInput
-                        className={"iborrainputfile linea-abajo"}
+                        // className={"iborrainputfile linea-abajo"}
+                        className={clsx(
+                          "ms-3",
+                          styles["linea-abajo"],
+                          styles.iborrainputfile
+                        )}
                         handleDrop={handleDrop}
                       >
                         sube un archivo
@@ -148,7 +204,10 @@ export default function Personalization() {
                   </div>
                 </div>
               </div>
-              <div className="col-5 mt-3">
+              <div
+                // className="col-5 mt-3"
+                className={clsx("col-5 mt-3")}
+              >
                 <Button
                   name="btnSaveImg"
                   onClick={(e) => {
@@ -158,7 +217,10 @@ export default function Personalization() {
                   Guardar
                 </Button>
               </div>
-              <div className="col-5 mt-3">
+              <div
+                // className="col-5 mt-3"
+                className={clsx("col-5 mt-3")}
+              >
                 <Button
                   name="btnDeleteImg"
                   onClick={(e) => {
@@ -170,26 +232,53 @@ export default function Personalization() {
               </div>
             </div>
           </div>
-          <div className="p-4 box-container mb-5 container-fluid p-4">
-            <div className="row">
-              <div className="container-bacgraund">
-                <div className="row p-3">
-                  <Label className="mb-2">Elige un color para el login</Label>
+          <div
+            // className="p-4 box-container mb-5 container-fluid p-4"
+            className={clsx("p-4 mb-5 container-fluid")}
+          >
+            <div
+              // className="row"
+              className={clsx("row")}
+            >
+              <div
+                // className="container-backgraund"
+                className={clsx(styles["container-backgraund"])}
+              >
+                <div
+                  // className="row p-3"
+                  className={clsx("row p-3")}
+                >
+                  <Label
+                    // className="mb-2"
+                    className={clsx("mb-2")}
+                  >
+                    Elige un color para el login
+                  </Label>
                   <input
                     type="color"
                     id="favcolor"
                     name="favcolor"
                     value={colorValue}
                     onChange={onChangeColorPicker}
-                    className="input-select-color"
+                    // className="input-select-color"
+                    className={clsx(styles["input-select-color"])}
                   ></input>
                 </div>
-                <div className="col-5 mt-3"></div>
+                <div
+                  className={clsx("col-5 mt-3")}
+                  // className="col-5 mt-3"
+                ></div>
               </div>
-              <div className="col-5 mt-3">
+              <div
+                // className="col-5 mt-3"
+                className={clsx("col-5 mt-3")}
+              >
                 <Button>Guardar</Button>
               </div>
-              <div className="col-5 mt-3">
+              <div
+                // className="col-5 mt-3"
+                className={clsx("col-5 mt-3")}
+              >
                 <Button
                   name="btnDeleteColor"
                   onClick={(e) => {

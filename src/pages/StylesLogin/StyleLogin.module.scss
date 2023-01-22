@@ -1,0 +1,51 @@
+@media only screen and (max-width: 480px) {
+  .style-title{
+    color: #7929e2;
+    font-size: 16px;
+  }
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+  }
+  .style-textarea{
+    // width: 300px;
+    height: 500px;
+  }
+}
+
+@media only screen and  (min-width:481px) and (max-width:1000px){
+  .style-title{
+    color: #7929e2;
+    font-size: 16px;
+  }
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+  }
+  .style-textarea{
+    // width: 300px;
+    height: 500px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  .style-title{
+    color: #7929e2;
+    font-size: 16px;
+  }
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+  }
+  .style-textarea{
+    // width: 370px;
+    height: 300px;
+  }
+}

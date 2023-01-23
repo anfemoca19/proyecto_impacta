@@ -71,6 +71,7 @@ const userData = [
   },
 ];
 
+let dataUserResgitrados = ["200"];
 export default function Users() {
   return (
     <>
@@ -80,7 +81,7 @@ export default function Users() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser />
+            <AccountUser dataNumber={dataUserResgitrados} />
             <Categorias />
             <GraphUsers />
           </>
@@ -168,10 +169,10 @@ export default function Users() {
               return <CardUserData imagenPerfil={user_img} userData={user} />;
             })}
           </div>
-          <div className={clsx("container-fluid d-flex mt-4", {})}>
+          <div className={clsx("container-fluid d-flex mt-4 me-4", {})}>
             {" "}
-            <div className={clsx("col-4", {})}></div>
-            <div className={clsx("col-4 ", {})}>
+            <div className={clsx("col-3", styles["container-vacio"])}></div>
+            <div className={clsx("col-4 ", styles["container-btn-siguiente"])}>
               <div
                 className={clsx(
                   " d-flex mr-2 align-items-center",
@@ -186,15 +187,15 @@ export default function Users() {
                 />
               </div>
             </div>
-            <div className={clsx("col-4 d-flex ", {})}>
-              <div className={clsx("col-3", {})}>
+            <div className={clsx("col-5 d-flex", styles["container-pages"])}>
+              <div className={clsx("col-3 ", styles["container-pagina"])}>
                 <span>Pagina</span>
               </div>
-              <div className={clsx("col-3", {})}>
+              <div className={clsx("col-3 ", {})}>
                 <Input className={"input-page"} />
               </div>
-              <div className={clsx("col-3", {})}>
-                <span>de{userData.length}</span>
+              <div className={clsx("col-3 ", {})}>
+                <span>de {userData.length}</span>
               </div>
               <div className={clsx("col-3 d-flex", {})}>
                 <img

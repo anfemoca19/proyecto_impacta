@@ -9,6 +9,7 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Menu from "../../components/Menu/Menu";
 import Button from "../../components/UI/Button";
+import { USER_PERMISSIONS } from "../../constants/user_const";
 
 export default function StyleLogin() {
   let dataUserResgitrados = ["200"];
@@ -20,9 +21,11 @@ export default function StyleLogin() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser dataNumber={dataUserResgitrados} />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >

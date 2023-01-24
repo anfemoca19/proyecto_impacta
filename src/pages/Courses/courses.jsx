@@ -9,18 +9,66 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Star from "../../components/Star/Star";
 import CardCurses from "../../components/CardCurses/CardCurses";
+import { USER_PERMISSIONS } from "../../constants/user_const";
 
 const cursesData = [
-  { id: 1, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 2, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 3, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 4, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 5, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 7, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 8, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 9, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
-  { id: 10, nombre: "Nutricón Consciente", creado: "Maria Isabel Valderrama" },
+  {
+    id: 1,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 2,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 3,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 4,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 5,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 7,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 8,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 1,
+  },
+  {
+    id: 9,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 1,
+  },
+  {
+    id: 10,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 1,
+  },
 ];
+
+let dataUserResgitrados = ["200"];
 export default function Courses() {
   return (
     <>
@@ -30,9 +78,11 @@ export default function Courses() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >

@@ -14,6 +14,7 @@ import Label from "../../components/UI/Label";
 import Menu from "../../components/Menu/Menu";
 
 import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
+import { USER_PERMISSIONS } from "../../constants/user_const";
 
 let dataUserResgitrados = ["200"];
 
@@ -27,9 +28,11 @@ export default function AddUser() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser dataNumber={dataUserResgitrados} />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >

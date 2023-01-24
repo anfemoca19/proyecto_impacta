@@ -19,6 +19,7 @@ import icon_plus_user from "../../imagenes/icono-anadir-usuarios.png";
 import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
 import { Link } from "react-router-dom";
 import CardUserData from "../../components/PerfiluserComponent/PerfilUserComponent";
+import { USER_PERMISSIONS } from "../../constants/user_const";
 
 const userData = [
   {
@@ -81,9 +82,11 @@ export default function Users() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser dataNumber={dataUserResgitrados} />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >

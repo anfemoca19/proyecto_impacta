@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import Button from "../../components/UI/Button";
 import Label from "../../components/UI/Label";
 import Menu from "../../components/Menu/Menu";
+import { USER_PERMISSIONS } from "../../constants/user_const";
 
 let dataUserResgitrados = ["200"];
 
@@ -25,9 +26,11 @@ export default function Configruation() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser dataNumber={dataUserResgitrados} />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >

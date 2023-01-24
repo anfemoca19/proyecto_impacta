@@ -22,6 +22,11 @@ import ChartPie from "../../components/ChartPie/ChartPie";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 
+import icon_boton_anterior from "../../imagenes/icono-boton-anterior.png";
+import icon_boton_siguiente from "../../imagenes/icono-boton-siguiente.png";
+
+import { USER_PERMISSIONS } from "../../constants/user_const";
+import CardCurses from "../../components/CardCurses/CardCurses";
 const data = [
   { name: "ENE", colaboradores: 4000, cursos: 2400 },
   { name: "MAR", colaboradores: 2000, cursos: 2800 },
@@ -45,6 +50,27 @@ const dataActiveUsersLast = [
   { name: "Group C", value: 300 },
   { name: "Group D", value: 200 },
 ];
+
+const cursesData = [
+  {
+    id: 1,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 2,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+  {
+    id: 3,
+    nombre: "Nutricón Consciente",
+    creado: "Maria Isabel Valderrama",
+    calificacion: 0,
+  },
+];
 let dataUserResgitrados = ["200"];
 export default function Dashboard() {
   return (
@@ -55,9 +81,11 @@ export default function Dashboard() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser dataNumber={dataUserResgitrados} />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >
@@ -303,171 +331,204 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* piecharweb */}
-          <div
-            className={clsx(
-              "container-fluid d-flex justify-content-between  align-items-center mt-5",
-              styles["container-consumo"],
-              styles["styles-background"],
-              styles["container-circleChart-web"]
-            )}
-          >
-            <div className={clsx("col-6", styles["style-container-pieChart"])}>
-              <ChartPie
-                percentage="60"
-                color="#7929e2"
-                size="150px"
-                remainingColor="black"
-              />
-              <ChartPie
-                percentage="50"
-                color="#afdb00"
-                size="150px"
-                remainingColor="black"
-              />
-            </div>
-            <div className="row">
-              <div
-                className={clsx(
-                  "container-fluid d-flex justify-content-between  align-items-center"
-                )}
-              >
-                <CircleColor className={clsx("circle-violet m-3")} />
-                <span className={clsx(styles["style-text"])}>
-                  Consumo promedio de contenido por usuario
-                </span>
-              </div>
-              <div
-                className={clsx(
-                  "container-fluid d-flex justify-content-between align-items-center"
-                )}
-              >
-                <CircleColor className={clsx("circle-green m-3")} />
-                <span className={clsx(styles["style-text"])}>
-                  {" "}
-                  Total de contenido consumido por la empresa
-                </span>
-              </div>
-            </div>
-          </div>
-          {/* tablet pieChart */}
-          <div
-            className={clsx(
-              "container-fluid d-flex justify-content-between  align-items-center mt-5",
-              styles["container-consumo"],
-              styles["styles-background"],
-              styles["container-circleChart-tablet"]
-            )}
-          >
-            <div className={clsx("col-6", styles["style-container-pieChart"])}>
-              <ChartPie
-                percentage="60"
-                color="#7929e2"
-                size="90px"
-                remainingColor="black"
-              />
-              <ChartPie
-                percentage="50"
-                color="#afdb00"
-                size="90px"
-                remainingColor="black"
-              />
-            </div>
-            <div className="row me-4">
-              <div
-                className={clsx(
-                  "container-fluid d-flex justify-content-between  align-items-center"
-                )}
-              >
-                <CircleColor className={clsx("circle-violet m-3")} />
-                <span className={clsx(styles["style-text"])}>
-                  Consumo promedio de contenido por usuario
-                </span>
-              </div>
-              <div
-                className={clsx(
-                  "container-fluid d-flex justify-content-between align-items-center"
-                )}
-              >
-                <CircleColor className={clsx("circle-green m-3")} />
-                <span className={clsx(styles["style-text"])}>
-                  {" "}
-                  Total de contenido consumido por la empresa
-                </span>
-              </div>
-            </div>
-          </div>
-          {/* mobile tablet */}
-          <div
-            className={clsx(
-              "container-fluid d-flex justify-content-between  align-items-center mt-5",
-              styles["container-consumo"],
-              styles["styles-background"],
-              styles["container-circleChart-mobile"]
-            )}
-          >
-            <div className={clsx("col-6", styles["style-container-pieChart"])}>
-              <ChartPie
-                percentage="60"
-                color="#7929e2"
-                size="60px"
-                remainingColor="black"
-              />
-              <ChartPie
-                percentage="50"
-                color="#afdb00"
-                size="60px"
-                remainingColor="black"
-              />
-            </div>
-            <div className="row me-4">
-              <div
-                className={clsx(
-                  "container-fluid d-flex justify-content-between  align-items-center"
-                )}
-              >
-                <CircleColor className={clsx("circle-violet m-3")} />
-                <span className={clsx(styles["style-text"])}>
-                  Consumo promedio de contenido por usuario
-                </span>
-              </div>
-              <div
-                className={clsx(
-                  "container-fluid d-flex justify-content-between align-items-center"
-                )}
-              >
-                <CircleColor className={clsx("circle-green m-3")} />
-                <span className={clsx(styles["style-text"])}>
-                  {" "}
-                  Total de contenido consumido por la empresa
-                </span>
-              </div>
-            </div>
-          </div>
-          <div
-            className={clsx(
-              "d-flex  align-items-center ps-4 pe-4 mt-5",
-              styles["container-activate"]
-            )}
-          >
-            <Link
+          {/*  */}
+          {!USER_PERMISSIONS.isAdmin && (
+            <div
               className={clsx(
-                "container-fluid text-center justify-content-between align-items-center d-flex",
-                styles["style-upload-link"]
+                "container-fluid d-flex justify-content-between  align-items-center mt-5",
+                styles["container-consumo"],
+                styles["styles-background"],
+                styles["container-circleChart-web"]
               )}
-              to=""
             >
-              <span>
-                Da click aquí para comenzar el proceso de activar tus usuarios
-              </span>
-              <img
-                // className="icon-upload"
-                className={clsx(styles["icon-upload"])}
-                src={upload}
-                alt="icon-upload"
-              />
-            </Link>
-          </div>
+              <div
+                className={clsx("col-6", styles["style-container-pieChart"])}
+              >
+                <ChartPie
+                  percentage="60"
+                  color="#7929e2"
+                  size="150px"
+                  remainingColor="black"
+                />
+                <ChartPie
+                  percentage="50"
+                  color="#afdb00"
+                  size="150px"
+                  remainingColor="black"
+                />
+              </div>
+              <div className="row">
+                <div
+                  className={clsx(
+                    "container-fluid d-flex justify-content-between  align-items-center"
+                  )}
+                >
+                  <CircleColor className={clsx("circle-violet m-3")} />
+                  <span className={clsx(styles["style-text"])}>
+                    Consumo promedio de contenido por usuario
+                  </span>
+                </div>
+                <div
+                  className={clsx(
+                    "container-fluid d-flex justify-content-between align-items-center"
+                  )}
+                >
+                  <CircleColor className={clsx("circle-green m-3")} />
+                  <span className={clsx(styles["style-text"])}>
+                    {" "}
+                    Total de contenido consumido por la empresa
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+          {!USER_PERMISSIONS.isAdmin && (
+            <div
+              className={clsx(
+                "container-fluid d-flex justify-content-between  align-items-center mt-5",
+                styles["container-consumo"],
+                styles["styles-background"],
+                styles["container-circleChart-tablet"]
+              )}
+            >
+              <div
+                className={clsx("col-6", styles["style-container-pieChart"])}
+              >
+                <ChartPie
+                  percentage="60"
+                  color="#7929e2"
+                  size="90px"
+                  remainingColor="black"
+                />
+                <ChartPie
+                  percentage="50"
+                  color="#afdb00"
+                  size="90px"
+                  remainingColor="black"
+                />
+              </div>
+              <div className="row me-4">
+                <div
+                  className={clsx(
+                    "container-fluid d-flex justify-content-between  align-items-center"
+                  )}
+                >
+                  <CircleColor className={clsx("circle-violet m-3")} />
+                  <span className={clsx(styles["style-text"])}>
+                    Consumo promedio de contenido por usuario
+                  </span>
+                </div>
+                <div
+                  className={clsx(
+                    "container-fluid d-flex justify-content-between align-items-center"
+                  )}
+                >
+                  <CircleColor className={clsx("circle-green m-3")} />
+                  <span className={clsx(styles["style-text"])}>
+                    {" "}
+                    Total de contenido consumido por la empresa
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+          {!USER_PERMISSIONS.isAdmin && (
+            <div
+              className={clsx(
+                "container-fluid d-flex justify-content-between  align-items-center mt-5",
+                styles["container-consumo"],
+                styles["styles-background"],
+                styles["container-circleChart-mobile"]
+              )}
+            >
+              <div
+                className={clsx("col-6", styles["style-container-pieChart"])}
+              >
+                <ChartPie
+                  percentage="60"
+                  color="#7929e2"
+                  size="60px"
+                  remainingColor="black"
+                />
+                <ChartPie
+                  percentage="50"
+                  color="#afdb00"
+                  size="60px"
+                  remainingColor="black"
+                />
+              </div>
+              <div className="row me-4">
+                <div
+                  className={clsx(
+                    "container-fluid d-flex justify-content-between  align-items-center"
+                  )}
+                >
+                  <CircleColor className={clsx("circle-violet m-3")} />
+                  <span className={clsx(styles["style-text"])}>
+                    Consumo promedio de contenido por usuario
+                  </span>
+                </div>
+                <div
+                  className={clsx(
+                    "container-fluid d-flex justify-content-between align-items-center"
+                  )}
+                >
+                  <CircleColor className={clsx("circle-green m-3")} />
+                  <span className={clsx(styles["style-text"])}>
+                    {" "}
+                    Total de contenido consumido por la empresa
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+          {!USER_PERMISSIONS.isAdmin && (
+            <div
+              className={clsx(
+                "d-flex  align-items-center ps-4 pe-4 mt-5",
+                styles["container-activate"]
+              )}
+            >
+              <Link
+                className={clsx(
+                  "container-fluid text-center justify-content-between align-items-center d-flex",
+                  styles["style-upload-link"]
+                )}
+                to=""
+              >
+                <span>
+                  Da click aquí para comenzar el proceso de activar tus usuarios
+                </span>
+                <img
+                  // className="icon-upload"
+                  className={clsx(styles["icon-upload"])}
+                  src={upload}
+                  alt="icon-upload"
+                />
+              </Link>
+            </div>
+          )}
+          {USER_PERMISSIONS.isAdmin && (
+            <div className="container-fluid">
+              {/* Card
+               */}
+              <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                {cursesData.map((curses) => {
+                  return <CardCurses cursesData={curses} />;
+                })}
+              </div>
+              <div className={clsx("col mt-4", styles["container-btn-next"])}>
+                <img
+                  className={clsx("", styles["btn-img"])}
+                  src={icon_boton_anterior}
+                />
+                <img
+                  className={clsx("", styles["btn-img"])}
+                  src={icon_boton_siguiente}
+                />
+              </div>
+            </div>
+          )}
         </div>
       </Layout>
     </>

@@ -17,6 +17,7 @@ import { useState } from "react";
 import Menu from "../../components/Menu/Menu";
 import UploadInput from "../../components/UI/UploadInput/UploadInput";
 import Label from "../../components/UI/Label/Label";
+import { USER_PERMISSIONS } from "../../constants/user_const";
 
 export default function Personalization() {
   const [colorValue, setColorValue] = useState("#ffff");
@@ -46,6 +47,7 @@ export default function Personalization() {
     console.log(dragfiles);
   };
 
+  let dataUserResgitrados = ["200"];
   return (
     <>
       {" "}
@@ -56,9 +58,11 @@ export default function Personalization() {
         sideBar={
           <>
             <Calendar />
-            <AccountUser />
+            {!USER_PERMISSIONS.isAdmin && (
+              <AccountUser dataNumber={dataUserResgitrados} />
+            )}
             <Categorias />
-            <GraphUsers />
+            {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }
       >

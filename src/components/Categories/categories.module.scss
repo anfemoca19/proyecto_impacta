@@ -1,79 +1,86 @@
 
-.styles-background{
-  height: 230px;
-  border-radius: 10px;
-  background-color: #f9fafb;
-  box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%)
-}
-
-.title-style {
-  color: #7929e2;
-  font-size: 13px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-a{
-  text-decoration: none;
-}
-
-.style-icon {
-  height: 40px;
-  width: 40px;
-  display: block;
-  box-shadow: 0px 6px 36px 14px #e6e6e800;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.container-elemet-icon{
-  display: flex;
-  font-size: 10px;
-}
-
-.icon-nutricion-blanco {
-  background-image: url("../../imagenes/icono-categoria-nutricion-blanco.png");
-  &:hover {
-    background-image: url("../../imagenes/icono-categoria-nutricion-color.png");
+@media only screen and (max-width: 480px) {}
+// Tablet
+@media only screen and  (min-width:481px) and (max-width:1000px){}
+// WEB
+@media only screen and (min-width: 1000px) {
+  .styles-background{
+    height: 230px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%)
   }
-}
-.icon-estilo-vida-blanco {
-  background-image: url("../../imagenes/icono-categoria-estilo-de-vida-blanco.png");
-  &:hover {
-    background-image: url("../../imagenes/icono-categoria-estilo-de-vida-color.png");
-  }
-}
-.icon-actividad-fisica-blanco {
-  background-image: url("../../imagenes/icono-categoria-actividad-fisica-blanco.png");
-  &:hover {
-    background-image: url("../../imagenes/icono-categoria-actividad-fisica-color.png");
-  }
-}
-.icon-yoga-blanco {
-  background-image: url("../../imagenes/icono-categoria-yoga-blanco.png");
-  &:hover {
-    background-image: url("../../imagenes/icono-categoria-yoga-color.png");
-  }
-}
-.icon-inteligencia-blanco {
-  background-image: url("../../imagenes/icono-categoria-inteligencia-emocional-blanco.png");
-  &:hover {
-    background-image: url("../../imagenes/icono-categoria-inteligencia-emocional-color.png");
-  }
-}
-.icon-finanzas-blanco {
-  background-image: url("../../imagenes/icono-categoria-finanzas-blanco.png");
-  &:hover {
-    background-image: url("../../imagenes/icono-categoria-finanzas-color.png");
-  }
-}
 
-.style-inline{
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-end;
-  gap: 15px;
-  padding: 0;
-  margin-top: 0 !important;
+  .title-style {
+    color: #7929e2;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .style-icon {
+    height: 40px;
+    width: 40px;
+    display: block;
+    box-shadow: 0px 6px 36px 14px #e6e6e800;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .container-elemet-icon{
+    display: flex;
+    font-size: 10px;
+  }
+
+  .icon-nutricion-blanco {
+    background-image: url("../../imagenes/icono-categoria-nutricion-blanco.png");
+    &:hover {
+      background-image: url("../../imagenes/icono-categoria-nutricion-color.png");
+    }
+  }
+  .icon-estilo-vida-blanco {
+    background-image: url("../../imagenes/icono-categoria-estilo-de-vida-blanco.png");
+    &:hover {
+      background-image: url("../../imagenes/icono-categoria-estilo-de-vida-color.png");
+    }
+  }
+  .icon-actividad-fisica-blanco {
+    background-image: url("../../imagenes/icono-categoria-actividad-fisica-blanco.png");
+    &:hover {
+      background-image: url("../../imagenes/icono-categoria-actividad-fisica-color.png");
+    }
+  }
+  .icon-yoga-blanco {
+    background-image: url("../../imagenes/icono-categoria-yoga-blanco.png");
+    &:hover {
+      background-image: url("../../imagenes/icono-categoria-yoga-color.png");
+    }
+  }
+  .icon-inteligencia-blanco {
+    background-image: url("../../imagenes/icono-categoria-inteligencia-emocional-blanco.png");
+    &:hover {
+      background-image: url("../../imagenes/icono-categoria-inteligencia-emocional-color.png");
+    }
+  }
+  .icon-finanzas-blanco {
+    background-image: url("../../imagenes/icono-categoria-finanzas-blanco.png");
+    &:hover {
+      background-image: url("../../imagenes/icono-categoria-finanzas-color.png");
+    }
+  }
+
+  .style-inline{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 0;
+    margin-top: 0 !important;
+  }
+
 }

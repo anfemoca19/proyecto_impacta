@@ -5,6 +5,7 @@
   width: 100%;
   border-radius: 5px;
   border: none;
+  outline: none;
   &:hover {
     color: white;
     background-color: #6f27cd;
@@ -14,7 +15,9 @@
   background-color: red;
 }
 .btn-secondary {
+  outline: none;
   background-color: #6f27cd;
+  outline: none;
 }
 
 .btn-terciary{
@@ -22,9 +25,13 @@
   
 }
 .btn-cuartary{
+  outline: none;
   padding: 0;
   font-size: 12px;
   height: 30px;
+  & :hover{
+    background-color: #afdb00;
+  }
 }
 
 

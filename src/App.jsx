@@ -11,11 +11,13 @@ import Register from "./pages/Register/register";
 import Users from "./pages/Users/users";
 import StyleAdmin from "./pages/StylesAdmin/StyleAdmin";
 import StyleAcademia from "./pages/StyleAcademia/StyleAcademia";
+import AddUser from "./pages/AddUser/AddUser";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/addUser" element={<AddUser />} />
         <Route path="/styleAcademia" element={<StyleAcademia />} />
         <Route path="/styleAdmin" element={<StyleAdmin />} />
         <Route path="/styleLogin" element={<StyleLogin />} />

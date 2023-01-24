@@ -31,17 +31,27 @@
 
   .container-anadir-usuario{
     background-color: #7929e2;
-    border-radius: 50px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
   }
+
+  .styles-anadir{
+    display: none;
+  }
+
+  .icon-anadir-user{
+    height: 30px;
+    margin-left: 20px;
+  }
+
   .icon-menu-style{
-    height: 10px;
+    height: 15px;
   }
+
   .container-menu{
     display: flex;
     gap: 10px;
-  }
-  .icon-anadir-user{
-    height: 20px;
   }
 
   .container-vacio{
@@ -119,7 +129,13 @@
 
   .container-anadir-usuario{
     background-color: #7929e2;
-    border-radius: 50px;
+    border-radius: 20px;
+  }
+  .styles-anadir{
+    color: #eee;
+    margin-right: 3px;
+    height: 30px;
+    font-size: 15px;
   }
   .icon-menu-style{
     height: 10px;
@@ -210,7 +226,17 @@
   .container-anadir-usuario{
     background-color: #7929e2;
     border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
   }
+  .styles-anadir{
+    color: #eee;
+    margin-right: 10px;
+    height: 30px;
+  }
+
   .icon-menu-style{
     height: 10px;
   }

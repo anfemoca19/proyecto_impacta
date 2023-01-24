@@ -111,12 +111,20 @@ export default function Users() {
             </div>
             <div className="row mt-3 align-items-center">
               <div
-                className={clsx(
-                  "col-3  d-flex align-items-center",
-                  styles["container-anadir-usuario"]
-                )}
+                className={clsx("col-3  ", styles["container-anadir-usuario"])}
               >
-                <Button className={"btn-cuartary"}> Añadir usuario </Button>
+                {/* <Button
+                  variant="primary"
+                  className={"btn-cuartary"}
+                  to="/addUser"
+                >
+                  {" "}
+                  Añadir usuario{" "}
+                </Button> */}
+                <Link to="/addUser" className={clsx(styles["styles-anadir"])}>
+                  {" "}
+                  Añadir usuario
+                </Link>
                 <img
                   className={clsx(styles["icon-anadir-user"])}
                   src={icon_plus_user}
@@ -129,10 +137,7 @@ export default function Users() {
                     className={clsx("nav  mb-3 mt-3", styles["container-menu"])}
                   >
                     <li className={clsx("nav-item text-center", {})}>
-                      <Link
-                        className={clsx("style-nav", {})}
-                        to="/configuration"
-                      >
+                      <Link className={clsx("style-nav", {})} to="/users">
                         <img
                           className={clsx("me-2", styles["icon-menu-style"])}
                           src={icon_menu}
@@ -142,10 +147,7 @@ export default function Users() {
                       </Link>
                     </li>
                     <li className={clsx("nav-item text-center", {})}>
-                      <Link
-                        className={clsx("style-nav", {})}
-                        to="/personalization"
-                      >
+                      <Link className={clsx("style-nav", {})} to="#">
                         Referidos
                       </Link>
                     </li>

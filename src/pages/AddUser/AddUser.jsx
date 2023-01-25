@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "../AddUser/AddUser.module.scss";
+import styles from "../AddUser/addUser.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";

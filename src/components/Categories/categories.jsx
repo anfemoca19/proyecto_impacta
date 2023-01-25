@@ -23,12 +23,7 @@ export default function Categorias({ className }) {
                     className
                   )}
                 />
-                <span
-                  className={clsx(
-                    "rounded text-muted mt-5",
-                    styles["card-subtitle"]
-                  )}
-                >
+                <span className={clsx("rounded text-muted mt-5 card-subtitle")}>
                   Nutricón
                 </span>
               </Link>
@@ -43,12 +38,7 @@ export default function Categorias({ className }) {
                     className
                   )}
                 />
-                <span
-                  className={clsx(
-                    "rounded text-muted mt-2",
-                    styles["card-subtitle"]
-                  )}
-                >
+                <span className={clsx("rounded text-muted mt-2 card-subtitle")}>
                   Estilo de vida
                 </span>
               </Link>
@@ -62,12 +52,7 @@ export default function Categorias({ className }) {
                     styles["icon-actividad-fisica-blanco"]
                   )}
                 />
-                <span
-                  className={clsx(
-                    "rounded text-muted mt-2",
-                    styles["card-subtitle"]
-                  )}
-                >
+                <span className={clsx("rounded text-muted mt-2 card-subtitle")}>
                   Actividad fisica
                 </span>
               </Link>
@@ -83,12 +68,7 @@ export default function Categorias({ className }) {
                     styles["icon-yoga-blanco"]
                   )}
                 />
-                <span
-                  className={clsx(
-                    "rounded text-muted mt-2",
-                    styles["card-subtitle"]
-                  )}
-                >
+                <span className={clsx("rounded text-muted mt-2 card-subtitle")}>
                   Yoga
                 </span>
               </Link>
@@ -102,12 +82,7 @@ export default function Categorias({ className }) {
                     styles["icon-inteligencia-blanco"]
                   )}
                 />
-                <span
-                  className={clsx(
-                    "rounded text-muted mt-2",
-                    styles["card-subtitle"]
-                  )}
-                >
+                <span className={clsx("rounded text-muted mt-2 card-subtitle")}>
                   Inteligencia emocional
                 </span>
               </Link>
@@ -121,12 +96,7 @@ export default function Categorias({ className }) {
                     styles["icon-finanzas-blanco"]
                   )}
                 />
-                <span
-                  className={clsx(
-                    "rounded text-muted mt-2",
-                    styles["card-subtitle"]
-                  )}
-                >
+                <span className={clsx("rounded text-muted mt-2 card-subtitle")}>
                   Finanzas
                 </span>
               </Link>

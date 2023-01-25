@@ -1,41 +1,28 @@
 
 @media only screen and (max-width: 480px) {
-
-  .container-imag-card{
-    background-color: #f3f2f2;
+  .title-style-curses {
+    display: none;
   }
-
-  .style-title-card{
-    color:#7929e2;
-    font-size: 13px;
-  }
-  p{font-size: 13px;}
-
 }
 
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
-  .container-imag-card{
-    background-color: #f3f2f2;
-  }
-  .style-title-card{
-    color:#7929e2;
-    font-size: 13px;
-  }
-  p{font-size: 13px;}
 
+  .title-style-curses {
+    display: none;
+  }
 
 }
 
 
 // WEB
-@media only screen and (min-width: 1000px) {
-  .container-imag-card{
-    background-color: #f3f2f2;
+@media only screen and (min-width: 1000px)  {
+
+  .title-style-curses {
+    color: #7929e2;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
   }
-  .style-title-card{
-    color:#7929e2;
-    font-size: 13px;
-  }
-  p{font-size: 13px;}
+
 }

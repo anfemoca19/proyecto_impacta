@@ -79,13 +79,13 @@ export default function Navbar({ className }) {
         >
           <Link
             className={clsx("fs-6 ", styles["nav-link"], styles["link-style"])}
-            to="#"
+            to="/categories"
           >
             <span
               className={clsx(styles["nav-icon"], styles["icon-categories"])}
             />
             <span ref={myRef} className={clsx(styles["text-menu"])}>
-              Categories
+              Categorias
             </span>
           </Link>
         </li>

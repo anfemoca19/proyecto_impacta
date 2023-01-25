@@ -2,21 +2,23 @@ import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Configruation from "./pages/Configuration/configurarion";
 import Courses from "./pages/Courses/courses";
 import Dashboard from "./pages/Dashboart/dashboard";
-import StyleLogin from "./pages/StylesLogin/StyleLogin";
+import StyleLogin from "./pages/StylesLogin/styleLogin";
 import ForgotPass from "./pages/ForgotPass/forgotPass";
 import Login from "./pages/Login/login";
 import NotFound from "./pages/NotFount/NotFound";
 import Personalization from "./pages/Personalization/personalization";
 import Register from "./pages/Register/register";
 import Users from "./pages/Users/users";
-import StyleAdmin from "./pages/StylesAdmin/StyleAdmin";
-import StyleAcademia from "./pages/StyleAcademia/StyleAcademia";
-import AddUser from "./pages/AddUser/AddUser";
+import StyleAdmin from "./pages/StylesAdmin/styleAdmin";
+import StyleAcademia from "./pages/StyleAcademia/styleAcademia";
+import AddUser from "./pages/AddUser/addUser";
+import CategoriasPages from "./pages/Categories/categories";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/categories" element={<CategoriasPages />} />
         <Route path="/addUser" element={<AddUser />} />
         <Route path="/styleAcademia" element={<StyleAcademia />} />
         <Route path="/styleAdmin" element={<StyleAdmin />} />

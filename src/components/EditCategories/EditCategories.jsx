@@ -2,6 +2,7 @@ import clsx from "clsx";
 import styles from "../EditCategories/EditCategories.module.scss";
 import ico_editar from "../../imagenes/icono-editar.png";
 import { Link } from "react-router-dom";
+import Modal from "../UI/Modal/Modal";
 
 export default function EditCategories({
   children,
@@ -9,6 +10,9 @@ export default function EditCategories({
   className,
   ...props
 }) {
+  const callModal = () => {
+    <Modal />;
+  };
   return (
     <>
       <div
@@ -35,7 +39,13 @@ export default function EditCategories({
                       styles["container-li"]
                     )}
                   >
-                    <Link className={clsx(styles["style-nav"])} to="/users">
+                    <Link
+                      className={clsx(styles["style-nav"])}
+                      to="/users"
+                      onClick={() => {
+                        callModal();
+                      }}
+                    >
                       Editar Nombre / Logo
                       <img
                         className={clsx("me-2", styles["icon-edit-style"])}

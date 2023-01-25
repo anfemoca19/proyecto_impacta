@@ -11,13 +11,13 @@ import DragAndDrop from "../../components/UI/DragAndDrop";
 import styles from "../Personalization/personalization.module.scss";
 import Button from "../../components/UI/Button";
 
-import icon_user_logo from "../../imagenes/icono-editar-logo.png";
 import icon_camera from "../../imagenes/icono-arrastra-una-imagen.png";
 import { useState } from "react";
 import Menu from "../../components/Menu/Menu";
 import UploadInput from "../../components/UI/UploadInput/UploadInput";
 import Label from "../../components/UI/Label/Label";
 import { USER_PERMISSIONS } from "../../constants/user_const";
+import EditLogo from "../../components/EditLogo/EditLogo";
 
 export default function Personalization() {
   const [colorValue, setColorValue] = useState("#ffff");
@@ -70,7 +70,8 @@ export default function Personalization() {
             Perfil de la empresa
           </span>
           <Menu />
-          <div
+          <EditLogo />
+          {/* <div
             // className="p-4 mb-5 container-fluid line-divider-boton text-center"
             className={clsx(
               "container-fluid p-4 mb-5 text-center",
@@ -146,7 +147,7 @@ export default function Personalization() {
                 <Button>Guardar</Button>
               </div>
             </div>
-          </div>
+          </div> */}
           <div
             // className="p-4 box-container mb-5 container-fluid p-4"
             className={clsx("p-4 box-container mb-5 container-fluid p-4")}

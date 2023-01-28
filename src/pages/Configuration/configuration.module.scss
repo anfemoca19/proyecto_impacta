@@ -13,6 +13,10 @@
   .grid-container {
     display: grid;
     align-items: center;
+    padding: 0;
+  }
+  label{
+    font-size: 10px;
   }
 
   //estilos para cambiar contraseña
@@ -28,6 +32,7 @@
   }
 
   .style-asterik {
+    display: none;
     color: #7929e2;
   }
 
@@ -49,6 +54,9 @@
   .grid-container {
     display: grid;
     align-items: center;
+  }
+  label{
+    font-size: 10px;
   }
 
   //estilos para cambiar contraseña

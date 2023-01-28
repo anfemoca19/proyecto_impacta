@@ -125,7 +125,7 @@ export default function Configruation() {
             <div className={clsx("row")}>
               <div
                 // className="container box-container p-4 col-6"
-                className={clsx("container p-4 col-6", styles["box-container"])}
+                className={clsx("container p-5 col-6", styles["box-container"])}
               >
                 <Input
                   placeholder="Contraseña actual "
@@ -143,10 +143,6 @@ export default function Configruation() {
                 />
                 <Button className={clsx("mt-3 mb-3")}>Iniciar Session</Button>
               </div>
-              <div
-                // className="col-6"
-                className={clsx("col-6")}
-              ></div>
             </div>
           </div>
         </div>

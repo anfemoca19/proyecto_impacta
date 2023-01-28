@@ -42,7 +42,7 @@ export default function Configruation() {
 
           <div
             className={clsx(
-              "container-fluid p-4 mb-5",
+              "container-fluid p-5 mb-5",
               styles["box-container"]
             )}
           >
@@ -125,7 +125,7 @@ export default function Configruation() {
             <div className={clsx("row")}>
               <div
                 // className="container box-container p-4 col-6"
-                className={clsx("container p-5 col-6", styles["box-container"])}
+                className={clsx("container p-5 col", styles["box-container"])}
               >
                 <Input
                   placeholder="Contraseña actual "

@@ -13,11 +13,13 @@ import StyleAdmin from "./pages/StylesAdmin/styleAdmin";
 import StyleAcademia from "./pages/StyleAcademia/styleAcademia";
 import AddUser from "./pages/AddUser/addUser";
 import CategoriasPages from "./pages/Categories/categories";
+import CourseZumba from "./pages/CoursesZumba/courseZumba";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/courseZumba" element={<CourseZumba />} />
         <Route path="/categories" element={<CategoriasPages />} />
         <Route path="/addUser" element={<AddUser />} />
         <Route path="/styleAcademia" element={<StyleAcademia />} />

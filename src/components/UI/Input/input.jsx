@@ -10,6 +10,7 @@ export default function Input({ children, typeInput, className, ...props }) {
         className={clsx("class-basic", className, {
           "input-primary": typeInput === "primary",
           "input-secondary": typeInput === "secondary",
+          "input-terciary": typeInput === "terciary",
         })}
         {...props}
       ></input>

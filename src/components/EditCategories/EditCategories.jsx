@@ -3,6 +3,8 @@ import styles from "../EditCategories/EditCategories.module.scss";
 import ico_editar from "../../imagenes/icono-editar.png";
 import { Link } from "react-router-dom";
 import Modal from "../UI/Modal/Modal";
+import EditLogo from "../EditLogo/EditLogo";
+import { useState } from "react";
 
 export default function EditCategories({
   children,
@@ -10,9 +12,6 @@ export default function EditCategories({
   className,
   ...props
 }) {
-  const callModal = () => {
-    <Modal />;
-  };
   return (
     <>
       <div
@@ -41,10 +40,11 @@ export default function EditCategories({
                   >
                     <Link
                       className={clsx(styles["style-nav"])}
-                      to="/users"
-                      onClick={() => {
-                        callModal();
-                      }}
+                      // onClick={() => {
+                      //   console.log("aca");
+                      //   setEstadoModalEdit(true);
+                      //   // setEestadoModalEdit(!estadoModalEdit);
+                      // }}
                     >
                       Editar Nombre / Logo
                       <img

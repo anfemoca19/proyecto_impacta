@@ -7,65 +7,8 @@ import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import CardCurses from "../../components/CardCurses/CardCurses";
-import { USER_PERMISSIONS } from "../../constants/user_const";
+import { cursesData, USER_PERMISSIONS } from "../../constants/user_const";
 import clsx from "clsx";
-
-const cursesData = [
-  {
-    id: 1,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 2,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 3,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 4,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 5,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 7,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 8,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 1,
-  },
-  {
-    id: 9,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 1,
-  },
-  {
-    id: 10,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 1,
-  },
-];
 
 let dataUserResgitrados = ["200"];
 export default function Courses() {
@@ -86,7 +29,9 @@ export default function Courses() {
         }
       >
         <div className="container-fluid">
-          <span className={clsx("mt-2", "title-style-curses")}>Categorias</span>
+          <span className={clsx("mt-2", styles["title-style-curses"])}>
+            Categorias
+          </span>
           <Categorias className={"style-inline"} />
           {/* Card
            */}

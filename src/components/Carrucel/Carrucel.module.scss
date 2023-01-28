@@ -1,0 +1,26 @@
+@media only screen and (min-width: 1000px) {
+
+  .carousel-inner-number{
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+  }
+  .styles-bottom-left,
+  .styles-bottom-rigth{
+    height: 30px;
+  }
+  .styles-bottom-left{
+    // margin-right: 150px;
+    color: #afdb00;
+    font-size: 50px;
+    margin-left: -158px;
+  }
+
+  .styles-bottom-rigth{
+    margin-left: 70px;
+  }
+  .carousel-control-next .styles-bottom-left{
+    color: #7929e2;
+    // #afdb00
+  }
+}

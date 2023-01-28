@@ -25,53 +25,15 @@ import clsx from "clsx";
 import icon_boton_anterior from "../../imagenes/icono-boton-anterior.png";
 import icon_boton_siguiente from "../../imagenes/icono-boton-siguiente.png";
 
-import { USER_PERMISSIONS } from "../../constants/user_const";
-import CardCurses from "../../components/CardCurses/CardCurses";
-const data = [
-  { name: "ENE", colaboradores: 4000, cursos: 2400 },
-  { name: "MAR", colaboradores: 2000, cursos: 2800 },
-  { name: "FEB", colaboradores: 3000, cursos: 1398 },
-  { name: "ABR", colaboradores: 2780, cursos: 2908 },
-  { name: "MAY", colaboradores: 3890, cursos: 2800 },
-  { name: "JUN", colaboradores: 2390, cursos: 1300 },
-  { name: "JUL", colaboradores: 3490, cursos: 1300 },
-  { name: "AGO", colaboradores: 3290, cursos: 2700 },
-  { name: "SEP", colaboradores: 3490, cursos: 2300 },
-  { name: "OCT", colaboradores: 3490, cursos: 1800 },
-  { name: "NOV", colaboradores: 2490, cursos: 2300 },
-  { name: "DIC", colaboradores: 5490, cursos: 2300 },
-];
+import {
+  cursesData,
+  data,
+  dataUserResgitrados,
+  USER_PERMISSIONS,
+} from "../../constants/user_const";
 
-const dataActiveUsers = [
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-];
-const dataActiveUsersLast = [
-  { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
-];
+import CarrucelCard from "../../components/Carrucel/Carrucel";
 
-const cursesData = [
-  {
-    id: 1,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 2,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-  {
-    id: 3,
-    nombre: "Nutricón Consciente",
-    creado: "Maria Isabel Valderrama",
-    calificacion: 0,
-  },
-];
-let dataUserResgitrados = ["200"];
 export default function Dashboard() {
   return (
     <>
@@ -510,23 +472,7 @@ export default function Dashboard() {
           )}
           {USER_PERMISSIONS.isAdmin && (
             <div className="container-fluid">
-              {/* Card
-               */}
-              <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
-                {cursesData.map((curses) => {
-                  return <CardCurses cursesData={curses} />;
-                })}
-              </div>
-              <div className={clsx("col mt-4", styles["container-btn-next"])}>
-                <img
-                  className={clsx("", styles["btn-img"])}
-                  src={icon_boton_anterior}
-                />
-                <img
-                  className={clsx("", styles["btn-img"])}
-                  src={icon_boton_siguiente}
-                />
-              </div>
+              <CarrucelCard cursesData={cursesData} />
             </div>
           )}
         </div>

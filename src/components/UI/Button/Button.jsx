@@ -8,7 +8,9 @@ export default function Button({ children, typeButton, className, ...props }) {
       className={clsx("btn btn-style", className, {
         "btn-primary": typeButton === "primary",
         "btn-secondary": typeButton === "secondary",
-        "btn-cuartary": typeButton === "secondary",
+        "btn-terciary": typeButton === "terciary",
+        "btn-cuartary": typeButton === "cuartary",
+        "btn-fifth": typeButton === "fifth",
       })}
       {...props}
     >

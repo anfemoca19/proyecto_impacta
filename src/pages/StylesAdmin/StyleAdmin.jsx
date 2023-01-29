@@ -43,7 +43,6 @@ export default function StyleAdmin() {
           >
             <div className={clsx("row")}>
               <textarea
-                class="form-control"
                 className={clsx("form-control", styles["style-textarea"])}
                 aria-label="With textarea"
               ></textarea>

@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/courseZumba" element={<CourseZumba />} />
+        <Route path="/courses/courceZumba/:id" element={<CourseZumba />} />
         <Route path="/categories" element={<CategoriasPages />} />
         <Route path="/addUser" element={<AddUser />} />
         <Route path="/styleAcademia" element={<StyleAcademia />} />

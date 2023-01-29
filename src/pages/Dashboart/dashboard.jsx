@@ -471,7 +471,7 @@ export default function Dashboard() {
             </div>
           )}
           {USER_PERMISSIONS.isAdmin && (
-            <div className="container-fluid">
+            <div className={clsx("container-fluid", styles.fixPosition)}>
               <CarrucelCard cursesData={cursesData} />
             </div>
           )}

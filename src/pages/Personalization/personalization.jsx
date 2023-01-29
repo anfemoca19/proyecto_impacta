@@ -21,7 +21,6 @@ import EditLogo from "../../components/EditLogo/EditLogo";
 
 export default function Personalization() {
   const [colorValue, setColorValue] = useState("#ffff");
-  const [ImageSelectedPrevious, setImageSelectedPrevious] = useState(null);
   const [dragfiles, setDragFiles] = useState([]);
 
   const onChangeColorPicker = (event) => {

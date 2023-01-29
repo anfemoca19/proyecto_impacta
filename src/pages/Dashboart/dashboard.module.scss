@@ -245,8 +245,6 @@
 }
 
 
-
-
 // WEB
 @media only screen and (min-width: 1000px) {
 
@@ -340,6 +338,10 @@
   }
 
   /* container upload */
+  .fixPosition {
+    position: relative;
+    left: 15px;
+  }
   .container-activate {
     background-color: #7929e2;
     font-size: 15px;

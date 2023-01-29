@@ -170,8 +170,14 @@ export default function Users() {
             </div>
           </div>
           <div className="row row-cols-1 row-cols-md-2 g-4 mt-3">
-            {userData.map((user) => {
-              return <CardUserData imagenPerfil={user_img} userData={user} />;
+            {userData.map((user, index) => {
+              return (
+                <CardUserData
+                  key={index}
+                  imagenPerfil={user_img}
+                  userData={user}
+                />
+              );
             })}
           </div>
           <div className={clsx("container-fluid d-flex mt-4 me-4", {})}>

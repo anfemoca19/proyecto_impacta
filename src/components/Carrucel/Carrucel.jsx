@@ -9,28 +9,26 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 export default function CarrucelCard({ cursesData, ...props }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // const handlePrevius = () => {
-  //   setCurrentIndex(currentIndex - 1);
-  // };
-
-  // const handleNext = () => {
-  //   setCurrentIndex(currentIndex + 1);
-  // };
-
-  // const imagesToShow = cursesData.slice(currentIndex, currentIndex + 3);
-
+  const limitSlider = 3;
   const handlePrevius = () => {
     setCurrentIndex(
-      currentIndex - 1 < 0 ? cursesData.length - 1 : currentIndex - 1
+      currentIndex - limitSlider < 0
+        ? cursesData.length - limitSlider
+        : currentIndex - limitSlider
     );
   };
 
   const handleNext = () => {
-    setCurrentIndex(
-      currentIndex + 1 >= cursesData.length ? 0 : currentIndex + 1
-    );
+    setCurrentIndex((prevState) => {
+      return prevState + limitSlider >= cursesData.length
+        ? 0
+        : prevState + limitSlider;
+    });
   };
-  const imagesToShow = cursesData.slice(currentIndex, currentIndex + 3);
+  const imagesToShow = cursesData.slice(
+    currentIndex,
+    currentIndex + limitSlider
+  );
 
   return (
     <>
@@ -39,7 +37,7 @@ export default function CarrucelCard({ cursesData, ...props }) {
           className={clsx("carousel-inner", styles["carousel-inner-number"])}
         >
           {imagesToShow.map((curses) => {
-            return <CardCurses cursesData={curses} />;
+            return <CardCurses key={curses.id} cursesData={curses} />;
           })}
         </div>
         <button

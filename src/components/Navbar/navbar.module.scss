@@ -19,9 +19,21 @@
     background-image: url("../../imagenes/icono-menu-1-fondo-blanco.png");
   }
 
-  a .text-menu{
-    display: none ;
+  .text-menu {
+    display: none;
     font-size: 13px;
+  }
+
+  li.nav-item {
+    &.active {
+      a {
+        color: #4B20A3;
+        background-color: transparent;
+        .text-menu {
+          display: block;
+        }
+      }
+    }
   }
 
   .nav-icon,
@@ -128,6 +140,19 @@
     display: none ;
     font-size: 16px;
   }
+
+  li.nav-item {
+    &.active {
+      a {
+        color: #4B20A3;
+        background-color: transparent;
+        .text-menu {
+          display: block;
+        }
+      }
+    }
+  }
+
 
   .nav-icon,
   .nav-item .nav-link:hover > .nav-icon {

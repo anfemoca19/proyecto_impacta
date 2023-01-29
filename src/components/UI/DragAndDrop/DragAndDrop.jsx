@@ -11,19 +11,20 @@ const DragAndDrop = ({ handleDrop, children }) => {
     e.stopPropagation();
   };
   useEffect(() => {
-    let div = dropRef.current;
-    div.addEventListener("dragenter", handleDragIn);
-    div.addEventListener("dragleave", handleDragOut);
-    div.addEventListener("dragover", handleDrag);
-    div.addEventListener("drop", handleDropInner);
-    return () => {
-      let div = dropRef.current;
-      div.removeEventListener("dragenter", handleDragIn);
-      div.removeEventListener("dragleave", handleDragOut);
-      div.removeEventListener("dragover", handleDrag);
-      div.removeEventListener("drop", handleDropInner);
-    };
-  }, []);
+    if (dropRef.current) {
+      const div = dropRef.current;
+      div.addEventListener("dragenter", handleDragIn);
+      div.addEventListener("dragleave", handleDragOut);
+      div.addEventListener("dragover", handleDrag);
+      div.addEventListener("drop", handleDropInner);
+      return () => {
+        div.removeEventListener("dragenter", handleDragIn);
+        div.removeEventListener("dragleave", handleDragOut);
+        div.removeEventListener("dragover", handleDrag);
+        div.removeEventListener("drop", handleDropInner);
+      };
+    }
+  }, [dropRef.current]);
 
   const handleDragIn = (e) => {
     e.preventDefault();

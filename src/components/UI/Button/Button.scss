@@ -66,7 +66,9 @@
     }
   }
   .btn-primary {
-    background-color: red;
+    position: absolute;
+    top: 129px;
+    right: 0;
   }
   .btn-secondary {
     background-color: #6f27cd;
@@ -124,7 +126,9 @@
     }
   }
   .btn-primary {
-    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .btn-secondary {
     background-color: #6f27cd;
@@ -183,7 +187,10 @@
     }
   }
   .btn-primary {
-    background-color: red;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    right: 0;
   }
   .btn-secondary {
     background-color: #6f27cd;

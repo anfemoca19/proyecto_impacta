@@ -10,7 +10,6 @@ export default function CardCurses({ cursesData }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    debugger;
     navigate("/courses/courceZumba/" + `${cursesData.id}` + "/");
   };
 

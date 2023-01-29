@@ -10,9 +10,12 @@ import Navbar from "../../components/Navbar/navbar";
 import Menu from "../../components/Menu/Menu";
 import Button from "../../components/UI/Button";
 import { USER_PERMISSIONS } from "../../constants/user_const";
+import { useState } from "react";
 
 export default function StyleLogin() {
   let dataUserResgitrados = ["200"];
+
+  const [disableTextarea, setDisableTexttarea] = useState(false);
   return (
     <>
       <Header />
@@ -41,24 +44,30 @@ export default function StyleLogin() {
               styles["box-container"]
             )}
           >
-            <div className={clsx("row")}>
-              <textarea
-                class="form-control"
-                className={clsx("form-control", styles["style-textarea"])}
-                aria-label="With textarea"
-              ></textarea>
-
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
-                <Button>Guardar</Button>
+            <div className={clsx("row p-3")}>
+              <div className={clsx("container-textarea")}>
+                <textarea
+                  className={clsx("form-control", styles["style-textarea"])}
+                  aria-label="With textarea"
+                  placeholder="Crea tu codigo de estilos css"
+                  disabled
+                ></textarea>
+                <Button typeButton="primary">Editar</Button>
               </div>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
-                <Button name="btnDeleteColor">Eliminar</Button>
+
+              <div className={clsx(styles["container-bottom"])}>
+                <div
+                  // className="col-5 mt-3"
+                  className={clsx("col-5 mt-3")}
+                >
+                  <Button>Guardar</Button>
+                </div>
+                <div
+                  // className="col-5 mt-3"
+                  className={clsx("col-5 mt-3")}
+                >
+                  <Button name="btnDeleteColor">Eliminar</Button>
+                </div>
               </div>
             </div>
           </div>

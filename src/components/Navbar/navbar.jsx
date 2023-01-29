@@ -18,8 +18,8 @@ export default function Navbar({ className }) {
   return (
     <ul className={clsx("ps-0", styles["menu-mobile"])}>
       <li
-        className={clsx(" mb-2", styles["nav-item"], {
-          active: location.pathname === "/dashboard",
+        className={clsx("mb-2", styles["nav-item"], {
+          [styles.active]: location.pathname === "/dashboard",
         })}
       >
         <Link
@@ -37,7 +37,7 @@ export default function Navbar({ className }) {
       </li>
       <li
         className={clsx("mb-2", styles["nav-item"], {
-          active: location.pathname === "/configuration",
+          [styles.active]: location.pathname === "/configuration",
         })}
       >
         <Link
@@ -57,7 +57,7 @@ export default function Navbar({ className }) {
 
       <li
         className={clsx("mb-2", styles["nav-item"], {
-          active: location.pathname === "/users",
+          [styles.active]: location.pathname === "/users",
         })}
       >
         <Link
@@ -74,7 +74,7 @@ export default function Navbar({ className }) {
       {USER_PERMISSIONS.isAdmin && (
         <li
           className={clsx("mb-2", styles["nav-item"], {
-            active: location.pathname === "/categories",
+            [styles.active]: location.pathname === "/categories",
           })}
         >
           <Link
@@ -93,7 +93,7 @@ export default function Navbar({ className }) {
 
       <li
         className={clsx("mb-2", styles["nav-item"], {
-          active: location.pathname === "/courses",
+          [styles.active]: location.pathname === "/courses",
         })}
       >
         <Link

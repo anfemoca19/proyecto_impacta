@@ -6,15 +6,16 @@ import styles from "../CoursesZumba/coursesZumba.module.scss";
 import banner_comida_saludable from "../../imagenes/banner_comida_saludable.jpeg";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
 import clsx from "clsx";
-import Layout from "../../components/Layout";
 import LayoutBackgroundCurses from "../../components/LayoutBackgroundCurses/LayoutBackgroundCurses";
 import RankinComponent from "../../components/Ranking/Ranking";
 import Input from "../../components/UI/Input/input";
 import Button from "../../components/UI/Button/Button";
 import Star from "../../components/Star/Star";
 import Foto_perfil from "../../imagenes/foto-perfil.jpg";
+import { useParams } from "react-router-dom";
 
 export default function CurseZumba({ children, ...props }) {
+  const routeParams = useParams();
   return (
     <>
       <LayoutBackgroundCurses>
@@ -121,7 +122,7 @@ export default function CurseZumba({ children, ...props }) {
               <span>Module</span>
               <video
                 src="https://player.vimeo.com/video/697591769"
-                class="object-fit-contain"
+                className="object-fit-contain"
                 autoplay
               ></video>
             </div>

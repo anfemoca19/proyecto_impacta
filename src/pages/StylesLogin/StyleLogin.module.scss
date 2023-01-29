@@ -12,6 +12,7 @@
   .style-textarea{
     // width: 300px;
     height: 500px;
+    border-radius: 20px;
   }
 }
 
@@ -29,6 +30,7 @@
   .style-textarea{
     // width: 300px;
     height: 500px;
+    border-radius: 20px;
   }
 }
 
@@ -43,9 +45,19 @@
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 30px;
     font-size: 13px;
+    
+  }
+  .container-textarea{
+    position: relative;
   }
   .style-textarea{
     // width: 370px;
     height: 300px;
+    border-radius: 20px;
+    outline: none
+  }
+  .container-bottom{
+    display: flex;
+    justify-content: space-around;
   }
 }

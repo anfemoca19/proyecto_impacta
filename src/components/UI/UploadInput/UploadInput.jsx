@@ -20,7 +20,7 @@ export default function UploadInput({
         multiple
       />
 
-      <label htmlfor="file-4">
+      <label htmlFor="file-4">
         <span
           // className={("iborrainputfile", className)}
           className={clsx("iborrainputfile", className, {})}

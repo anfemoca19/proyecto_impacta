@@ -1,4 +1,6 @@
+import { useState } from "react";
 import clsx from "clsx";
+import styles from "../Personalization/personalization.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
@@ -8,11 +10,10 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import DragAndDrop from "../../components/UI/DragAndDrop";
 
-import styles from "../Personalization/personalization.module.scss";
 import Button from "../../components/UI/Button";
 
 import icon_camera from "../../imagenes/icono-arrastra-una-imagen.png";
-import { useState } from "react";
+
 import Menu from "../../components/Menu/Menu";
 import UploadInput from "../../components/UI/UploadInput/UploadInput";
 import Label from "../../components/UI/Label/Label";
@@ -70,86 +71,12 @@ export default function Personalization() {
           </span>
           <Menu />
           <EditLogo />
-          {/* <div
-            // className="p-4 mb-5 container-fluid line-divider-boton text-center"
-            className={clsx(
-              "container-fluid p-4 mb-5 text-center",
-              styles["line-divider-boton"]
-            )}
-          >
-            <div className={clsx("row", {})}>
-              <div
-                // className=" grid-container"
-                className={clsx("grid-containe", {})}
-              >
-                <span
-                  // className="style-title-logos"
-                  className={clsx(styles["style-title-logos"])}
-                >
-                  Logos e imágenes
-                </span>
-              </div>
-            </div>
-            <div
-              // className="row mt-3"
-              className={clsx("row mt-3", {})}
-            >
-              <div
-                // className=" grid-container"
-                className={clsx("grid-containe", {})}
-              >
-                <div>
-                  <span>Editar logo</span>
-                </div>
-                <div
-                  // className="mt-3"
-                  className={clsx("mt-3", {})}
-                >
-                  <img
-                    // className="style-img-perfil"
-                    className={clsx(styles["style-img-perfil"])}
-                    src={icon_user_logo}
-                    alt=""
-                    id="img-perfil"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              // className="row
-              className={clsx("row")}
-            >
-              <div
-                // className=" grid-container mt-3 "
-                className={clsx("grid-containe mt-3", {})}
-              >
-                <div
-                  // className="container-input"
-                  className={clsx(styles["container-input"])}
-                >
-                  <UploadInput
-                    className={"iborrainputfile"}
-                    // className={clsx(styles.iborrainputfile)}
-                    handleDrop={handleDrop}
-                  >
-                    Selecionar una imagen
-                  </UploadInput>
-                </div>
-                <span>Tamaño sugerido (1500px por 250px)</span>
-              </div>
-            </div>
-            <div className={clsx("row")}>
-              <div
-                // className="col-12 mt-3"
-                className={clsx("col-12 mt-3")}
-              >
-                <Button>Guardar</Button>
-              </div>
-            </div>
-          </div> */}
           <div
             // className="p-4 box-container mb-5 container-fluid p-4"
-            className={clsx("p-4 box-container mb-5 container-fluid p-4")}
+            className={clsx(
+              "p-5 mb-5 container-fluid",
+              styles["box-container"]
+            )}
           >
             <div className={clsx("row")}>
               <div
@@ -207,37 +134,42 @@ export default function Personalization() {
                   </div>
                 </div>
               </div>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
-                <Button
-                  name="btnSaveImg"
-                  onClick={(e) => {
-                    saveImgBackground(e);
-                  }}
+              <div className={clsx("mt-3", styles["container-bottom"])}>
+                <div
+                  // className="col-5 mt-3"
+                  className={clsx("col-5 mt-3 text-center")}
                 >
-                  Guardar
-                </Button>
-              </div>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
-                <Button
-                  name="btnDeleteImg"
-                  onClick={(e) => {
-                    cancelUpload(e);
-                  }}
+                  <Button
+                    name="btnSaveImg"
+                    onClick={(e) => {
+                      saveImgBackground(e);
+                    }}
+                  >
+                    Guardar
+                  </Button>
+                </div>
+                <div
+                  // className="col-5 mt-3"
+                  className={clsx("col-5 mt-3 text-center")}
                 >
-                  Eliminar
-                </Button>
+                  <Button
+                    name="btnDeleteImg"
+                    onClick={(e) => {
+                      cancelUpload(e);
+                    }}
+                  >
+                    Eliminar
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
           <div
             // className="p-4 box-container mb-5 container-fluid p-4"
-            className={clsx("p-4 mb-5 container-fluid")}
+            className={clsx(
+              "p-5 mb-5 container-fluid",
+              styles["box-container"]
+            )}
           >
             <div
               // className="row"
@@ -272,24 +204,26 @@ export default function Personalization() {
                   // className="col-5 mt-3"
                 ></div>
               </div>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
-                <Button>Guardar</Button>
-              </div>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
-                <Button
-                  name="btnDeleteColor"
-                  onClick={(e) => {
-                    cancelUpload(e);
-                  }}
+              <div className={clsx("mt-3", styles["container-bottom"])}>
+                <div
+                  // className="col-5 mt-3"
+                  className={clsx("col-5 mt-3 text-center")}
                 >
-                  Eliminar
-                </Button>
+                  <Button>Guardar</Button>
+                </div>
+                <div
+                  // className="col-5 mt-3"
+                  className={clsx("col-5 mt-3 text-center")}
+                >
+                  <Button
+                    name="btnDeleteColor"
+                    onClick={(e) => {
+                      cancelUpload(e);
+                    }}
+                  >
+                    Eliminar
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

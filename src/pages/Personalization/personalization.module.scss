@@ -22,15 +22,19 @@
     border-radius: 100px;
   }
 
-  .container-input {
-    text-align: center;
-    padding: 5px 0;
-    border:2px solid grey;
-    border-radius: 3px;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    cursor: pointer;
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 5px;
+  }
+
+
+
+  .container-bottom{
+    display: flex;
+    justify-content: space-around;
   }
 
   .container-backgraund{
@@ -51,6 +55,7 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .file-upload-input{
     position: absolute;
     margin: 0;
@@ -72,7 +77,9 @@
   }
 
   .container-upload-img{
-    width: 230px;
+    padding: 5px;
+    width: 130px;
+    font-size: 10px;
   }
 
   input[type=”file”] .style-input-upload {
@@ -117,15 +124,18 @@
     border-radius: 100px;
   }
 
-  .container-input {
-    text-align: center;
-    padding: 5px 0;
-    border:2px solid grey;
-    border-radius: 3px;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    cursor: pointer;
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 5px;
+  }
+
+
+  .container-bottom{
+    display: flex;
+    justify-content: space-around;
   }
 
   .container-backgraund{
@@ -167,7 +177,7 @@
   }
 
   .container-upload-img{
-    width: 230px;
+    width: 120px;
   }
 
   input[type=”file”] .style-input-upload {
@@ -205,15 +215,17 @@
     border-radius: 100px;
   }
 
-  .container-input {
-    text-align: center;
-    padding: 5px 0;
-    border:2px solid grey;
-    border-radius: 3px;
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    cursor: pointer;
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .container-bottom{
+    display: flex;
+    justify-content: space-around;
   }
 
   .container-backgraund{
@@ -234,6 +246,7 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .file-upload-input{
     position: absolute;
     margin: 0;
@@ -257,7 +270,7 @@
   .container-upload-img{
     width: 230px;
   }
-  jj
+
   input[type=”file”] .style-input-upload {
     width: 0.1px;
     height: 0.1px;

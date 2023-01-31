@@ -37,16 +37,18 @@
     background-color: #f9fafb ;
     border-radius: 10px;
     align-items: center;
-    height: 40px;
+    height: 50px;
+    width: 150px;
   }
   
   .icon-search {
     margin-left: 5px;
-    height: 25px;
+    height: 20px;
   }
 
   .input-search {
     border: none;
+    outline: none;
     margin-right: 5px;
     font-size: 12px;
     color: #333;
@@ -61,6 +63,7 @@
     display: flex !important;
     justify-content: center;
   }
+
   .style-button-hamburguer{
     border: none;
     background-color: white;
@@ -72,11 +75,6 @@
         background-image: url("../../imagenes/icono-hamburguesa-gris.png");
       }
   }
-
-  // menuNav
-  // .container-menu-nav{
-  //   display: none !important;
-  // }
 
 }
 
@@ -153,10 +151,6 @@
       }
   }
 
-    // menuNav
-    // .container-menu-nav{
-    //   display: none !important;
-    // }
 }
 
 @media only screen and (min-width: 1000px) {

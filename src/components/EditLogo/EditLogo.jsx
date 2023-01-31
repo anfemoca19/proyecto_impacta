@@ -6,7 +6,7 @@ import Button from "../UI/Button";
 import { useState } from "react";
 
 export default function EditLogo() {
-  const [dragfiles, setDragFiles] = useState([]);
+  const [, setDragFiles] = useState([]);
 
   const handleDrop = (files) => {
     let fileList = [];

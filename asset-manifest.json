@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/proyecto_impacta/static/css/main.94cd46ae.css",
-    "main.js": "/proyecto_impacta/static/js/main.16a9e896.js",
+    "main.css": "/proyecto_impacta/static/css/main.99a2a564.css",
+    "main.js": "/proyecto_impacta/static/js/main.eb0972ae.js",
     "static/media/foto-perfil.jpg": "/proyecto_impacta/static/media/foto-perfil.c17e0967dd9ff22c8805.jpg",
+    "static/media/nutricion_conciente.jpeg": "/proyecto_impacta/static/media/nutricion_conciente.1571988035e1526d24cf.jpeg",
     "static/media/fondo-login.png": "/proyecto_impacta/static/media/fondo-login.be81cf0b6de922f0319e.png",
+    "static/media/banner_comida_saludable.jpeg": "/proyecto_impacta/static/media/banner_comida_saludable.d5322eae9ff698b341ed.jpeg",
     "index.html": "/proyecto_impacta/index.html",
-    "main.94cd46ae.css.map": "/proyecto_impacta/static/css/main.94cd46ae.css.map",
-    "main.16a9e896.js.map": "/proyecto_impacta/static/js/main.16a9e896.js.map"
+    "main.99a2a564.css.map": "/proyecto_impacta/static/css/main.99a2a564.css.map",
+    "main.eb0972ae.js.map": "/proyecto_impacta/static/js/main.eb0972ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.94cd46ae.css",
-    "static/js/main.16a9e896.js"
+    "static/css/main.99a2a564.css",
+    "static/js/main.eb0972ae.js"
   ]
 }

@@ -11,6 +11,7 @@ export default function Button({ children, typeButton, className, ...props }) {
         "btn-terciary": typeButton === "terciary",
         "btn-cuartary": typeButton === "cuartary",
         "btn-fifth": typeButton === "fifth",
+        "btn-modal": typeButton === "modal",
       })}
       {...props}
     >

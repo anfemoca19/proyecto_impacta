@@ -18,6 +18,10 @@ import icon_inteligencia_emocional from "../../imagenes/icono-categoria-intelige
 import icon_finanzas from "../../imagenes/icono-categoria-finanzas-color.png";
 import Modal from "../../components/UI/Modal/Modal";
 import { useState } from "react";
+import EditLogo from "../../components/EditLogo/EditLogo";
+import Button from "../../components/UI/Button";
+import Label from "../../components/UI/Label";
+import Input from "../../components/UI/Input/input";
 
 let dataUserResgitrados = ["200"];
 export default function CategoriasPages() {
@@ -74,10 +78,88 @@ export default function CategoriasPages() {
           </div>
           {estadoModalEdit && (
             <Modal closeModal={setEstadoModalEdit}>
-              <div>Hello data.name</div>
-              <button onClick={() => setEstadoModalEdit(false)}>
-                close modal{" "}
-              </button>
+              <EditLogo />
+              <div
+                className={clsx(
+                  "container-fluid p-5 mb-5",
+                  styles["box-container"]
+                )}
+              >
+                <div className={clsx("row text-center")}>
+                  <div className={clsx("col-5", styles["grid-container"])}>
+                    <div className={clsx("d-flex gap-2")}>
+                      <Label htmlFor="nombre_empresa ">Nombre Categoría </Label>
+                      <span className={clsx(styles["style-asterik"])}>*</span>
+                    </div>
+                    <div className={clsx("d-flex gap-2")}>
+                      <Label htmlFor="nombre_encargado">
+                        Nombre del encargado
+                      </Label>
+                      <span className={clsx(styles["style-asterik"])}>*</span>
+                    </div>
+                    <div className={clsx("d-flex gap-2")}>
+                      <Label>Categoria Activa</Label>
+                      <span className={clsx(styles["style-asterik"])}>*</span>
+                    </div>
+                  </div>
+                  <div className={clsx("col-7", styles["grid-container"])}>
+                    <Input
+                      id="password "
+                      className="mb-2 input-data-configuration"
+                      // className={clsx("mb-2 ", styles["input-data-configuration"])}
+                    />
+                    <Input
+                      className="mb-2 input-data-configuration"
+                      // className={clsx("mb-2", styles["input-data-configuration"])}
+                    />
+                    <div className={clsx(styles["container-button-activa"])}>
+                      <div className={clsx(styles["me-3 styles-btn-ativa"])}>
+                        <input
+                          type="checkbox"
+                          className={clsx("btn-check")}
+                          // class="btn-check"
+                          id="btncheck1"
+                          autocomplete="off"
+                        />
+                        <label
+                          //  class="btn btn-outline-primary"
+                          className={clsx("btn", styles["btn-outline-primary"])}
+                          for="btncheck1"
+                        >
+                          Sí{" "}
+                        </label>
+                      </div>
+                      <div className={clsx("me-3")}>
+                        <input
+                          type="checkbox"
+                          className={clsx("btn-check")}
+                          id="btncheck1"
+                          autocomplete="off"
+                        />
+                        <label
+                          className={clsx("btn", styles["btn-outline-primary"])}
+                          for="btncheck1"
+                        >
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    // className="col-12 mt-3"
+                    className={clsx("col-12 mt-3")}
+                  >
+                    <Button>Actualizar</Button>
+                  </div>
+                </div>
+              </div>
+              <Button
+                onClick={() => setEstadoModalEdit(false)}
+                typeButton={"modal"}
+              >
+                Cerrar{" "}
+              </Button>
             </Modal>
           )}
         </div>

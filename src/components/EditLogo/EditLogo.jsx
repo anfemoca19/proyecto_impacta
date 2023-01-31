@@ -5,7 +5,7 @@ import UploadInput from "../UI/UploadInput/UploadInput";
 import Button from "../UI/Button";
 import { useState } from "react";
 
-export default function EditLogo() {
+export default function EditLogo({}) {
   const [, setDragFiles] = useState([]);
 
   const handleDrop = (files) => {

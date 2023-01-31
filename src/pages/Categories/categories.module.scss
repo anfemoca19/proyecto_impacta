@@ -15,4 +15,35 @@
     color: #7929e2;
     font-size: 20px;
   }
+
+  .box-container {
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    border-radius: 30px;
+  }
+
+  .grid-container {
+    display: grid;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .style-asterik {
+    color: #7929e2;
+  }
+
+  .container-button-activa{
+    display: flex;
+    justify-content: flex-start;
+    gap: 17px;
+  }
+
+
+  .btn-outline-primary{
+    border-color: #7929e2;
+    &:hover{
+      background-color:  #afdb00;
+      border-color: #afdb00;
+    }
+  }
 }

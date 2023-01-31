@@ -1,7 +1,7 @@
 import AcordionComponent from "../../components/AcordionModule/AcordionModule";
 import FooterComponenet from "../../components/Footer/Footer";
 import LayoutCureses from "../../components/LayoutCurses/LayoutCurses";
-import styles from "../CoursesZumba/coursesZumba.module.scss";
+import styles from "../CoursesTemplate/coursesTemplate.module.scss";
 
 import banner_comida_saludable from "../../imagenes/banner_comida_saludable.jpeg";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
@@ -13,9 +13,19 @@ import Button from "../../components/UI/Button/Button";
 import Star from "../../components/Star/Star";
 import Foto_perfil from "../../imagenes/foto-perfil.jpg";
 import { useParams } from "react-router-dom";
+import { cursesData } from "../../constants/user_const";
+import { useEffect, useState } from "react";
 
-export default function CurseZumba({ children, ...props }) {
+export default function CoursesTemplate({ children, ...props }) {
+  const [curse, setCurse] = useState();
   const routeParams = useParams();
+
+  console.log("route", routeParams);
+  console.log("data", cursesData);
+  let courseDetails = cursesData.find((item) => {
+    return item?.id.toString() === routeParams?.id.toString();
+  });
+
   return (
     <>
       <LayoutBackgroundCurses>
@@ -28,7 +38,7 @@ export default function CurseZumba({ children, ...props }) {
             <>
               <div className={clsx("container-fluid mb-5")}>
                 <img
-                  src={banner_comida_saludable}
+                  src={courseDetails?.img || banner_comida_saludable}
                   className={clsx(styles["banner-styles"])}
                   alt="comida-saludable"
                 />
@@ -89,7 +99,7 @@ export default function CurseZumba({ children, ...props }) {
           <div>
             <div className={clsx("mb-5", styles["container-title"])}>
               <span className={clsx("", styles["styles-tittle-curso"])}>
-                Nutrición conciente
+                {courseDetails.nombre}
               </span>
             </div>
             <div className={clsx("mt-3")}>
@@ -123,7 +133,6 @@ export default function CurseZumba({ children, ...props }) {
               <video
                 src="https://player.vimeo.com/video/697591769"
                 className="object-fit-contain"
-                autoplay
               ></video>
             </div>
             <div className={clsx(styles["line-styles"])}>

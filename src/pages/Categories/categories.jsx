@@ -21,7 +21,7 @@ import { useState } from "react";
 
 let dataUserResgitrados = ["200"];
 export default function CategoriasPages() {
-  const [estadoModalEdit, setEstadoModalEdit] = useState(true);
+  const [estadoModalEdit, setEstadoModalEdit] = useState(false);
   return (
     <>
       <Header />
@@ -46,8 +46,18 @@ export default function CategoriasPages() {
             <EditCategories
               span="Nutricion"
               icon={icon_nutricion}
-              onClick={() => {
+              onClick={({ type }) => {
                 setEstadoModalEdit(true);
+                switch (type) {
+                  case "edit":
+                    console.log("editing");
+                    // setData(type)
+                    break;
+                  case "position":
+                    console.log("posistion");
+                    // setData(positio)
+                    break;
+                }
               }}
             />
             <EditCategories span="Estilo de vida" icon={icon_estilo_vida} />
@@ -63,37 +73,11 @@ export default function CategoriasPages() {
             <EditCategories span="Finanzas" icon={icon_finanzas} />
           </div>
           {estadoModalEdit && (
-            <Modal estado={estadoModalEdit}>
-              <div className="modal" tabIndex="-1">
-                <div className="modal-dialog">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                      <h5 className="modal-title">Modal title</h5>
-                      <button
-                        type="button"
-                        className="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div className="modal-body">
-                      <p>Modal body text goes here.</p>
-                    </div>
-                    <div className="modal-footer">
-                      <button
-                        type="button"
-                        className="btn btn-secondary"
-                        data-bs-dismiss="modal"
-                      >
-                        Close
-                      </button>
-                      <button type="button" className="btn btn-primary">
-                        Save changes
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <Modal closeModal={setEstadoModalEdit}>
+              <div>Hello data.name</div>
+              <button onClick={() => setEstadoModalEdit(false)}>
+                close modal{" "}
+              </button>
             </Modal>
           )}
         </div>

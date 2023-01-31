@@ -11,9 +11,13 @@ import Menu from "../../components/Menu/Menu";
 import Button from "../../components/UI/Button";
 import { USER_PERMISSIONS } from "../../constants/user_const";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function StyleLogin() {
   let dataUserResgitrados = ["200"];
+  const location = useLocation();
+
+  console.log(location.pathname);
 
   const [disableTextarea, setDisableTexttarea] = useState(false);
   return (
@@ -50,17 +54,33 @@ export default function StyleLogin() {
                   className={clsx("form-control", styles["style-textarea"])}
                   aria-label="With textarea"
                   placeholder="Crea tu codigo de estilos css"
-                  disabled
+                  disabled={disableTextarea}
                 ></textarea>
-                <Button typeButton="primary">Editar</Button>
+                <Button
+                  typeButton="primary"
+                  className={clsx({
+                    [styles.active]: location.pathname === "/styleLogin",
+                  })}
+                  onClick={() => {
+                    setDisableTexttarea(!disableTextarea);
+                  }}
+                >
+                  Editar
+                </Button>
               </div>
 
               <div className={clsx(styles["container-bottom"])}>
                 <div
                   // className="col-5 mt-3"
-                  className={clsx("col-5 mt-3")}
+                  className={clsx("col-5 mt-3 text-center")}
                 >
-                  <Button>Guardar</Button>
+                  <Button
+                    onClick={() => {
+                      setDisableTexttarea(!disableTextarea);
+                    }}
+                  >
+                    Guardar
+                  </Button>
                 </div>
                 <div
                   // className="col-5 mt-3"

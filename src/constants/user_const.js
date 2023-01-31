@@ -1,3 +1,4 @@
+import banner_comida_saludable from '../imagenes/banner_comida_saludable.jpeg'
 export const USER_PERMISSIONS = {
   isAdmin: true,
 }
@@ -8,6 +9,7 @@ export const cursesData = [
     nombre: "Nutricón Consciente",
     creado: "Maria Isabel Valderrama",
     calificacion: 3,
+    img: banner_comida_saludable
   },
   {
     id: 2,

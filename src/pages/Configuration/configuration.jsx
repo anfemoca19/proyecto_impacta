@@ -8,7 +8,6 @@ import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Input from "../../components/UI/Input/input";
-import { Link } from "react-router-dom";
 import Button from "../../components/UI/Button";
 import Label from "../../components/UI/Label";
 import Menu from "../../components/Menu/Menu";
@@ -39,14 +38,13 @@ export default function Configruation() {
             Perfil de la empresa
           </span>
           <Menu />
-
           <div
             className={clsx(
               "container-fluid p-5 mb-5",
               styles["box-container"]
             )}
           >
-            <div className={clsx("row")}>
+            <div className={clsx("row text-center")}>
               <div className={clsx("col-5", styles["grid-container"])}>
                 <Label htmlFor="nombre_empresa ">
                   Nombre de la empresa{" "}
@@ -120,7 +118,7 @@ export default function Configruation() {
           </div>
           <div
             // className="container-fluid"
-            className={clsx("container-fluid")}
+            className={clsx("container-fluid text-center")}
           >
             <div className={clsx("row")}>
               <div

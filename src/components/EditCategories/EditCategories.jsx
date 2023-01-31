@@ -10,12 +10,14 @@ export default function EditCategories({
   children,
   typeButton,
   className,
+  onClick,
   ...props
 }) {
   return (
     <>
       <div
         className={clsx("container-fluid p-4 mb-5", styles["box-container"])}
+        {...props}
       >
         <div className={clsx("row")}>
           <div className={clsx("col-md-2", styles["container-icon"])}>
@@ -37,15 +39,9 @@ export default function EditCategories({
                       "nav-item text-center",
                       styles["container-li"]
                     )}
+                    onClick={() => onClick({ type: "edit" })}
                   >
-                    <Link
-                      className={clsx(styles["style-nav"])}
-                      // onClick={() => {
-                      //   console.log("aca");
-                      //   setEstadoModalEdit(true);
-                      //   // setEestadoModalEdit(!estadoModalEdit);
-                      // }}
-                    >
+                    <Link className={clsx(styles["style-nav"])}>
                       Editar Nombre / Logo
                       <img
                         className={clsx("me-2", styles["icon-edit-style"])}
@@ -59,6 +55,7 @@ export default function EditCategories({
                       "nav-item text-center",
                       styles["container-li"]
                     )}
+                    onClick={() => onClick({ type: "position" })}
                   >
                     <Link className={clsx(styles["style-nav"])} to="#">
                       Posición de la categoría

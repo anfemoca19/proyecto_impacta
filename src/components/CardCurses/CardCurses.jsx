@@ -10,7 +10,7 @@ export default function CardCurses({ cursesData }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/courses/courceZumba/" + `${cursesData.id}` + "/");
+    navigate("/courses/coursesTemplate/" + `${cursesData.id}` + "/");
   };
 
   return (

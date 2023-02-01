@@ -10,13 +10,74 @@ export const cursesData = [
     nombre: "Nutricón Consciente",
     creado: "Maria Isabel Valderrama",
     descripcion_creador:"Nutricionista dietista, por más de 10 años fue presentadora y realizadora de de programas de nutrición y gastronomía, le apasiona ser fuente de bienestar.",
-    descripcion_curso:"Existe evidencia sólida que demuestra que comer una alimentación balanceada y saludable puede reducir el riesgo de obesidad y  enfermedades tales como diabetes, cardiopatía, accidentescerebro-vasculares, osteoporosis y algunos tipos de cáncer. El programa de nutrición consciente esta diseñado para mostarte elcamino hacia una alimentación adecuada, suficiente, variada,equilibrada y enriquecida con alimentos nutritivos. Aprende dela mano de Maria Isabel Valderrama, nutricionista dietista, laimportancia de una alimentación saludable. 'Aliméntate bien y vive mejor'.",
+    descripcion_curso:"Existe evidencia sólida que demuestra que comer una alimentación balanceada y saludable puede reducir el riesgo de obesidad y  enfermedades tales como diabetes, cardiopatía, accidentescerebro-vasculares, osteoporosis y algunos tipos de cáncer.   El programa de nutrición consciente esta diseñado para mostarte elcamino hacia una alimentación adecuada, suficiente, variada,equilibrada y enriquecida con alimentos nutritivos. Aprende dela mano de Maria Isabel Valderrama, nutricionista dietista, laimportancia de una alimentación saludable. 'Aliméntate bien y vive mejor'.",
     requerimientos:"No hay un requerimiento especial, sin embargo sugerimos acompañar el programa de nutrición consciente con los programas de actividad física.",
     foto_perfil : foto_perfil,
     calificacion: 3,
     img: banner_comida_saludable,
-    // modulos:[modulo1:{}]
-    beneficios:[]
+    beneficios:[
+      {
+        beneficio:"Aprenderás de manera divertida y práctica que es la nutrición y cuales son alimentos que realmente aportan valor a tu alimentación."
+      },
+      {
+        beneficio:"Descubrirás recetas fáciles y prácticas para una merienda, almuerzo o cena deliciosa y rica en nutrientes."
+      },
+      {
+        beneficio:"Aprenderás a leer etiquetas nutricionales, a conocer los aditivos y tóxicos que esconden las etiquetas y los componentes que debes evitar."
+      },
+      {
+        beneficio:"Conocerás cuales son los nutrientes esenciales que tu cuerpo necesita para estar en equilibrio y balance."
+      },
+      {
+        beneficio:"Aprenderás a conocer tu composición corporal y entenderás que todos tenemos un cuerpo diferente."
+      },
+      {
+        beneficio:"Tendrás claro los conceptos claves para empezar a crear una alimentación balanceada y empezar a prevenir afecciones y enfermedades futuras para ti y tu familia."
+      }
+    ],
+    modulos:[
+        {
+          módulo:1,
+          nombre_modulo:"Alimentación consciente",
+          video:"https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd",
+          temario_modulo:
+          { 
+            1:"Bienvenido a la nutrición consciente",
+            2:"¿Qué es nutrición consciente?",
+            3:"¿Sabes como se procesa un alimento en tu cuerpo?",
+            4:"¿Realmente somos solo lo que comemos?",
+          },
+        },
+        {
+          módulo:2,
+          nombre_modulo:"Aprende a elegir tus alimetnos - parte 1",
+          video:"https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd",
+          temario_modulo:
+          { 
+            1:"¿Como seleccionar facilmente los alimentos?",
+            2:"Conoce los nutrientes que aportan los alimentos.",
+            3:"Hablemos de carbohidratos.",
+            4:"Receta - aprende a preparar una deliciosa arepa casera de maíz peto con quinua.",
+            5:"Hablemos de proteinas.",
+            6:"Receta - aprende a preparar un delicioso pollo al curry y tofu al curry en leche de coco.",
+            7:"Hablemos de las grasas.",
+            8:"Receta - aprende a preparar mayonesa casera y mantequilla clarificada - ghee",
+          },
+        },
+        {
+          módulo:3,
+          nombre_modulo:"Aprende a elegir tus alimetnos - parte 1",
+          video:"https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd",
+          temario_modulo:
+          { 
+            1:"Hablemos de vitaminas.",
+            2:"Hablemos de minerales.",
+            3:"Hablemos de fitonutrientes.",
+            4:"Receta - aprende a preparar una deliciosa ensalada.",
+            5:"Receta - aprende a preparar deliciosas aguas saborizadas.",
+          },
+        },
+      ]
   },
   {
     id: 2,

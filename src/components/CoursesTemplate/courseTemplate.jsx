@@ -15,6 +15,7 @@ import { useParams } from "react-router-dom";
 import { cursesData } from "../../constants/user_const";
 import { useState } from "react";
 import { BsCheckCircle } from "react-icons/bs";
+import CardCurses from "../CardCurses/CardCurses";
 
 export default function CoursesTemplate({ children, ...props }) {
   const [curse, setCurse] = useState();
@@ -132,7 +133,7 @@ export default function CoursesTemplate({ children, ...props }) {
             <div className={clsx(styles["contaienr-video"])}>
               <span>Module</span>
               <video
-                src="https://player.vimeo.com/video/697591769"
+                src={courseDetails.video}
                 className="object-fit-contain"
               ></video>
             </div>
@@ -142,14 +143,27 @@ export default function CoursesTemplate({ children, ...props }) {
                 Beneficios:
               </span>
               {
-                <div className={clsx("mb-3", styles["container-beneficios"])}>
-                  <BsCheckCircle color={"#abc821"} />
-                  <span>Pruebas</span>
+                <div
+                  className={clsx("mb-3", styles["container-beneficios-all"])}
+                >
+                  <div className={clsx(styles["container-beneficios"])}>
+                    {" "}
+                    {courseDetails.beneficios.map((curses) => {
+                      return <BsCheckCircle color={"#afdb00"} />;
+                    })}
+                  </div>
+                  <div className={clsx(styles["container-beneficios"])}>
+                    {" "}
+                    {courseDetails.beneficios.map((beneficios) => {
+                      return <span>{beneficios.beneficio}</span>;
+                    })}
+                  </div>
                 </div>
               }
             </div>
             <div
               className={clsx(
+                "mb-5",
                 styles["container-descripcion"],
                 styles["line-styles"]
               )}
@@ -157,19 +171,22 @@ export default function CoursesTemplate({ children, ...props }) {
               <span className={clsx("mb-3", styles["styles-subttitle"])}>
                 Descripción
               </span>
-              <p>{courseDetails.descripcion_curso}</p>
+              <p className={clsx("mb-3")}>{courseDetails.descripcion_curso}</p>
             </div>
             <div>
               <span className={clsx(styles["line-styles"])}></span>
             </div>
-            <div className={clsx("mt-4 mb-4", styles["line-styles"])}>
+            <div
+              className={clsx(
+                "mt-4 mb-4",
+                styles["line-styles"],
+                styles["container-requerimientos"]
+              )}
+            >
               <span className={clsx("mb-3", styles["styles-subttitle"])}>
                 Requerimientos
               </span>
-              <p>{courseDetails.requerimientos}</p>
-            </div>
-            <div>
-              <span className={clsx(styles["line-styles"])}></span>
+              <p className={clsx("mt-3 ")}>{courseDetails.requerimientos}</p>
             </div>
           </div>
         </LayoutCureses>

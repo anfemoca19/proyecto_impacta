@@ -30,7 +30,7 @@
     background-color: white;
     border-radius: 10px;
   }
-  
+
   .container-comentary{
     display: flex;
     flex-direction: row;
@@ -79,11 +79,18 @@
       color:  #7929e2;
   }
 
-  .container-beneficios{
+  .container-beneficios-all{
     display: flex;
     align-items: center;
+    flex-direction: row;
     color: white;
     gap: 15px;
+  }
+  .container-beneficios{
+    gap: 16px;
+    display: flex;
+   flex-direction: column;
+   align-items: center;
   }
 
   .container-descripcion{
@@ -98,6 +105,9 @@
 
   .styles-subttitle{
     color:  #afdb00;
+  }
+  .container-requerimientos{
+    color: white;
   }
 
 }

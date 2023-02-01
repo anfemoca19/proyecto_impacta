@@ -13,7 +13,7 @@ import StyleAdmin from "./pages/StylesAdmin/styleAdmin";
 import StyleAcademia from "./pages/StyleAcademia/styleAcademia";
 import AddUser from "./pages/AddUser/addUser";
 import CategoriasPages from "./pages/Categories/categories";
-import CoursesTemplate from "./pages/CoursesTemplate/courseTemplate";
+import CoursesTemplate from "./components/CoursesTemplate/courseTemplate";
 
 function App() {
   return (

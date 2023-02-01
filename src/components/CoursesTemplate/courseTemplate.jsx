@@ -1,20 +1,20 @@
-import AcordionComponent from "../../components/AcordionModule/AcordionModule";
-import FooterComponenet from "../../components/Footer/Footer";
-import LayoutCureses from "../../components/LayoutCurses/LayoutCurses";
+import AcordionComponent from "../AcordionModule/AcordionModule";
+import FooterComponenet from "../Footer/Footer";
+import LayoutCureses from "../LayoutCurses/LayoutCurses";
 import styles from "../CoursesTemplate/coursesTemplate.module.scss";
 
 import banner_comida_saludable from "../../imagenes/banner_comida_saludable.jpeg";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
 import clsx from "clsx";
-import LayoutBackgroundCurses from "../../components/LayoutBackgroundCurses/LayoutBackgroundCurses";
-import RankinComponent from "../../components/Ranking/Ranking";
-import Input from "../../components/UI/Input/input";
-import Button from "../../components/UI/Button/Button";
-import Star from "../../components/Star/Star";
-import Foto_perfil from "../../imagenes/foto-perfil.jpg";
+import LayoutBackgroundCurses from "../LayoutBackgroundCurses/LayoutBackgroundCurses";
+import RankinComponent from "../Ranking/Ranking";
+import Input from "../UI/Input/input";
+import Button from "../UI/Button/Button";
+import Star from "../Star/Star";
 import { useParams } from "react-router-dom";
 import { cursesData } from "../../constants/user_const";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { BsCheckCircle } from "react-icons/bs";
 
 export default function CoursesTemplate({ children, ...props }) {
   const [curse, setCurse] = useState();
@@ -45,7 +45,7 @@ export default function CoursesTemplate({ children, ...props }) {
               </div>
 
               <AcordionComponent title="Modulo 1"></AcordionComponent>
-              <RankinComponent />
+              <RankinComponent courseDetails={courseDetails.calificacion} />
               <div className={clsx("mt-3", styles["container-styles-number"])}>
                 <div className={clsx("", styles["container-valorar-all"])}>
                   <div
@@ -103,28 +103,29 @@ export default function CoursesTemplate({ children, ...props }) {
               </span>
             </div>
             <div className={clsx("mt-3")}>
-              <span className={clsx("mb-5", styles["styles-tittle-acerca"])}>
+              <span className={clsx(styles["styles-subttitle"])}>
                 Acerca del instructor
               </span>
               <div className={clsx(styles["container-acerca-instructor"])}>
                 <div className={clsx(styles["container-foto-perfil"])}>
                   <img
                     className={clsx(styles["foto-perfil"])}
-                    src={Foto_perfil}
-                    alt=""
+                    src={courseDetails.foto_perfil}
+                    alt="foto de perfil"
                   />
                 </div>
                 <div
-                  className={clsx(styles["contaienr-descripcion-instructor"])}
+                  className={clsx(
+                    "mb-3",
+                    styles["contaienr-descripcion-instructor"]
+                  )}
                 >
-                  <span className={clsx(styles["styles-tittle-instructor"])}>
-                    Maria Isabel Valderrama
+                  <span
+                    className={clsx("mb-2", styles["styles-tittle-instructor"])}
+                  >
+                    {courseDetails.creado}
                   </span>
-                  <p>
-                    Nutricionista dietista, por más de 10 años fue presentadora
-                    y realizadora de de programas de nutrición y gastronomía, le
-                    apasiona ser fuente de bienestar.
-                  </p>
+                  <p>{courseDetails.descripcion_creador}</p>
                 </div>
               </div>
             </div>
@@ -135,31 +136,40 @@ export default function CoursesTemplate({ children, ...props }) {
                 className="object-fit-contain"
               ></video>
             </div>
-            <div className={clsx(styles["line-styles"])}>
-              <span> Beneficios</span>
-            </div>
-            <div className={clsx(styles["line-styles"])}>
-              <span>Descripcion</span>
-              <span>
-                Existe evidencia sólida que demuestra que comer una alimentación
-                balanceada y saludable puede reducir el riesgo de obesidad y
-                enfermedades tales como diabetes, cardiopatía, accidentes
-                cerebro-vasculares, osteoporosis y algunos tipos de cáncer. El
-                programa de nutrición consciente esta diseñado para mostarte el
-                camino hacia una alimentación adecuada, suficiente, variada,
-                equilibrada y enriquecida con alimentos nutritivos. Aprende de
-                la mano de Maria Isabel Valderrama, nutricionista dietista, la
-                importancia de una alimentación saludable. "Aliméntate bien y
-                vive mejor"
+            <div className={clsx("mt-5 mb-4", styles["line-styles"])}>
+              <span className={clsx("mb-5", styles["styles-subttitle"])}>
+                {" "}
+                Beneficios:
               </span>
+              {
+                <div className={clsx("mb-3", styles["container-beneficios"])}>
+                  <BsCheckCircle color={"#abc821"} />
+                  <span>Pruebas</span>
+                </div>
+              }
+            </div>
+            <div
+              className={clsx(
+                styles["container-descripcion"],
+                styles["line-styles"]
+              )}
+            >
+              <span className={clsx("mb-3", styles["styles-subttitle"])}>
+                Descripción
+              </span>
+              <p>{courseDetails.descripcion_curso}</p>
+            </div>
+            <div>
+              <span className={clsx(styles["line-styles"])}></span>
             </div>
             <div className={clsx("mt-4 mb-4", styles["line-styles"])}>
-              <span>Requerimientos</span>
-              <p>
-                No hay un requerimiento especial, sin embargo sugerimos
-                acompañar el programa de nutrición consciente con los programas
-                de actividad física.
-              </p>
+              <span className={clsx("mb-3", styles["styles-subttitle"])}>
+                Requerimientos
+              </span>
+              <p>{courseDetails.requerimientos}</p>
+            </div>
+            <div>
+              <span className={clsx(styles["line-styles"])}></span>
             </div>
           </div>
         </LayoutCureses>

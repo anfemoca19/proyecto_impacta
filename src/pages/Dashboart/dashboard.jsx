@@ -472,7 +472,7 @@ export default function Dashboard() {
           )}
           {USER_PERMISSIONS.isAdmin && (
             <div className={clsx("container-fluid", styles.fixPosition)}>
-              <CarrucelCard cursesData={cursesData} />
+              <CarrucelCard cursesData={cursesData} limitSlider={3} />
             </div>
           )}
         </div>

@@ -3,6 +3,7 @@ import clsx from "clsx";
 import Start from "../Star/Star";
 
 export default function RankinComponent({ children, ...props }) {
+  console.log(props.courseDetails);
   return (
     <>
       <div
@@ -10,7 +11,9 @@ export default function RankinComponent({ children, ...props }) {
       >
         <div className={clsx(styles["container-styles-number"])}>
           <span>Valoraciones</span>
-          <span className={clsx("styles-number-ranking")}>5</span>
+          <span className={clsx(styles["styles-number-ranking"])}>
+            {props.courseDetails}
+          </span>
         </div>
         <div className={clsx(styles["container-styles-number"])}>
           <Start

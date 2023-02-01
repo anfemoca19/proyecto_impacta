@@ -8,8 +8,7 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 // import icon_next_left from "../../imagenes/icono-anterior.png";
 export default function CarrucelCard({ cursesData, ...props }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const limitSlider = 3;
+  const limitSlider = props.limitSlider;
   const handlePrevius = () => {
     setCurrentIndex(
       currentIndex - limitSlider < 0

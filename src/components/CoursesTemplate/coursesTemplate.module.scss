@@ -6,26 +6,31 @@
     height:60px ;
     border-radius: 10px;
   }
+
   .container-styles-number{ 
     display: flex;
     flex-direction: column;
     align-items: center; 
     color: white;
   }
+
   .container-valorar{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
   }
+
   .container-valorar-all{
     border-bottom: 1 solid #afdb00;
   }
+
   .container-aporte{
     padding: 10px;
     background-color: white;
     border-radius: 10px;
   }
+  
   .container-comentary{
     display: flex;
     flex-direction: row;
@@ -62,9 +67,7 @@
     border: 3px solid #abc821;
   }
 
-  .styles-tittle-acerca{
-    color:  #afdb00;
-  }
+
 
   .container-acerca-instructor{
     margin-top:50px
@@ -75,8 +78,26 @@
       margin-bottom: 10px;
       color:  #7929e2;
   }
-.line-styles{
-  color: white;
-  margin-bottom: 1px solid white !important;
-}
+
+  .container-beneficios{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 15px;
+  }
+
+  .container-descripcion{
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .line-styles{
+    border-bottom: 1px solid white;
+  }
+
+  .styles-subttitle{
+    color:  #afdb00;
+  }
+
 }

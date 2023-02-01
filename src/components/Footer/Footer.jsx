@@ -14,7 +14,7 @@ export default function FooterComponenet() {
           </span>
         </div>
         <div className={clsx("container-fluid", styles.fixPosition)}>
-          <CarrucelCard cursesData={cursesData} />
+          <CarrucelCard cursesData={cursesData} limitSlider={4} />
         </div>
       </div>
     </>

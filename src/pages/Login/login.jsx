@@ -31,8 +31,9 @@ export default function Login() {
               required
             />
           </div>
-
-          <Button name="iniciar_seccion">Iniciar sesión</Button>
+          <div className={styles["container-btn-iniciar"]}>
+            <Button name="iniciar_seccion">Iniciar sesión</Button>
+          </div>
 
           <div className="row mb-4 mt-5 form-group">
             <div className="col justify-content-center ">

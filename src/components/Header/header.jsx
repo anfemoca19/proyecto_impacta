@@ -8,11 +8,11 @@ import Input from "../UI/Input/input";
 import clsx from "clsx";
 import { USER_PERMISSIONS } from "../../constants/user_const";
 import Navbar from "../Navbar/navbar";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export default function Header() {
   const [isActiveMenu, setIsActiveMenu] = useState(false);
-  const [styleContainerNav, setStyleContainerNav] = useState(" menu-mobile");
+  const [styleContainerNav] = useState(" menu-mobile");
 
   let menuHamburguer = () => {
     setIsActiveMenu(!isActiveMenu);

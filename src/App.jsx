@@ -14,6 +14,7 @@ import StyleAcademia from "./pages/StyleAcademia/styleAcademia";
 import AddUser from "./pages/AddUser/addUser";
 import CategoriasPages from "./pages/Categories/categories";
 import CoursesTemplate from "./components/CoursesTemplate/courseTemplate";
+import Home from "./pages/home/home";
 
 function App() {
   return (
@@ -37,7 +38,8 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/" />
+        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

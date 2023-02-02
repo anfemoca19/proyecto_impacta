@@ -2,7 +2,7 @@ import AcordionComponent from "../AcordionModule/AcordionModule";
 import FooterComponenet from "../Footer/Footer";
 import LayoutCureses from "../LayoutCurses/LayoutCurses";
 import styles from "../CoursesTemplate/coursesTemplate.module.scss";
-
+import ReactPlayer from "react-player";
 import banner_comida_saludable from "../../imagenes/banner_comida_saludable.jpeg";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
 import clsx from "clsx";
@@ -13,12 +13,11 @@ import Button from "../UI/Button/Button";
 import Star from "../Star/Star";
 import { useParams } from "react-router-dom";
 import { cursesData } from "../../constants/user_const";
-import { useState } from "react";
 import { BsCheckCircle } from "react-icons/bs";
-import CardCurses from "../CardCurses/CardCurses";
+import icono_anterior from "../../imagenes/icono-anterior.png";
+import icono_siguiente from "../../imagenes/icono-siguiente.png";
 
 export default function CoursesTemplate({ children, ...props }) {
-  const [curse, setCurse] = useState();
   const routeParams = useParams();
 
   console.log("route", routeParams);
@@ -31,7 +30,11 @@ export default function CoursesTemplate({ children, ...props }) {
     <>
       <LayoutBackgroundCurses>
         <header className="p-5">
-          <img src={logo_blanco} alt="" />
+          <img
+            src={logo_blanco}
+            alt=""
+            className={clsx(styles["icon-impacta"])}
+          />
         </header>
 
         <LayoutCureses
@@ -98,7 +101,7 @@ export default function CoursesTemplate({ children, ...props }) {
           }
         >
           <div>
-            <div className={clsx("mb-5", styles["container-title"])}>
+            <div className={clsx("mb-4", styles["container-title"])}>
               <span className={clsx("", styles["styles-tittle-curso"])}>
                 {courseDetails.nombre}
               </span>
@@ -130,12 +133,25 @@ export default function CoursesTemplate({ children, ...props }) {
                 </div>
               </div>
             </div>
-            <div className={clsx(styles["contaienr-video"])}>
+            <div className={clsx("mt-4", styles["container-video"])}>
               <span>Module</span>
               <video
-                src={courseDetails.video}
-                className="object-fit-contain"
+                className={clsx("object-fit-contain", styles["styles-video"])}
+                width={800}
+                height={400}
+                // borderRadius={"10px"}
+                controls
+                src={
+                  "https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd"
+                }
               ></video>
+              {/* <ReactPlayer
+                url="https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd"
+                controls
+                width="100%"
+                height="100%"
+                className={"react-player"}
+              /> */}
             </div>
             <div className={clsx("mt-5 mb-4", styles["line-styles"])}>
               <span className={clsx("mb-5", styles["styles-subttitle"])}>
@@ -148,14 +164,14 @@ export default function CoursesTemplate({ children, ...props }) {
                 >
                   <div className={clsx(styles["container-beneficios"])}>
                     {" "}
-                    {courseDetails.beneficios.map((curses) => {
-                      return <BsCheckCircle color={"#afdb00"} />;
+                    {courseDetails.beneficios.map((curses, item) => {
+                      return <BsCheckCircle key={item} color={"#afdb00"} />;
                     })}
                   </div>
                   <div className={clsx(styles["container-beneficios"])}>
                     {" "}
-                    {courseDetails.beneficios.map((beneficios) => {
-                      return <span>{beneficios.beneficio}</span>;
+                    {courseDetails.beneficios.map((beneficios, item) => {
+                      return <span key={item}>{beneficios.beneficio}</span>;
                     })}
                   </div>
                 </div>
@@ -187,6 +203,26 @@ export default function CoursesTemplate({ children, ...props }) {
                 Requerimientos
               </span>
               <p className={clsx("mt-3 ")}>{courseDetails.requerimientos}</p>
+            </div>
+            <div className={clsx(styles["container-btn-next"])}>
+              <div className={clsx(styles["container-icon-btn"])}>
+                <img
+                  src={icono_anterior}
+                  alt=""
+                  className={clsx("ms-3", styles["styles-icon"])}
+                />
+                <Button typeButton={"next"}>Modulo anterior</Button>
+              </div>
+              <div className={clsx(styles["container-icon-btn"])}>
+                <Button typeButton={"next"} className={clsx("me-4")}>
+                  Modulo siguiente
+                </Button>
+                <img
+                  src={icono_siguiente}
+                  alt=""
+                  className={clsx(styles["styles-icon"])}
+                />
+              </div>
             </div>
           </div>
         </LayoutCureses>

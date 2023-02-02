@@ -2,6 +2,11 @@
 @media only screen and  (max-width: 480px) {}
 @media only screen and  (min-width:480px) and (max-width:1000px){}
 @media only screen and (min-width: 1000px) {
+  .icon-impacta{
+    height: 125px;
+    width: 280px;
+  }
+
   .banner-styles{
     height:60px ;
     border-radius: 10px;
@@ -47,9 +52,22 @@
     color:white;
     border-bottom: 1px solid white;
   }
+
   .styles-tittle-curso{
     font-size: 50px;
   }
+
+  .container-video{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 35px;
+  }
+
+  .react-player{
+    border-top: 10px;
+  }
+
   .container-acerca-instructor{
     display:flex;
     color: white;
@@ -89,8 +107,8 @@
   .container-beneficios{
     gap: 16px;
     display: flex;
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .container-descripcion{
@@ -110,4 +128,22 @@
     color: white;
   }
 
+  .container-btn-next{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .container-icon-btn{
+    display: flex;
+    align-items: center;
+    background-color: #7929e2;
+    border-radius: 10px;
+    gap: 5px;
+  }
+
+  .styles-icon{
+    height: 30px;
+    width: 30px;
+  }
 }

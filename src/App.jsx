@@ -18,8 +18,9 @@ import Home from "./pages/home/home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
+        <Route path="/*" element={<NotFound />} />
         <Route
           path="/courses/coursesTemplate/:id"
           element={<CoursesTemplate />}
@@ -36,7 +37,6 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/forgotPass" element={<ForgotPass />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />

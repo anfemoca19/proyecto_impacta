@@ -23,11 +23,29 @@
         color: white;
       }
     }
+  
+  // .style-nav{
+  //   color: black;
+  //   text-decoration: none;
+  //   background-color: #afdb00;
+  //   padding: 5px 10px;
+  //   margin-left: 2px;
+  //   margin-right: 2px;
+  //   border-radius: 3px;
+  //   font-size: 12px;
+  //   &:hover{
+  //     background-color: #7929e2;
+  //     color: white;
+  //   }
   }
+
+
+@media only screen and  (min-width:480px) and (max-width:1000px){  
   nav ul {
     display: flex;
     gap: 6px;
   }
+
   .style-nav{
     color: black;
     text-decoration: none;
@@ -41,7 +59,28 @@
       background-color: #7929e2;
       color: white;
     }
+    &:active{
+      background-color: #7929e2;
+      color: white;
+    }
+  }
+
+//   .style-nav{
+//   color: black;
+//   text-decoration: none;
+//   background-color: #afdb00;
+//   padding: 5px 10px;
+//   margin-left: 2px;
+//   margin-right: 2px;
+//   border-radius: 3px;
+//   font-size: 12px;
+//   &:hover{
+//     background-color: #7929e2;
+//     color: white;
+//   }
+// }
 }
+
 
 @media only screen and (min-width: 1000px) {
     nav ul {

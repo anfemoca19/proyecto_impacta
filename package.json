@@ -2,7 +2,7 @@
   "name": "proyecto-impacta",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://anfemoca19.github.io/proyecto_impacta/",
+  "homepage": "https://anfemoca19.github.io/",
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "clsx": "^1.2.1",
+    "firebase": "^9.16.0",
     "react": "^18.2.0",
     "react-calendar": "^4.0.0",
     "react-dom": "^18.2.0",

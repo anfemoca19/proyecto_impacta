@@ -27,9 +27,11 @@ export default function ForgotPass() {
               placeholder="Email"
             />
           </div>
-          <Button labelText="Iniciar sección" name="iniciar_sesión">
-            Iniciar Sesión{" "}
-          </Button>
+          <div className={clsx("mt-4", styles["container-btn-iniciar"])}>
+            <Button labelText="Iniciar sección" name="iniciar_sesión">
+              Iniciar Sesión{" "}
+            </Button>
+          </div>
         </form>
       </section>
     </LoginLayout>

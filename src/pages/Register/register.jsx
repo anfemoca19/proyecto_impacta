@@ -65,10 +65,11 @@ export default function Register() {
               placeholder="Confirmar contraseña"
             />
           </div>
-
-          <Button labelText="Crear cuenta" name="iniciar_seccion">
-            Crear cuenta
-          </Button>
+          <div className={styles["container-btn-crear"]}>
+            <Button labelText="Crear cuenta" name="iniciar_seccion">
+              Crear cuenta
+            </Button>
+          </div>
 
           <div className="d-sm-flex mt-4">
             <Link to="/login" className={styles["border-button-register"]}>

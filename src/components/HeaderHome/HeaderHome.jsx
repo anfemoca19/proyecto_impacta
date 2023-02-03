@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import styles from "../../components/HeaderHome/HeaderHome.module.scss";
 import Logo from "../../imagenes/logo-en-color.png";
 import icon_hamburguer from "../../imagenes/icono-hamburguesa-gris.png";
-import { useEffect } from "react";
+import Button from "../UI/Button/Button";
 export default function HeaderHome() {
   const location = useLocation();
   const [isActiveMenu, setIsActiveMenu] = useState(false);
@@ -16,11 +16,13 @@ export default function HeaderHome() {
 
   return (
     <>
-      <header className={clsx(styles["container-mobile"])}>
-        <div className={clsx("col-2 p-2", styles["container-logo"])}>
+      <header
+        className={clsx(styles["container-mobile"], styles["container-web"])}
+      >
+        <div className={clsx("col-4 p-4", styles["container-logo"])}>
           <img className={clsx(styles.logo)} src={Logo} alt="logo" />
         </div>
-        <div className={clsx("col-2 p-2", styles["container-nav"])}>
+        <div className={clsx("col-4 p-4", styles["container-nav"])}>
           <nav className={clsx(styles["nav-container"])}>
             <ul className={clsx(styles["ul-container"])}>
               <li
@@ -55,9 +57,13 @@ export default function HeaderHome() {
           </nav>
         </div>
 
-        <div className={clsx("col-2 p-2", styles["container-btns"])}>
-          <Link>Login</Link>
-          <Link>Empresas</Link>
+        <div className={clsx("col-4 p-4", styles["container-btns"])}>
+          <Button to={"/login"} className={clsx(styles["styles-btn-login"])}>
+            Login
+          </Button>
+          <Button to={"/login"} typeButton="empresa" className={clsx()}>
+            Empresas
+          </Button>
         </div>
         <div
           className={clsx("col-4 p-2 ", styles["container-menu-hamburguesa"])}

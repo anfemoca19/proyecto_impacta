@@ -5,7 +5,7 @@ import clsx from "clsx";
 export default function Categorias({ className }) {
   return (
     <>
-      <div className={clsx("mt-5 mb-4", styles["styles-background"])}>
+      <div className={clsx("mt-5 mb-4")}>
         <div className={clsx("container-fluid mt-3", styles[className])}>
           {/* <div className={"mt-5"}> */}
           <span className={clsx("mt-2", styles["title-style"])}>

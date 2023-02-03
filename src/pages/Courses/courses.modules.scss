@@ -16,7 +16,7 @@
 
 
 // WEB
-@media only screen and (min-width: 1000px)  {
+@media only screen and (min-width: 1000px) {
 
   .title-style-curses {
     color: #7929e2;
@@ -25,4 +25,10 @@
     margin-top: 10px;
   }
 
+  .styles-background-categories{
+    height: 230px;
+    border-radius: 10px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%)
+  }
 }

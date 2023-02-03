@@ -13,6 +13,7 @@ export default function Button({ children, typeButton, className, ...props }) {
         "btn-fifth": typeButton === "fifth",
         "btn-modal": typeButton === "modal",
         "btn-next": typeButton === "next",
+        "btn-empresa": typeButton === "empresa",
       })}
       {...props}
     >

@@ -55,9 +55,11 @@
   .container-nav-mobile{
     display: flex;
   }
+
   .nav-container{
     display: flex;
   }
+
   .ul-container{
     display: flex;
     padding: 0;
@@ -71,21 +73,18 @@
     list-style: none;
     align-items: center;
     height: 30px;
+    padding: 5px;
     a{
       color: black;
       text-align: center;
     }
+    &:hover{
+          background-color: #afdb00;
+          border-radius: 5px;
+        }
     
   }
 
-  .nav-link{
-    &:hover{
-      background-color: #afdb00;
-      border-radius: 5px;
-      padding: 5px;
-    }
-
-  }
 
   .container-btns-mobile{
     display: flex;
@@ -124,50 +123,200 @@
     margin-left: 50px;
     justify-content: space-between;
   }
-    .container-logo {
+
+  .container-logo {
     display: flex;
     justify-content: center;
   }
+
   .logo {
-    height: 50px;
+    height: 80px;
   }
+
   .container-nav{
     display: none;
   }
+
   .container-btns{
     display: none;
   }
-    //Menu hamburguesa
-    .container-menu-hamburguesa{
-      display: flex !important;
-      justify-content: center;
-    }
-  
-    .style-button-hamburguer{
-      border: none;
-      background-color: white;
-    }
-  
-    .icon-hamburger{
-      height: 40px;
-      &.active {
-          background-image: url("../../imagenes/icono-hamburguesa-gris.png");
-        }
-    }
 
-    .container-nav-mobile{
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none;
+    //Menu hamburguesa
+  .container-menu-hamburguesa{
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .style-button-hamburguer{
+    border: none;
+    background-color: white;
+  }
+  
+  .icon-hamburger{
+    height: 40px;
+    &.active {
+        background-image: url("../../imagenes/icono-hamburguesa-gris.png");
+      }
+  }
+
+  .container-menu-nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 11px;
+    justify-content: space-around;
+  }
+
+  .container-nav-mobile{
+    display: flex;
+  }
+
+  .nav-container{
+    display: flex;
+  }
+
+  .ul-container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap:20px
+  }
+
+  .nav-item {   
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 30px;
+    padding: 5px;
+    a{
+      color: black;
+      text-align: center;
     }
+    &:hover{
+          background-color: #afdb00;
+          border-radius: 5px;
+        }
+    
+  }
+
+ 
+
+  .container-btns-mobile{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  
+  .styles-btn-login{
+    display: flex;
+    border-radius: 10px;
+    color: white;
+    background-color: #4b209e;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .styles-btn-empresa{
+    display: flex;
+    border-radius: 10px;
+    border:1px solid #4b209e; ;
+    color: #4b209e;
+    padding: 5px;
+    align-items: center;
+  }
 }
+
 @media only screen and (min-width: 1000px) {
   .container-menu-hamburguesa{
     display: none;
   }
+
   .container-menu-nav{
     display:  none;
+  }
+
+  .container-web{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .container-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .container-nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .ul-container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap:60px
+  }
+
+  .nav-item {   
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 30px;
+    padding: 5px;
+    a{
+      color: black;
+      text-align: center;
+    }
+    &:hover{
+          background-color: #afdb00;
+          border-radius: 5px;
+        }
+    
+  }
+
+  // .nav-link{
+  //   &:hover{
+  //     background-color: #afdb00;
+  //     border-radius: 5px;
+  //     padding: 5px;
+  //   }
+  // }
+
+  .container-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .styles-btn-login{
+    // display: flex;
+    border-radius: 10px;
+    color: white;
+    background-color: #7929e2;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .styles-btn-empresa{
+    // display: flex;
+    border-radius: 10px;
+    border:1px solid #4b209e; ;
+    color: #4b209e;
+    padding: 5px;
+    align-items: center;
   }
 }

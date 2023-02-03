@@ -12,35 +12,37 @@ export default function Home() {
       <div className={clsx("container-fluid mt-2")}>
         <HeaderHome />
         <div className={clsx("mt-4", styles["container-tour"])}>
-          <div className={clsx("mt-5 p-5", styles["container-box"])}>
-            <span>
-              ¡Un viaje por el bienestar integral que eleva la energía vital de
-              tus colaboradores!
-            </span>
-          </div>
-          <div>
-            <div
-              className={clsx(
-                "d-flex  align-items-center ps-4 pe-4 mt-5",
-                styles["container-activate"]
-              )}
-            >
-              <Link
+          <div className={clsx(styles["container-text-imgOne"])}>
+            <div className={clsx(styles["container-wrap"])}>
+              <div className={clsx("mt-5 p-5", styles["container-box"])}>
+                <span>
+                  ¡Un viaje por el bienestar integral que eleva la energía vital
+                  de tus colaboradores!
+                </span>
+              </div>
+              <div
                 className={clsx(
-                  "container-fluid text-center justify-content-between align-items-center d-flex",
-                  styles["style-upload-link"]
+                  "d-flex  align-items-center ps-4 pe-4 mt-5",
+                  styles["container-activate"]
                 )}
-                to=""
               >
-                <span>Haz un tour por la plataforma</span>
-                <img
-                  src={icono_siguiente}
-                  alt="arro-raight"
-                  className={clsx(styles["icon-upload"])}
-                />
-              </Link>
+                <Link
+                  className={clsx(
+                    "container-fluid text-center justify-content-between align-items-center d-flex",
+                    styles["style-upload-link"]
+                  )}
+                  to=""
+                >
+                  <span>Haz un tour por la plataforma</span>
+                  <img
+                    src={icono_siguiente}
+                    alt="arro-raight"
+                    className={clsx(styles["icon-upload"])}
+                  />
+                </Link>
+              </div>
             </div>
-            <div>
+            <div className={clsx("mb-5", styles["container-img-one"])}>
               <img
                 src={imagen_one}
                 alt=""
@@ -56,7 +58,7 @@ export default function Home() {
             {" "}
             <Categorias />
           </div>
-          <div className={clsx("d-flex mb-4", styles[""])}>
+          <div className={clsx("mb-4", styles["container-styles-description"])}>
             <h4 className={clsx("mt-3 mb-2")}>
               Impacta tu vida, es la primera{" "}
               <span className={clsx(styles["styles-text"])}>

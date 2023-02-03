@@ -58,12 +58,14 @@ export default function HeaderHome() {
         </div>
 
         <div className={clsx("col-4 p-4", styles["container-btns"])}>
-          <Button to={"/login"} className={clsx(styles["styles-btn-login"])}>
-            Login
-          </Button>
-          <Button to={"/login"} typeButton="empresa" className={clsx()}>
-            Empresas
-          </Button>
+          <Link to="/login" className={clsx(styles["styles-link-btn"])}>
+            <Button className={clsx(styles["styles-btn-login"])}>Login</Button>
+          </Link>
+          <Link to="/login" className={clsx(styles["styles-link-btn"])}>
+            <Button typeButton="empresa" className={clsx()}>
+              Empresas
+            </Button>
+          </Link>
         </div>
         <div
           className={clsx("col-4 p-2 ", styles["container-menu-hamburguesa"])}

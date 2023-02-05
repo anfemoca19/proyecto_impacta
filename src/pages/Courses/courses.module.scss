@@ -1,6 +1,6 @@
 
 @media only screen and (max-width: 480px) {
-  .title-style-curses {
+  .title-style-curses-web{
     display: none;
   }
 }
@@ -8,22 +8,29 @@
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
 
-  .title-style-curses {
+  .title-style-curses-web {
     display: none;
   }
 
 }
 
 
-// WEB
-@media only screen and (min-width: 1000px) {
 
-  .title-style-curses {
+@media only screen and (min-width: 1000px) {
+  
+  .title-style-curses-web{
     color: #7929e2;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
-  }
+  } 
+
+  // .title-style-curses {
+  //   color: #7929e2;
+  //   font-size: 25px;
+  //   font-weight: bold;
+  //   margin-top: 10px;
+  // }
 
   .styles-background-categories{
     height: 230px;

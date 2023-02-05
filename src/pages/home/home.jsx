@@ -51,22 +51,22 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={clsx("row d-flex mb-4")}>
-          <div
-            className={clsx(" p-3 text-center", styles["container-categorias"])}
-          >
+        <div className={clsx("mb-4 p-4", styles["container-wrappers"])}>
+          <div className={clsx(styles["container-categorias"])}>
             {" "}
-            <Categorias />
+            <Categorias className={"style-container-home"} />
           </div>
-          <div className={clsx("mb-4", styles["container-styles-description"])}>
-            <h4 className={clsx("mt-3 mb-2")}>
-              Impacta tu vida, es la primera{" "}
-              <span className={clsx(styles["styles-text"])}>
-                agencia de bienestar integral
-              </span>{" "}
-              para empresas.
-            </h4>
-            <div className={clsx("d-flex mb-4")}>
+          <div className={clsx(styles["container-styles-description"])}>
+            <div>
+              <h4 className={clsx("mt-3 mb-4")}>
+                Impacta tu vida, es la primera{" "}
+                <span className={clsx(styles["styles-text"])}>
+                  agencia de bienestar integral
+                </span>{" "}
+                para empresas.
+              </h4>
+            </div>
+            <div className={clsx("d-flex ")}>
               <div
                 className={clsx(
                   "col-4",

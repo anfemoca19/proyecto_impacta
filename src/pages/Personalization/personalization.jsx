@@ -60,7 +60,9 @@ export default function Personalization() {
             {!USER_PERMISSIONS.isAdmin && (
               <AccountUser dataNumber={dataUserResgitrados} />
             )}
-            <Categorias />
+            <div className={clsx(styles["styles-background-categories"])}>
+              <Categorias />
+            </div>
             {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
           </>
         }

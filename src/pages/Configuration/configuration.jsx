@@ -28,12 +28,7 @@ export default function Configruation() {
             {!USER_PERMISSIONS.isAdmin && (
               <AccountUser dataNumber={dataUserResgitrados} />
             )}
-            <div
-              className={clsx(
-                "mt-5 mb-4",
-                styles["styles-background-categories"]
-              )}
-            >
+            <div className={clsx(styles["styles-background-categories"])}>
               <Categorias />
             </div>
             {!USER_PERMISSIONS.isAdmin && <GraphUsers />}

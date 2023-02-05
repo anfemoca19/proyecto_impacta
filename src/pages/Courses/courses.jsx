@@ -1,4 +1,4 @@
-import styles from "../Courses/courses.modules.scss";
+import styles from "../Courses/courses.module.scss";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Calendar from "../../components/Calendar/Calendar";
 import Categorias from "../../components/Categories/categories";
@@ -23,12 +23,7 @@ export default function Courses() {
             {!USER_PERMISSIONS.isAdmin && (
               <AccountUser dataNumber={dataUserResgitrados} />
             )}
-            <div
-              className={clsx(
-                "mt-5 mb-4",
-                styles["styles-background-categories"]
-              )}
-            >
+            <div className={clsx(styles["styles-background-categories"])}>
               <Categorias />
             </div>
             {!USER_PERMISSIONS.isAdmin && <GraphUsers />}
@@ -36,7 +31,7 @@ export default function Courses() {
         }
       >
         <div className="container-fluid">
-          <span className={clsx("mt-2", styles["title-style-curses"])}>
+          <span className={clsx("mt-2", styles["title-style-curses-web"])}>
             Categorias
           </span>
           <Categorias className={"style-inline"} />

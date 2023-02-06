@@ -196,7 +196,7 @@ export default function Home() {
         <div className={clsx("p-4", styles["container-violet"])}></div>
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mt-4", styles["container-text-imgtree"])}>
-            <div>
+            <div className={clsx(styles["container-tu-marca"])}>
               <p>
                 Tu marca<span className={clsx(styles["styles-text"])}> +</span>{" "}
                 nuestro contendido{" "}
@@ -207,27 +207,38 @@ export default function Home() {
             </div>
             <div
               // className="container-fluid"
-              className={clsx("container-fluid text-center")}
+              className={clsx(
+                "container-fluid text-center",
+                styles["container-contactanos"]
+              )}
             >
               <div className={clsx("row")}>
                 <div
                   // className="container box-container p-4 col-6"
-                  className={clsx("container p-5 col", styles["container-box"])}
+                  className={clsx(
+                    "container p-5 col",
+                    styles["container-box"],
+                    styles["container-login"]
+                  )}
                 >
                   <div className={clsx("mb-3")}>
-                    <span className={clsx("mb-3", styles["styles-text"])}>
+                    <span
+                      className={clsx(
+                        "mb-3",
+                        styles["styles-text-login"],
+                        styles
+                      )}
+                    >
                       Déjanos tus datos y nos pondremos en contacto contigo.
                     </span>
                   </div>
                   <Input
                     placeholder="Contraseña actual "
                     className="mb-2 input-data-configuration"
-                    // className={clsx("mb-2", styles["input-data-configuration"])}
                   />
                   <Input
                     placeholder="Nueva contraseña"
                     className="mb-2 input-data-configuration"
-                    // className={clsx("mb-2", styles["input-data-configuration"])}
                   />
                   <Input
                     placeholder="Confirme contraseña"
@@ -259,7 +270,11 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <Button className={clsx("mt-3 mb-3")}>Iniciar Session</Button>
+                  <Button
+                    className={clsx("mt-3 mb-3", styles["styles-btn-login"])}
+                  >
+                    Enviar
+                  </Button>
                 </div>
               </div>
             </div>

@@ -15,11 +15,19 @@
 
   .container-text-imgtree{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+    margin-bottom: 10px;
   }
+
+  .container-tu-marca{
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+  }
+
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
@@ -115,6 +123,10 @@
   }
 
   // Login
+  .styles-text-login{
+    color: #7929e2;
+    font-size: 13px;
+  } 
   .check-color {
     cursor: pointer;
     border: 2px solid #7929e2;
@@ -128,6 +140,7 @@
   .color-text-check {
     color: #7929e2;
   }
+
 }
 
 
@@ -150,11 +163,17 @@
   }
 
   .container-text-imgtree{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: center;
+      margin-bottom: 10px;
+  }
+
+  .container-tu-marca{
+    width: 50%;
+    font-size: 40px;
   }
 
   .container-btn-arrow {
@@ -253,6 +272,10 @@
     gap: 5px;
   }
 
+  .container-tu-marca{
+    text-align: center;
+    font-size: 30px;
+  }
 
   //desepeño
   .container-wrap{
@@ -263,6 +286,20 @@
   .style-title-sidebar{
     font-size: 25px;
     font-weight: bold;
+  }
+  .styles-text-login{
+    color: #7929e2;
+    font-size: 13px;
+  } 
+
+  .container-login{
+      width: 100%;
+      height: 480px;
+  }
+
+  .color-text-check {
+    color: #7929e2;
+    font-size: 12px;
   }
 }
 
@@ -409,15 +446,23 @@
   }
 
   //Contañe desempeño
-  .container-desepeño{
+  .container-login{
+    width: 490px;
+    height: 520px;
 
   }
+
   .container-text-imgtree{
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+  
+  .container-tu-marca{
+    width: 50%;
+    font-size: 40px;
   }
   .styles-paragraph{
     font-size: 20px;
@@ -429,18 +474,39 @@
     font-weight: bold;
   }
 
+  .styles-text-login{
+    color: #7929e2;
+    font-size: 13px;
+  } 
+
   .check-color {
     cursor: pointer;
     border: 2px solid #7929e2;
     appearance: none;
+    width: 22px;
+    height: 22px;
   }
 
   .check-color:checked {
     background-color: #7929e2;
     border-color: #7929e2;
   }
+
   .color-text-check {
     color: #7929e2;
+    font-size: 12px;
   }
 
+  .container-contactanos{
+    display: flex;
+    width: 50%;
+    margin-left: 80px;
+  }
+
+  .styles-btn-login{
+    font-size: 15px;
+  }
+
+
 }
+

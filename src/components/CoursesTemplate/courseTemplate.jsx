@@ -16,6 +16,7 @@ import { cursesData } from "../../constants/user_const";
 import { BsCheckCircle } from "react-icons/bs";
 import icono_anterior from "../../imagenes/icono-anterior.png";
 import icono_siguiente from "../../imagenes/icono-siguiente.png";
+import CardAportes from "../CardAportes/CardAportes";
 
 export default function CoursesTemplate({ children, ...props }) {
   const routeParams = useParams();
@@ -50,13 +51,10 @@ export default function CoursesTemplate({ children, ...props }) {
 
               <AcordionComponent title="Modulo 1"></AcordionComponent>
               <RankinComponent courseDetails={courseDetails.calificacion} />
-              <div className={clsx("mt-3", styles["container-styles-number"])}>
-                <div
-                  className={clsx(
-                    styles.wrapper,
-                    styles["container-valorar-all"]
-                  )}
-                >
+              <div
+                className={clsx("mt-3", styles["container-styles-elements"])}
+              >
+                <div className={clsx(styles.wrapper)}>
                   <div
                     className={clsx("mt-3 mb-3", styles["container-valorar"])}
                   >
@@ -86,28 +84,45 @@ export default function CoursesTemplate({ children, ...props }) {
                   )}
                 >
                   <span>Ordenar por:</span>
-                  <Button typeButton="fifth">Nuevo</Button>
-                  <Button typeButton="fifth">Mas votados</Button>
-                </div>
-                <div className={styles.wrapper}>
-                  <span>Aporte</span>
-                  <div className={clsx("mt-2", styles["container-aporte"])}>
-                    <div className={clsx(styles["container-comentary"])}>
-                      <img src="" alt="" />
-                      <span className={clsx(styles["styles-title-nombre"])}>
-                        Nombre del usuario
-                      </span>
-                    </div>
-                    <Input typeInput="terciary" />
+                  <div className={clsx(styles["me-3 styles-btn-ativa"])}>
+                    <input
+                      type="checkbox"
+                      className={clsx("btn-check")}
+                      id="btncheck1"
+                      autocomplete="off"
+                    />
+                    <label
+                      className={clsx(styles["styles-btn-check"])}
+                      for="btncheck1"
+                    >
+                      Nuevo{" "}
+                    </label>
                   </div>
-                  <div className={clsx("mt-3", styles["container-aporte"])}>
-                    <div className={clsx(styles["container-comentary"])}>
-                      <img src="" alt="" />
-                      <span className={clsx(styles["styles-title-nombre"])}>
-                        Nombre del usuario
-                      </span>
-                    </div>
-                    <Input typeInput="terciary" />
+                  <div className={clsx(styles["me-3 styles-btn-activa"])}>
+                    <input
+                      type="checkbox"
+                      className={clsx("btn-check")}
+                      id="btncheck1"
+                      autocomplete="off"
+                    />
+                    <label
+                      className={clsx(styles["styles-btn-check"])}
+                      for="btncheck1"
+                    >
+                      Más votados{" "}
+                    </label>
+                  </div>
+                </div>
+                <div
+                  className={clsx(styles.wrapper, styles["style-line"])}
+                ></div>
+                <div className={clsx("mt-3", styles.wrapper)}>
+                  <span>Aporte</span>
+                  <div className={clsx("mt-4")}>
+                    <CardAportes />
+                  </div>
+                  <div className={clsx("mt-3")}>
+                    <CardAportes />
                   </div>
                 </div>
               </div>

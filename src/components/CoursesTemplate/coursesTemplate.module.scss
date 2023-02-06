@@ -6,13 +6,13 @@
     height: 125px;
     width: 280px;
   }
-
+//sidebar
   .banner-styles{
     height:60px ;
     border-radius: 10px;
   }
-
-  .container-styles-number{ 
+//container elementos de sidebar
+  .container-styles-elements{ 
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -30,10 +30,22 @@
     }
   }
 
-  .container-valorar-all{
-    border-bottom: 1 solid #afdb00;
+  //stylo btn filter 
+  .styles-btn-check{
+    color: white;
+    padding: 5px;
+    &:hover{
+      background-color:  #afdb00;
+      border-radius: 5px;
+    }
   }
 
+  //styo linea separadora
+    .style-line{
+    border-bottom: 1px solid #afdb00;
+  }
+
+  //estilos para las carsd aportes
   .wrapper {
     width: 100%;
   }
@@ -55,7 +67,7 @@
     font-size: 10px;
   }
 
-
+  //Estilos del modulo principal
   .container-title{
     color:white;
     border-bottom: 1px solid white;

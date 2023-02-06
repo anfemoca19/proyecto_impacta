@@ -5,7 +5,10 @@ export default function LayoutCureses({ children, sideBar }) {
   return (
     <div className={clsx("row p-5")}>
       <div
-        className={clsx("col-8 p-4", styles["container-responsive-children"])}
+        className={clsx(
+          "col-12 col-sm-4  col-sm-12 col-md-8  p-4",
+          styles["container-responsive-children"]
+        )}
       >
         {children}
       </div>

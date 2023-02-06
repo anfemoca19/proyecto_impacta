@@ -1,6 +1,152 @@
+//mobile
+@media only screen and  (max-width: 480px) {
+///header
+  header{
+    display: none;
+  }
+  /// styles-video
+  .styles-video{
+    width: 100%;
+    height: 500px;
+  }
 
-@media only screen and  (max-width: 480px) {}
-@media only screen and  (min-width:480px) and (max-width:1000px){}
+   //Estilos del modulo principal
+  .container-title{
+    color:white;
+    border-bottom: 1px solid white;
+  }
+
+  .styles-tittle-curso{
+    font-size: 25px;
+  }
+
+  .styles-subttitle{
+    color:  #afdb00;
+  }
+
+  .container-acerca-instructor{
+    display:flex;
+    color: white;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  .contaienr-descripcion-instructor{
+    display: flex;
+  }
+
+  ///Stilos foto del  creador 
+  .container-foto-perfil {
+    // margin-left: 50px;
+    // margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .foto-perfil {
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+    margin-right: 5px;
+    border: 3px solid #abc821;
+  }
+  .contaienr-descripcion-instructor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .styles-tittle-instructor{
+      font-size: 20px;
+      margin-bottom: 10px;
+      color:  #7929e2;
+  }
+
+  .container-video{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 35px;
+  }
+
+  .container-wrap{
+    display: none;
+  }
+  .container-wrap-tab{
+    display: flex;
+  }
+
+}
+
+//tablet
+@media only screen and  (min-width:480px) and (max-width:1000px){
+  ///header
+  header{
+    display: none;
+  }
+  
+  .styles-video{
+    width: 100%;
+  }
+
+  //Estilos del modulo principal
+  .container-title{
+    color:white;
+    border-bottom: 1px solid white;
+  }
+
+  .styles-tittle-curso{
+    font-size: 35px;
+  }
+  
+  .styles-subttitle{
+    color:  #afdb00;
+  }
+  .container-acerca-instructor{
+    display:flex;
+    color: white;
+    margin-top:50px
+  }
+  ///Stilos foto del  creador 
+  .container-foto-perfil {
+    margin-left: 5px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foto-perfil {
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    margin-right: 5px;
+    border: 3px solid #abc821;
+  }
+
+  .contaienr-descripcion-instructor{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .styles-tittle-instructor{
+      font-size: 20px;
+      margin-bottom: 10px;
+      color:  #7929e2;
+  }
+
+  .container-video{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 35px;
+  }
+  .container-wrap{
+    display: none;
+  }
+}
+//web
 @media only screen and (min-width: 1000px) {
   .icon-impacta{
     height: 125px;
@@ -91,10 +237,15 @@
   .container-acerca-instructor{
     display:flex;
     color: white;
+    margin-top: 50px;
   }
   .container-foto-perfil {
-    margin-left: 50px;
+    margin-left: 5px;
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .foto-perfil {
@@ -104,11 +255,9 @@
     margin-right: 5px;
     border: 3px solid #abc821;
   }
-
-
-
-  .container-acerca-instructor{
-    margin-top:50px
+  .contaienr-descripcion-instructor{
+    display: flex;
+    flex-direction: column;
   }
 
   .styles-tittle-instructor{
@@ -173,5 +322,8 @@
   .styles-icon{
     height: 30px;
     width: 30px;
+  }
+  .container-wrap-tab{
+    display: none;
   }
 }

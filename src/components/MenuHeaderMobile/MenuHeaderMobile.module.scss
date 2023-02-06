@@ -1,0 +1,147 @@
+@media only screen and  (max-width: 480px) {
+  .container-mobile{
+    display: flex !important;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
+  }
+
+  //estilos del logo
+  .container-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  //input search
+  .container-pricipal-search {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-search {
+    display: flex;
+    background-color: #f9fafb ;
+    border-radius: 10px;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+  }
+  
+  .icon-search {
+    margin-left: 5px;
+    height: 20px;
+  }
+
+  .input-search {
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #333;
+    background-color: #f9fafb ;
+    padding: 5px;
+    border-radius: 3px;
+    width: 80px;
+  }
+
+      //Menu hamburguesa
+  .container-menu-hamburguesa{
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .style-button-hamburguer{
+    border: none;
+    background-color: white;
+  }
+
+  .icon-hamburger{
+    height: 40px;
+    &.active {
+      background-image: url("../../imagenes/icono-hamburguesa-gris.png");
+    }
+  }
+
+}
+
+@media only screen and  (min-width:480px) and (max-width:1000px){
+  .container-mobile{
+    display: flex !important;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
+  }
+
+  //estilos del logo
+  .container-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  //input search
+  .container-pricipal-search {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-search {
+    display: flex;
+    background-color: #f9fafb ;
+    border-radius: 10px;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+  }
+  
+  .icon-search {
+    margin-left: 5px;
+    height: 20px;
+  }
+
+  .input-search {
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #333;
+    background-color: #f9fafb ;
+    padding: 5px;
+    border-radius: 3px;
+    width: 80px;
+  }
+
+      //Menu hamburguesa
+  .container-menu-hamburguesa{
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .style-button-hamburguer{
+    border: none;
+    background-color: white;
+  }
+
+  .icon-hamburger{
+    height: 40px;
+    &.active {
+      background-image: url("../../imagenes/icono-hamburguesa-gris.png");
+    }
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container-mobile{
+    display: none;
+  }
+}

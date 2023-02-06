@@ -17,6 +17,8 @@ import { BsCheckCircle } from "react-icons/bs";
 import icono_anterior from "../../imagenes/icono-anterior.png";
 import icono_siguiente from "../../imagenes/icono-siguiente.png";
 import CardAportes from "../CardAportes/CardAportes";
+import MenuMobile from "../MenuHeaderMobile/MenuHeaderMobile";
+import MenuTab from "../MenuTabs/ManuTabs";
 
 export default function CoursesTemplate({ children, ...props }) {
   const routeParams = useParams();
@@ -29,6 +31,7 @@ export default function CoursesTemplate({ children, ...props }) {
 
   return (
     <>
+      <MenuMobile />
       <LayoutBackgroundCurses>
         <header className="p-5">
           <img
@@ -41,7 +44,7 @@ export default function CoursesTemplate({ children, ...props }) {
         <LayoutCureses
           sideBar={
             <>
-              <div className={clsx("container-fluid mb-5")}>
+              <div className={clsx("container-fluid mb-5 mt-3")}>
                 <img
                   src={courseDetails?.img || banner_comida_saludable}
                   className={clsx(styles["banner-styles"])}
@@ -175,79 +178,86 @@ export default function CoursesTemplate({ children, ...props }) {
                 }
               ></video>
             </div>
-            <div className={clsx("mt-5 mb-4", styles["line-styles"])}>
-              <span className={clsx("mb-5", styles["styles-subttitle"])}>
-                {" "}
-                Beneficios:
-              </span>
-              {
-                <div
-                  className={clsx("mb-3", styles["container-beneficios-all"])}
-                >
-                  <div className={clsx(styles["container-beneficios"])}>
-                    {courseDetails.beneficios.map((beneficios, index) => {
-                      return (
-                        <div className={styles.beneficio} key={index}>
-                          <BsCheckCircle
-                            className={styles.icon}
-                            color={"#afdb00"}
-                          />
-                          <span className={styles.text}>
-                            {beneficios.beneficio}
-                          </span>
-                        </div>
-                      );
-                    })}
+            <div className={clsx(styles["container-wrap"])}>
+              <div className={clsx("mt-5 mb-4", styles["line-styles"])}>
+                <span className={clsx("mb-5", styles["styles-subttitle"])}>
+                  {" "}
+                  Beneficios:
+                </span>
+                {
+                  <div
+                    className={clsx("mb-3", styles["container-beneficios-all"])}
+                  >
+                    <div className={clsx(styles["container-beneficios"])}>
+                      {courseDetails.beneficios.map((beneficios, index) => {
+                        return (
+                          <div className={styles.beneficio} key={index}>
+                            <BsCheckCircle
+                              className={styles.icon}
+                              color={"#afdb00"}
+                            />
+                            <span className={styles.text}>
+                              {beneficios.beneficio}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
+                }
+              </div>
+              <div
+                className={clsx(
+                  "mb-5",
+                  styles["container-descripcion"],
+                  styles["line-styles"]
+                )}
+              >
+                <span className={clsx("mb-3", styles["styles-subttitle"])}>
+                  Descripción
+                </span>
+                <p className={clsx("mb-3")}>
+                  {courseDetails.descripcion_curso}
+                </p>
+              </div>
+              <div>
+                <span className={clsx(styles["line-styles"])}></span>
+              </div>
+              <div
+                className={clsx(
+                  "mt-4 mb-4",
+                  styles["line-styles"],
+                  styles["container-requerimientos"]
+                )}
+              >
+                <span className={clsx("mb-3", styles["styles-subttitle"])}>
+                  Requerimientos
+                </span>
+                <p className={clsx("mt-3 ")}>{courseDetails.requerimientos}</p>
+              </div>
+              <div className={clsx(styles["container-btn-next"])}>
+                <div className={clsx(styles["container-icon-btn"])}>
+                  <img
+                    src={icono_anterior}
+                    alt=""
+                    className={clsx("ms-3", styles["styles-icon"])}
+                  />
+                  <Button typeButton={"next"}>Modulo anterior</Button>
                 </div>
-              }
-            </div>
-            <div
-              className={clsx(
-                "mb-5",
-                styles["container-descripcion"],
-                styles["line-styles"]
-              )}
-            >
-              <span className={clsx("mb-3", styles["styles-subttitle"])}>
-                Descripción
-              </span>
-              <p className={clsx("mb-3")}>{courseDetails.descripcion_curso}</p>
-            </div>
-            <div>
-              <span className={clsx(styles["line-styles"])}></span>
-            </div>
-            <div
-              className={clsx(
-                "mt-4 mb-4",
-                styles["line-styles"],
-                styles["container-requerimientos"]
-              )}
-            >
-              <span className={clsx("mb-3", styles["styles-subttitle"])}>
-                Requerimientos
-              </span>
-              <p className={clsx("mt-3 ")}>{courseDetails.requerimientos}</p>
-            </div>
-            <div className={clsx(styles["container-btn-next"])}>
-              <div className={clsx(styles["container-icon-btn"])}>
-                <img
-                  src={icono_anterior}
-                  alt=""
-                  className={clsx("ms-3", styles["styles-icon"])}
-                />
-                <Button typeButton={"next"}>Modulo anterior</Button>
+                <div className={clsx(styles["container-icon-btn"])}>
+                  <Button typeButton={"next"} className={clsx("me-4")}>
+                    Modulo siguiente
+                  </Button>
+                  <img
+                    src={icono_siguiente}
+                    alt=""
+                    className={clsx(styles["styles-icon"])}
+                  />
+                </div>
               </div>
-              <div className={clsx(styles["container-icon-btn"])}>
-                <Button typeButton={"next"} className={clsx("me-4")}>
-                  Modulo siguiente
-                </Button>
-                <img
-                  src={icono_siguiente}
-                  alt=""
-                  className={clsx(styles["styles-icon"])}
-                />
-              </div>
+            </div>
+            <div className={clsx(styles["container-wrap-tab"])}>
+              <MenuTab />
             </div>
           </div>
         </LayoutCureses>

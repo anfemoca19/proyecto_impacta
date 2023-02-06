@@ -72,8 +72,8 @@
   .icon-hamburger{
     height: 40px;
     &.active {
-        background-image: url("../../imagenes/icono-hamburguesa-gris.png");
-      }
+      background-image: url("../../imagenes/icono-hamburguesa-gris.png");
+    }
   }
 
 }
@@ -143,18 +143,15 @@
   .style-button-hamburguer{
     border: none;
     background-color: white;
+    padding: 0;
   }
   .icon-hamburger{
     height: 60px;
-    &.active {
-        background-image: url("../../imagenes/icono-hamburguesa-gris.png");
-      }
   }
 
 }
 
 @media only screen and (min-width: 1000px) {
-
     .container-logo {
       display: flex;
       justify-content: center;

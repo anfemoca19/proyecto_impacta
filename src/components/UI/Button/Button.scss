@@ -18,12 +18,8 @@
   .btn-primary {
     position: absolute;
     top: 129px;
-    right: 0;
     &:hover{
       background-color:  #afdb00;
-      // &:active{
-      //   display: none;
-      // }
     }
   }
   .btn-secondary {

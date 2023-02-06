@@ -19,7 +19,7 @@ export default function StyleLogin() {
 
   console.log(location.pathname);
 
-  const [disableTextarea, setDisableTexttarea] = useState(false);
+  const [disableTextarea, setDisableTexttarea] = useState(true);
   return (
     <>
       <Header />
@@ -51,24 +51,26 @@ export default function StyleLogin() {
             )}
           >
             <div className={clsx("row p-3")}>
-              <div className={clsx("container-textarea")}>
+              <div className={clsx(styles["container-textarea"])}>
                 <textarea
                   className={clsx("form-control", styles["style-textarea"])}
                   aria-label="With textarea"
                   placeholder="Crea tu codigo de estilos css"
                   disabled={disableTextarea}
                 ></textarea>
-                <Button
-                  typeButton="primary"
-                  className={clsx({
-                    [styles.active]: location.pathname === "/styleLogin",
-                  })}
-                  onClick={() => {
-                    setDisableTexttarea(!disableTextarea);
-                  }}
-                >
-                  Editar
-                </Button>
+                {disableTextarea && (
+                  <Button
+                    typeButton="primary"
+                    className={clsx(styles.editButton, {
+                      [styles.active]: location.pathname === "/styleLogin",
+                    })}
+                    onClick={() => {
+                      setDisableTexttarea((prevState) => !prevState);
+                    }}
+                  >
+                    Editar
+                  </Button>
+                )}
               </div>
 
               <div className={clsx(styles["container-bottom"])}>
@@ -76,13 +78,7 @@ export default function StyleLogin() {
                   // className="col-5 mt-3"
                   className={clsx("col-5 mt-3 text-center")}
                 >
-                  <Button
-                    onClick={() => {
-                      setDisableTexttarea(!disableTextarea);
-                    }}
-                  >
-                    Guardar
-                  </Button>
+                  <Button>Guardar</Button>
                 </div>
                 <div
                   // className="col-5 mt-3"

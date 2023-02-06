@@ -28,6 +28,12 @@
     font-size: 10px;
     justify-content: space-between;
   }
+  .container-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
   .icon-nutricion-blanco {
     background-image: url("../../imagenes/icono-categoria-nutricion-blanco.png");
@@ -98,6 +104,13 @@
     display: flex;
     font-size: 10px;
     justify-content: space-between;
+  }
+  
+  .container-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .icon-nutricion-blanco {
@@ -271,5 +284,7 @@
     flex-direction: column;
     align-items: center;
   }
+
+
 
 }

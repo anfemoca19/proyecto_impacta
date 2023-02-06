@@ -1,28 +1,32 @@
-export default function AcordionComponent({ children, ...props }) {
+import { useState } from "react";
+
+export default function AcordionComponent({ children, title }) {
+  const [openAccordion, setOpenAccordion] = useState(false);
+
+  const accordionHander = () => {
+    setOpenAccordion(!openAccordion);
+  };
+
   return (
     <>
-      <div className="accordion" id="accordionExample">
+      <div className="accordion">
         <div className="accordion-item">
-          <h2 className="accordion-header" id="headingOne">
+          <h2>
             <button
               className="accordion-button"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
+              onClick={accordionHander}
             >
-              {props.title}
+              {title}
+              {/* {openAccordion && "arriba"}
+              {!openAccordion && "abajo"} */}
             </button>
           </h2>
-          <div
-            id="collapseOne"
-            className="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div className="accordion-body"></div>
-          </div>
+          {openAccordion && (
+            <div className="accordion-collapse collapse show">
+              <div className="accordion-body">here goes body</div>
+            </div>
+          )}
         </div>
       </div>
     </>

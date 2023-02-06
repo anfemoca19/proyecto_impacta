@@ -30,7 +30,7 @@ export default function Menu() {
           </li>
           <li
             className={clsx(styles["nav-item"], {
-              [styles.active]: location.pathname === "/styleAdmin",
+              [styles.active]: location.pathname === "/styleLogin",
             })}
           >
             <Link className={clsx(styles["style-nav"], {})} to="/styleLogin">

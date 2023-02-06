@@ -1,5 +1,5 @@
 @media only screen and (max-width: 480px) {
-  .container-tour{
+  .container-grey{
     background-color: #f9fafb;
     padding: 5px;
   };
@@ -13,7 +13,14 @@
     text-align: center;
   }
 
-  .container-activate {
+  .container-text-imgtree{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
     font-size: 15px;
@@ -26,36 +33,42 @@
       color: white;
     }
   }
+
   .styles-text{
     color: #7929e2;
   }
+
   .style-upload-link{
     color: #f9f9f9;
   }
+
   .icon-upload {
     height: 30px;
     
   }
+
   .style-imagen-one{
     width: 100%;
   }
+
   .container-categorias{
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
+
   .container-styles-description{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
+    margin-top: 15px;
   }
 
   .container-elements-information{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .styles-line{
     border-right: 1px solid #7929e2;
@@ -63,6 +76,57 @@
   
   .styles-green-text{
     color: #afdb00;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+    //Seccion aprende
+
+  .container-violet{
+    background-color: #7929e2;
+    padding: 10px;
+  }
+
+  .container-btn-arrow-white{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    height: 60px;
+    gap: 8px;
+    justify-content: flex-end;
+    &:hover{
+      background-color: #afdb00;
+      color: black;
+    }
+  }
+
+  .style-upload-link-white{
+    color: black;
+    gap: 5px;
+  }
+  .container-wrap{
+    text-align:center ;
+  }
+
+  .style-title-sidebar{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  // Login
+  .check-color {
+    cursor: pointer;
+    border: 2px solid #7929e2;
+    appearance: none;
+  }
+  
+  .check-color:checked {
+    background-color: #7929e2;
+    border-color: #7929e2;
+  }
+  .color-text-check {
+    color: #7929e2;
   }
 }
 
@@ -71,7 +135,7 @@
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
 
-  .container-tour{
+  .container-grey{
     background-color: #f9fafb;
     padding: 5px;
   };
@@ -85,7 +149,15 @@
     text-align: center;
   }
 
-  .container-activate {
+  .container-text-imgtree{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
     font-size: 15px;
@@ -98,6 +170,7 @@
       color: white;
     }
   }
+
   .styles-text{
     color: #7929e2;
   }
@@ -111,16 +184,28 @@
   .style-imagen-one{
     width: 100%;
   }
+  .container-styles-description{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 50%;
+    font-weight: bold;
+    margin-top: 4px;
+  }
+
+  .container-wrappers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .container-categorias{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 50%;
   }
-  .container-styles-description{
-    display: flex;
-  }
-
   .container-elements-information{
       display: flex;
       flex-direction: column;
@@ -132,12 +217,61 @@
 
   .styles-green-text{
     color: #afdb00;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  //Seccion aprende
+
+
+  .container-violet{
+    background-color: #7929e2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .container-btn-arrow-white{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    height: 60px;
+    gap: 8px;
+    justify-content: flex-end;
+    &:hover{
+      background-color: #afdb00;
+      color: black;
+    }
+  }
+
+  .style-upload-link-white{
+    color: black;
+    gap: 5px;
+  }
+
+
+  //desepeño
+  .container-wrap{
+    text-align:center ;
+  }
+
+  //silider
+  .style-title-sidebar{
+    font-size: 25px;
+    font-weight: bold;
   }
 }
 
+
+
+
 // WEB
 @media only screen and (min-width: 1000px) {
-  .container-tour{
+  .container-grey{
     background-color: #f9fafb;
     padding: 5px;
     width: 100%;
@@ -168,10 +302,6 @@
     width: 50%;
   }
   
-  .container-img-one{
-    
-  }
-
   .style-imagen-one{
     width: 100%;
     height: 500px;
@@ -181,7 +311,7 @@
     display: none;
   }
 
-  .container-activate {
+  .container-btn-arrow{
     background-color: #7929e2;
     border-radius: 15px;
     font-size: 15px;
@@ -198,12 +328,14 @@
   .styles-text{
     color: #7929e2;
   }
+
   .style-upload-link{
     color: #f9f9f9;
+    gap: 5px;
   }
+
   .icon-upload {
     height: 30px;
-    
   }
   
   .container-styles-description{
@@ -220,18 +352,20 @@
     align-items: center;
     justify-content: center;
   }
+
   .container-categorias{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
   }
+
   .container-elements-information{
       display: flex;
       flex-direction: column;
       align-items: center;
- 
   }
+
   .styles-line{
     border-right: 1px solid #7929e2;
   }
@@ -239,5 +373,74 @@
   .styles-green-text{
     color: #afdb00;
     font-size: 30px;
+    font-weight: bold;
   }
+    //Seccion aprende
+
+  
+
+  .container-violet{
+    background-color: #7929e2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .style-text-black{
+    color: black;
+    font-size: 30px;
+  }
+
+  .container-btn-arrow-white{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    height: 60px;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  .style-upload-link-white{
+    color: black;
+    gap: 5px;
+  }
+
+  //Contañe desempeño
+  .container-desepeño{
+
+  }
+  .container-text-imgtree{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .styles-paragraph{
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .style-title-sidebar{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .check-color {
+    cursor: pointer;
+    border: 2px solid #7929e2;
+    appearance: none;
+  }
+
+  .check-color:checked {
+    background-color: #7929e2;
+    border-color: #7929e2;
+  }
+  .color-text-check {
+    color: #7929e2;
+  }
+
 }

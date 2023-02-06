@@ -125,23 +125,23 @@ export default function Configruation() {
             <div className={clsx("row")}>
               <div
                 // className="container box-container p-4 col-6"
-                className={clsx("container p-5 col", styles["box-container"])}
+                className={clsx("container p-5 col", styles["container-box"])}
               >
                 <Input
-                  placeholder="Contraseña actual "
+                  placeholder="Nombre completo "
                   className="mb-2 input-data-configuration"
                   // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
                 <Input
-                  placeholder="Nueva contraseña"
+                  placeholder="Numero Telefónico"
                   className="mb-2 input-data-configuration"
                   // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
                 <Input
-                  placeholder="Confirme contraseña"
+                  placeholder="Correo Eléctronico"
                   className="mb-2 input-data-configuration"
                 />
-                <Button className={clsx("mt-3 mb-3")}>Iniciar Session</Button>
+                <Button className={clsx("mt-3 mb-3")}>Enviar</Button>
               </div>
             </div>
           </div>

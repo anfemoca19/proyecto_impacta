@@ -20,14 +20,22 @@
   }
 
   .container-valorar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
     gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .container-valorar-all{
     border-bottom: 1 solid #afdb00;
+  }
+
+  .wrapper {
+    width: 100%;
   }
 
   .container-aporte{
@@ -105,10 +113,18 @@
     gap: 15px;
   }
   .container-beneficios{
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .beneficio {
+      display: flex;
+      gap: 16px;
+      margin-top: 10px;
+      .icon {
+        position: relative;
+        top: 4px;
+      }
+      .text {
+        width: 90%;
+      }
+    }
   }
 
   .container-descripcion{

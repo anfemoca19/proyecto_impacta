@@ -1,8 +1,8 @@
+import React from "react";
 import AcordionComponent from "../AcordionModule/AcordionModule";
 import FooterComponenet from "../Footer/Footer";
 import LayoutCureses from "../LayoutCurses/LayoutCurses";
 import styles from "../CoursesTemplate/coursesTemplate.module.scss";
-import ReactPlayer from "react-player";
 import banner_comida_saludable from "../../imagenes/banner_comida_saludable.jpeg";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
 import clsx from "clsx";
@@ -51,12 +51,21 @@ export default function CoursesTemplate({ children, ...props }) {
               <AcordionComponent title="Modulo 1"></AcordionComponent>
               <RankinComponent courseDetails={courseDetails.calificacion} />
               <div className={clsx("mt-3", styles["container-styles-number"])}>
-                <div className={clsx("", styles["container-valorar-all"])}>
+                <div
+                  className={clsx(
+                    styles.wrapper,
+                    styles["container-valorar-all"]
+                  )}
+                >
                   <div
                     className={clsx("mt-3 mb-3", styles["container-valorar"])}
                   >
                     <span>Valorar curso</span>
-                    <Star colorBorder={"#afdb00;"} colorRelleno={"#afdb00"} />
+                    <Star
+                      className={styles.valorarStars}
+                      colorBorder={"#afdb00"}
+                      colorRelleno={"#afdb00"}
+                    />
                     <Button typeButton="cuartary">Guardar</Button>
                   </div>
                   <div className={clsx(styles["container-aporte"])}>
@@ -69,13 +78,18 @@ export default function CoursesTemplate({ children, ...props }) {
                     <Input typeInput="terciary" />
                   </div>
                 </div>
-                <div className={clsx("mt-3 mb-3", styles["container-valorar"])}>
-                  <div></div>
+                <div
+                  className={clsx(
+                    "mt-3 mb-3",
+                    styles["container-valorar"],
+                    styles.wrapper
+                  )}
+                >
                   <span>Ordenar por:</span>
                   <Button typeButton="fifth">Nuevo</Button>
                   <Button typeButton="fifth">Mas votados</Button>
                 </div>
-                <div>
+                <div className={styles.wrapper}>
                   <span>Aporte</span>
                   <div className={clsx("mt-2", styles["container-aporte"])}>
                     <div className={clsx(styles["container-comentary"])}>
@@ -145,13 +159,6 @@ export default function CoursesTemplate({ children, ...props }) {
                   "https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd"
                 }
               ></video>
-              {/* <ReactPlayer
-                url="https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd"
-                controls
-                width="100%"
-                height="100%"
-                className={"react-player"}
-              /> */}
             </div>
             <div className={clsx("mt-5 mb-4", styles["line-styles"])}>
               <span className={clsx("mb-5", styles["styles-subttitle"])}>
@@ -163,15 +170,18 @@ export default function CoursesTemplate({ children, ...props }) {
                   className={clsx("mb-3", styles["container-beneficios-all"])}
                 >
                   <div className={clsx(styles["container-beneficios"])}>
-                    {" "}
-                    {courseDetails.beneficios.map((curses, item) => {
-                      return <BsCheckCircle key={item} color={"#afdb00"} />;
-                    })}
-                  </div>
-                  <div className={clsx(styles["container-beneficios"])}>
-                    {" "}
-                    {courseDetails.beneficios.map((beneficios, item) => {
-                      return <span key={item}>{beneficios.beneficio}</span>;
+                    {courseDetails.beneficios.map((beneficios, index) => {
+                      return (
+                        <div className={styles.beneficio} key={index}>
+                          <BsCheckCircle
+                            className={styles.icon}
+                            color={"#afdb00"}
+                          />
+                          <span className={styles.text}>
+                            {beneficios.beneficio}
+                          </span>
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

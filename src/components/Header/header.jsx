@@ -1,5 +1,6 @@
 import styles from "./header.module.scss";
 import icon_hamburguer from "../../imagenes/icono-hamburguesa-gris.png";
+import icon_hamburguer_color from "../../imagenes/icono-hamburguesa-color.png";
 import Icon_search from "../../imagenes/icono-buscador.png";
 import Logo from "../../imagenes/logo-en-color.png";
 import Foto_perfil from "../../imagenes/foto-perfil.jpg";
@@ -11,7 +12,7 @@ import Navbar from "../Navbar/navbar";
 import { useState } from "react";
 
 export default function Header() {
-  const [isActiveMenu, setIsActiveMenu] = useState(false);
+  const [isActiveMenu, setIsActiveMenu] = useState(true);
   const [styleContainerNav] = useState(" menu-mobile");
 
   let menuHamburguer = () => {
@@ -88,7 +89,7 @@ export default function Header() {
             }}
           >
             <img
-              src={icon_hamburguer}
+              src={isActiveMenu ? icon_hamburguer : icon_hamburguer_color}
               alt="icon-hamburguer"
               className={clsx(styles["icon-hamburger"])}
             />

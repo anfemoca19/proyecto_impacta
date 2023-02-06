@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Start from "../Star/Star";
 
 export default function RankinComponent({ children, ...props }) {
-  console.log(props.courseDetails);
   return (
     <>
       <div
@@ -17,9 +16,10 @@ export default function RankinComponent({ children, ...props }) {
         </div>
         <div className={clsx(styles["container-styles-number"])}>
           <Start
-            colorBorder={"#afdb00;"}
+            colorBorder={"#afdb00"}
             colorRelleno={"#afdb00"}
             fontSize={"40px"}
+            score={3}
           />
           <span>Rating de curso</span>
         </div>

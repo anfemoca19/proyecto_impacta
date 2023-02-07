@@ -317,8 +317,14 @@ export default function Home() {
         </div>
         <LoginLayout className={"home-img"}>
           <div className="container-fluid ">
-            <div className={clsx("row ")}>
-              <div className={clsx("col-4 p-4", styles["container-logo"])}>
+            <div className={clsx("row", styles["container-mobile"])}>
+              {/* <div className={clsx("col-4 p-4", styles["container-logo"])}> */}
+              <div
+                className={clsx(
+                  "col-4 col-sm-4 col-sm-8 col-md-4 ",
+                  styles["container-logo"]
+                )}
+              >
                 <div className={clsx()}>
                   <img
                     src={logo_blanco}
@@ -328,18 +334,28 @@ export default function Home() {
                 </div>
               </div>
               <div
-                className={clsx("col-4 p-4", styles["container-social-media"])}
+                className={clsx(
+                  "col-4 col-sm-4 col-sm-8 col-md-4 ",
+                  styles["container-social-media"]
+                )}
               >
-                {/* <div className={clsx(styles["container-social-media"])}> */}
+                {/* <div
+                className={clsx("col-4 p-4", styles["container-social-media"])}
+              > */}
                 <img src={icon_facebook} alt="icon-facebook" />
                 <img src={icon_instagram} alt="icon-instagram" />
                 <img src={icon_youtube} alt="icon-youtube" />
                 <img src={icon_twiter} alt="icon-twiter" />
-                {/* </div> */}
               </div>
               <div
-                className={clsx("col-4 p-4", styles["container-wrap-links"])}
+                className={clsx(
+                  "col-4 col-sm-4 col-sm-8 col-md-4 ",
+                  styles["container-wrap-links"]
+                )}
               >
+                {/* <div
+                className={clsx("col-4 p-4", styles["container-wrap-links"])}
+              > */}
                 {/* <div className={clsx(styles["container-wrap-links"])}> */}
                 <div>
                   <img src="" alt="" />

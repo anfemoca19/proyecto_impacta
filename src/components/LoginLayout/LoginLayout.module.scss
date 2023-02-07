@@ -2,3 +2,12 @@
   background-image: url("./../../imagenes/fondo-login.png");
   height: 100vh;
 }
+
+.home-img{
+  display: flex;
+  background-image: url("./../../imagenes/fondo-login.png");
+  height: 150px;
+  // justify-content: center;
+  align-items: center;
+  // gap: 10px;
+}

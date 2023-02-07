@@ -6,14 +6,19 @@ import imagen_one from "../../imagenes/imagen-1-web-movil.png";
 import imagen_two from "../../imagenes/imagen-2-web-movil.png";
 import imagen_tree from "../../imagenes/imagen-3-web-movil.png";
 import icono_siguiente from "../../imagenes/icono-siguiente.png";
+import logo_blanco from "../../imagenes/logo-en-blanco.png";
+import icon_facebook from "../../imagenes/icono-facebook.png";
+import icon_instagram from "../../imagenes/icono-instagram.png";
+import icon_youtube from "../../imagenes/icono-you-tube.png";
+import icon_twiter from "../../imagenes/icono-twiter.png";
 import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
 import Input from "../../components/UI/Input/input";
 import Button from "../../components/UI/Button";
-import Star from "../../components/Star/Star";
 import CardSocial from "../../components/CardSocial/CardSocial";
 import CardArticules from "../../components/CardArticules/CardArticules";
+import LoginLayout from "../../components/LoginLayout/LoginLayout";
 
 export default function Home() {
   return (
@@ -194,8 +199,10 @@ export default function Home() {
           <CarrucelCard cursesData={cursesData} limitSlider={4} />
         </div>
         <div className={clsx("p-4", styles["container-grey"])}>
-          <div className={clsx("mb-4", styles["styles-name"])}>
-            <span>Lo que nuestro usuarios piensan de nosotros</span>
+          <div className={clsx("mb-4")}>
+            <span className={clsx(styles["styles-name"])}>
+              Lo que nuestro usuarios piensan de nosotros
+            </span>
           </div>
           <div
             className={
@@ -307,6 +314,57 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <LoginLayout className={"home-img"}>
+          <div className="container-fluid ">
+            <div className={clsx("row ")}>
+              <div className={clsx("col-4 p-4", styles["container-logo"])}>
+                <div className={clsx()}>
+                  <img
+                    src={logo_blanco}
+                    alt="logo-blanco"
+                    className={clsx(styles["styles-icon-logo"])}
+                  />
+                </div>
+              </div>
+              <div
+                className={clsx("col-4 p-4", styles["container-social-media"])}
+              >
+                {/* <div className={clsx(styles["container-social-media"])}> */}
+                <img src={icon_facebook} alt="icon-facebook" />
+                <img src={icon_instagram} alt="icon-instagram" />
+                <img src={icon_youtube} alt="icon-youtube" />
+                <img src={icon_twiter} alt="icon-twiter" />
+                {/* </div> */}
+              </div>
+              <div
+                className={clsx("col-4 p-4", styles["container-wrap-links"])}
+              >
+                {/* <div className={clsx(styles["container-wrap-links"])}> */}
+                <div>
+                  <img src="" alt="" />
+                  <Link className={clsx(styles["style-upload-link"])}>
+                    Politica de privacidad
+                  </Link>
+                </div>
+                <div>
+                  <img src="" alt="" />
+                  <Link className={clsx(styles["style-upload-link"])}>
+                    Terminos y condiciones
+                  </Link>
+                </div>
+                <div>
+                  <img src="" alt="" />
+                  <Link className={clsx(styles["style-upload-link"])}>
+                    Preguntas frecuentes
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </LoginLayout>
+        <div className={clsx(styles["container-derechos"])}>
+          <span>@Impacta tu vida 2023</span>
         </div>
       </div>
     </>

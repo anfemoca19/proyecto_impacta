@@ -531,7 +531,41 @@ div.containerSocial {
     color: #7929e2;
   }
 
+  //Estilos footer home
+
+  .container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .styles-icon-logo{
+    width: 150px;
+    height: 80px;
+  }
+  .container-social-media{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
 
 
+
+  ///derechos
+  .container-derechos{
+    display: flex;
+    color: #7929e2;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 

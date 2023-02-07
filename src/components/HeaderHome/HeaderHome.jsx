@@ -27,7 +27,7 @@ export default function HeaderHome() {
             <ul className={clsx(styles["ul-container"])}>
               <li
                 className={clsx("mb-2", styles["nav-item"], {
-                  [styles.active]: location.pathname === "/nosotros",
+                  [styles.active]: location.pathname === "/home/nosotros",
                 })}
               >
                 <Link to={"/nosotros"} className={clsx(styles["nav-link"])}>
@@ -40,7 +40,7 @@ export default function HeaderHome() {
                   [styles.active]: location.pathname === "/cursos",
                 })}
               >
-                <Link to={"/cursos"} className={clsx(styles["nav-link"])}>
+                <Link to={"/courses"} className={clsx(styles["nav-link"])}>
                   Cursos
                 </Link>
               </li>

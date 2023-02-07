@@ -15,6 +15,7 @@ import AddUser from "./pages/AddUser/addUser";
 import CategoriasPages from "./pages/Categories/categories";
 import CoursesTemplate from "./components/CoursesTemplate/courseTemplate";
 import Home from "./pages/home/home";
+import Nosotros from "./pages/Nosotros/nosotros";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           path="/courses/coursesTemplate/:id"
           element={<CoursesTemplate />}
         />
+        <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/categories" element={<CategoriasPages />} />
         <Route path="/addUser" element={<AddUser />} />
         <Route path="/styleAcademia" element={<StyleAcademia />} />

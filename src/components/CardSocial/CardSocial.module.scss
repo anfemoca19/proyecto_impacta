@@ -1,0 +1,101 @@
+
+
+@media only screen and (max-width: 480px) {
+  .container-box{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 30px;
+    width: 500px;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .container-wrap{
+    display: flex;
+  }
+
+  //Estilos foto
+  .container-foto{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: #7929e2;
+    border-radius: 100%;
+    margin-top: -130px;
+    margin-left: 240px;
+  }
+
+  //seccion prueba social
+  .style-name{
+    color: #7929e2;
+  }
+}
+
+// Tablet
+@media only screen and  (min-width:481px) and (max-width:1000px){
+  .container-box{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 30px;
+    width: 500px;
+    position: relative;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .container-wrap{
+    display: flex;
+  }
+
+  //Estilos foto
+  .container-foto{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: #7929e2;
+    border-radius: 100%;
+    margin-top: -130px;
+    margin-left: 240px;
+  }
+
+ 
+}
+
+
+// WEB
+@media only screen and (min-width: 1000px) {
+  .container-box{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 20px;
+    text-align: start;
+    width: 500px;
+    position: relative;
+    padding: 50px;
+  }
+
+  .container-wrap{
+    display: flex;
+  }
+
+  //Estilos foto
+  .container-foto{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-color: #7929e2;
+    border-radius: 100%;
+    margin-top: -140px;
+    margin-left: 320px;
+  }
+
+  //seccion prueba social
+  .style-name{
+    color: #7929e2;
+  }
+}
+

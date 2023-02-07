@@ -11,6 +11,8 @@ import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
 import Input from "../../components/UI/Input/input";
 import Button from "../../components/UI/Button";
+import Star from "../../components/Star/Star";
+import CardSocial from "../../components/CardSocial/CardSocial";
 
 export default function Home() {
   return (
@@ -186,12 +188,17 @@ export default function Home() {
             )}
           >
             {" "}
-            Programas de bienestar en disitias áreas
+            Programas de bienestar en distintas áreas
           </span>
           <CarrucelCard cursesData={cursesData} limitSlider={4} />
         </div>
         <div className={clsx("p-4", styles["container-grey"])}>
-          <div></div>
+          <div className={clsx("mb-4", styles["styles-name"])}>
+            <span>Lo que nuestro usuarios piensan de nosotros</span>
+          </div>
+          <div className={("p-4", clsx(styles["container-box"]))}>
+            <CardSocial />
+          </div>
         </div>
         <div className={clsx("p-4", styles["container-violet"])}></div>
         <div className={clsx("p-4", styles["container-grey"])}>
@@ -206,7 +213,6 @@ export default function Home() {
               </p>
             </div>
             <div
-              // className="container-fluid"
               className={clsx(
                 "container-fluid text-center",
                 styles["container-contactanos"]
@@ -214,7 +220,6 @@ export default function Home() {
             >
               <div className={clsx("row")}>
                 <div
-                  // className="container box-container p-4 col-6"
                   className={clsx(
                     "container p-5 col",
                     styles["container-box"],

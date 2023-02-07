@@ -1,0 +1,149 @@
+.wrapper {
+  min-width: 240px;
+}
+@media only screen and (max-width: 480px) {
+  .card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 4px 18px 5px rgba(56, 56, 56, 0.71);
+  }
+  .styles-img-curse{
+    
+  }
+
+  .title {
+    color: #6f27cd;
+    font-size: 16px;
+  }
+  .textEllipsis {
+    text-overflow: ellipsis;
+    // max-width: 150px;
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    white-space: nowrap;
+  }
+  .card-text {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .container {
+    background-color: #f9fafb;
+    padding: 0 10px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    display: flex;
+    gap: 5px;
+    .button {
+      padding: 5px;
+      border-radius: 50em;
+      &.secondary {
+        color: #6f27cd;
+        background-color: white;
+        border:1px solid #6f27cd;
+      }
+    }
+  }
+}
+
+// Tablet
+@media only screen and  (min-width:481px) and (max-width:1000px){
+  .card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 4px 18px 5px rgba(56, 56, 56, 0.71);
+  }
+
+  .styles-img-curse{
+    
+  }
+
+  .title {
+    color: #6f27cd;
+    font-size: 20px;
+  }
+  .textEllipsis {
+    text-overflow: ellipsis;
+    // max-width: 150px;
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    white-space: nowrap;
+  }
+  .card-text {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  .container {
+    background-color: #f9fafb;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .footer {
+    display: flex;
+    gap: 5px;
+    .button {
+      padding: 5px;
+      border-radius: 10px;
+      &.secondary {
+        color: #6f27cd;
+        background-color: white;
+        border:1px solid #6f27cd;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 4px 18px 5px rgba(56, 56, 56, 0.71);
+    max-width: 280px;
+  }
+  .styles-img-curse{
+    
+  }
+  .title {
+    color: #6f27cd;
+    font-size: 16px;
+  }
+  .textEllipsis {
+    text-overflow: ellipsis;
+    max-width: 150px;
+    overflow: hidden;
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    white-space: nowrap;
+  }
+  .card-text {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .container {
+    background-color: #f9fafb;
+    border-radius: 10px;
+    .header {
+      padding: 20px;
+      font-size: 12px;
+    }
+  }
+  .footer {
+    display: flex;
+    gap: 5px;
+    .button {
+      padding: 5px;
+      border-radius: 10px;
+      &.secondary {
+        color: #6f27cd;
+        background-color: white;
+        border:1px solid #6f27cd;
+      }
+    }
+  }
+}

@@ -13,6 +13,7 @@ import Input from "../../components/UI/Input/input";
 import Button from "../../components/UI/Button";
 import Star from "../../components/Star/Star";
 import CardSocial from "../../components/CardSocial/CardSocial";
+import CardArticules from "../../components/CardArticules/CardArticules";
 
 export default function Home() {
   return (
@@ -196,11 +197,33 @@ export default function Home() {
           <div className={clsx("mb-4", styles["styles-name"])}>
             <span>Lo que nuestro usuarios piensan de nosotros</span>
           </div>
-          <div className={("p-4", clsx(styles["container-box"]))}>
+          <div
+            className={
+              ("p-4", clsx(styles["container-box"], styles.containerSocial))
+            }
+          >
+            <CardSocial />
+            <CardSocial />
+            <CardSocial />
+            <CardSocial />
+            <CardSocial />
+            <CardSocial />
             <CardSocial />
           </div>
         </div>
-        <div className={clsx("p-4", styles["container-violet"])}></div>
+        <div className={clsx(styles["container-violet"])}>
+          <h3 className={styles.title}>Articulos de interes</h3>
+          <div className={styles.cardVioletContainer}>
+            <CardArticules />
+            <CardArticules />
+            <CardArticules />
+            <CardArticules />
+            <CardArticules />
+            <CardArticules />
+            <CardArticules />
+            <CardArticules />
+          </div>
+        </div>
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mt-4", styles["container-text-imgtree"])}>
             <div className={clsx(styles["container-tu-marca"])}>

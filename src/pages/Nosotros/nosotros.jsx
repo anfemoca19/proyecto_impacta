@@ -4,7 +4,6 @@ import HeaderHome from "../../components/HeaderHome/HeaderHome";
 import styles from "../Nosotros/nosotros.module.scss";
 import imagen_for from "../../imagenes/imagen-4-web-movil.png";
 import imagen_five from "../../imagenes/imagen-5-web-movil.png";
-import imagen_tree from "../../imagenes/imagen-3-web-movil.png";
 import imagen_six from "../../imagenes/imagen-6-web-movil.png";
 import icono_siguiente from "../../imagenes/icono-siguiente.png";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
@@ -12,13 +11,13 @@ import icon_facebook from "../../imagenes/icono-facebook.png";
 import icon_instagram from "../../imagenes/icono-instagram.png";
 import icon_youtube from "../../imagenes/icono-you-tube.png";
 import icon_twiter from "../../imagenes/icono-twiter.png";
-import Categorias from "../../components/Categories/categories";
-import CarrucelCard from "../../components/Carrucel/Carrucel";
-import { cursesData } from "../../constants/user_const";
+import icon_ejercicio from "../../imagenes/icono-twiter.png";
+import icon_corazon from "../../imagenes/icono-twiter.png";
+import icon_estudiado from "../../imagenes/icono-twiter.png";
+import icon_ganador from "../../imagenes/icono-twiter.png";
 import Input from "../../components/UI/Input/input";
 import Button from "../../components/UI/Button";
 import CardSocial from "../../components/CardSocial/CardSocial";
-import CardArticules from "../../components/CardArticules/CardArticules";
 import LoginLayout from "../../components/LoginLayout/LoginLayout";
 
 export default function Nosotros() {
@@ -118,48 +117,98 @@ export default function Nosotros() {
         </div>
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mt-4", styles["container-text-imgtree"])}>
-            <div className={clsx("mb-5", styles["container-img-one"])}>
-              <img
-                src={imagen_tree}
-                alt=""
-                className={clsx(styles["style-imagen-one"])}
-              />
-            </div>
-            <div className={clsx(styles["container-wrap"])}>
-              <div className={clsx("mt-5 p-5", styles[""])}>
-                <h4>
-                  Conoce el desempeño
+            <div className={styles["container-metodologia"]}>
+              <div className={clsx("", styles["container-title-metodologia"])}>
+                <span>
+                  Una metodología que motiva a tu equipo a{" "}
                   <span className={clsx(styles["styles-text"])}>
-                    de tu equipo
+                    {" "}
+                    seguir aprendiendo
                   </span>
-                </h4>
-                <p className={clsx("mt-4", styles["styles-paragraph"])}>
-                  Obtén las métricas de aprendizaje de tu organización para
-                  ajustar,{" "}
-                  <span className={clsx(styles["styles-text"])}>
-                    rediseñar o cambiar los planes de estudios.
-                  </span>
-                </p>
+                </span>
               </div>
+              <div className={clsx(styles["container-metodologia-wrap"])}>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img src={icon_ejercicio} alt="icono haciendo enercicio " />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Aprende desde cualquier lugar
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      Comenzar a practicar y aprender{" "}
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        desde cualquier lugar 24/7,
+                      </span>
+                      y empezar a mejorar tu calidad de vida y la salud de tus
+                      colaboradores.
+                    </p>
+                  </div>
+                </div>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img src={icon_corazon} alt="icono haciendo enercicio " />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Desarrollar hábitos saludables para el mundo de hoy.
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      Integrarse al bienestar, elevar la energía, prevenir
+                      enfermedades y mejorar el autoestima,{" "}
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        es crucial para ganar el juego en la vida actual.
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={clsx("mt-5", styles["container-metodologia-wrap"])}
+              >
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img src={icon_estudiado} alt="icono haciendo enercicio " />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Entrenarse con maestros en cada área.
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      La información de alta calidad proviene de
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        coach, mentores y especialistas en cada área.
+                      </span>
+                      Todos nuestros maestros enseñan prácticas que han
+                      funcionado para sus vidas.
+                    </p>
+                  </div>
+                </div>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img src={icon_ganador} alt="icono haciendo enercicio " />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Avanzar paso a paso.
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      Los programas son diversos y están{" "}
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        disponibles para poderlos ver y repetir las veces que se
+                        requieran,
+                      </span>
+                      hasta apropiarlos y comprenderlos plenamente.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={clsx(styles["container-box"])}></div>
             </div>
           </div>
         </div>
-        {/* <div className={clsx("mt-5 container-fluid", styles.fixPosition)}>
-          <span
-            className={clsx(
-              "mb-5",
-              styles["styles-text"],
-              styles["style-title-sidebar"]
-            )}
-          >
-            {" "}
-            Programas de bienestar en distintas áreas
-          </span>
-          <CarrucelCard cursesData={cursesData} limitSlider={4} />
-        </div> */}
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mb-4")}>
-            <span className={clsx(styles["styles-name"])}>
+            <span className={clsx(styles["styles-text-title-social"])}>
               Lo que nuestro usuarios piensan de nosotros
             </span>
           </div>

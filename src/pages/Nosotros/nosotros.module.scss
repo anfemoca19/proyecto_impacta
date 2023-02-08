@@ -20,6 +20,8 @@ div.containerSocial {
     font-size: 30px;
   }
 }
+
+
 @media only screen and (max-width: 480px) {
   .container-grey{
     background-color: #f9fafb;
@@ -50,16 +52,67 @@ div.containerSocial {
     margin-bottom: 10px;
   }
 
-  .container-tu-marca{
-    width: 50%;
+
+  //
+
+  .container-box-metodologia{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     font-size: 20px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+  }
+
+  .container-metodologia{
+    text-align: center;
+    
+  }
+
+  .container-title-metodologia{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .container-metodologia-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .style-tittle-card{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  .styles-paragraph-card{
+    font-size: 13px;
+    margin-top: 25px;
+  }
+
+
+
+
+
+
+
+  .container-tu-marca{
+    font-size: 15px;
+    justify-content: center;
     text-align: center;
   }
 
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 10px;
     color: white;
     height: 60px;
     gap: 5px;
@@ -69,6 +122,60 @@ div.containerSocial {
       color: white;
     }
   }
+
+  //
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
+  //
+  .container-empleados-felices{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    gap: 35px;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .styles-green-text{
+    color: #afdb00;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .styles-simbol{
+    font-size: 70px;
+    color: #afdb00;
+    font-weight: bold;
+  }
+
+ //Seccion imagen mujer
+  .img-mujer-pc{
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .container-violet-box{
+    border-radius: 30px;
+    background-color: #7929e2;
+    box-shadow: 5px 4px 18px 5px rgb(56 56 56 / 71%);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+
+  //
+
 
   .styles-text{
     color: #7929e2;
@@ -109,7 +216,10 @@ div.containerSocial {
   .styles-line{
     border-right: 1px solid #7929e2;
   }
-  
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
   .styles-green-text{
     color: #afdb00;
     font-size: 17px;
@@ -245,10 +355,57 @@ div.containerSocial {
       margin-bottom: 10px;
   }
 
-  .container-tu-marca{
-    width: 50%;
-    font-size: 40px;
+  .container-box-metodologia{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
   }
+
+  .container-metodologia{
+    text-align: center;
+
+  }
+
+  .container-title-metodologia{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .container-metodologia-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .style-tittle-card{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  .styles-paragraph-card{
+    font-size: 13px;
+    margin-top: 25px;
+  }
+
+
+
+
+  .container-tu-marca{
+    font-size: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
@@ -271,6 +428,12 @@ div.containerSocial {
   .styles-text-paragraph{
     font-size: 25px;
   }
+
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 25px; 
+  }
+
 
   //
   .container-empleados-felices{
@@ -578,6 +741,51 @@ div.containerSocial {
     justify-content: center;
   }
   
+
+//
+.container-box-metodologia{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    padding: 10px;
+  }
+
+  .container-metodologia{
+    text-align: center;
+    
+  }
+
+  .container-title-metodologia{
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 25px;
+  }
+
+  .container-metodologia-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .style-tittle-card{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+
+  .styles-paragraph-card{
+    font-size: 13px;
+    margin-top: 25px;
+  }
+
+  //
   .container-tu-marca{
     width: 50%;
     font-size: 40px;

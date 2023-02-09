@@ -6,10 +6,7 @@ import "./calendar.scss";
 export default function Calendar() {
   const [date, setDate] = useState(new Date());
   return (
-    <div
-      className="container-fluid calendar mb-5 mt-4 p-3"
-      // className={clsx("container-fluidmb-5 mt-4 p-3", styles["calendar"])}
-    >
+    <div className="container-fluid calendar mb-5 mt-4 p-3">
       <CalendarLibrary
         onChange={setDate}
         value={date}

@@ -1,36 +1,33 @@
-.backgroun-img{
-  background-image: url("./../../imagenes/fondo-login.png");
-  height: 100vh;
-}
 
-.home-img{
-  display: flex;
-  background-image: url("./../../imagenes/fondo-login.png");
-  height: 150px;
-  // justify-content: center;
-  align-items: center;
-  // gap: 10px;
-}
-
+// mobile
 @media only screen and (max-width: 480px) {
-  .home-img{
+  .backgroun-img{
+    background-image: url("./../../imagenes/fondo-login.png");
+    height: 100vh;
+  }
+
+  .footer-img{
     display: flex;
     background-image: url("./../../imagenes/fondo-login.png");
     height: 300px;
-    // justify-content: center;
     align-items: center;
-    // gap: 10px;
   }
 }
 
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
-  .home-img{
-    display: flex;
+  .backgroun-img{
     background-image: url("./../../imagenes/fondo-login.png");
-    height: 300px;
-    // justify-content: center;
-    align-items: center;
-    // gap: 10px;
+    height: 100vh;
   }
+}
+
+// WEB
+
+@media only screen and (min-width: 1000px) {
+  .backgroun-img{
+    background-image: url("./../../imagenes/fondo-login.png");
+    height: 100vh;
+  }
+
 }

@@ -8,7 +8,6 @@ import Button from "../UI/Button/Button";
 export default function HeaderHome() {
   const location = useLocation();
   const [isActiveMenu, setIsActiveMenu] = useState(false);
-  // const [styleContainerNav] = useState(" menu-mobile");
 
   let menuHamburguer = () => {
     setIsActiveMenu(!isActiveMenu);
@@ -30,17 +29,20 @@ export default function HeaderHome() {
                   [styles.active]: location.pathname === "/home/nosotros",
                 })}
               >
-                <Link to={"/nosotros"} className={clsx(styles["nav-link"])}>
+                <Link
+                  to={"/home/nosotros"}
+                  className={clsx(styles["nav-link"])}
+                >
                   {" "}
                   Nosotros
                 </Link>
               </li>
               <li
                 className={clsx("mb-2", styles["nav-item"], {
-                  [styles.active]: location.pathname === "/cursos",
+                  [styles.active]: location.pathname === "/home/cursos",
                 })}
               >
-                <Link to={"/courses"} className={clsx(styles["nav-link"])}>
+                <Link to={"/home/cursos"} className={clsx(styles["nav-link"])}>
                   Cursos
                 </Link>
               </li>
@@ -94,20 +96,23 @@ export default function HeaderHome() {
               <ul className={clsx(styles["ul-container"])}>
                 <li
                   className={clsx("mb-2", styles["nav-item"], {
-                    [styles.active]: location.pathname === "/nosotros",
+                    [styles.active]: location.pathname === "/home/nosotros",
                   })}
                 >
-                  <Link to={"/nosotros"} className={clsx(styles["nav-link"])}>
+                  <Link
+                    to={"home/nosotros"}
+                    className={clsx(styles["nav-link"])}
+                  >
                     {" "}
                     Nosotros
                   </Link>
                 </li>
                 <li
                   className={clsx("mb-2", styles["nav-item"], {
-                    [styles.active]: location.pathname === "/cursos",
+                    [styles.active]: location.pathname === "/home/cursos",
                   })}
                 >
-                  <Link to={"/cursos"} className={clsx(styles["nav-link"])}>
+                  <Link to={"home/cursos"} className={clsx(styles["nav-link"])}>
                     Cursos
                   </Link>
                 </li>

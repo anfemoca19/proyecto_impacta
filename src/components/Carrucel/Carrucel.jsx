@@ -2,10 +2,8 @@ import clsx from "clsx";
 import { useState } from "react";
 import CardCurses from "../CardCurses/CardCurses";
 import styles from "../Carrucel/Carrucel.module.scss";
-
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-// import icon_next_rigth from "../../imagenes/icono-siguiente.png";
-// import icon_next_left from "../../imagenes/icono-anterior.png";
+
 export default function CarrucelCard({ cursesData, ...props }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const limitSlider = props.limitSlider;

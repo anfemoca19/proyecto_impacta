@@ -171,7 +171,6 @@ export default function CoursesTemplate({ children, ...props }) {
                 className={clsx("object-fit-contain", styles["styles-video"])}
                 width={800}
                 height={400}
-                // borderRadius={"10px"}
                 controls
                 src={
                   "https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd"

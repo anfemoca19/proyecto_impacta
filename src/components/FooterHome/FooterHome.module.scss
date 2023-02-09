@@ -1,0 +1,176 @@
+  
+  @media only screen and (max-width: 480px) {
+  //Estilos footer home
+  .container-mobile{
+    background-image: url("./../../imagenes/fondo-login.png");
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+
+  .container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .styles-icon-logo{
+    width: 110px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+
+  .container-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .style-upload-link{
+    color: white;
+    font-size: 10px;
+  }
+
+  ///derechos
+  .container-derechos{
+    display: flex;
+    color: #7929e2;
+    font-size: 12px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+// // Tablet
+@media only screen and  (min-width:481px) and (max-width:1000px){
+    //Estilos footer home
+    .container-mobile{
+      background-image: url("./../../imagenes/fondo-login.png");
+      height: 250px;
+    }
+
+    .container-logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .styles-icon-logo{
+      width: 170px;
+      height: 90px;
+    }
+
+
+    .container-social-media{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+
+    .container-wrap-links{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      gap:10px
+    }
+    .container-wrappers-links{
+      display: flex;
+      align-items: center;
+    }
+    .style-upload-link{
+      color: white;
+      font-size: 15px;
+    }
+  
+    ///derechos
+    .container-derechos{
+      display: flex;
+      color: #7929e2;
+      font-size: 12px;
+      font-weight: bold;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+// web
+@media only screen and (min-width: 1000px) {
+    //Estilos footer home
+
+    .container-mobile{
+      background-image: url("./../../imagenes/fondo-login.png");
+      height: 250px;
+    }
+
+    .container-logo{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .styles-icon-logo{
+      width: 200px;
+      height: 100px;
+    }
+
+  
+
+    .container-social-media{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+    }
+    
+    .container-wrap-links{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      gap:10px
+    }
+    .container-wrappers-links{
+      display: flex;
+      align-items: center;
+    }
+    .style-upload-link{
+      color: white;
+      font-size: 20px;
+    }
+    ///derechos
+    .container-derechos{
+      display: flex;
+      color: #7929e2;
+      font-size: 12px;
+      font-weight: bold;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+}

@@ -6,11 +6,6 @@ import imagen_for from "../../imagenes/imagen-4-web-movil.png";
 import imagen_five from "../../imagenes/imagen-5-web-movil.png";
 import imagen_six from "../../imagenes/imagen-6-web-movil.png";
 import icono_siguiente from "../../imagenes/icono-siguiente.png";
-import logo_blanco from "../../imagenes/logo-en-blanco.png";
-import icon_facebook from "../../imagenes/icono-facebook.png";
-import icon_instagram from "../../imagenes/icono-instagram.png";
-import icon_youtube from "../../imagenes/icono-you-tube.png";
-import icon_twiter from "../../imagenes/icono-twiter.png";
 import icon_ejercicio from "../../imagenes/icono-twiter.png";
 import icon_corazon from "../../imagenes/icono-twiter.png";
 import icon_estudiado from "../../imagenes/icono-twiter.png";
@@ -18,7 +13,7 @@ import icon_ganador from "../../imagenes/icono-twiter.png";
 import Input from "../../components/UI/Input/input";
 import Button from "../../components/UI/Button";
 import CardSocial from "../../components/CardSocial/CardSocial";
-import LoginLayout from "../../components/LoginLayout/LoginLayout";
+import FooterHome from "../../components/FooterHome/FooterHome";
 
 export default function Nosotros() {
   return (
@@ -206,6 +201,91 @@ export default function Nosotros() {
             </div>
           </div>
         </div>
+
+        {/* container violeta */}
+        <div className={clsx("p-4", styles["container-violet"])}>
+          <div className={styles["container-wrap-info-violeta"]}>
+            <div
+              className={clsx(
+                styles["container-violet-box"],
+                styles["container-elemento-violeta"]
+              )}
+            >
+              <div className={clsx(styles["container-interior-green"])}>
+                <span>3000</span>
+                <span>Empleados</span>
+              </div>
+              <div className={clsx(styles["container-texto-violet"])}>
+                <span>Empleados felices y productivos</span>
+              </div>
+            </div>
+            <div
+              className={clsx(
+                styles["container-violet-box"],
+                styles["container-elemento-violeta"]
+              )}
+            >
+              <div className={clsx(styles["container-interior-green"])}>
+                <span>2550</span>
+                <span>Consultas</span>
+              </div>
+              <div className={clsx(styles["container-texto-violet"])}>
+                <span>
+                  Utilizan el beneficio de atención médica, psicologica y de
+                  nutrición en un mes
+                </span>
+              </div>
+            </div>
+            <div
+              className={clsx(
+                styles["container-violet-box"],
+                styles["container-elemento-violeta"]
+              )}
+            >
+              <div className={clsx(styles["container-interior-green"])}>
+                <span>$214.200</span>
+                <span>USD</span>
+              </div>
+              <div className={clsx(styles["container-texto-violet"])}>
+                <span>
+                  Ahorro estimado por reduccion de ausentismo laboral en un año
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className={styles["container-web"]}>
+            <div
+              className={clsx(
+                "d-flex  align-items-center ps-4 pe-4 mt-5",
+                styles["container-btn-arrow-green"]
+              )}
+            >
+              <Link
+                className={clsx(
+                  "container-fluid text-center justify-content-between align-items-center d-flex",
+                  styles["style-upload-link-violet"]
+                )}
+                to=""
+              >
+                <span>Agenda demostración</span>
+                <img
+                  src={icono_siguiente}
+                  alt="arro-raight"
+                  className={clsx(styles["icon-upload"])}
+                />
+              </Link>
+            </div>
+            <div className={clsx(styles["container-paragrap"])}>
+              <p>
+                Según artículos publicados por la OMS los programas de bienestar
+                en el lugar de trabajo pueden contribuir a reducir el absentismo
+                por enfermedad general en un 27% y los costos de atención
+                sanitaria para las empresas en un 26%
+              </p>
+            </div>
+          </div>
+        </div>
+        {/*  */}
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mb-4")}>
             <span className={clsx(styles["styles-text-title-social"])}>
@@ -258,7 +338,7 @@ export default function Nosotros() {
             </div>
             <div
               className={clsx(
-                "container-fluid text-center",
+                "mb-5 container-fluid text-center",
                 styles["container-contactanos"]
               )}
             >
@@ -329,73 +409,7 @@ export default function Nosotros() {
             </div>
           </div>
         </div>
-        <LoginLayout className={"home-img"}>
-          <div className="container-fluid ">
-            <div className={clsx("row", styles["container-mobile"])}>
-              {/* <div className={clsx("col-4 p-4", styles["container-logo"])}> */}
-              <div
-                className={clsx(
-                  "col-4 col-sm-4 col-sm-8 col-md-4 ",
-                  styles["container-logo"]
-                )}
-              >
-                <div className={clsx()}>
-                  <img
-                    src={logo_blanco}
-                    alt="logo-blanco"
-                    className={clsx(styles["styles-icon-logo"])}
-                  />
-                </div>
-              </div>
-              <div
-                className={clsx(
-                  "col-4 col-sm-4 col-sm-8 col-md-4 ",
-                  styles["container-social-media"]
-                )}
-              >
-                {/* <div
-                className={clsx("col-4 p-4", styles["container-social-media"])}
-              > */}
-                <img src={icon_facebook} alt="icon-facebook" />
-                <img src={icon_instagram} alt="icon-instagram" />
-                <img src={icon_youtube} alt="icon-youtube" />
-                <img src={icon_twiter} alt="icon-twiter" />
-              </div>
-              <div
-                className={clsx(
-                  "col-4 col-sm-4 col-sm-8 col-md-4 ",
-                  styles["container-wrap-links"]
-                )}
-              >
-                {/* <div
-                className={clsx("col-4 p-4", styles["container-wrap-links"])}
-              > */}
-                {/* <div className={clsx(styles["container-wrap-links"])}> */}
-                <div>
-                  <img src="" alt="" />
-                  <Link className={clsx(styles["style-upload-link"])}>
-                    Politica de privacidad
-                  </Link>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <Link className={clsx(styles["style-upload-link"])}>
-                    Terminos y condiciones
-                  </Link>
-                </div>
-                <div>
-                  <img src="" alt="" />
-                  <Link className={clsx(styles["style-upload-link"])}>
-                    Preguntas frecuentes
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </LoginLayout>
-        <div className={clsx(styles["container-derechos"])}>
-          <span>@Impacta tu vida 2023</span>
-        </div>
+        <FooterHome />
       </div>
     </>
   );

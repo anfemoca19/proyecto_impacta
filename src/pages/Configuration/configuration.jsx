@@ -73,69 +73,42 @@ export default function Configruation() {
                 <Input
                   id="password "
                   className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2 ", styles["input-data-configuration"])}
                 />
-                <Input
-                  className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2", styles["input-data-configuration"])}
-                />
-                <Input
-                  className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2", styles["input-data-configuration"])}
-                />
-                <Input
-                  className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2", styles["input-data-configuration"])}
-                />
+                <Input className="mb-2 input-data-configuration" />
+                <Input className="mb-2 input-data-configuration" />
+                <Input className="mb-2 input-data-configuration" />
                 <Input
                   id="telefono_encargado"
                   className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
               </div>
-              <div
-                // className="col-12 mt-3"
-                className={clsx("col-12 mt-3")}
-              >
+              <div className={clsx("col-12 mt-3")}>
                 <Button>Actualizar</Button>
               </div>
             </div>
           </div>
-          <div
-            // className="container-fluid mb-5"
-            className={clsx("container-fluid mb-5")}
-          >
+          <div className={clsx("container-fluid mb-5")}>
             <span
-              // className="style-title-actualice mt-5 mb-5"
               className={clsx("mt-5 mb-5", styles["style-title-actualice"])}
             >
               Actualice su contraseña
             </span>
-            <p
-              // className="mt-3 style-title-pass"
-              className={clsx("mb-3", styles["style-title-pass"])}
-            >
+            <p className={clsx("mb-3", styles["style-title-pass"])}>
               Asegure su cuenta con una contraseña fuerte
             </p>
           </div>
-          <div
-            // className="container-fluid"
-            className={clsx("container-fluid text-center")}
-          >
+          <div className={clsx("container-fluid text-center")}>
             <div className={clsx("row")}>
               <div
-                // className="container box-container p-4 col-6"
                 className={clsx("container p-5 col", styles["container-box"])}
               >
                 <Input
                   placeholder="Nombre completo "
                   className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
                 <Input
                   placeholder="Numero Telefónico"
                   className="mb-2 input-data-configuration"
-                  // className={clsx("mb-2", styles["input-data-configuration"])}
                 />
                 <Input
                   placeholder="Correo Eléctronico"

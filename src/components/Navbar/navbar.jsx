@@ -1,10 +1,7 @@
 import clsx from "clsx";
 import { useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-
-// CONSTANTS
 import { USER_PERMISSIONS } from "../../constants/user_const";
-
 import styles from "../Navbar/navbar.module.scss";
 
 export default function Navbar({ className }) {

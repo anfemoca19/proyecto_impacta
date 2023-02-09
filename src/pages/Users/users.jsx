@@ -111,7 +111,6 @@ export default function Users() {
                   src={Icon_search}
                   alt="icon-sarch"
                 />
-                {/* <input className="input-search" type="text" placeholder="Buscar" /> */}
                 <Input
                   className={clsx("border-0", styles["input-search"])}
                   type="text"
@@ -123,14 +122,6 @@ export default function Users() {
               <div
                 className={clsx("col-3  ", styles["container-anadir-usuario"])}
               >
-                {/* <Button
-                  variant="primary"
-                  className={"btn-cuartary"}
-                  to="/addUser"
-                >
-                  {" "}
-                  Añadir usuario{" "}
-                </Button> */}
                 <Link to="/addUser" className={clsx(styles["styles-anadir"])}>
                   {" "}
                   Añadir usuario
@@ -219,10 +210,12 @@ export default function Users() {
                 <img
                   className={clsx("col-4", styles["btn-img"])}
                   src={icon_boton_anterior}
+                  alt="icono-boton-anterior"
                 />
                 <img
                   className={clsx("col-4", styles["btn-img"])}
                   src={icon_boton_siguiente}
+                  alt="iconon-boton-siguiente"
                 />
               </div>
             </div>

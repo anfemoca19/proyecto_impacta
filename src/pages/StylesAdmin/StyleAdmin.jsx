@@ -37,7 +37,6 @@ export default function StyleAdmin() {
           </span>
           <Menu />
           <div
-            // className="container-backgraund mt-3 p-4"
             className={clsx(
               "container-fluid p-4 mb-5",
               styles["box-container"]
@@ -48,16 +47,10 @@ export default function StyleAdmin() {
                 className={clsx("form-control", styles["style-textarea"])}
                 aria-label="With textarea"
               ></textarea>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
+              <div className={clsx("col-5 mt-3")}>
                 <Button>Guardar</Button>
               </div>
-              <div
-                // className="col-5 mt-3"
-                className={clsx("col-5 mt-3")}
-              >
+              <div className={clsx("col-5 mt-3")}>
                 <Button name="btnDeleteColor">Eliminar</Button>
               </div>
             </div>

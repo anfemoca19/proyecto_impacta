@@ -22,9 +22,6 @@ import ChartPie from "../../components/ChartPie/ChartPie";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
 
-import icon_boton_anterior from "../../imagenes/icono-boton-anterior.png";
-import icon_boton_siguiente from "../../imagenes/icono-boton-siguiente.png";
-
 import {
   cursesData,
   data,
@@ -464,7 +461,6 @@ export default function Dashboard() {
                   Da click aquí para comenzar el proceso de activar tus usuarios
                 </span>
                 <img
-                  // className="icon-upload"
                   className={clsx(styles["icon-upload"])}
                   src={upload}
                   alt="icon-upload"

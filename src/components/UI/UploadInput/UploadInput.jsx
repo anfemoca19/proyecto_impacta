@@ -1,5 +1,3 @@
-import { useRef } from "react";
-import Label from "../Label/Label";
 import "./UploadInput.scss";
 import clsx from "clsx";
 
@@ -21,11 +19,7 @@ export default function UploadInput({
       />
 
       <label htmlFor="file-4">
-        <span
-          // className={("iborrainputfile", className)}
-          className={clsx("iborrainputfile", className, {})}
-          {...props}
-        >
+        <span className={clsx("iborrainputfile", className, {})} {...props}>
           {children}
         </span>
       </label>

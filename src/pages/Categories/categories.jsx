@@ -62,11 +62,9 @@ export default function CategoriasPages() {
                 switch (type) {
                   case "edit":
                     console.log("editing");
-                    // setData(type)
                     break;
                   case "position":
                     console.log("posistion");
-                    // setData(positio)
                     break;
                 }
               }}
@@ -113,23 +111,17 @@ export default function CategoriasPages() {
                     <Input
                       id="password "
                       className="mb-2 input-data-configuration"
-                      // className={clsx("mb-2 ", styles["input-data-configuration"])}
                     />
-                    <Input
-                      className="mb-2 input-data-configuration"
-                      // className={clsx("mb-2", styles["input-data-configuration"])}
-                    />
+                    <Input className="mb-2 input-data-configuration" />
                     <div className={clsx(styles["container-button-activa"])}>
                       <div className={clsx(styles["me-3 styles-btn-ativa"])}>
                         <input
                           type="checkbox"
                           className={clsx("btn-check")}
-                          // class="btn-check"
                           id="btncheck1"
                           autocomplete="off"
                         />
                         <label
-                          //  class="btn btn-outline-primary"
                           className={clsx("btn", styles["btn-outline-primary"])}
                           for="btncheck1"
                         >
@@ -152,11 +144,7 @@ export default function CategoriasPages() {
                       </div>
                     </div>
                   </div>
-
-                  <div
-                    // className="col-12 mt-3"
-                    className={clsx("col-12 mt-3")}
-                  >
+                  <div className={clsx("col-12 mt-3")}>
                     <Button>Actualizar</Button>
                   </div>
                 </div>

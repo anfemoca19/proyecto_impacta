@@ -16,7 +16,7 @@ export default function FooterHome() {
         <div className={clsx("row", styles["container-mobile"])}>
           <div
             className={clsx(
-              "col-4 col-sm-4 col-sm-8 col-md-4 ",
+              "col-5 col-sm-4 col-sm-8 col-md-4 ",
               styles["container-logo"]
             )}
           >
@@ -30,7 +30,7 @@ export default function FooterHome() {
           </div>
           <div
             className={clsx(
-              "col-4 col-sm-4 col-sm-8 col-md-4 ",
+              "col-5 col-sm-4 col-sm-8 col-md-4 ",
               styles["container-social-media"]
             )}
           >
@@ -41,7 +41,7 @@ export default function FooterHome() {
           </div>
           <div
             className={clsx(
-              "col-4 col-sm-4 col-sm-8 col-md-4",
+              "col-5 col-sm-4 col-sm-8 col-md-4",
               styles["container-wrap-links"]
             )}
           >

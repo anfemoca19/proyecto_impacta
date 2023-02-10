@@ -19,7 +19,9 @@ export default function HeaderHome() {
         className={clsx(styles["container-mobile"], styles["container-web"])}
       >
         <div className={clsx("col-4 p-4", styles["container-logo"])}>
-          <img className={clsx(styles.logo)} src={Logo} alt="logo" />
+          <Link to={"/home"}>
+            <img className={clsx(styles.logo)} src={Logo} alt="logo" />
+          </Link>
         </div>
         <div className={clsx("col-4 p-4", styles["container-nav"])}>
           <nav className={clsx(styles["nav-container"])}>

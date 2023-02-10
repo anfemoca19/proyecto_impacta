@@ -39,7 +39,7 @@ export default function CursosHome() {
           <span
             className={clsx(
               "mb-5",
-              styles["styles-text"],
+              styles["styles-text-title-social"],
               styles["style-title-sidebar"]
             )}
           >
@@ -56,7 +56,7 @@ export default function CursosHome() {
           <div className={clsx("mb-4")}>
             <span
               className={clsx(
-                styles["styles-text"],
+                styles["styles-text-title-social"],
                 styles["style-title-sidebar"]
               )}
             >

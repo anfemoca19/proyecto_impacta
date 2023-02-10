@@ -89,8 +89,6 @@ div.containerSocial {
 
   .container-categorias{
     display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .container-styles-description{
@@ -579,6 +577,11 @@ div.containerSocial {
     color: #7929e2;
     font-size: 13px;
   } 
+  
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
 
   .check-color {
     cursor: pointer;

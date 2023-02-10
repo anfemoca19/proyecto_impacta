@@ -288,7 +288,12 @@ export default function Nosotros() {
         {/*  */}
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mb-4")}>
-            <span className={clsx(styles["styles-text-title-social"])}>
+            <span
+              className={clsx(
+                styles["styles-text-title-social"],
+                styles["style-title-sidebar"]
+              )}
+            >
               Lo que nuestro usuarios piensan de nosotros
             </span>
           </div>

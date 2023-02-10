@@ -180,11 +180,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className={clsx("mt-5 container-fluid", styles.fixPosition)}>
+        <div className={clsx("mt-5 p-4 container-fluid", styles.fixPosition)}>
           <span
             className={clsx(
               "mb-5",
-              styles["styles-text"],
+              styles["styles-text-title-social"],
               styles["style-title-sidebar"]
             )}
           >
@@ -195,7 +195,12 @@ export default function Home() {
         </div>
         <div className={clsx("p-4", styles["container-grey"])}>
           <div className={clsx("mb-4")}>
-            <span className={clsx(styles["styles-name"])}>
+            <span
+              className={clsx(
+                styles["styles-text-title-social"],
+                styles["style-title-sidebar"]
+              )}
+            >
               Lo que nuestro usuarios piensan de nosotros
             </span>
           </div>

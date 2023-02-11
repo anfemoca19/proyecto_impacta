@@ -261,7 +261,7 @@ div.containerSocial {
 
   .container-text-imgtree{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
@@ -287,8 +287,8 @@ div.containerSocial {
     cursor: pointer;
     border: 2px solid #7929e2;
     appearance: none;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 
   .check-color:checked {

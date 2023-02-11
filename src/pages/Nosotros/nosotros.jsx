@@ -96,7 +96,7 @@ export default function Nosotros() {
                 <h4 className={clsx("mt-3 mb-4", styles["styles-green-text"])}>
                   Estamos seguros que crear una cultura de bienestar,
                 </h4>
-                <span className={clsx("style-text-black")}>
+                <span className={clsx(styles["style-text-white"])}>
                   genera multiples beneficios para las empresas
                 </span>{" "}
               </div>

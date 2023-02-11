@@ -1,10 +1,14 @@
 
 @media only screen and (max-width: 480px) {
+  .container-title-categories{
+    display: flex;
+    justify-content: center;
+  }
 
   .title-style {
     color: #7929e2;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 600;
     margin-top: 5px;
   }
 
@@ -33,7 +37,7 @@
     align-items: center;
     text-align: center;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
   }
 
 
@@ -185,7 +189,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  .fontSizeHome{
     font-size: 18px;
   }
 
@@ -255,6 +263,7 @@
     gap: 15px;
     padding: 10px;
     margin-top: 0 !important;
+    font-size: 20px;
   }
 
   .style-inline .title-style{display:  none;}

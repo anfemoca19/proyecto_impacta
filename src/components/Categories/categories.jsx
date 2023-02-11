@@ -6,7 +6,7 @@ export default function Categorias({ className, isHome }) {
   return (
     <>
       <div className={clsx("container-fluid mt-3", styles[className])}>
-        <div className={""}>
+        <div className={styles["container-title-categories"]}>
           <span className={clsx("mt-2", styles["title-style"])}>
             Categorias
           </span>
@@ -26,8 +26,9 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded mt-2 text-muted",
-                  styles["text-categories"]
+                  "rounded  text-muted",
+                  styles["text-categories"],
+                  isHome && [styles.fontSizeHome]
                 )}
               >
                 Nutricón
@@ -48,8 +49,9 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted mt-2",
-                  styles["text-categories"]
+                  "rounded text-muted",
+                  styles["text-categories"],
+                  isHome && [styles.fontSizeHome]
                 )}
               >
                 Estilo de vida
@@ -69,8 +71,9 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted mt-2",
-                  styles["text-categories"]
+                  "rounded text-muted",
+                  styles["text-categories"],
+                  isHome && [styles.fontSizeHome]
                 )}
               >
                 Actividad fisica
@@ -92,8 +95,9 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted mt-2",
-                  styles["text-categories"]
+                  "rounded text-muted",
+                  styles["text-categories"],
+                  isHome && [styles.fontSizeHome]
                 )}
               >
                 Yoga
@@ -113,8 +117,9 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted mt-2",
-                  styles["text-categories"]
+                  "rounded text-muted",
+                  styles["text-categories"],
+                  isHome && [styles.fontSizeHome]
                 )}
               >
                 Inteligencia emocional
@@ -134,8 +139,9 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted mt-2",
-                  styles["text-categories"]
+                  "rounded text-muted",
+                  styles["text-categories"],
+                  isHome && [styles.fontSizeHome]
                 )}
               >
                 Finanzas

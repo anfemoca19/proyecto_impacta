@@ -102,7 +102,7 @@ export default function HeaderHome() {
                   })}
                 >
                   <Link
-                    to={"home/nosotros"}
+                    to={"/home/nosotros"}
                     className={clsx(styles["nav-link"])}
                   >
                     {" "}
@@ -114,7 +114,10 @@ export default function HeaderHome() {
                     [styles.active]: location.pathname === "/home/cursos",
                   })}
                 >
-                  <Link to={"home/cursos"} className={clsx(styles["nav-link"])}>
+                  <Link
+                    to={"/home/cursos"}
+                    className={clsx(styles["nav-link"])}
+                  >
                     Cursos
                   </Link>
                 </li>

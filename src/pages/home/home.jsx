@@ -74,7 +74,7 @@ export default function Home() {
               para empresas.
             </h4>
           </div>
-          <div className={clsx("d-flex ")}>
+          <div className={clsx(styles["container-descripcion-number"])}>
             <div
               className={clsx(
                 "col-4",
@@ -117,8 +117,8 @@ export default function Home() {
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
             <div>
-              <h4 className={clsx("mt-3 mb-4", styles["styles-green-text"])}>
-                Aprende cuando y donde quieras{" "}
+              <h4 className={clsx("mt-3", styles["styles-green-text"])}>
+                Aprende cuando y donde quieras.{" "}
               </h4>
               <span className={clsx(styles["style-text-white"])}>
                 ¡Desarrolla tu mejor versión!
@@ -157,7 +157,7 @@ export default function Home() {
       </div>
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mt-4", styles["container-text-imgtree"])}>
-          <div className={clsx("mb-5", styles["container-img-one"])}>
+          <div className={clsx("mb-3", styles["container-img-one"])}>
             <img
               src={imagen_tree}
               alt=""
@@ -165,7 +165,7 @@ export default function Home() {
             />
           </div>
           <div className={clsx(styles["container-wrap"])}>
-            <div className={clsx("mt-5 p-5", styles[""])}>
+            <div className={clsx("mt-1 p-5", styles[""])}>
               <h4>
                 Conoce el desempeño
                 <span className={clsx(styles["styles-text"])}>
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={clsx("mt-5 p-4 container-fluid", styles.fixPosition)}>
+      <div className={clsx("mt-3 p-4 container-fluid", styles.fixPosition)}>
         <span
           className={clsx(
             "mb-5",

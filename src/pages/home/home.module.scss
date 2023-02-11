@@ -1,3 +1,6 @@
+body{
+  padding: 0;
+}
 .cardVioletContainer,
 div.containerSocial {
   display: flex;
@@ -66,7 +69,7 @@ div.containerSocial {
     justify-content: flex-end;
     &:hover{
       background-color: #afdb00;
-      color: white;
+      color: black;
     }
   }
 
@@ -76,6 +79,12 @@ div.containerSocial {
 
   .style-upload-link{
     color: #f9f9f9;
+    gap: 5px;
+    font-weight:bold ;
+    font-size: 13px;
+    &:hover{
+      color: black;
+    }
   }
 
   .icon-upload {
@@ -114,6 +123,9 @@ div.containerSocial {
     font-weight: bold;
   }
 
+  .text-disable-mobile{
+    display:none;
+  }
     //Seccion aprende
 
   .container-violet{
@@ -121,6 +133,10 @@ div.containerSocial {
     padding-right: 0;
   }
 
+  .style-text-white{
+    color: white;
+    font-size: 20px;
+  }
   .container-btn-arrow-white{
     background-color: white;
     border-radius: 15px;
@@ -181,9 +197,7 @@ div.containerSocial {
     width: 110px;
     height: 50px;
   }
-  .style-upload-link{
-    font-size: 12px;
-  }
+
   .container-social-media{
     display: flex;
     justify-content: center;
@@ -194,6 +208,10 @@ div.containerSocial {
     }
   }
 
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
   ///derechos
   .container-derechos{
     display: flex;
@@ -253,7 +271,7 @@ div.containerSocial {
     justify-content: flex-end;
     &:hover{
       background-color: #afdb00;
-      color: white;
+      color: black;
     }
   }
 
@@ -262,6 +280,12 @@ div.containerSocial {
   }
   .style-upload-link{
     color: #f9f9f9;
+    gap: 5px;
+    font-weight:bold ;
+    font-size: 15px;
+    &:hover{
+      color: black;
+    }
   }
   .icon-upload {
     height: 30px;
@@ -315,6 +339,10 @@ div.containerSocial {
     padding-right: 0;
   }
 
+  .style-text-white{
+    color: white;
+    font-size: 25px;
+  }
   .container-btn-arrow-white{
     background-color: white;
     border-radius: 15px;
@@ -323,15 +351,18 @@ div.containerSocial {
     height: 60px;
     gap: 8px;
     justify-content: flex-end;
+    font-weight: bold;
     &:hover{
       background-color: #afdb00;
-      color: black;
+      color: #7929e2;
+      font-weight: bold;
     }
   }
 
   .style-upload-link-white{
     color: black;
     gap: 5px;
+    
   }
 
   .container-tu-marca{
@@ -364,11 +395,15 @@ div.containerSocial {
     font-size: 12px;
   }
 
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
 
 
    //Estilos footer home
 
-   .container-logo{
+  .container-logo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -379,9 +414,7 @@ div.containerSocial {
     height: 80px;
   }
 
-  .style-upload-link{
-    font-size: 12px;
-  }
+
   .container-social-media{
     display: flex;
     justify-content: center;
@@ -452,7 +485,7 @@ div.containerSocial {
     display: none;
   }
 
-  .container-btn-arrow{
+  .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
     font-size: 15px;
@@ -462,7 +495,23 @@ div.containerSocial {
     justify-content: flex-end;
     &:hover{
       background-color: #afdb00;
-      color: white;
+      color: black;
+    }
+  }
+
+  .container-btn-arrow-white{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 15px;
+    color: black;
+    height: 60px;
+    gap: 8px;
+    justify-content: flex-end;
+    font-weight: bold;
+    &:hover{
+      background-color: #afdb00;
+      color: #7929e2;
+      font-weight: bold;
     }
   }
 
@@ -473,6 +522,11 @@ div.containerSocial {
   .style-upload-link{
     color: #f9f9f9;
     gap: 5px;
+    font-weight:bold ;
+    font-size: 15px;
+    &:hover{
+      color: black;
+    }
   }
 
   .icon-upload {
@@ -529,15 +583,6 @@ div.containerSocial {
     font-size: 30px;
   }
 
-  .container-btn-arrow-white{
-    background-color: white;
-    border-radius: 15px;
-    font-size: 15px;
-    color: black;
-    height: 60px;
-    gap: 8px;
-    justify-content: flex-end;
-  }
 
   .style-upload-link-white{
     color: black;
@@ -629,9 +674,7 @@ div.containerSocial {
     width: 150px;
     height: 80px;
   }
-  .style-upload-link{
-    font-size: 15px;
-  }
+ 
   .container-social-media{
     display: flex;
     justify-content: center;

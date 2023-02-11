@@ -13,8 +13,8 @@
   }
 
   .style-icon {
-    height: 60px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
     display: block;
     box-shadow: 0px 6px 36px 14px #e6e6e800;
     background-repeat: no-repeat;
@@ -32,7 +32,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-weight: bold;
+    font-size: 13px;
   }
+
 
   .icon-nutricion-blanco {
     background-image: url("../../imagenes/icono-categoria-nutricion-blanco.png");
@@ -109,6 +112,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-weight: bold;
+    font-size: 15px;
   }
 
   .icon-nutricion-blanco {
@@ -172,7 +177,6 @@
 
   .container-elemet-icon{
     display: flex;
-    font-size: 10px;
     justify-content: center;
   }
 
@@ -181,6 +185,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-weight: bold;
+    font-size: 18px;
   }
 
   .style-icon{

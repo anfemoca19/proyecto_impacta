@@ -117,7 +117,7 @@ export default function Home() {
                 <h4 className={clsx("mt-3 mb-4", styles["styles-green-text"])}>
                   Aprende cuando y donde quieras{" "}
                 </h4>
-                <span className={clsx("style-text-black")}>
+                <span className={clsx("style-text-white")}>
                   ¡Desarrolla tu mejor versión!
                 </span>{" "}
               </div>

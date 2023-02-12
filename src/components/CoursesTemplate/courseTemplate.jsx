@@ -33,7 +33,7 @@ export default function CoursesTemplate({ children, ...props }) {
     <>
       <MenuMobile />
       <LayoutBackgroundCurses>
-        <header className="p-5">
+        <header className={clsx("p-5", styles["style-header"])}>
           <img
             src={logo_blanco}
             alt=""

@@ -7,8 +7,27 @@
     border: none;
     box-shadow: 5px 4px 18px 5px rgba(56, 56, 56, 0.71);
   }
+  .container-header-card{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px;
+    justify-content: space-around;
+
+  }
+  .container-like-coments{
+    display: flex;
+    gap: 10px;
+  }
+  .styles-lik-coments{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   .styles-img-curse{
-    
+    width: 100%;
   }
 
   .title {
@@ -25,11 +44,11 @@
   }
   .card-text {
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 500;
   }
   .container {
     background-color: #f9fafb;
-    padding: 0 10px;
     border-radius: 10px;
   }
 
@@ -56,8 +75,27 @@
     box-shadow: 5px 4px 18px 5px rgba(56, 56, 56, 0.71);
   }
 
+  .container-header-card{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px;
+    justify-content: space-around;
+
+  }
+  .container-like-coments{
+    display: flex;
+    gap: 10px;
+  }
+  .styles-lik-coments{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   .styles-img-curse{
-    
+    width: 100%;
   }
 
   .title {
@@ -78,7 +116,6 @@
   }
   .container {
     background-color: #f9fafb;
-    padding: 10px;
     border-radius: 10px;
   }
   .footer {
@@ -103,8 +140,29 @@
     box-shadow: 5px 4px 18px 5px rgba(56, 56, 56, 0.71);
     max-width: 280px;
   }
+  .container-header-card{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 6px;
+    justify-content: space-around;
+
+  }
+  .container-like-coments{
+    display: flex;
+    gap: 10px;
+  }
+  .styles-lik-coments{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .style-date-card{
+
+  }
   .styles-img-curse{
-    
+    width: 100%;
   }
   .title {
     color: #6f27cd;

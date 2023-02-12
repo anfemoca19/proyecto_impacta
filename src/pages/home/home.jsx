@@ -9,13 +9,47 @@ import icono_siguiente from "../../imagenes/icono-siguiente.png";
 import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
-import Input from "../../components/UI/Input/input";
-import Button from "../../components/UI/Button";
 import CardSocial from "../../components/CardSocial/CardSocial";
 import CardArticules from "../../components/CardArticules/CardArticules";
 import FooterHome from "../../components/FooterHome/FooterHome";
+import { useState } from "react";
+import { useEffect } from "react";
+import ContactanosFomr from "../../components/Contactanos/Contactanos";
 
 export default function Home() {
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex((prevSlideIndex) =>
+        prevSlideIndex === slides.length - 1 ? 0 : prevSlideIndex + 1
+      );
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const slides = [
+    {
+      content: <CardSocial />,
+    },
+    {
+      content: <CardSocial />,
+    },
+    {
+      content: <CardSocial />,
+    },
+    {
+      content: <CardSocial />,
+    },
+    {
+      content: <CardSocial />,
+    },
+    {
+      content: <CardSocial />,
+    },
+  ];
+
   return (
     <>
       <HeaderHome />
@@ -183,7 +217,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={clsx("mt-3 p-4 container-fluid")}>
+      <div
+        className={clsx(
+          "mt-3 p-4 container-fluid",
+          styles["title-center-home-mobile"]
+        )}
+      >
         <span
           className={clsx(
             "mb-5",
@@ -201,7 +240,8 @@ export default function Home() {
           <span
             className={clsx(
               styles["styles-text-title-social"],
-              styles["style-title-sidebar"]
+              styles["style-title-sidebar"],
+              styles["title-center-home-mobile"]
             )}
           >
             Lo que nuestro usuarios piensan de nosotros
@@ -213,13 +253,13 @@ export default function Home() {
             clsx(styles["container-box-social"], styles.containerSocial))
           }
         >
+          <CardSocial limitSlider={6} />
+          {/* <CardSocial />
           <CardSocial />
           <CardSocial />
           <CardSocial />
           <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
+          <CardSocial />  */}
         </div>
       </div>
       <div className={clsx(styles["container-violet"])}>
@@ -252,70 +292,7 @@ export default function Home() {
               styles["container-contactanos"]
             )}
           >
-            <div className={clsx("row")}>
-              <div
-                className={clsx(
-                  "container p-5 col",
-                  styles["container-box"],
-                  styles["container-login"]
-                )}
-              >
-                <div className={clsx("mb-3")}>
-                  <span
-                    className={clsx(
-                      "mb-3",
-                      styles["styles-text-login"],
-                      styles
-                    )}
-                  >
-                    Déjanos tus datos y nos pondremos en contacto contigo.
-                  </span>
-                </div>
-                <Input
-                  placeholder="Contraseña actual "
-                  className="mb-2 input-data-configuration"
-                />
-                <Input
-                  placeholder="Nueva contraseña"
-                  className="mb-2 input-data-configuration"
-                />
-                <Input
-                  placeholder="Confirme contraseña"
-                  className="mb-2 input-data-configuration"
-                />
-                <div className="row mb-4 mt-5 form-group">
-                  <div className="col justify-content-center ">
-                    <div className="form-check">
-                      <input
-                        className={clsx(
-                          "form-check-input",
-                          styles["check-color"]
-                        )}
-                        type="checkbox"
-                        value=""
-                        id="form2Example31"
-                      />
-                      <label
-                        className={clsx(
-                          "form-check-label",
-                          styles["color-text-check"]
-                        )}
-                        htmlFor="form2Example31"
-                      >
-                        {" "}
-                        Acepto los términos y condiciones, el Aviso de
-                        privacidad y la Política de datos de navegación
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <Button
-                  className={clsx("mt-3 mb-3", styles["styles-btn-login"])}
-                >
-                  Enviar
-                </Button>
-              </div>
-            </div>
+            <ContactanosFomr />
           </div>
         </div>
       </div>

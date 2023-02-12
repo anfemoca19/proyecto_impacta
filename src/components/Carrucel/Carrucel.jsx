@@ -22,6 +22,7 @@ export default function CarrucelCard({ cursesData, isHome, ...props }) {
         : prevState + limitSlider;
     });
   };
+
   const imagesToShow = cursesData.slice(
     currentIndex,
     currentIndex + limitSlider

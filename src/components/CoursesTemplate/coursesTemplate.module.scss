@@ -1,7 +1,7 @@
 //mobile
 @media only screen and  (max-width: 480px) {
-///header
-  header{
+///style-header
+  style-header{
     display: none;
   }
   /// styles-video
@@ -79,8 +79,8 @@
 
 //tablet
 @media only screen and  (min-width:480px) and (max-width:1000px){
-  ///header
-  header{
+  ///style-header
+  style-header{
     display: none;
   }
   

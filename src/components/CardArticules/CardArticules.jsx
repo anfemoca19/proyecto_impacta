@@ -1,28 +1,39 @@
-import { Navigate, useNavigate } from "react-router-dom";
-import Star from "../Star/Star";
+import { useNavigate } from "react-router-dom";
 import styles from "./CardArticules.module.scss";
 import clsx from "clsx";
 import img_curse_nutrition from "../../imagenes/nutricion_conciente.jpeg";
+import { AiOutlineHeart } from "react-icons/ai";
+import { BsChatLeftText } from "react-icons/bs";
 
-import Button from "../UI/Button/Button";
-
-export default function CardArticules({}) {
+export default function CardArticules() {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/courses/coursesTemplate/" + `${1}` + "/");
-  };
+  // const handleClick = () => {
+  //   navigate("/courses/coursesTemplate/" + `${1}` + "/");
+  // };
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.card}>
         <div className={styles.container}>
-          <header className={styles.header}>
-            <span>20 de enero 2019</span>
+          <header className={clsx(styles["container-header-card"])}>
+            <span className={clsx(styles["style-date-card"])}>
+              20 de enero 2019
+            </span>
+            <div className={clsx(styles["container-like-coments"])}>
+              <div className={clsx(styles["styles-lik-coments"])}>
+                <AiOutlineHeart color={"#7929e2"} />
+                <span>1200</span>
+              </div>
+              <div className={clsx(styles["styles-lik-coments"])}>
+                <BsChatLeftText color={"#7929e2"} />
+                <span>1200</span>
+              </div>
+            </div>
           </header>
           <img
             src={img_curse_nutrition}
-            className={clsx("card-img-top", styles["styles-img-curse"])}
+            className={clsx("", styles["styles-img-curse"])}
             alt="..."
           />
           <footer className="card-body">

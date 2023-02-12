@@ -2,7 +2,7 @@ import clsx from "clsx";
 import styles from "../CardSocial/CardSocial.module.scss";
 import Star from "../Star/Star";
 
-export default function CardSocial() {
+export default function CardSocial(limitSlider) {
   return (
     <div className={clsx(styles["container-wrap"])}>
       <div className={clsx(styles["container-box"])}>

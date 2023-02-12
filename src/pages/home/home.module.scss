@@ -1,26 +1,4 @@
 
-// .cardVioletContainer,
-// div.containerSocial {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   overflow: hidden;
-//   overflow-x: auto;
-//   width: 100%;
-//   gap: 35px;
-//   padding: 20px 10px;
-// }
-// div.containerSocial {
-//   padding: 210px 80px 30px;
-// }
-// .container-violet {
-//   padding: 10px 40px 40px;
-//   .title {
-//     color: #fff;
-//     margin: 35px 0 45px 0;
-//     font-weight: 600;
-//     font-size: 30px;
-//   }
-// }
 @media only screen and (max-width: 480px) {
 
   .cardVioletContainer,
@@ -31,12 +9,13 @@ div.containerSocial {
   overflow-x: auto;
   width: 100%;
   gap: 35px;
-  padding: 20px 10px;
+  padding: 10px;
 }
-// div.containerSocial {
-//   padding: 210px 80px 30px;
-// }
+
+
+
 .container-violet {
+  background-color: #7929e2;
   padding: 10px 40px 40px;
   .title {
     color: #fff;
@@ -179,10 +158,6 @@ div.containerSocial {
 
     //Seccion aprende
 
-  .container-violet{
-    background-color: #7929e2;
-    padding-right: 0;
-  }
 
   .style-text-white{
     color: white;
@@ -202,25 +177,10 @@ div.containerSocial {
     font-size: 20px;
     font-weight: bold;
   }
+  .title-center-home-mobile{
+    text-align: center;
+  }
 
-  // Login
-  .styles-text-login{
-    color: #7929e2;
-    font-size: 13px;
-  } 
-  .check-color {
-    cursor: pointer;
-    border: 2px solid #7929e2;
-    appearance: none;
-  }
-  
-  .check-color:checked {
-    background-color: #7929e2;
-    border-color: #7929e2;
-  }
-  .color-text-check {
-    color: #7929e2;
-  }
 
 
 
@@ -428,9 +388,7 @@ div.containerSocial {
     color: white;
     font-size: 25px;
   }
-
-
-
+  
   .style-upload-link-white{
     color: black;
     gap: 5px;
@@ -448,31 +406,7 @@ div.containerSocial {
     text-align:center ;
   }
 
-  //silider
-  .style-title-sidebar{
-    font-size: 25px;
-    font-weight: bold;
-  }
-  .styles-text-login{
-    color: #7929e2;
-    font-size: 13px;
-  } 
-
-  .container-login{
-      width: 100%;
-      height: 480px;
-  }
-
-  .color-text-check {
-    color: #7929e2;
-    font-size: 12px;
-  }
-
-  .styles-text-title-social{
-    color: #7929e2;
-    font-size: 20px; 
-  }
-
+ 
 
    //Estilos footer home
 
@@ -722,33 +656,7 @@ div.containerSocial {
     font-weight: bold;
   }
 
-  .styles-text-login{
-    color: #7929e2;
-    font-size: 13px;
-  } 
-  
-  .styles-text-title-social{
-    color: #7929e2;
-    font-size: 30px; 
-  }
 
-  .check-color {
-    cursor: pointer;
-    border: 2px solid #7929e2;
-    appearance: none;
-    width: 22px;
-    height: 22px;
-  }
-
-  .check-color:checked {
-    background-color: #7929e2;
-    border-color: #7929e2;
-  }
-
-  .color-text-check {
-    color: #7929e2;
-    font-size: 12px;
-  }
 
   .container-contactanos{
     display: flex;

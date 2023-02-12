@@ -12,21 +12,25 @@
     position: relative;
     padding: 10px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   .container-wrap{
     display: flex;
+
+    padding: 30px;
   }
 
   //Estilos foto
   .container-foto{
-    width: 150px;
-    height: 150px;
-    position: absolute;
+    width: 120px;
+    height: 120px;
     background-color: #7929e2;
     border-radius: 100%;
-    top: -110px;
-    left: 260px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   //seccion prueba social

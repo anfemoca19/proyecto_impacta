@@ -209,7 +209,8 @@ export default function Home() {
         </div>
         <div
           className={
-            ("p-4", clsx(styles["container-box"], styles.containerSocial))
+            ("p-4",
+            clsx(styles["container-box-social"], styles.containerSocial))
           }
         >
           <CardSocial />

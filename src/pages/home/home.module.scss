@@ -1,7 +1,29 @@
-body{
-  padding: 0;
-}
-.cardVioletContainer,
+
+// .cardVioletContainer,
+// div.containerSocial {
+//   display: flex;
+//   flex-wrap: nowrap;
+//   overflow: hidden;
+//   overflow-x: auto;
+//   width: 100%;
+//   gap: 35px;
+//   padding: 20px 10px;
+// }
+// div.containerSocial {
+//   padding: 210px 80px 30px;
+// }
+// .container-violet {
+//   padding: 10px 40px 40px;
+//   .title {
+//     color: #fff;
+//     margin: 35px 0 45px 0;
+//     font-weight: 600;
+//     font-size: 30px;
+//   }
+// }
+@media only screen and (max-width: 480px) {
+
+  .cardVioletContainer,
 div.containerSocial {
   display: flex;
   flex-wrap: nowrap;
@@ -11,9 +33,9 @@ div.containerSocial {
   gap: 35px;
   padding: 20px 10px;
 }
-div.containerSocial {
-  padding: 210px 80px 30px;
-}
+// div.containerSocial {
+//   padding: 210px 80px 30px;
+// }
 .container-violet {
   padding: 10px 40px 40px;
   .title {
@@ -23,7 +45,6 @@ div.containerSocial {
     font-size: 30px;
   }
 }
-@media only screen and (max-width: 480px) {
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
@@ -36,6 +57,17 @@ div.containerSocial {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    padding: 10px;
+  }
+
+  .container-box-social{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    // box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
   }
 
   .container-text-imgtree{
@@ -240,6 +272,29 @@ div.containerSocial {
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
 
+
+.cardVioletContainer,
+div.containerSocial {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  gap: 35px;
+  padding: 20px 10px;
+}
+div.containerSocial {
+  padding: 140px 80px 30px;
+}
+.container-violet {
+  padding: 10px 40px 40px;
+  .title {
+    color: #fff;
+    margin: 35px 0 45px 0;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
@@ -464,6 +519,30 @@ div.containerSocial {
 
 // WEB
 @media only screen and (min-width: 1000px) {
+
+  .cardVioletContainer,
+div.containerSocial {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  gap: 35px;
+  padding: 20px 10px;
+}
+div.containerSocial {
+  padding: 137px 80px 30px;
+}
+.container-violet {
+  padding: 10px 40px 40px;
+  .title {
+    color: #fff;
+    margin: 35px 0 45px 0;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;

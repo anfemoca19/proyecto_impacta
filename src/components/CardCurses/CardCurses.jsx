@@ -6,7 +6,7 @@ import img_curse_nutrition from "../../imagenes/nutricion_conciente.jpeg";
 
 import Button from "../UI/Button/Button";
 
-export default function CardCurses({ cursesData }) {
+export default function CardCurses({ cursesData, isHome }) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -29,13 +29,17 @@ export default function CardCurses({ cursesData }) {
           <h5 className={clsx(styles.title, styles["textEllipsis"])}>
             {cursesData.nombre}
           </h5>
-          <p className={styles["card-text"]}>{cursesData.creado}</p>
+          <p className={styles["card-text"]}>
+            {`${"Por: "}` + cursesData.creado}
+          </p>
           <Star
             score={cursesData.calificacion}
             colorBorder={"#7929e2"}
             colorRelleno={"#7929e2"}
           />
-          <footer className={styles.footer}>
+          <footer
+            className={clsx(styles.footer, { [styles["btn-center"]]: isHome })}
+          >
             <Button
               className={styles.button}
               typeButton="secondary"
@@ -47,7 +51,9 @@ export default function CardCurses({ cursesData }) {
               Ir al curso
             </Button>
             <Button
-              className={clsx(styles.button, styles.secondary)}
+              className={clsx(styles.button, styles.secondary, {
+                [styles["btn-activo"]]: isHome,
+              })}
               typeButton="secondary"
             >
               Activo

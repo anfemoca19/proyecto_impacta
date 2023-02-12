@@ -90,7 +90,7 @@ export default function HeaderHome() {
       </header>
       {!isActiveMenu && (
         <div
-          className={clsx("mt-4", styles["container-menu-nav"])}
+          className={clsx(styles["container-menu-nav"])}
           id="container-menu-nav"
         >
           <div className={clsx("p-2", styles["container-nav-mobile"])}>

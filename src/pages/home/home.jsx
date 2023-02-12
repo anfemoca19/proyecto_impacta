@@ -22,7 +22,7 @@ export default function Home() {
       <div className={clsx("mt-4 p-4", styles["container-grey"])}>
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
-            <div className={clsx("mt-5 p-5", styles["container-box"])}>
+            <div className={clsx("mt-3 p-5", styles["container-box"])}>
               <span>
                 ¡Un viaje por el bienestar integral que eleva la energía vital
                 de tus colaboradores!
@@ -50,7 +50,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className={clsx("mb-5", styles["container-img-one"])}>
+          <div className={clsx("", styles["container-img-one"])}>
             <img
               src={imagen_one}
               alt=""
@@ -165,9 +165,9 @@ export default function Home() {
             />
           </div>
           <div className={clsx(styles["container-wrap"])}>
-            <div className={clsx("mt-1 p-5", styles[""])}>
-              <h4>
-                Conoce el desempeño
+            <div className={clsx("mt-1 p-3", styles[""])}>
+              <h4 className={styles["style-title-bold"]}>
+                Conoce el desempeño{" "}
                 <span className={clsx(styles["styles-text"])}>
                   de tu equipo
                 </span>
@@ -183,7 +183,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={clsx("mt-3 p-4 container-fluid", styles.fixPosition)}>
+      <div className={clsx("mt-3 p-4 container-fluid")}>
         <span
           className={clsx(
             "mb-5",
@@ -194,7 +194,7 @@ export default function Home() {
           {" "}
           Programas de bienestar en distintas áreas
         </span>
-        <CarrucelCard cursesData={cursesData} limitSlider={4} />
+        <CarrucelCard isHome cursesData={cursesData} limitSlider={4} />
       </div>
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mb-4")}>

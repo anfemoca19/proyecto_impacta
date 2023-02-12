@@ -1,4 +1,35 @@
 
+.tabWrapper {
+  color: white;
+}
+.tabItems {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 5%;
+  overflow: hidden;
+  overflow-x: auto;
+  border-bottom: 1px solid white;
+  .tabItem {
+    color: white;
+    font-size: 14px;
+    list-style-type: none;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+    &.activeItem {
+      color: #afdb00;
+      border-bottom: 3px solid #afdb00;
+    }
+  }
+}
+.tab {
+  display: none;
+  margin-top: 20px;
+  color: white;
+  &.active {
+    display: block;
+  }
+}
 
 @media only screen and  (max-width: 480px) {
   #exTab2 h3 {

@@ -29,12 +29,6 @@ div.containerSocial {
     padding: 5px;
   };
 
-  div.containerSocial {
-    transform: translateX(30px);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
   .container-box{
     border-radius: 30px;
     background-color: #f9fafb;
@@ -89,6 +83,9 @@ div.containerSocial {
     }
   }
 
+  .style-title-bold{
+    font-weight: bold;
+  }
   .styles-text{
     color: #7929e2;
   }
@@ -143,7 +140,7 @@ div.containerSocial {
   }
   .styles-green-text{
     color: #afdb00;
-    font-size: 19px;
+    font-size: 30px;
     font-weight: bold;
   }
 
@@ -284,6 +281,24 @@ div.containerSocial {
       color: black;
     }
   }
+  .container-btn-arrow-white{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    color: black;
+    height: 60px;
+    gap: 8px;
+    justify-content: flex-end;
+    font-weight: bold;
+    &:hover{
+      background-color: #afdb00;
+      color: #7929e2;
+      font-weight: bold;
+    }
+  }
+  .style-title-bold{
+    font-weight: bold;
+  }
 
   .styles-text{
     color: #7929e2;
@@ -359,21 +374,7 @@ div.containerSocial {
     font-size: 25px;
   }
 
-  .container-btn-arrow-white{
-    background-color: white;
-    border-radius: 15px;
-    font-size: 18px;
-    color: black;
-    height: 60px;
-    gap: 8px;
-    justify-content: flex-end;
-    font-weight: bold;
-    &:hover{
-      background-color: #afdb00;
-      color: #7929e2;
-      font-weight: bold;
-    }
-  }
+
 
   .style-upload-link-white{
     color: black;
@@ -532,7 +533,9 @@ div.containerSocial {
       font-weight: bold;
     }
   }
-
+  .style-title-bold{
+    font-weight: bold;
+  }
   .styles-text{
     color: #7929e2;
   }
@@ -647,7 +650,7 @@ div.containerSocial {
   
   .styles-text-title-social{
     color: #7929e2;
-    font-size: 20px; 
+    font-size: 30px; 
   }
 
   .check-color {

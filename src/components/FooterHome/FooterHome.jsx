@@ -5,7 +5,7 @@ import icon_facebook from "../../imagenes/icono-facebook.png";
 import icon_instagram from "../../imagenes/icono-instagram.png";
 import icon_youtube from "../../imagenes/icono-you-tube.png";
 import icon_twiter from "../../imagenes/icono-twiter.png";
-import { TiArrowRightThick } from "react-icons/ti";
+import { TbPoint } from "react-icons/tb";
 import { Link } from "react-router-dom";
 
 export default function FooterHome() {
@@ -16,7 +16,7 @@ export default function FooterHome() {
         <div className={clsx("row", styles["container-mobile"])}>
           <div
             className={clsx(
-              "col-5 col-sm-4 col-sm-8 col-md-4 ",
+              "col-4 col-sm-4 col-sm-8 col-md-4 ",
               styles["container-logo"]
             )}
           >
@@ -30,7 +30,7 @@ export default function FooterHome() {
           </div>
           <div
             className={clsx(
-              "col-5 col-sm-4 col-sm-8 col-md-4 ",
+              "col-4 col-sm-4 col-sm-8 col-md-4 ",
               styles["container-social-media"]
             )}
           >
@@ -41,24 +41,24 @@ export default function FooterHome() {
           </div>
           <div
             className={clsx(
-              "col-5 col-sm-4 col-sm-8 col-md-4",
+              "col-4 col-sm-4 col-sm-8 col-md-4",
               styles["container-wrap-links"]
             )}
           >
             <div className={clsx(styles["container-wrappers-links"])}>
-              <TiArrowRightThick fontSize={"20px"} color={"#fff"} />
+              <TbPoint fontSize={"20px"} color={"#fff"} />
               <Link className={clsx(styles["style-upload-link"])}>
                 Politica de privacidad
               </Link>
             </div>
             <div className={clsx(styles["container-wrappers-links"])}>
-              <TiArrowRightThick fontSize={"20px"} color={"#fff"} />
+              <TbPoint fontSize={"20px"} color={"#fff"} />
               <Link className={clsx(styles["style-upload-link"])}>
                 Terminos y condiciones
               </Link>
             </div>
             <div className={clsx(styles["container-wrappers-links"])}>
-              <TiArrowRightThick fontSize={"20px"} color={"#fff"} />
+              <TbPoint fontSize={"20px"} color={"#fff"} />
               <Link className={clsx(styles["style-upload-link"])}>
                 Preguntas frecuentes
               </Link>

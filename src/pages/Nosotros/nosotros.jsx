@@ -10,10 +10,9 @@ import icon_ejercicio from "../../imagenes/icono-twiter.png";
 import icon_corazon from "../../imagenes/icono-twiter.png";
 import icon_estudiado from "../../imagenes/icono-twiter.png";
 import icon_ganador from "../../imagenes/icono-twiter.png";
-import Input from "../../components/UI/Input/input";
-import Button from "../../components/UI/Button";
 import CardSocial from "../../components/CardSocial/CardSocial";
 import FooterHome from "../../components/FooterHome/FooterHome";
+import ContactanosFomr from "../../components/Contactanos/Contactanos";
 
 export default function Nosotros() {
   return (
@@ -22,17 +21,15 @@ export default function Nosotros() {
       <div className={clsx("mt-4 p-4", styles["container-grey"])}>
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
-            <div className={clsx("mt-5 p-5", styles["container-box"])}>
-              <div className={clsx(styles["container-tu-marca"])}>
-                <p>
-                  Tu marca
-                  <span className={clsx(styles["styles-text"])}> +</span>{" "}
-                  nuestro contendido{" "}
-                  <span className={clsx(styles["styles-text"])}>
-                    = Colaboradores felices
-                  </span>
-                </p>
-              </div>
+            <div className={clsx("mt-3 p-5", styles["container-box"])}>
+              <p>
+                Tu marca
+                <span className={clsx(styles["styles-text"])}> +</span> nuestro
+                contendido{" "}
+                <span className={clsx(styles["styles-text"])}>
+                  = Colaboradores felices
+                </span>
+              </p>
             </div>
             <div
               className={clsx(
@@ -56,7 +53,7 @@ export default function Nosotros() {
               </Link>
             </div>
           </div>
-          <div className={clsx("mb-5", styles["container-img-one"])}>
+          <div className={clsx("", styles["container-img-one"])}>
             <img
               src={imagen_for}
               alt=""
@@ -68,7 +65,7 @@ export default function Nosotros() {
       <div className={clsx(" p-4", styles["container-grey"])}>
         <div className="d-flex row text-center">
           <div className={clsx("mt-4 mb-4")}>
-            <h2>
+            <h2 className={styles["style-title-bold"]}>
               Impulsamos la cultura{" "}
               <span className={clsx(styles["styles-text"])}>
                 del aprendizaje
@@ -92,12 +89,12 @@ export default function Nosotros() {
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
             <div>
-              <h4 className={clsx("mt-3 mb-4", styles["styles-green-text"])}>
-                Estamos seguros que crear una cultura de bienestar,
+              <h4 className={clsx("", styles["styles-green-text"])}>
+                Estamos seguros que crear una cultura de bienestar,{" "}
+                <span className={clsx(styles["style-text-white"])}>
+                  genera multiples beneficios para las empresas
+                </span>{" "}
               </h4>
-              <span className={clsx(styles["style-text-white"])}>
-                genera multiples beneficios para las empresas
-              </span>{" "}
             </div>
           </div>
           <div className={clsx("", styles["container-img-one"])}>
@@ -284,11 +281,12 @@ export default function Nosotros() {
       </div>
       {/*  */}
       <div className={clsx("p-4", styles["container-grey"])}>
-        <div className={clsx("mb-4")}>
+        <div className={clsx("mb-2", styles["container-title-social"])}>
           <span
             className={clsx(
               styles["styles-text-title-social"],
-              styles["style-title-sidebar"]
+              styles["style-title-sidebar"],
+              styles["title-center-home-mobile"]
             )}
           >
             Lo que nuestro usuarios piensan de nosotros
@@ -296,7 +294,8 @@ export default function Nosotros() {
         </div>
         <div
           className={
-            ("p-4", clsx(styles["container-box"], styles.containerSocial))
+            ("p-4",
+            clsx(styles["container-box-nosotros"], styles.containerSocial))
           }
         >
           <CardSocial />
@@ -344,70 +343,7 @@ export default function Nosotros() {
               styles["container-contactanos"]
             )}
           >
-            <div className={clsx("row")}>
-              <div
-                className={clsx(
-                  "container p-5 col",
-                  styles["container-box"],
-                  styles["container-login"]
-                )}
-              >
-                <div className={clsx("mb-3")}>
-                  <span
-                    className={clsx(
-                      "mb-3",
-                      styles["styles-text-login"],
-                      styles
-                    )}
-                  >
-                    Déjanos tus datos y nos pondremos en contacto contigo.
-                  </span>
-                </div>
-                <Input
-                  placeholder="Contraseña actual "
-                  className="mb-2 input-data-configuration"
-                />
-                <Input
-                  placeholder="Nueva contraseña"
-                  className="mb-2 input-data-configuration"
-                />
-                <Input
-                  placeholder="Confirme contraseña"
-                  className="mb-2 input-data-configuration"
-                />
-                <div className="row mb-4 mt-5 form-group">
-                  <div className="col justify-content-center ">
-                    <div className="form-check">
-                      <input
-                        className={clsx(
-                          "form-check-input",
-                          styles["check-color"]
-                        )}
-                        type="checkbox"
-                        value=""
-                        id="form2Example31"
-                      />
-                      <label
-                        className={clsx(
-                          "form-check-label",
-                          styles["color-text-check"]
-                        )}
-                        htmlFor="form2Example31"
-                      >
-                        {" "}
-                        Acepto los términos y condiciones, el Aviso de
-                        privacidad y la Política de datos de navegación
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <Button
-                  className={clsx("mt-3 mb-3", styles["styles-btn-login"])}
-                >
-                  Enviar
-                </Button>
-              </div>
-            </div>
+            <ContactanosFomr />
           </div>
         </div>
       </div>

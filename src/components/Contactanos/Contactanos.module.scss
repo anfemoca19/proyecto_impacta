@@ -10,9 +10,6 @@
 }
 
 @media only screen and (max-width: 480px) {
-
-
-  // Login
   .styles-text-login{
     color: #7929e2;
     font-size: 18px;
@@ -31,10 +28,17 @@
     color: #7929e2;
   }
 }
+
 @media only screen and  (min-width:481px) and (max-width:1000px){
 
-   //silider
-   .style-title-sidebar{
+
+    //Contañe desempeño
+    .container-login{
+      width: 490px;
+      height: 420px;
+    }
+
+  .style-title-sidebar{
     font-size: 25px;
     font-weight: bold;
   }
@@ -42,10 +46,11 @@
     color: #7929e2;
     font-size: 20px;
   } 
+d
 
   .container-login{
       width: 100%;
-      height: 480px;
+      height: 400px;
   }
   .check-color {
     cursor: pointer;
@@ -60,10 +65,11 @@
     border-color: #7929e2;
   }
 
-  .styles-text-title-social{
+  .color-text-check {
     color: #7929e2;
-    font-size: 20px; 
   }
+
+ 
 
 }
 
@@ -71,6 +77,11 @@
 // WEB
 @media only screen and (min-width: 1000px) {
 
+    //Contañe desempeño
+    .container-login{
+      width: 490px;
+      height: 420px;
+    }
   .styles-text-login{
     color: #7929e2;
     font-size: 20px;

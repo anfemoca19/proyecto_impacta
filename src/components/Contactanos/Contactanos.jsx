@@ -49,7 +49,7 @@ export default function ContactanosFomr() {
             </div>
           </div>
         </div>
-        <Button className={clsx("mt-3 mb-3", styles["styles-btn-login"])}>
+        <Button className={clsx("mt-1 ", styles["styles-btn-login"])}>
           Enviar
         </Button>
       </div>

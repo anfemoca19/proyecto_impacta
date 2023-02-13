@@ -5,13 +5,8 @@
 
   .style-title{
     color: #7929e2;
-    font-size: 16px;
+    font-size: 20px;
   }
-  .style-title-logos{
-    color: #7929e2;
-    font-size: 16px;
-  }
-
 
   .line-divider-boton{
     border-bottom:  1px solid #7929e2;
@@ -30,15 +25,13 @@
     padding: 5px;
   }
 
-
-
   .container-bottom{
     display: flex;
     justify-content: space-around;
   }
 
   .container-backgraund{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     border-width: 2px;
     border-style: dashed;
@@ -48,6 +41,7 @@
 
 
   .image-upload-wrap {
+    border-radius: 10px;
     background-color: #7929e2;
     position: relative;
     height: 100px;
@@ -78,8 +72,9 @@
 
   .container-upload-img{
     padding: 5px;
-    width: 130px;
-    font-size: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
   }
 
   input[type=”file”] .style-input-upload {
@@ -94,8 +89,8 @@
   //estylos elige color login
   .input-select-color{
     height: 50px;
-    border: none;
-    background: white;
+    border-radius: 10px;
+    background: black;
   }
 }
 
@@ -106,12 +101,12 @@
 
   .style-title{
     color: #7929e2;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .style-title-logos{
     color: #7929e2;
-    font-size: 16px;
+    font-size: 20px;
   }
 
 
@@ -139,7 +134,7 @@
   }
 
   .container-backgraund{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     border-width: 2px;
     border-style: dashed;
@@ -149,6 +144,7 @@
 
 
   .image-upload-wrap {
+    border-radius: 10px;
     background-color: #7929e2;
     position: relative;
     height: 100px;
@@ -177,7 +173,10 @@
   }
 
   .container-upload-img{
-    width: 120px;
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
   }
 
   input[type=”file”] .style-input-upload {
@@ -192,8 +191,8 @@
   //estylos elige color login
   .input-select-color{
     height: 50px;
-    border: none;
-    background: white;
+    border-radius: 10px;
+    background: black;
   }
 }
 
@@ -202,7 +201,7 @@
 // web
   .style-title-logos{
     color: #7929e2;
-    font-size: 16px;
+    font-size: 20px;
   }
 
 
@@ -229,7 +228,7 @@
   }
 
   .container-backgraund{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: white;
     border-width: 2px;
     border-style: dashed;
@@ -239,6 +238,7 @@
 
 
   .image-upload-wrap {
+    border-radius: 10px;
     background-color: #7929e2;
     position: relative;
     height: 100px;
@@ -271,6 +271,13 @@
     width: 230px;
   }
 
+  .container-upload-img{
+    padding: 5px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
   input[type=”file”] .style-input-upload {
     width: 0.1px;
     height: 0.1px;
@@ -283,8 +290,8 @@
   //estylos elige color login
   .input-select-color{
     height: 50px;
-    border: none;
-    background: white;
+    border-radius: 10px;
+    background: black;
   }
   .styles-background-categories{
     height: 230px;

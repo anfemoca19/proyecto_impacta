@@ -6,7 +6,7 @@ export default function Menu() {
   return (
     <div className={clsx(styles["container-submenu"])}>
       <nav className="">
-        <ul className={clsx("nav mb-5 mt-3")}>
+        <ul className={clsx("nav mb-3 mt-3")}>
           <li
             className={clsx(styles["nav-item"], {
               [styles.active]: location.pathname === "/configuration",

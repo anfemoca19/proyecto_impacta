@@ -89,16 +89,16 @@ export default function Configruation() {
           </div>
           <div
             className={clsx(
-              "container-fluid mb-5",
+              "container-fluid mb-4",
               styles["container-actualice-contraseña"]
             )}
           >
             <span
-              className={clsx("mt-5 mb-5", styles["style-title-actualice"])}
+              className={clsx("mt-5 mb-3", styles["style-title-actualice"])}
             >
               Actualice su contraseña
             </span>
-            <p className={clsx("mb-3", styles["style-title-pass"])}>
+            <p className={clsx(styles["style-title-pass"])}>
               Asegure su cuenta con una contraseña fuerte
             </p>
           </div>

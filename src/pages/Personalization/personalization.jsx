@@ -72,7 +72,7 @@ export default function Personalization() {
           <EditLogo />
           <div
             className={clsx(
-              "p-5 mb-5 container-fluid",
+              "p-4 mb-5 container-fluid",
               styles["box-container"]
             )}
           >
@@ -91,7 +91,9 @@ export default function Personalization() {
                     <div key={i}>{file}</div>
                   ))}
                 </div>
-                <div className={clsx("d-flex col-5 mt-3")}>
+                <div
+                  className={clsx("d-flex col mt-3", styles["container-photo"])}
+                >
                   <img
                     src={icon_camera}
                     alt="icon"
@@ -117,7 +119,7 @@ export default function Personalization() {
                 </div>
               </div>
               <div className={clsx("mt-3", styles["container-bottom"])}>
-                <div className={clsx("col-5 mt-3 text-center")}>
+                <div className={clsx("col-6 mt-3 text-center")}>
                   <Button
                     name="btnSaveImg"
                     onClick={(e) => {
@@ -127,7 +129,7 @@ export default function Personalization() {
                     Guardar
                   </Button>
                 </div>
-                <div className={clsx("col-5 mt-3 text-center")}>
+                <div className={clsx("col-6 mt-3 text-center")}>
                   <Button
                     name="btnDeleteImg"
                     onClick={(e) => {
@@ -142,7 +144,7 @@ export default function Personalization() {
           </div>
           <div
             className={clsx(
-              "p-5 mb-5 container-fluid",
+              "p-4 mb-5 container-fluid",
               styles["box-container"]
             )}
           >
@@ -164,10 +166,10 @@ export default function Personalization() {
                 <div className={clsx("col-5 mt-3")}></div>
               </div>
               <div className={clsx("mt-3", styles["container-bottom"])}>
-                <div className={clsx("col-5 mt-3 text-center")}>
+                <div className={clsx("col-6 mt-3 text-center")}>
                   <Button>Guardar</Button>
                 </div>
-                <div className={clsx("col-5 mt-3 text-center")}>
+                <div className={clsx("col-6 mt-3 text-center")}>
                   <Button
                     name="btnDeleteColor"
                     onClick={(e) => {

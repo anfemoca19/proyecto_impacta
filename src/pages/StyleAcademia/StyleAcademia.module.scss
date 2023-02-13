@@ -1,17 +1,24 @@
 @media only screen and (max-width: 480px) {
   .style-title{
     color: #7929e2;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
   }
   .box-container {
     background-color: #f9fafb;
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 30px;
     font-size: 13px;
+    
   }
   .style-textarea{
-
-    height: 500px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  .container-bottom{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
   }
 }
 
@@ -27,7 +34,8 @@
     font-size: 13px;
   }
   .style-textarea{
-    height: 500px;
+    height: 250px;
+    border-radius: 20px;
   }
 }
 

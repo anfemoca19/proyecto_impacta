@@ -17,11 +17,18 @@
   }
   .btn-primary {
     position: absolute;
-    top: 129px;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform:translate(-50%,-50%) ;
     &:hover{
       background-color:  #afdb00;
+      &:active{
+        display: none;
+      }
     }
   }
+
   .btn-secondary {
     background-color: #6f27cd;
     outline: none;
@@ -78,12 +85,18 @@
   }
   .btn-primary {
     position: absolute;
-    top: 129px;
-    right: 0;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform:translate(30%,-50%) ;
     &:hover{
       background-color:  #afdb00;
+      &:active{
+        display: none;
+      }
     }
   }
+  
   .btn-secondary {
     background-color: #6f27cd;
     outline: none;

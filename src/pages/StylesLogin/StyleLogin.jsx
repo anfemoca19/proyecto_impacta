@@ -45,11 +45,11 @@ export default function StyleLogin() {
           <Menu />
           <div
             className={clsx(
-              "container-fluid p-4 mb-5",
+              "container-fluid p-4 mb-5 mt-4",
               styles["box-container"]
             )}
           >
-            <div className={clsx("row p-3")}>
+            <div className={clsx("row p-2")}>
               <div className={clsx(styles["container-textarea"])}>
                 <textarea
                   className={clsx("form-control", styles["style-textarea"])}

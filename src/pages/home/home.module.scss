@@ -224,6 +224,11 @@ div.containerSocial {
     align-items: center;
   }
 
+  .title-center-home-mobile{
+    text-align: center;
+  }
+
+
 }
 
 
@@ -246,6 +251,7 @@ div.containerSocial {
   padding: 140px 80px 30px;
 }
 .container-violet {
+  background-color: #7929e2;
   padding: 10px 40px 40px;
   .title {
     color: #fff;
@@ -383,10 +389,6 @@ div.containerSocial {
   //Seccion aprende
 
 
-  .container-violet{
-    background-color: #7929e2;
-    padding-right: 0;
-  }
 
   .style-text-white{
     color: white;
@@ -469,6 +471,7 @@ div.containerSocial {
 }
 .container-violet {
   padding: 10px 40px 40px;
+  background-color: #7929e2;
   .title {
     color: #fff;
     margin: 35px 0 45px 0;
@@ -612,10 +615,6 @@ div.containerSocial {
 
   
 
-  .container-violet{
-    background-color: #7929e2;
-  }
-
   .style-text-white{
     color: white;
     font-size: 30px;
@@ -710,6 +709,12 @@ div.containerSocial {
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+  }
+
+  .btn-prev,.btn-next{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
   }
 }
 

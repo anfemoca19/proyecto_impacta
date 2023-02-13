@@ -1,42 +1,41 @@
-.cardVioletContainer,
-div.containerSocial {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  overflow-x: auto;
-  width: 100%;
-  gap: 35px;
-  padding: 20px 10px;
-}
-div.containerSocial {
-  padding: 210px 80px 30px;
-}
-.container-violet {
-  padding: 10px 40px 40px;
-  .title {
-    color: #fff;
-    margin: 35px 0 45px 0;
-    font-weight: 600;
-    font-size: 30px;
-  }
-}
+
 
 @media only screen and (max-width: 480px) {
+  .cardVioletContainer,
+  div.containerSocial {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    gap: 35px;
+    padding: 10px;
+  }
+
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
   };
 
+  .title-center-home-mobile{
+    text-align: center;
+  }
   .title-style-curses-web{
     display: none;
   }
 
-  div.containerSocial {
-    transform: translateX(30px);
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  .container-title-social{
+    text-align: center;
   }
-
+  .container-box-cursos{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    // box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
   .container-box{
     border-radius: 30px;
     background-color: #f9fafb;
@@ -47,9 +46,9 @@ div.containerSocial {
   }
 
   .container-tu-marca{
-    width: 50%;
     font-size: 20px;
     text-align: center;
+    font-weight: 600;
   }
 
   .styles-text{
@@ -60,9 +59,16 @@ div.containerSocial {
     color: #f9f9f9;
   }
 
-  .container-violet{
+  .container-violet {
     background-color: #7929e2;
-    padding-right: 0;
+    padding: 10px 40px 40px;
+    .title {
+      color: #fff;
+      margin: 35px 0 45px 0;
+      font-weight: 600;
+      font-size: 30px;
+      text-align: center;
+    }
   }
 
   .style-title-sidebar{
@@ -96,6 +102,10 @@ div.containerSocial {
     justify-content: center;
     margin-bottom: 10px;
   }
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
 
 }
 
@@ -103,12 +113,26 @@ div.containerSocial {
 
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
-
+.cardVioletContainer,
+div.containerSocial {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  width: 100%;
+  gap: 35px;
+  padding: 20px 10px;
+}
+div.containerSocial {
+  padding: 140px 80px 30px;
+}
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
   };
-
+  .title-center-home-mobile{
+    text-align: center;
+  }
   .title-style-curses-web {
     display: none;
   }
@@ -132,9 +156,9 @@ div.containerSocial {
   }
 
   .container-tu-marca{
-    width: 50%;
-    font-size: 40px;
     text-align: center;
+    font-size: 40px;
+    font-weight: 600;
   }
 
 
@@ -150,9 +174,14 @@ div.containerSocial {
   }
 
   //Seccion aprende
-  .container-violet{
-    background-color: #7929e2;
-    padding-right: 0;
+  .container-violet {
+    padding: 10px 40px 40px;
+    .title {
+      color: #fff;
+      margin: 35px 0 45px 0;
+      font-weight: 600;
+      font-size: 30px;
+    }
   }
 
   .style-upload-link-white{
@@ -179,6 +208,10 @@ div.containerSocial {
     color: #7929e2;
     font-size: 12px;
   }
+  .styles-text-title-social{
+    color: #7929e2;
+    font-size: 20px; 
+  }
 
 }
 
@@ -187,6 +220,19 @@ div.containerSocial {
 
 // WEB
 @media only screen and (min-width: 1000px) {
+  .cardVioletContainer,
+  div.containerSocial {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    gap: 35px;
+    padding: 20px 10px;
+  }
+  div.containerSocial {
+    padding: 137px 80px 30px;
+  }
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
@@ -237,9 +283,15 @@ div.containerSocial {
     color: #f9f9f9;
     gap: 5px;
   }
-
-  .container-violet{
+  .container-violet {
+    padding: 10px 40px 40px;
     background-color: #7929e2;
+    .title {
+      color: #fff;
+      margin: 35px 0 45px 0;
+      font-weight: 600;
+      font-size: 30px;
+    }
   }
 
   .style-text-black{
@@ -271,8 +323,9 @@ div.containerSocial {
   .container-tu-marca{
     width: 50%;
     font-size: 40px;
-    text-align: center;
+    font-weight: 600;
   }
+
   .styles-paragraph{
     font-size: 20px;
     margin-top: 30px;

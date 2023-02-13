@@ -10,12 +10,11 @@ import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
 import CardSocial from "../../components/CardSocial/CardSocial";
-import CardArticules from "../../components/CardArticules/CardArticules";
 import FooterHome from "../../components/FooterHome/FooterHome";
 import { useState } from "react";
 import { useEffect } from "react";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import Articules from "../../components/Articules/Articules";
 
 export default function Home() {
   const [slideIndex, setSlideIndex] = useState(0);
@@ -226,15 +225,14 @@ export default function Home() {
       >
         <span
           className={clsx(
-            "mb-5",
             styles["styles-text-title-social"],
-            styles["style-title-sidebar"]
+            styles["style-title-sidebar"],
+            styles["title-center-home-mobile"]
           )}
         >
-          {" "}
           Programas de bienestar en distintas áreas
         </span>
-        <CarrucelCard isHome cursesData={cursesData} limitSlider={4} />
+        <CarrucelCard cursesData={cursesData} limitSlider={3} />
       </div>
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mb-2", styles["container-title-social"])}>
@@ -245,7 +243,7 @@ export default function Home() {
               styles["title-center-home-mobile"]
             )}
           >
-            Lo que nuestro usuarios piensan de nosotros
+            Lo que nuestros usuarios piensan de nosotros
           </span>
         </div>
         <div
@@ -263,49 +261,7 @@ export default function Home() {
           <CardSocial />  */}
         </div>
       </div>
-      <div className={clsx(styles["container-violet"])}>
-        <h3 className={styles.title}>Articulos de interes</h3>
-        <div className={styles.cardVioletContainer}>
-          <CardArticules />
-          <CardArticules />
-          <CardArticules />
-          <CardArticules />
-          <CardArticules />
-          <CardArticules />
-          <CardArticules />
-          <CardArticules />
-        </div>
-        <div className={styles["container-btn"]}>
-          <button
-            // className={clsx("carousel-control-prev")}
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev"
-            // onClick={() => {
-            //   handlePrevius();
-            // }}
-          >
-            <AiOutlineLeft
-              color="#afdb00"
-              style={{ fontSize: "50px", marginLeft: "-158px" }}
-            />
-          </button>
-          <button
-            // className={clsx("carousel-control-next")}
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next"
-            // onClick={() => {
-            //   handleNext();
-            // }}
-          >
-            <AiOutlineRight
-              color="#afdb00"
-              style={{ fontSize: "50px", marginLeft: "70px" }}
-            />
-          </button>
-        </div>
-      </div>
+      <Articules />
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mt-4", styles["container-text-imgtree"])}>
           <div className={clsx(styles["container-tu-marca"])}>

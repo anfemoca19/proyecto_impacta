@@ -289,7 +289,7 @@ export default function Nosotros() {
               styles["title-center-home-mobile"]
             )}
           >
-            Lo que nuestro usuarios piensan de nosotros
+            Lo que nuestros usuarios piensan de nosotros
           </span>
         </div>
         <div

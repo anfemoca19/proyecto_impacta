@@ -76,7 +76,7 @@ export default function StyleAcademia() {
                 <div className={clsx("col-5 mt-3 text-center")}>
                   <Button>Guardar</Button>
                 </div>
-                <div className={clsx("col-5 mt-3")}>
+                <div className={clsx("col-5 mt-3 text-center")}>
                   <Button name="btnDeleteColor">Eliminar</Button>
                 </div>
               </div>

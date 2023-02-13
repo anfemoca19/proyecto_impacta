@@ -45,7 +45,7 @@ export default function StyleLogin() {
           <Menu />
           <div
             className={clsx(
-              "container-fluid p-4 mb-5 mt-4",
+              "container-fluid p-2 mb-5 mt-4",
               styles["box-container"]
             )}
           >
@@ -71,7 +71,6 @@ export default function StyleLogin() {
                   </Button>
                 )}
               </div>
-
               <div className={clsx(styles["container-bottom"])}>
                 <div className={clsx("col-5 mt-3 text-center")}>
                   <Button>Guardar</Button>

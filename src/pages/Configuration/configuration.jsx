@@ -42,7 +42,7 @@ export default function Configruation() {
           <Menu />
           <div
             className={clsx(
-              "container-fluid p-5 mb-5",
+              "container-fluid p-4 mb-5",
               styles["box-container"]
             )}
           >
@@ -87,7 +87,12 @@ export default function Configruation() {
               </div>
             </div>
           </div>
-          <div className={clsx("container-fluid mb-5")}>
+          <div
+            className={clsx(
+              "container-fluid mb-5",
+              styles["container-actualice-contraseña"]
+            )}
+          >
             <span
               className={clsx("mt-5 mb-5", styles["style-title-actualice"])}
             >
@@ -97,21 +102,26 @@ export default function Configruation() {
               Asegure su cuenta con una contraseña fuerte
             </p>
           </div>
-          <div className={clsx("container-fluid text-center")}>
+          <div
+            className={clsx(
+              "container-fluid text-center",
+              styles["box-container"]
+            )}
+          >
             <div className={clsx("row")}>
               <div
-                className={clsx("container p-5 col", styles["container-box"])}
+                className={clsx("container p-4 col", styles["container-box"])}
               >
                 <Input
-                  placeholder="Nombre completo "
+                  placeholder="Contraseña actual"
                   className="mb-2 input-data-configuration"
                 />
                 <Input
-                  placeholder="Numero Telefónico"
+                  placeholder="Nueva contraseña"
                   className="mb-2 input-data-configuration"
                 />
                 <Input
-                  placeholder="Correo Eléctronico"
+                  placeholder="Confirme contraseña"
                   className="mb-2 input-data-configuration"
                 />
                 <Button className={clsx("mt-3 mb-3")}>Enviar</Button>

@@ -1,3 +1,53 @@
+//stilos menu
+nav ul {
+  display: flex;
+  gap: 6px;
+}
+
+.style-nav{
+  color: black;
+  text-decoration: none;
+  background-color: #afdb00;
+  padding: 5px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 3px;
+  font-size: 12px;
+  &:hover{
+    background-color: #7929e2;
+    color: white;
+  }
+}
+
+
+nav ul {
+  display: flex;
+  gap: 6px;
+}
+
+.nav-item {
+  &.active {
+    a {
+      color: #fff;
+      background-color: #4b209e;
+    }
+  }
+}
+
+.style-nav{
+  color: black;
+  text-decoration: none;
+  background-color: #afdb00;
+  padding: 5px 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 3px;
+  font-size: 12px;
+  &:hover{
+    background-color: #7929e2;
+    color: white;
+  }
+}
 
 @media only screen and (max-width: 480px) {
   .container-pricipal-search {
@@ -34,6 +84,7 @@
     border-radius: 20px;
     display: flex;
     text-align: center;
+    justify-content: center;
     padding: 8px;
   }
 
@@ -43,7 +94,7 @@
 
   .icon-anadir-user{
     height: 25px;
-    margin-left: 20px;
+    // margin-left: 20px;
   }
 
   .icon-menu-style{
@@ -59,40 +110,31 @@
     display: none;
   }
 
-  .container-btn-siguiente{
-    margin-right: 60px;
+  .container-btn-next{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
   }
+
   .container-styles-nextPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:#7929e2;
     border-radius:6px;
-    font-size: 10px;
+    font-weight: bold;
     cursor: pointer;
-    height: 60px;
-    width: 140px;
+    height: 45px;
+    width: 230px;
     &:hover{
       color: white;
       background-color: #6f27cd;
     }
   }
-  .container-pagina{
-    margin-right: 10px;
-  }
-  .container-pages{
-    font-size: 10px;
-  }
 
   .icon-arrow{
     height: 25px;
   }
-
-  .btn-img{
-    height: 25px;
-    width: 25px;
-  }
-
-  .input-page{
-    height: 10px;
-  }  
 
 }
 
@@ -130,14 +172,18 @@
 
   .container-anadir-usuario{
     background-color: #7929e2;
-    border-radius: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+    height: 40px;
   }
+  
   .styles-anadir{
     color: #eee;
-    margin-right: 3px;
-    height: 30px;
-    font-size: 15px;
   }
+  
   .icon-menu-style{
     height: 10px;
   }
@@ -153,42 +199,30 @@
     display: none;
   }
 
-  .container-btn-siguiente{
-    margin-right: 50px;
+  .container-btn-next{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
   }
+
   .container-styles-nextPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:#7929e2;
     border-radius:6px;
-    font-size: 10px;
     cursor: pointer;
-    height: 60px;
-    width: 140px;
+    height: 45px;
+    width: 230px;
     &:hover{
       color: white;
       background-color: #6f27cd;
     }
   }
-
-  .container-pagina{
-    margin-right: 5px;
-  }
-  .container-pages{
-    font-size: 10px;
-  }
-
   .icon-arrow{
     height: 25px;
   }
 
-  .btn-img{
-    height: 25px;
-    width: 25px;
-  }
-
-  .input-page{
-    height: 10px;
-    width: 10px;
-  }  
 
 }
 
@@ -224,18 +258,19 @@
     border-radius: 3px;
   }
 
+  //Btn añadir
   .container-anadir-usuario{
     background-color: #7929e2;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 2px;
+    height: 40px;
   }
+
   .styles-anadir{
     color: #eee;
-    margin-right: 10px;
-    height: 30px;
   }
 
   .icon-menu-style{
@@ -249,36 +284,33 @@
     height: 20px;
   }
 
-  .container-btn-siguiente{
-    margin-right: 45px;
+
+//--
+  .container-btn-next{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
   }
 
   .container-styles-nextPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color:#7929e2;
     border-radius:6px;
     cursor: pointer;
+    height: 45px;
+    width: 230px;
     &:hover{
       color: white;
       background-color: #6f27cd;
     }
   }
-
-  .container-pagina{
-    margin-right: 5px;
-  }
-
-  .input-page{
-
-  }
-
+  
   .icon-arrow{
     height: 25px;
   }
-  .btn-img{
-    height: 25px;
-    width: 25px;
-  }
-  
+
   .styles-background-categories{
     height: 230px;
     border-radius: 10px;

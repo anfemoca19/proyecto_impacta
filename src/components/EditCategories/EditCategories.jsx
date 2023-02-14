@@ -2,9 +2,6 @@ import clsx from "clsx";
 import styles from "../EditCategories/EditCategories.module.scss";
 import ico_editar from "../../imagenes/icono-editar.png";
 import { Link } from "react-router-dom";
-import Modal from "../UI/Modal/Modal";
-import EditLogo from "../EditLogo/EditLogo";
-import { useState } from "react";
 
 export default function EditCategories({
   children,

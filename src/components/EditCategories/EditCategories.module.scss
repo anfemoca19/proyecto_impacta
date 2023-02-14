@@ -7,16 +7,20 @@
     border-radius: 30px;
     font-size: 13px;
   }
+  .container-menu{
+    display: flex;
+    justify-content: center;
+  }
+
   .container-icon{
     display: flex;
-    /* text-align: center; */
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items: center;
   }
+
   .icon-styles{
     height: 100px;
-    width: 100px;
+    width: 115px;
   }
   .icon-edit-style{
     width: 10px;
@@ -27,7 +31,7 @@
   .style-nav{
     color: black;
     text-decoration: none;
-    background-color: #afdb00;
+    background-color: #dee0e26a;
     padding: 5px 10px;
     margin-left: 2px;
     margin-right: 2px;
@@ -51,12 +55,15 @@
     font-size: 13px;
   }
   .container-icon{
-    display: block;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .icon-styles{
     height: 100px;
-    width: 100px;
+    width: 115px;
   }
   .icon-edit-style{
     width: 10px;
@@ -67,7 +74,7 @@
   .style-nav{
     color: black;
     text-decoration: none;
-    background-color: #afdb00;
+    background-color: #dee0e26a;
     padding: 5px 10px;
     margin-left: 2px;
     margin-right: 2px;
@@ -91,12 +98,19 @@
     font-size: 13px;
   }
   .container-icon{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-icon{
     display: block;
     text-align: center;
   }
   .icon-styles{
     height: 100px;
-    width: 100px;
+    width: 115px;
   }
   .icon-edit-style{
     width: 10px;
@@ -107,7 +121,7 @@
   .style-nav{
     color: black;
     text-decoration: none;
-    background-color: #afdb00;
+    background-color: #dee0e26a;
     padding: 5px 10px;
     margin-left: 2px;
     margin-right: 2px;

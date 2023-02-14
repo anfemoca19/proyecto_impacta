@@ -9,71 +9,21 @@ import Navbar from "../../components/Navbar/navbar";
 import Button from "../../components/UI/Button/Button";
 import Input from "../../components/UI/Input/input";
 import clsx from "clsx";
-
 import arrow_icon from "../../imagenes/icono-siguiente.png";
 import user_img from "../../imagenes/foto-perfil.jpg";
-import icon_boton_anterior from "../../imagenes/icono-boton-anterior.png";
-import icon_boton_siguiente from "../../imagenes/icono-boton-siguiente.png";
 import Icon_search from "../../imagenes/icono-buscador.png";
 import icon_plus_user from "../../imagenes/icono-anadir-usuarios.png";
 import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import CardUserData from "../../components/PerfiluserComponent/PerfilUserComponent";
-import { USER_PERMISSIONS } from "../../constants/user_const";
+import {
+  dataUserResgitrados,
+  userData,
+  USER_PERMISSIONS,
+} from "../../constants/user_const";
 
-const userData = [
-  {
-    id: 1,
-    cargo: "Gerente",
-    nombre: "Santiago Cardenas",
-    correo: "jhondoe@tueempresa.com",
-    telefono: 3005552455,
-    edad: 30,
-  },
-  {
-    id: 2,
-    cargo: "Gerente",
-    nombre: "Santiago Cardenas",
-    correo: "jhondoe@tueempresa.com",
-    telefono: 3005552455,
-    edad: 30,
-  },
-  {
-    id: 3,
-    cargo: "Gerente",
-    nombre: "Santiago Cardenas",
-    correo: "jhondoe@tueempresa.com",
-    telefono: 3005552455,
-    edad: 30,
-  },
-  {
-    id: 4,
-    cargo: "Gerente",
-    nombre: "Santiago Cardenas",
-    correo: "jhondoe@tueempresa.com",
-    telefono: 3005552455,
-    edad: 30,
-  },
-  {
-    id: 5,
-    cargo: "Gerente",
-    nombre: "Santiago Cardenas",
-    correo: "jhondoe@tueempresa.com",
-    telefono: 3005552455,
-    edad: 30,
-  },
-  {
-    id: 6,
-    cargo: "Gerente",
-    nombre: "Santiago Cardenas",
-    correo: "jhondoe@tueempresa.com",
-    telefono: 3005552455,
-    edad: 30,
-  },
-];
-
-let dataUserResgitrados = ["200"];
 export default function Users() {
+  const location = useLocation();
   return (
     <>
       <Header />
@@ -137,8 +87,12 @@ export default function Users() {
                   <ul
                     className={clsx("nav  mb-3 mt-3", styles["container-menu"])}
                   >
-                    <li className={clsx("nav-item text-center", {})}>
-                      <Link className={clsx("style-nav", {})} to="/users">
+                    <li
+                      className={clsx(" text-center", styles["nav-item"], {
+                        [styles.active]: location.pathname === "/users",
+                      })}
+                    >
+                      <Link className={clsx(styles["style-nav"])} to="/users">
                         <img
                           className={clsx("me-2", styles["icon-menu-style"])}
                           src={icon_menu}
@@ -147,18 +101,30 @@ export default function Users() {
                         Todos los usuarios
                       </Link>
                     </li>
-                    <li className={clsx("nav-item text-center", {})}>
-                      <Link className={clsx("style-nav", {})} to="#">
+                    <li
+                      className={clsx("text-center", styles["nav-item"], {
+                        [styles.active]: location.pathname === "/#",
+                      })}
+                    >
+                      <Link className={clsx(styles["style-nav"])} to="#">
                         Referidos
                       </Link>
                     </li>
-                    <li className={clsx("nav-item text-center", {})}>
-                      <Link className={clsx("style-nav", {})} to="#">
+                    <li
+                      className={clsx("text-center", styles["nav-item"], {
+                        [styles.active]: location.pathname === "/#",
+                      })}
+                    >
+                      <Link className={clsx(styles["style-nav"])} to="#">
                         Familiares
                       </Link>
                     </li>
-                    <li className={clsx("nav-item text-center", {})}>
-                      <Link className={clsx("style-nav", {})}>
+                    <li
+                      className={clsx("text-center", styles["nav-item"], {
+                        [styles.active]: location.pathname === "/#",
+                      })}
+                    >
+                      <Link className={clsx(styles["style-nav"])}>
                         Empresariales
                       </Link>
                     </li>
@@ -178,46 +144,16 @@ export default function Users() {
               );
             })}
           </div>
-          <div className={clsx("container-fluid d-flex mt-4 me-4", {})}>
-            {" "}
-            <div className={clsx("col-3", styles["container-vacio"])}></div>
-            <div className={clsx("col-4 ", styles["container-btn-siguiente"])}>
-              <div
-                className={clsx(
-                  " d-flex mr-2 align-items-center",
-                  styles["container-styles-nextPage"]
-                )}
-              >
-                <Button className="btn-terciary">Siguiente pagina</Button>
-                <img
-                  src={arrow_icon}
-                  alt=""
-                  className={clsx("me-3", styles["icon-arrow"])}
-                />
-              </div>
-            </div>
-            <div className={clsx("col-5 d-flex", styles["container-pages"])}>
-              <div className={clsx("col-3 ", styles["container-pagina"])}>
-                <span>Pagina</span>
-              </div>
-              <div className={clsx("col-3 ", {})}>
-                <Input className={"input-page"} />
-              </div>
-              <div className={clsx("col-3 ", {})}>
-                <span>de {userData.length}</span>
-              </div>
-              <div className={clsx("col-3 d-flex", {})}>
-                <img
-                  className={clsx("col-4", styles["btn-img"])}
-                  src={icon_boton_anterior}
-                  alt="icono-boton-anterior"
-                />
-                <img
-                  className={clsx("col-4", styles["btn-img"])}
-                  src={icon_boton_siguiente}
-                  alt="iconon-boton-siguiente"
-                />
-              </div>
+          <div
+            className={clsx("container-fluid", styles["container-btn-next"])}
+          >
+            <div className={clsx(styles["container-styles-nextPage"])}>
+              <Button className="btn-terciary">Siguiente pagina</Button>
+              <img
+                src={arrow_icon}
+                alt=""
+                className={clsx("me-3", styles["icon-arrow"])}
+              />
             </div>
           </div>
         </div>

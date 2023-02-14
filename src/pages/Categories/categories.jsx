@@ -49,7 +49,7 @@ export default function CategoriasPages() {
           </>
         }
       >
-        <div className={clsx("container-fluid")}>
+        <div className={clsx("")}>
           <span className={clsx("mb-5", styles["style-title"])}>
             Categorias
           </span>

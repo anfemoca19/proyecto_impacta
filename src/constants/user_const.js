@@ -154,3 +154,54 @@ export const dataActiveUsersLast = [
   { name: "Group D", value: 200 },
 ];
 export const dataUserResgitrados = ["200"];
+
+export const userData = [
+  {
+    id: 1,
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    id: 2,
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    id: 3,
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    id: 4,
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    id: 5,
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+  {
+    id: 6,
+    cargo: "Gerente",
+    nombre: "Santiago Cardenas",
+    correo: "jhondoe@tueempresa.com",
+    telefono: 3005552455,
+    edad: 30,
+  },
+];

@@ -3,7 +3,7 @@ import styles from "../LayoutCurses/LayoutCurses.module.scss";
 
 export default function LayoutCureses({ children, sideBar }) {
   return (
-    <div className={clsx("row p-5")}>
+    <div className={clsx("row p-4")}>
       <div
         className={clsx(
           "col-12 col-sm-4  col-sm-12 col-md-8  p-4",

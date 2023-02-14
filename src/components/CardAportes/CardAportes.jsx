@@ -5,7 +5,7 @@ import img_user from "../../imagenes/icono-usuarios-activos.png";
 
 export default function CardAportes() {
   return (
-    <div class={clsx("card", styles["container-aporte"])}>
+    <div className={clsx("card", styles["container-aporte"])}>
       <div className={clsx(styles["container-name"])}>
         <img
           src={img_user}
@@ -16,7 +16,7 @@ export default function CardAportes() {
           Nombre del usuario
         </span>
       </div>
-      <div class={clsx("card-body", styles["styles-body-card"])}>
+      <div className={clsx("card-body", styles["styles-body-card"])}>
         <span>Esto es un texto de prueba y es el comentario</span>
       </div>
       <div className={clsx("ms-3 mb-2")}>

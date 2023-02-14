@@ -42,7 +42,7 @@ export default function Configruation() {
           <Menu />
           <div
             className={clsx(
-              "container-fluid p-4 mb-5",
+              "container-fluid p-4 mb-5 mt-4",
               styles["box-container"]
             )}
           >

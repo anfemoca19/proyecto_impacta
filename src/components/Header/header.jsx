@@ -10,6 +10,7 @@ import clsx from "clsx";
 import { USER_PERMISSIONS } from "../../constants/user_const";
 import Navbar from "../Navbar/navbar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isActiveMenu, setIsActiveMenu] = useState(true);
@@ -30,7 +31,9 @@ export default function Header() {
         )}
       >
         <div className={clsx("col-2 p-2", styles["container-logo"])}>
-          <img className={clsx(styles.logo)} src={Logo} alt="logo" />
+          <Link to={"/home"}>
+            <img className={clsx(styles.logo)} src={Logo} alt="logo" />
+          </Link>
         </div>
         <div
           className={clsx(

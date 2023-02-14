@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import styles from "../Categories/categories.module.scss";
-import { Calendar } from "react-calendar";
 import AccountUser from "../../components/AcountUser/accountUser";
 import Categorias from "../../components/Categories/categories";
 import GraphUsers from "../../components/GraphUsers/graphUsers";
@@ -9,7 +8,7 @@ import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import { USER_PERMISSIONS } from "../../constants/user_const";
 import EditCategories from "../../components/EditCategories/EditCategories";
-
+import Calendar from "../../components/Calendar/Calendar";
 import icon_nutricion from "../../imagenes/icono-categoria-nutricion-color.png";
 import icon_estilo_vida from "../../imagenes/icono-categoria-estilo-de-vida-color.png";
 import icon_actividad_fisica from "../../imagenes/icono-categoria-actividad-fisica-color.png";

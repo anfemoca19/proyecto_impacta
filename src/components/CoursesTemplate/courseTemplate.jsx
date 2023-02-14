@@ -23,8 +23,6 @@ import MenuTab from "../MenuTabs/ManuTabs";
 export default function CoursesTemplate({ children, ...props }) {
   const routeParams = useParams();
 
-  console.log("route", routeParams);
-  console.log("data", cursesData);
   let courseDetails = cursesData.find((item) => {
     return item?.id.toString() === routeParams?.id.toString();
   });
@@ -33,7 +31,7 @@ export default function CoursesTemplate({ children, ...props }) {
     <>
       <MenuMobile />
       <LayoutBackgroundCurses>
-        <header className={clsx("p-5", styles["style-header"])}>
+        <header className={clsx("p-4", styles["style-header"])}>
           <img
             src={logo_blanco}
             alt=""
@@ -92,11 +90,11 @@ export default function CoursesTemplate({ children, ...props }) {
                       type="checkbox"
                       className={clsx("btn-check")}
                       id="btncheck1"
-                      autocomplete="off"
+                      autoComplete="off"
                     />
                     <label
                       className={clsx(styles["styles-btn-check"])}
-                      for="btncheck1"
+                      htmlFor="btncheck1"
                     >
                       Nuevo{" "}
                     </label>
@@ -106,11 +104,11 @@ export default function CoursesTemplate({ children, ...props }) {
                       type="checkbox"
                       className={clsx("btn-check")}
                       id="btncheck1"
-                      autocomplete="off"
+                      autoComplete="off"
                     />
                     <label
                       className={clsx(styles["styles-btn-check"])}
-                      for="btncheck1"
+                      htmlFor="btncheck1"
                     >
                       Más votados{" "}
                     </label>
@@ -169,8 +167,6 @@ export default function CoursesTemplate({ children, ...props }) {
               <span>Module</span>
               <video
                 className={clsx("object-fit-contain", styles["styles-video"])}
-                width={800}
-                height={400}
                 controls
                 src={
                   "https://player.vimeo.com/progressive_redirect/playback/697590375/rendition/1080p/file.mp4?loc=external&signature=b2dfcce3fa0229f1a03011666046b5a1ea4791c659180084a49d8c4bb89fa2dd"
@@ -255,8 +251,8 @@ export default function CoursesTemplate({ children, ...props }) {
                 </div>
               </div>
             </div>
-            <div className={clsx(styles["container-wrap-tab"])}>
-              <MenuTab />
+            <div className={clsx("mt-4")}>
+              <MenuTab courseDetails={courseDetails} />
             </div>
           </div>
         </LayoutCureses>

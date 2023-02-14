@@ -7,6 +7,7 @@ import Logo from "../../imagenes/logo-en-color.png";
 import Input from "../UI/Input/input";
 import { useState } from "react";
 import Navbar from "../Navbar/navbar";
+import { Link } from "react-router-dom";
 
 export default function MenuMobile() {
   const [isActiveMenu, setIsActiveMenu] = useState(true);
@@ -25,7 +26,9 @@ export default function MenuMobile() {
         )}
       >
         <div className={clsx("col-2 p-2", styles["container-logo"])}>
-          <img className={clsx(styles.logo)} src={Logo} alt="logo" />
+          <Link to={"/home"}>
+            <img className={clsx(styles.logo)} src={Logo} alt="logo" />
+          </Link>
         </div>
         <div
           className={clsx("col-2 p-2 ", styles["container-pricipal-search"])}

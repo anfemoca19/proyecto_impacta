@@ -78,6 +78,17 @@
     }
   }
 
+
+  .style-inline{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    .container-wrap{
+      font-size: 15px;
+    }
+  }
+
 }
 
 // Tablet
@@ -157,6 +168,7 @@
     }
   }
 
+
 }
 
 // WEB
@@ -189,8 +201,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-weight: 700;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 11px;
   }
 
   .fontSizeHome{
@@ -259,11 +271,12 @@
   .style-inline{
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-end;
-    gap: 15px;
     padding: 10px;
     margin-top: 0 !important;
-    font-size: 20px;
+    justify-content: center;
+    .container-wrap{
+      font-size: 15px;
+    }
   }
 
   .style-inline .title-style{display:  none;}
@@ -297,6 +310,16 @@
     align-items: center;
   }
 
+  .style-inline-home{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 0 !important;
+    font-size: 20px;
+    justify-content: center;
+  }
 
 
 }

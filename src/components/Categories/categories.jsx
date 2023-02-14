@@ -26,7 +26,7 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded  text-muted",
+                  "text-muted",
                   styles["text-categories"],
                   isHome && [styles.fontSizeHome]
                 )}
@@ -49,7 +49,7 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted",
+                  "text-muted",
                   styles["text-categories"],
                   isHome && [styles.fontSizeHome]
                 )}
@@ -71,7 +71,7 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted",
+                  "text-muted",
                   styles["text-categories"],
                   isHome && [styles.fontSizeHome]
                 )}
@@ -95,7 +95,7 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted",
+                  "text-muted",
                   styles["text-categories"],
                   isHome && [styles.fontSizeHome]
                 )}
@@ -117,7 +117,7 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted",
+                  "text-muted",
                   styles["text-categories"],
                   isHome && [styles.fontSizeHome]
                 )}
@@ -139,7 +139,7 @@ export default function Categorias({ className, isHome }) {
               />
               <span
                 className={clsx(
-                  "rounded text-muted",
+                  "text-muted",
                   styles["text-categories"],
                   isHome && [styles.fontSizeHome]
                 )}

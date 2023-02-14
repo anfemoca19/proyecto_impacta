@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import clsx from "clsx";
 import styles from "./MenuTabs.module.scss";
-export default function MenuTab() {
+import { BsCheckCircle } from "react-icons/bs";
+import AcordionComponent from "../AcordionModule/AcordionModule";
+export default function MenuTab({ courseDetails }) {
   const [activeTab, setActiveTab] = useState("temario");
+  console.log("rueba", courseDetails);
 
   const handlerTab = ({ tab }) => {
     setActiveTab(tab);
@@ -10,10 +13,6 @@ export default function MenuTab() {
 
   return (
     <div className={styles.wrapper}>
-      <div className={clsx("container")}>
-        <h2>Example tab 2 (using standard nav-tabs)</h2>
-      </div>
-
       <ul className={styles.tabItems}>
         <li
           className={clsx(
@@ -56,7 +55,7 @@ export default function MenuTab() {
         <div
           className={clsx(styles.tab, activeTab === "temario" && styles.active)}
         >
-          <p>Standard tab panel created on bootstrap using nav-tabs</p>
+          <AcordionComponent title="Modulo 1"></AcordionComponent>
         </div>
         <div
           className={clsx(
@@ -64,10 +63,25 @@ export default function MenuTab() {
             activeTab === "beneficios" && styles.active
           )}
         >
-          <p>
-            Notice the gap between the content and tab after applying a
-            background color
-          </p>
+          {
+            <div className={clsx("mb-3", styles["container-beneficios-all"])}>
+              <div className={clsx(styles["container-beneficios"])}>
+                {courseDetails.beneficios.map((beneficios, index) => {
+                  return (
+                    <div className={styles.beneficio} key={index}>
+                      <BsCheckCircle
+                        className={styles.icon}
+                        color={"#afdb00"}
+                      />
+                      <span className={styles.text}>
+                        {beneficios.beneficio}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          }
         </div>
         <div
           className={clsx(
@@ -75,7 +89,7 @@ export default function MenuTab() {
             activeTab === "descripcion" && styles.active
           )}
         >
-          <p>descripcion</p>
+          <p>{courseDetails.descripcion_creador}</p>
         </div>
         <div
           className={clsx(
@@ -83,7 +97,7 @@ export default function MenuTab() {
             activeTab === "requerimientos" && styles.active
           )}
         >
-          <p>add clearfix to tab-content (see the css)</p>
+          <p> {courseDetails.requerimientos}</p>
         </div>
       </div>
     </div>

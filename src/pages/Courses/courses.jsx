@@ -30,18 +30,16 @@ export default function Courses() {
           </>
         }
       >
-        <div className="container-fluid">
-          <span className={clsx("mt-2", styles["title-style-curses-web"])}>
-            Categorias
-          </span>
-          <Categorias className={"style-inline"} />
-          {/* Card
-           */}
-          <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
-            {cursesData.map((curses, index) => {
-              return <CardCurses key={index} cursesData={curses} />;
-            })}
-          </div>
+        <span className={clsx("mt-2", styles["title-style-curses-web"])}>
+          Categorias
+        </span>
+        <Categorias className={"style-inline"} />
+        {/* Card
+         */}
+        <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+          {cursesData.map((curses, index) => {
+            return <CardCurses key={index} cursesData={curses} />;
+          })}
         </div>
       </Layout>
     </>

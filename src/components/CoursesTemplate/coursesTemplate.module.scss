@@ -1,13 +1,14 @@
 //mobile
 @media only screen and  (max-width: 480px) {
 ///style-header
-  style-header{
+
+  .style-header{
     display: none;
   }
   /// styles-video
   .styles-video{
     width: 100%;
-    height: 500px;
+    height: 325px;
   }
 
    //Estilos del modulo principal
@@ -80,7 +81,8 @@
 //tablet
 @media only screen and  (min-width:480px) and (max-width:1000px){
   ///style-header
-  style-header{
+
+  .style-header{
     display: none;
   }
   

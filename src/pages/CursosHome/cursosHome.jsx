@@ -31,7 +31,7 @@ export default function CursosHome() {
         <span></span>
         <p></p>
       </div>
-      <div className={clsx("mt-5 p-4 container-fluid", styles.fixPosition)}>
+      <div className={clsx("mt-3 p-4 container-fluid", styles.fixPosition)}>
         <span
           className={clsx(
             styles["styles-text-title-social"],

@@ -82,11 +82,14 @@ export default function Users() {
                   alt="icono-mas"
                 />
               </div>
-              <div className="col-9  d-flex  align-items-center ">
+              <div
+                className={clsx(
+                  "col-9  d-flex  align-items-center",
+                  styles["container-menu"]
+                )}
+              >
                 <div className={clsx(styles["container-menu"])}>
-                  <ul
-                    className={clsx("nav  mb-3 mt-3", styles["container-menu"])}
-                  >
+                  <ul className={clsx("nav  mb-3 mt-3", styles["cont"])}>
                     <li
                       className={clsx(" text-center", styles["nav-item"], {
                         [styles.active]: location.pathname === "/users",

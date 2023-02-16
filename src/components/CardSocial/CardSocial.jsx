@@ -2,7 +2,7 @@ import clsx from "clsx";
 import styles from "../CardSocial/CardSocial.module.scss";
 import Star from "../Star/Star";
 
-export default function CardSocial(limitSlider) {
+export default function CardSocial({ comentSocial }) {
   return (
     <div className={clsx(styles["container-wrap"])}>
       <div className={clsx(styles["container-box"])}>
@@ -18,14 +18,12 @@ export default function CardSocial(limitSlider) {
           />
         </div>
         <div>
-          <span className={clsx(styles["style-name"])}>Naomi Smith</span>
+          <span className={clsx(styles["style-name"])}>
+            {comentSocial.nombre}
+          </span>
         </div>
         <div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-          </p>
+          <p>{comentSocial.comentario}</p>
         </div>
       </div>
     </div>

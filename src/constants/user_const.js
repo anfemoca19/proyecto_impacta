@@ -205,3 +205,55 @@ export const userData = [
     edad: 30,
   },
 ];
+
+export const socialComment =[
+  {
+    id:0,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:1,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:2,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:3,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:4,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:5,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:6,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  },
+  {
+    id:7,
+    nombre: "Naomi Smith",
+    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    calificacion: 3,
+  }
+]
+

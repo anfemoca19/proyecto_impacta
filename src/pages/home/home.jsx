@@ -9,47 +9,12 @@ import icono_siguiente from "../../imagenes/icono-siguiente.png";
 import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
-import CardSocial from "../../components/CardSocial/CardSocial";
 import FooterHome from "../../components/FooterHome/FooterHome";
-import { useState } from "react";
-import { useEffect } from "react";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import Articules from "../../components/Articules/Articules";
+import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
 
 export default function Home() {
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlideIndex((prevSlideIndex) =>
-        prevSlideIndex === slides.length - 1 ? 0 : prevSlideIndex + 1
-      );
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  const slides = [
-    {
-      content: <CardSocial />,
-    },
-    {
-      content: <CardSocial />,
-    },
-    {
-      content: <CardSocial />,
-    },
-    {
-      content: <CardSocial />,
-    },
-    {
-      content: <CardSocial />,
-    },
-    {
-      content: <CardSocial />,
-    },
-  ];
-
   return (
     <>
       <HeaderHome />
@@ -247,18 +212,12 @@ export default function Home() {
           </span>
         </div>
         <div
-          className={
-            ("p-4",
-            clsx(styles["container-box-social"], styles.containerSocial))
-          }
+        // className={
+        //   ("p-4",
+        //   clsx(styles["container-box-social"], styles.containerSocial))
+        // }
         >
-          <CardSocial limitSlider={6} />
-          {/* <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />  */}
+          <CardSocialComponent limitSlider={6} />
         </div>
       </div>
       <Articules />

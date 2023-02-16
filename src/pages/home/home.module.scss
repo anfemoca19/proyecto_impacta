@@ -241,8 +241,8 @@ div.containerSocial {
 div.containerSocial {
   display: flex;
   flex-wrap: nowrap;
-  overflow: hidden;
-  overflow-x: auto;
+  // overflow: hidden;
+  // overflow-x: auto;
   width: 100%;
   gap: 35px;
   padding: 20px 10px;
@@ -459,8 +459,8 @@ div.containerSocial {
   .cardVioletContainer,
 div.containerSocial {
   display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  // flex-wrap: nowrap;
+  // overflow: hidden;
   overflow-x: auto;
   width: 100%;
   gap: 35px;

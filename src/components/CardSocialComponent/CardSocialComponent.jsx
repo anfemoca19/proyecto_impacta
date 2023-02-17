@@ -15,8 +15,15 @@ export default function CardSocialComponent({ ...props }) {
   );
 
   useEffect(() => {
+    let currentScroll = 0;
     const intervalId = setInterval(() => {
-      containerRef.current.scrollLeft += 100;
+      containerRef.current.scrollLeft += 300;
+      if (currentScroll >= containerRef.current.scrollLeft) {
+        containerRef.current.scrollLeft = 1;
+        currentScroll = 0;
+      } else {
+        currentScroll = containerRef.current.scrollLeft;
+      }
     }, 2000);
 
     return () => clearInterval(intervalId);

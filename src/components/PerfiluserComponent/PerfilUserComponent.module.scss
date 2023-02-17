@@ -56,6 +56,11 @@
     align-items: center;
     padding: 10px 0;
     width: 100%;
+    color: #ffff;
+  }
+
+  .container-card-web{
+    display: none !important;
   }
 
   .textTime{
@@ -131,6 +136,10 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .container-card-mobile{
+    display: none !important;
+  }
+
   .box-container {
     background-color: #f9fafb;
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);

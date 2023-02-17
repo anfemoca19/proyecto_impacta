@@ -211,12 +211,7 @@ export default function Home() {
             Lo que nuestros usuarios piensan de nosotros
           </span>
         </div>
-        <div
-        // className={
-        //   ("p-4",
-        //   clsx(styles["container-box-social"], styles.containerSocial))
-        // }
-        >
+        <div>
           <CardSocialComponent limitSlider={6} />
         </div>
       </div>

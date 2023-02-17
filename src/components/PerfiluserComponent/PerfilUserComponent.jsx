@@ -37,7 +37,8 @@ export default function CardUserData({ imagenPerfil, userData }) {
           <div
             className={clsx(
               "right col-md-4 text-center",
-              styles["style-tiempo-acomulado"]
+              styles["style-tiempo-acomulado"],
+              styles["container-card-web"]
             )}
           >
             <div className={styles.wrapTime}>
@@ -48,6 +49,31 @@ export default function CardUserData({ imagenPerfil, userData }) {
                 remainingColor="#abc821"
               />
               <span className={clsx(styles.textTime)}>Tiempo acumoluado</span>
+            </div>
+          </div>
+          <div
+            className={clsx(
+              "right col-md-4 text-center",
+              styles["style-tiempo-acomulado"],
+              styles["container-card-mobile"]
+            )}
+          >
+            <div className={styles.wrapTime}>
+              <div className="col-2">
+                <span>Progreso</span>
+              </div>
+              <div className="col-2">
+                <span>70%</span>
+                <span></span>
+              </div>
+              <div className="col-2">
+                <span>17</span>
+                <span>Cursos</span>
+              </div>
+              <div className="col-8">
+                <span>Timepo acomulado</span>
+                <span>33:02:00</span>
+              </div>
             </div>
           </div>
         </div>

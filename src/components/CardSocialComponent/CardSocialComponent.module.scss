@@ -1,3 +1,16 @@
+.container-box-social {
+  scroll-behavior: smooth;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container-box-social::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container-box-social {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 @media only screen and (max-width: 480px) {
 
   div.containerSocial {

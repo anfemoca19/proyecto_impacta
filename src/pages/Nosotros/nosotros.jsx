@@ -190,9 +190,6 @@ export default function Nosotros() {
               </div>
             </div>
           </div>
-          <div>
-            <div className={clsx(styles["container-box"])}></div>
-          </div>
         </div>
       </div>
 

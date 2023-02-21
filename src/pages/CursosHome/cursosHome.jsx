@@ -4,10 +4,10 @@ import styles from "../CursosHome/cursosHome.module.scss";
 import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
-import CardSocial from "../../components/CardSocial/CardSocial";
 import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import Articules from "../../components/Articules/Articules";
+import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
 
 export default function CursosHome() {
   return (
@@ -65,19 +65,8 @@ export default function CursosHome() {
             Lo que nuestros usuarios piensan de nosotros
           </span>
         </div>
-        <div
-          className={
-            ("p-4",
-            clsx(styles["container-box-cursos"], styles.containerSocial))
-          }
-        >
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
+        <div>
+          <CardSocialComponent limitSlider={6} />
         </div>
       </div>
       <Articules />

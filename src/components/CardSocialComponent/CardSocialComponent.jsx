@@ -6,7 +6,7 @@ import styles from "../CardSocialComponent/CardSocialComponent.module.scss";
 
 export default function CardSocialComponent({ ...props }) {
   const containerRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex] = useState(0);
   const limitSlider = props.limitSlider;
 
   const imagesToShow = socialComment.slice(
@@ -17,7 +17,7 @@ export default function CardSocialComponent({ ...props }) {
   useEffect(() => {
     let currentScroll = 0;
     const intervalId = setInterval(() => {
-      containerRef.current.scrollLeft += 300;
+      containerRef.current.scrollLeft += 408;
       if (currentScroll >= containerRef.current.scrollLeft) {
         containerRef.current.scrollLeft = 1;
         currentScroll = 0;

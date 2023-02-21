@@ -10,9 +10,9 @@ import icon_ejercicio from "../../imagenes/icono-twiter.png";
 import icon_corazon from "../../imagenes/icono-twiter.png";
 import icon_estudiado from "../../imagenes/icono-twiter.png";
 import icon_ganador from "../../imagenes/icono-twiter.png";
-import CardSocial from "../../components/CardSocial/CardSocial";
 import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
+import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
 
 export default function Nosotros() {
   return (
@@ -210,7 +210,7 @@ export default function Nosotros() {
               <span>Empleados</span>
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
-              <span>Empleados felices y productivos</span>
+              <span>Empleados felices y productivos.</span>
             </div>
           </div>
           <div
@@ -226,7 +226,7 @@ export default function Nosotros() {
             <div className={clsx(styles["container-texto-violet"])}>
               <span>
                 Utilizan el beneficio de atención médica, psicologica y de
-                nutrición en un mes
+                nutrición en un mes.
               </span>
             </div>
           </div>
@@ -242,7 +242,7 @@ export default function Nosotros() {
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
               <span>
-                Ahorro estimado por reduccion de ausentismo laboral en un año
+                Ahorro estimado por reduccion de ausentismo laboral en un año.
               </span>
             </div>
           </div>
@@ -292,19 +292,8 @@ export default function Nosotros() {
             Lo que nuestros usuarios piensan de nosotros
           </span>
         </div>
-        <div
-          className={
-            ("p-4",
-            clsx(styles["container-box-nosotros"], styles.containerSocial))
-          }
-        >
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
-          <CardSocial />
+        <div>
+          <CardSocialComponent limitSlider={6} />
         </div>
       </div>
       <div className={clsx(styles["container-violet"])}>

@@ -7,15 +7,12 @@ import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Button from "../../components/UI/Button/Button";
-import Input from "../../components/UI/Input/input";
 import clsx from "clsx";
 import arrow_icon from "../../imagenes/icono-siguiente.png";
 import user_img from "../../imagenes/foto-perfil.jpg";
-import Icon_search from "../../imagenes/icono-buscador.png";
-import icon_plus_user from "../../imagenes/icono-anadir-usuarios.png";
-import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
 import { Link, useLocation } from "react-router-dom";
 import CardUserData from "../../components/PerfiluserComponent/PerfilUserComponent";
+import { FaPlus } from "react-icons/fa";
 import {
   dataUserResgitrados,
   userData,
@@ -49,90 +46,60 @@ export default function Users() {
       >
         <div className="container">
           <div>
-            <div
-              className={clsx(
-                "p-2 col-4 ",
-                styles["container-pricipal-search"]
-              )}
-            >
-              <div className={clsx(styles["container-search"])}>
-                <img
-                  className={clsx(styles["icon-search"])}
-                  src={Icon_search}
-                  alt="icon-sarch"
-                />
-                <Input
-                  className={clsx("border-0", styles["input-search"])}
-                  type="text"
-                  placeholder="Buscar"
-                ></Input>
-              </div>
-            </div>
             <div className="row mt-3 align-items-center">
               <div
                 className={clsx("col-3  ", styles["container-anadir-usuario"])}
               >
                 <Link to="/addUser" className={clsx(styles["styles-anadir"])}>
                   {" "}
-                  Añadir usuario
+                  Añadir
                 </Link>
-                <img
-                  className={clsx(styles["icon-anadir-user"])}
-                  src={icon_plus_user}
-                  alt="icono-mas"
-                />
+                <FaPlus color="#c3c3c3" style={{ fontSize: "20px" }} />
               </div>
               <div
                 className={clsx(
-                  "col-9  d-flex  align-items-center",
+                  "col-9    align-items-center",
                   styles["container-menu"]
                 )}
               >
-                <div className={clsx(styles["container-menu"])}>
-                  <ul className={clsx("nav  mb-3 mt-3", styles["cont"])}>
-                    <li
-                      className={clsx(" text-center", styles["nav-item"], {
-                        [styles.active]: location.pathname === "/users",
-                      })}
-                    >
-                      <Link className={clsx(styles["style-nav"])} to="/users">
-                        <img
-                          className={clsx("me-2", styles["icon-menu-style"])}
-                          src={icon_menu}
-                          alt=""
-                        />
-                        Todos los usuarios
-                      </Link>
-                    </li>
-                    <li
-                      className={clsx("text-center", styles["nav-item"], {
-                        [styles.active]: location.pathname === "/#",
-                      })}
-                    >
-                      <Link className={clsx(styles["style-nav"])} to="#">
-                        Referidos
-                      </Link>
-                    </li>
-                    <li
-                      className={clsx("text-center", styles["nav-item"], {
-                        [styles.active]: location.pathname === "/#",
-                      })}
-                    >
-                      <Link className={clsx(styles["style-nav"])} to="#">
-                        Familiares
-                      </Link>
-                    </li>
-                    <li
-                      className={clsx("text-center", styles["nav-item"], {
-                        [styles.active]: location.pathname === "/#",
-                      })}
-                    >
-                      <Link className={clsx(styles["style-nav"])}>
-                        Empresariales
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+                <ul className={clsx("nav  mb-3 mt-3", styles["container-ul"])}>
+                  <li
+                    className={clsx(" text-center", styles["nav-item"], {
+                      [styles.active]: location.pathname === "/users",
+                    })}
+                  >
+                    <Link className={clsx(styles["style-nav"])} to="/users">
+                      Todos los usuarios
+                    </Link>
+                  </li>
+                  <li
+                    className={clsx("text-center", styles["nav-item"], {
+                      [styles.active]: location.pathname === "/#",
+                    })}
+                  >
+                    <Link className={clsx(styles["style-nav"])} to="#">
+                      Referidos
+                    </Link>
+                  </li>
+                  <li
+                    className={clsx("text-center", styles["nav-item"], {
+                      [styles.active]: location.pathname === "/#",
+                    })}
+                  >
+                    <Link className={clsx(styles["style-nav"])} to="#">
+                      Familiares
+                    </Link>
+                  </li>
+                  <li
+                    className={clsx("text-center", styles["nav-item"], {
+                      [styles.active]: location.pathname === "/courses",
+                    })}
+                  >
+                    <Link className={clsx(styles["style-nav"])}>
+                      Empresariales
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

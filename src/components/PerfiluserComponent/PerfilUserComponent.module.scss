@@ -1,26 +1,44 @@
+
+.btn-style{
+  justify-content: center;
+}
 @media only screen and (max-width: 480px) {
+  .container-card{
+    display: flex;
+    justify-content: center;
+  }
+
   .box-container {
     background-color: #f9fafb;
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 10px;
     border: none;
   }
+
   .imgProfile {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 13px;
   }
+
   .cardInfo {
     font-size: 12px;
     padding: 0;
+    font-weight: 400;
   }
-  .styles-mobile-card{
+  .container-img-user{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 10px;
+    padding: 3px;
+  }
+
+  .styles-name{
+    font-size: 15px;
     font-weight: 600;
   }
+
   .infoWrap {
     margin-top: 15px;
     text-align: center;
@@ -31,14 +49,6 @@
     width: 90px;
     border: 3px solid #abc821;
   }
-  .wrapTime{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    flex-direction: column;
-  }
 
   .style-span {
     display: block;
@@ -47,38 +57,83 @@
     text-align: center;
   }
 
+  .wrapTime{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
   .style-tiempo-acomulado{
     background-color: #7929e2;
     border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    width: 100%;
+    padding: 5px 0;
     color: #ffff;
   }
 
   .container-card-web{
     display: none !important;
   }
+  .styles-mobile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  .container-card-mobile{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    width: 100%;
+  }
+  .style-line{
+    border-right: 1px solid #ffff;
+    align-items: center;
+    padding: 1px;
+  }
+  .container-element-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    height: 35px;
+    padding: 5px;
+  }
+  .container-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .style-tiempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    height: 30px;
+    padding: 2px;
+  }
 
-  .textTime{
-    margin-top: 5px;
-    color: #f3f2f2;
-    display: block;
-    font-size: 18px;
+  .styles-span-footer{
+    margin-right: 8px;
   }
 
 }
 
 
 @media only screen and  (min-width:481px) and (max-width:1000px){
+  .container-card{
+    display: flex;
+    justify-content: center;
+  }
+
   .box-container {
     background-color: #f9fafb;
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 10px;
     border: none;
+    width: 328px;
   }
   .imgProfile {
     display: flex;
@@ -90,11 +145,24 @@
     font-size: 12px;
     padding: 0;
   }
+  .container-img-user{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px;
+  }
   .styles-mobile-card{
     display: flex;
-    gap:8px;
+    gap:10px;
+    font-weight: 600;
+    justify-content: center;
+  }
+
+  .styles-name{
+    font-size: 15px;
     font-weight: 600;
   }
+
   .infoWrap {
     margin-top: 15px;
     text-align: center;
@@ -107,38 +175,60 @@
   }
   .wrapTime {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center; 
     align-items: center;
+    gap: 5px;
   }
 
   .style-tiempo-acomulado{
     background-color: #7929e2;
-    border-radius: 0px 10px 10px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    padding: 5px 0;
+    color: #ffff;
+  }
+  .container-card-mobile{
+    font-size: 10px;
+    width: 100%;
+  }
+  .style-line{
+    border-right: 1px solid #ffff;
     align-items: center;
-    padding: 10px 0;
+    padding: 1px;
+  }
+  .container-element-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    height: 35px;
+    padding: 5px;
+  } 
+
+  .container-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .style-tiempo{
+    display: flex;
+    gap: 2px;
+    align-items: center;
   }
   .style-span {
     display: block;
     font-size: 10px;
     margin-top: 5px;
   }
-  .textTime{
-    margin-top: 5px;
-    color: #f3f2f2;
-    display: block;
-    font-size: 11px;
+  .styles-span-footer{
+    margin-right: 8px;
   }
+
 }
 
 @media only screen and (min-width: 1000px) {
-  .container-card-mobile{
-    display: none !important;
-  }
+
 
   .box-container {
     background-color: #f9fafb;
@@ -146,60 +236,105 @@
     border-radius: 10px;
     border: none;
   }
+
+  .container-img-user{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px;
+  }
+
   .imgProfile {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .styles-mobile-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-weight: 600;
-  }
-  .cardInfo {
-    font-size: 12px;
-    padding: 0;
-  }
-  .infoWrap {
-    margin-top: 15px;
-  }
+
   .img-perfil-style{
     border-radius: 100%;
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
     border: 3px solid #abc821;
   }
-  .wrapTime {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
+  .infoWrap {
+    margin-top: 15px;
+    text-align: center;
   }
+
+  .styles-name{
+    font-size: 15px;
+    font-weight: 600;
+  }
+
   .textEllipsis {
     text-overflow: ellipsis;
-    max-width: 70px;
+    max-width: 120px;
     overflow: hidden;
     display: block;
     white-space: nowrap;
   }
-  .style-tiempo-acomulado{
-    background-color: #7929e2;
-    border-radius: 0px 10px 10px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-  }
   .style-span {
     display: block;
-    font-size: 10px;
+    font-size: 13px;
     margin-top: 5px;
+    
   }
-  .textTime{
-    margin-top: 5px;
-    color: #f3f2f2;
-    display: block;
-    font-size: 11px;
+  .cardInfo {
+    font-size: 12px;
+    padding: 0;
+    font-weight: 500;
   }
+
+
+  .style-tiempo-acomulado{
+    background-color: #7929e2;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: center;
+    padding: 5px 0;
+    color: #ffff;
+  }
+
+  .wrapTime{
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      padding: 10px;
+  }
+
+
+  .container-card-mobile{
+    font-size: 12px;
+    width: 100%;
+  }
+  .style-line{
+    border-right: 1px solid #ffff;
+    align-items: center;
+    padding: 1px;
+  }
+  .container-element-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    height: 35px;
+    padding: 5px;
+  } 
+  .styles-span-footer{
+    margin-right: 10px;
+  }
+  .container-courses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .style-tiempo{
+    display: flex;
+    align-items: center;
+  }
+
 }

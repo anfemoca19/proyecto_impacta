@@ -1,9 +1,58 @@
 
+//stilos menu
+nav ul {
+  font-size: 20px;
+  display: flex;
+  gap: 6px;
+}
+
+.nav-item {
+  &.active {
+    a {
+      color: black;
+      border-bottom: 3px solid #afdb00;
+    }
+  }
+}
+.container-actualice-contraseña{
+  font-weight: 600;
+
+}
+
+.grid-container{
+  font-weight: 600;
+}
 @media only screen and (max-width: 480px) {
+
   .style-title {
     color: #7929e2;
     font-size: 15px;
+    font-weight: 600;
   }
+  
+  .style-nav{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 10px;
+    &:hover{
+      border-bottom: #afdb00;
+      color: black;
+    }
+  }
+  .container-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    ul{
+      display: flex;
+      gap: 2px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  } 
 
   .style-title-actualice {
     color: #7929e2;
@@ -21,6 +70,7 @@
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 30px;
     font-size: 13px;
+    text-align: center;
   }
 
   .style-title-pass {
@@ -31,6 +81,12 @@
     color: #7929e2;
   }
 
+  .container-actualice-contraseña{
+      text-align: center;
+      font-weight: 600;
+    
+  }
+
 }
 
 // Tablet
@@ -38,8 +94,32 @@
   .style-title {
     color: #7929e2;
     font-size: 15px;
+    font-weight: 600;
   }
 
+  .style-nav{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 10px;
+    &:hover{
+      border-bottom: #afdb00;
+      color: black;
+    }
+  }
+  .container-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    ul{
+      display: flex;
+      gap: 2px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  } 
 
   .style-title-actualice {
     color: #7929e2;
@@ -57,6 +137,7 @@
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 30px;
     font-size: 13px;
+    text-align: center;
   }
 
   .style-title-pass {
@@ -73,8 +154,34 @@
 @media only screen and (min-width: 1000px) {
   .style-title {
     color: #7929e2;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 600;
   }
+
+  .style-nav{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 15px;
+    &:hover{
+      border-bottom: #afdb00;
+      color: black;
+    }
+  }
+
+  .container-menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    ul{
+      display: flex;
+      gap: 2px;
+      flex-direction: row;
+      justify-content: center;
+    }
+  } 
 
   .icon-menu-style{
     height: 10px;
@@ -100,6 +207,7 @@
     background-color: #f9fafb;
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     border-radius: 30px;
+    text-align: center;
   }
 
   .style-title-pass {
@@ -110,4 +218,8 @@
     color: #7929e2;
   }
 
+  .grid-container {
+    display: grid;
+    align-items: center;
+  }
 }

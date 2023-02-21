@@ -8,15 +8,15 @@ import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
 import Input from "../../components/UI/Input/input";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Button from "../../components/UI/Button";
 import Label from "../../components/UI/Label";
-import icon_menu from "../../imagenes/icono-todos-los-usuarios.png";
 import { USER_PERMISSIONS } from "../../constants/user_const";
 
 let dataUserResgitrados = ["200"];
 
 export default function AddUser() {
+  const location = useLocation();
   return (
     <>
       {" "}
@@ -36,31 +36,49 @@ export default function AddUser() {
       >
         <div className={clsx("container-fluid ")}>
           <span className={clsx(styles["style-title"])}>Crear usuarios</span>
-          <div className="col-9  d-flex  align-items-center ">
-            <div className={clsx(styles["container-menu"])}>
-              <ul className={clsx("nav  mb-3 mt-3", styles["container-menu"])}>
-                <li className={clsx("nav-item text-center", {})}>
-                  <Link className={clsx("style-nav", {})} to="/users">
-                    <img
-                      className={clsx("me-2", styles["icon-menu-style"])}
-                      src={icon_menu}
-                      alt=""
-                    />
+          <div className="d-flex  align-items-center ">
+            <div
+              className={clsx(
+                "col-9    align-items-center",
+                styles["container-menu"]
+              )}
+            >
+              <ul className={clsx("nav  mb-3 mt-3", styles["container-ul"])}>
+                <li
+                  className={clsx(" text-center", styles["nav-item"], {
+                    [styles.active]: location.pathname === "/users",
+                  })}
+                >
+                  <Link className={clsx(styles["style-nav"])} to="/users">
                     Todos los usuarios
                   </Link>
                 </li>
-                <li className={clsx("nav-item text-center", {})}>
-                  <Link className={clsx("style-nav", {})} to="/personalization">
+                <li
+                  className={clsx("text-center", styles["nav-item"], {
+                    [styles.active]: location.pathname === "/#",
+                  })}
+                >
+                  <Link className={clsx(styles["style-nav"])} to="#">
                     Referidos
                   </Link>
                 </li>
-                <li className={clsx("nav-item text-center", {})}>
-                  <Link className={clsx("style-nav", {})} to="#">
+                <li
+                  className={clsx("text-center", styles["nav-item"], {
+                    [styles.active]: location.pathname === "/#",
+                  })}
+                >
+                  <Link className={clsx(styles["style-nav"])} to="#">
                     Familiares
                   </Link>
                 </li>
-                <li className={clsx("nav-item text-center", {})}>
-                  <Link className={clsx("style-nav", {})}>Empresariales</Link>
+                <li
+                  className={clsx("text-center", styles["nav-item"], {
+                    [styles.active]: location.pathname === "/courses",
+                  })}
+                >
+                  <Link className={clsx(styles["style-nav"])}>
+                    Empresariales
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -113,7 +131,12 @@ export default function AddUser() {
               </div>
             </div>
           </div>
-          <div className={clsx("container-fluid mb-5")}>
+          <div
+            className={clsx(
+              "container-fluid mb-5",
+              styles["container-actualice-contraseña"]
+            )}
+          >
             <span
               className={clsx("mt-5 mb-5", styles["style-title-actualice"])}
             >
@@ -125,9 +148,7 @@ export default function AddUser() {
           </div>
           <div className={clsx("container-fluid")}>
             <div className={clsx("row")}>
-              <div
-                className={clsx("container p-4 col-6", styles["box-container"])}
-              >
+              <div className={clsx("container p-4 ", styles["box-container"])}>
                 <Input
                   placeholder="Contraseña actual "
                   className="mb-2 input-data-configuration"
@@ -140,9 +161,10 @@ export default function AddUser() {
                   placeholder="Confirme contraseña"
                   className="mb-2 input-data-configuration"
                 />
-                <Button className={clsx("mt-3 mb-3")}>Iniciar Session</Button>
+                <Button className={clsx("mt-3 mb-3 ", styles["btn-style"])}>
+                  Iniciar Session
+                </Button>
               </div>
-              <div className={clsx("col-6")}></div>
             </div>
           </div>
         </div>

@@ -1,26 +1,6 @@
 //stilos menu
 nav ul {
-  display: flex;
-  gap: 6px;
-}
-
-.style-nav{
-  color: black;
-  text-decoration: none;
-  background-color: #afdb00;
-  padding: 5px 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-  border-radius: 3px;
-  font-size: 12px;
-  &:hover{
-    background-color: #7929e2;
-    color: white;
-  }
-}
-
-
-nav ul {
+  font-size: 20px;
   display: flex;
   gap: 6px;
 }
@@ -28,87 +8,61 @@ nav ul {
 .nav-item {
   &.active {
     a {
-      color: #fff;
-      background-color: #4b209e;
+      color: black;
+      border-bottom: 3px solid #afdb00;
     }
   }
 }
 
-.style-nav{
-  color: black;
-  text-decoration: none;
-  background-color: #afdb00;
-  padding: 5px 10px;
-  margin-left: 2px;
-  margin-right: 2px;
-  border-radius: 3px;
-  font-size: 12px;
-  &:hover{
-    background-color: #7929e2;
-    color: white;
-  }
-}
+
 
 @media only screen and (max-width: 480px) {
+  .style-nav{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 10px;
+    &:hover{
+      border-bottom: #afdb00;
+      color: black;
+    }
+  }
   .container-pricipal-search {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .container-search {
-    display: flex;
-    background-color: #eee;
-    border-radius: 5px;
-    margin-right: 5px;
-    align-items: center;
-    height: 35px;
-    width: 280px; 
-  }
-  .icon-search {
-    margin-left: 5px;
-    height: 25px;
-  }
-
-  .input-search {
-    border: none;
-    margin-right: 5px;
-    font-size: 12px;
-    color: #333;
-    background-color: #eee;
-    padding: 5px;
-    border-radius: 3px;
-  }
 
   .container-anadir-usuario{
-    background-color: #7929e2;
+    border-color: #c3c3c3;;
     border-radius: 20px;
+    border-style: dashed;
     display: flex;
     text-align: center;
+    align-items: center;
     justify-content: center;
-    padding: 8px;
+    flex-direction: column-reverse;
+    // padding: 1px;
+    font-size: 10px;
+    width: 15%;
+    gap: 5px;
+    height: 70px;
+    color: #fff;
   }
 
   .styles-anadir{
-    display: none;
+    color:#c3c3c3;
+    font-weight: 600;
   }
 
-  .icon-anadir-user{
-    height: 25px;
-    // margin-left: 20px;
-  }
-
-  .icon-menu-style{
-    height: 15px;
-  }
-
-  .container-menu{
+  .container-ul{
     display: flex;
-    gap: 10px;
+    flex-direction: row;
   }
 
-  .container-vacio{
-    display: none;
-  }
+
 
   .container-btn-next{
     display: flex;
@@ -137,11 +91,12 @@ nav ul {
   }
   
   .container-menu{
+    display: flex;
     justify-content: center;
     ul{
       display: flex;
-      gap: 10px;
-      flex-direction: column;
+      gap: 2px;
+      flex-direction: row;
       justify-content: center;
     }
   } 
@@ -150,6 +105,18 @@ nav ul {
 
 
 @media only screen and  (min-width:481px) and (max-width:1000px){
+  .style-nav{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 12px;
+    &:hover{
+      border-bottom: #afdb00;
+      color: black;
+    }
+  }
   .container-pricipal-search {
     display: flex;
     flex-direction: column;
@@ -180,13 +147,19 @@ nav ul {
   }
 
   .container-anadir-usuario{
-    background-color: #7929e2;
-    border-radius: 50px;
+    border-color: #c3c3c3;
+    border-radius: 20px;
+    border-style: dashed;
     display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 2px;
-    height: 40px;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 15px;
+    width: 15%;
+    gap: 5px;
+    height: 70px;
+    color: #fff;
   }
   
   .styles-anadir{
@@ -198,7 +171,13 @@ nav ul {
   }
   .container-menu{
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    ul{
+      display: flex;
+      gap: 2px;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
   .icon-anadir-user{
     height: 20px;
@@ -237,6 +216,18 @@ nav ul {
 
 
 @media only screen and (min-width: 1000px) {
+  .style-nav{
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 15px;
+    &:hover{
+      border-bottom: #afdb00;
+      color: black;
+    }
+  }
 
   .container-pricipal-search {
     display: flex;
@@ -269,27 +260,40 @@ nav ul {
 
   //Btn añadir
   .container-anadir-usuario{
-    background-color: #7929e2;
-    border-radius: 50px;
+    border-color: #c3c3c3;
+    border-radius: 20px;
+    border-style: dashed;
     display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 2px;
-    height: 40px;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 15px;
+    width: 15%;
+    gap: 5px;
+    height: 70px;
+    color: #fff;
   }
 
   .styles-anadir{
-    color: #eee;
+    color: #c3c3c3;
   }
 
   .icon-menu-style{
     height: 10px;
   }
+
   .container-menu{
     display: flex;
-    gap: 10px;
-    flex-direction: column;
+    justify-content: center;
+    ul{
+      display: flex;
+      gap: 2px;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
+
   .icon-anadir-user{
     height: 20px;
   }

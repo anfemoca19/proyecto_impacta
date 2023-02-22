@@ -1,13 +1,22 @@
-.stars {
-  display: flex;
-  gap: 5px;
+
+@media only screen and (max-width: 480px) {
+  .stars {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
 }
-.btn-start{
-  border: none;
-  background-color: white;
-  font-size: 12px;
-  padding: 0;
-}
-.start-style{
-  color: red;
+// Tablet
+@media only screen and  (min-width:481px) and (max-width:1000px){}
+@media only screen and (min-width: 1000px) {
+  .stars {
+    display: flex;
+    gap: 5px;
+  }
+  .btn-start{
+    border: none;
+    background-color: white;
+    font-size: 12px;
+    padding: 0;
+  }
 }

@@ -203,7 +203,7 @@ export default function Nosotros() {
             )}
           >
             <div className={clsx(styles["container-interior-green"])}>
-              <span>3000</span>
+              <span className={clsx(styles["styles-number"])}>3000</span>
               <span>Empleados</span>
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
@@ -217,7 +217,7 @@ export default function Nosotros() {
             )}
           >
             <div className={clsx(styles["container-interior-green"])}>
-              <span>2550</span>
+              <span className={clsx(styles["styles-number"])}>2550</span>
               <span>Consultas</span>
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
@@ -234,7 +234,7 @@ export default function Nosotros() {
             )}
           >
             <div className={clsx(styles["container-interior-green"])}>
-              <span>$214.200</span>
+              <span className={clsx(styles["styles-number"])}>$214.200</span>
               <span>USD</span>
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
@@ -295,7 +295,7 @@ export default function Nosotros() {
       </div>
       <div className={clsx(styles["container-violet"])}>
         <div className={clsx("p-4", styles["container-empleados-felices"])}>
-          <div className={clsx(styles["container-violet-box"])}>
+          <div className={clsx(styles["container-violet-operators"])}>
             <span className={clsx(styles["styles-simbol"])}>+</span>
             <span>Empleados felices y productivos</span>
           </div>
@@ -306,9 +306,11 @@ export default function Nosotros() {
               className={clsx(styles["img-mujer-pc"])}
             />
           </div>
-          <div className={clsx(styles["container-violet-box"])}>
+          <div className={clsx(styles["container-violet-operators"])}>
             <span className={clsx(styles["styles-simbol"])}>=</span>
-            <span>Data y análitica programas de bienstar integral </span>
+            <span className="">
+              Data y análitica programas de bienstar integral{" "}
+            </span>
           </div>
         </div>
       </div>

@@ -32,11 +32,13 @@ export default function CardCurses({ cursesData, isHome }) {
           <p className={styles["card-text"]}>
             {`${"Por: "}` + cursesData.creado}
           </p>
-          <Star
-            score={cursesData.calificacion}
-            colorBorder={"#7929e2"}
-            colorRelleno={"#7929e2"}
-          />
+          <div className={clsx("container-start")}>
+            <Star
+              score={cursesData.calificacion}
+              colorBorder={"#7929e2"}
+              colorRelleno={"#7929e2"}
+            />
+          </div>
           <footer
             className={clsx(styles.footer, { [styles["btn-center"]]: isHome })}
           >

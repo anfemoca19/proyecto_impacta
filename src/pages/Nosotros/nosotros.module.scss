@@ -130,6 +130,7 @@
   justify-content: center;
   padding: 10px;
   height: 200px;
+  font-weight: 600;
 }
 .container-interior-green{
   border-radius: 30px;
@@ -137,7 +138,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 600;
   text-align: center;
   width: 160px;
   height: 120px;
@@ -146,10 +148,13 @@
   left: 20%;
   color:black
 }
+.styles-number{
+  font-size:30px;
+}
 
 .container-texto-violet{
   margin-top: 70px;
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 15px;
 }
 
@@ -220,6 +225,19 @@
     padding: 20px 10px;
     flex-direction: column;
     align-items: center;
+  }
+  .container-violet-operators{
+    border-radius: 30px;
+    background-color: #7929e2;
+    box-shadow: 5px 4px 18px 5px rgb(56 56 56 / 71%);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 290px;
+    color: #fff;
+    padding: 10px;
   }
 
   .styles-simbol{
@@ -507,8 +525,8 @@ div.containerSocial {
     flex-direction: column;
     width: 85%;
     justify-content: center;
-    padding: 8px;
-    height: 210px;
+    padding: 10px;
+    height: 310px;
   }
   .container-elemento-violeta{
     position: relative;
@@ -628,6 +646,18 @@ div.containerSocial {
     color: #afdb00;
     font-size: 30px;
     font-weight: bold;
+  }
+  .container-violet-operators{
+    border-radius: 30px;
+    background-color: #7929e2;
+    box-shadow: 5px 4px 18px 5px rgb(56 56 56 / 71%);
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    color: #fff;
+    padding: 10px;
   }
 
   .styles-simbol{
@@ -854,6 +884,7 @@ div.containerSocial {
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
+    align-items: center;
   }
 
 
@@ -862,6 +893,19 @@ div.containerSocial {
     font-size: 30px;
     font-weight: bold;
   }
+  .container-violet-operators{
+    border-radius: 30px;
+    background-color: #7929e2;
+    box-shadow: 5px 4px 18px 5px rgb(56 56 56 / 71%);
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 100%;
+    color: #fff;
+  }
+
   .styles-simbol{
     font-size: 95px;
     color: #afdb00;
@@ -871,6 +915,7 @@ div.containerSocial {
   .img-mujer-pc{
     height: 300px;
     width: 400px;
+    border-radius: 5px;
   }
 
   .container-violet-box{

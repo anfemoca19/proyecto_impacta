@@ -56,15 +56,10 @@ export default function Users() {
                 </Link>
                 <FaPlus color="#c3c3c3" style={{ fontSize: "20px" }} />
               </div>
-              <div
-                className={clsx(
-                  "col-9    align-items-center",
-                  styles["container-menu"]
-                )}
-              >
+              <div className={clsx("col-9", styles["container-menu"])}>
                 <ul className={clsx("nav  mb-3 mt-3", styles["container-ul"])}>
                   <li
-                    className={clsx(" text-center", styles["nav-item"], {
+                    className={clsx("", styles["nav-item"], {
                       [styles.active]: location.pathname === "/users",
                     })}
                   >

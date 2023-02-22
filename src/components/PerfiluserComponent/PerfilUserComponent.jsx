@@ -16,12 +16,10 @@ export default function CardUserData({ imagenPerfil, userData }) {
           </div>
           <div className={clsx("right col-md-4 mb-3", styles.cardInfo)}>
             <div className={styles.infoWrap}>
-              <span
-                className={clsx(styles["style-span"], styles["styles-name"])}
-              >
+              <span className={clsx(styles["styles-name"])}>
                 {userData.nombre}
               </span>
-              <span className={clsx(styles["style-span"])}>
+              <span className={clsx("mb-1", styles["style-span"])}>
                 {userData.cargo}
               </span>
               <span className={clsx(styles["style-span"], styles.textEllipsis)}>
@@ -31,7 +29,7 @@ export default function CardUserData({ imagenPerfil, userData }) {
                 {userData.telefono}
               </span>
               <span className={clsx(styles["style-span"])}>
-                {`${userData.edad} ${"Años"}`}
+                {`${userData.edad} ${"Años"} / ${"20 junio 1997"}`}
               </span>
             </div>
           </div>
@@ -79,7 +77,7 @@ export default function CardUserData({ imagenPerfil, userData }) {
                 </span>
               </div>
             </div>
-            <div className={clsx("col-2 col-md-4")}>
+            <div className={clsx("col-3 col-md-4")}>
               <div className={clsx("col")}>
                 <span>Tiempo acomulado</span>
               </div>

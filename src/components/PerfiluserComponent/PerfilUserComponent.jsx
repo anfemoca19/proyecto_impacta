@@ -1,6 +1,9 @@
 import clsx from "clsx";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import styles from "./PerfilUserComponent.module.scss";
+import { MdOutlineEmail } from "react-icons/md";
+import { BsCalendar } from "react-icons/bs";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 export default function CardUserData({ imagenPerfil, userData }) {
   return (
@@ -22,15 +25,26 @@ export default function CardUserData({ imagenPerfil, userData }) {
               <span className={clsx("mb-1", styles["style-span"])}>
                 {userData.cargo}
               </span>
-              <span className={clsx(styles["style-span"], styles.textEllipsis)}>
-                {userData.correo}
-              </span>
-              <span className={clsx(styles["style-span"])}>
-                {userData.telefono}
-              </span>
-              <span className={clsx(styles["style-span"])}>
-                {`${userData.edad} ${"Años"} / ${"20 junio 1997"}`}
-              </span>
+              <div className={clsx(styles["container-data-users"])}>
+                <MdOutlineEmail />
+                <span
+                  className={clsx(styles["style-span"], styles.textEllipsis)}
+                >
+                  {userData.correo}
+                </span>
+              </div>
+              <div className={clsx(styles["container-data-users"])}>
+                <AiOutlineWhatsApp />
+                <span className={clsx(styles["style-span"])}>
+                  {userData.telefono}
+                </span>
+              </div>
+              <div className={clsx(styles["container-data-users"])}>
+                <BsCalendar />
+                <span className={clsx(styles["style-span"])}>
+                  {`${userData.edad} ${"Años"} / ${"20 junio 1997"}`}
+                </span>
+              </div>
             </div>
           </div>
         </div>

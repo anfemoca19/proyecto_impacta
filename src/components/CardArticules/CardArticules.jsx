@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import styles from "./CardArticules.module.scss";
 import clsx from "clsx";
 import img_curse_nutrition from "../../imagenes/nutricion_conciente.jpeg";
@@ -6,12 +5,6 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { BsChatLeftText } from "react-icons/bs";
 
 export default function CardArticules() {
-  const navigate = useNavigate();
-
-  // const handleClick = () => {
-  //   navigate("/courses/coursesTemplate/" + `${1}` + "/");
-  // };
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.card}>

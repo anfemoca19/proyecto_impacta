@@ -197,7 +197,17 @@ export default function Home() {
         >
           Programas de bienestar en distintas áreas
         </span>
-        <CarrucelCard cursesData={cursesData} limitSlider={3} />
+        <p
+          className={clsx(
+            "mt-4",
+            styles["style-title-sidebar"],
+            styles["title-center-home-mobile"]
+          )}
+        >
+          Desarrollar tus capacidades y habilidades relacionadas con nutricióny
+          más, para tener bienestar integral
+        </p>
+        <CarrucelCard cursesData={cursesData} limitSlider={4} />
       </div>
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mb-2", styles["container-title-social"])}>

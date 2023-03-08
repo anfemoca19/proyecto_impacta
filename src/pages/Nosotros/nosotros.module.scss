@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 10px;
@@ -68,6 +68,9 @@
   .container-metodologia{
     text-align: center;
     
+  }
+  .styles-icons{
+    height: 120px;
   }
 
   .container-title-metodologia{
@@ -218,7 +221,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
@@ -428,7 +431,7 @@ div.containerSocial {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  overflow-x: auto;
+  // overflow-x: auto;
   width: 100%;
   gap: 35px;
   padding: 20px 10px;
@@ -490,7 +493,9 @@ div.containerSocial {
     width: 100%;
     justify-content: center;
   }
-
+  .styles-icons{
+    height: 120px;
+  }
   .style-tittle-card{
     font-size: 16px;
     font-weight: bold;
@@ -633,7 +638,7 @@ div.containerSocial {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
@@ -795,7 +800,7 @@ div.containerSocial {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
@@ -879,7 +884,7 @@ div.containerSocial {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
@@ -1001,6 +1006,9 @@ div.containerSocial {
     justify-content: center;
   }
 
+  .styles-icons{
+    height: 120px;
+  }
   .style-tittle-card{
     font-size: 16px;
     font-weight: bold;
@@ -1193,7 +1201,7 @@ div.containerSocial {
 
   .styles-text-title-social{
     color: #7929e2;
-    font-size: 20px; 
+    font-size: 25px; 
   }
   .style-title-bold{
     font-weight: bold;

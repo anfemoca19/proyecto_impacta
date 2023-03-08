@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 10px;
@@ -71,7 +71,7 @@
   }
 
   .style-title-sidebar{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
   }
 
@@ -117,7 +117,7 @@ div.containerSocial {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  overflow-x: auto;
+  // overflow-x: auto;
   width: 100%;
   gap: 35px;
   padding: 20px 10px;
@@ -224,7 +224,7 @@ div.containerSocial {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
@@ -240,7 +240,7 @@ div.containerSocial {
 
 
   .style-title-sidebar{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
   }
 
@@ -364,7 +364,12 @@ div.containerSocial {
   }
   .styles-text-title-social{
     color: #7929e2;
-    font-size: 20px; 
+    font-size: 25px; 
+  }
+
+  .container-coruses{
+    display: flex;
+    flex-direction: row;
   }
 }
 

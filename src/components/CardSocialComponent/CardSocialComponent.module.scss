@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 10px;
@@ -40,13 +40,13 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
-    overflow-x: auto;
+    // overflow-x: auto;
     width: 100%;
     gap: 35px;
     padding: 20px 10px;
   }
   div.containerSocial {
-    padding: 140px 80px 30px;
+    padding: 70px 80px 30px;
   }
 }
 
@@ -57,12 +57,12 @@ div.containerSocial {
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  overflow-x: auto;
+  // overflow-x: auto;
   width: 100%;
   gap: 35px;
   padding: 20px 10px;
 }
 div.containerSocial {
-  padding: 137px 80px 30px;
+  padding: 70px 80px 30px;
 }
 }

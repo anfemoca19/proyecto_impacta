@@ -8,6 +8,7 @@ import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import Articules from "../../components/Articules/Articules";
 import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
+import CardCurses from "../../components/CardCurses/CardCurses";
 
 export default function CursosHome() {
   return (
@@ -51,7 +52,19 @@ export default function CursosHome() {
           Desarrollar tus capacidades y habilidades relacionadas con nutricióny
           más, para tener bienestar integral
         </p>
-        <CarrucelCard cursesData={cursesData} limitSlider={4} />
+        {/* <CarrucelCard cursesData={cursesData} limitSlider={4} /> */}
+        <div className={styles["container-coruses"]}>
+          <div className={"col-1"}></div>
+          <div
+            className="row row-cols-1 row-cols-md-4 g-5 mt-2 
+          "
+          >
+            {cursesData.map((curses, index) => {
+              return <CardCurses key={index} isHome cursesData={curses} />;
+            })}
+          </div>
+          <div className={"col-1"}></div>
+        </div>
       </div>
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mb-4", styles["container-title-social"])}>

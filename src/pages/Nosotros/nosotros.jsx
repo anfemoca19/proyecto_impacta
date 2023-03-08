@@ -6,10 +6,10 @@ import imagen_for from "../../imagenes/imagen-4-web-movil.png";
 import imagen_five from "../../imagenes/imagen-5-web-movil.png";
 import imagen_six from "../../imagenes/imagen-6-web-movil.png";
 import icono_siguiente from "../../imagenes/icono-siguiente.png";
-import icon_ejercicio from "../../imagenes/icono-twiter.png";
-import icon_corazon from "../../imagenes/icono-twiter.png";
-import icon_estudiado from "../../imagenes/icono-twiter.png";
-import icon_ganador from "../../imagenes/icono-twiter.png";
+import icon_ejercicio from "../../imagenes/icono-aprende-desde-cualquier-lugar.png";
+import icon_corazon from "../../imagenes/icono-desarrollar-habitos-saludables.png";
+import icon_estudiado from "../../imagenes/icono-entrenarse.png";
+import icon_ganador from "../../imagenes/icono-avanzar-paso-a-paso.png";
 import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
@@ -120,7 +120,11 @@ export default function Nosotros() {
             </div>
             <div className={clsx(styles["container-metodologia-wrap"])}>
               <div className={clsx(styles["container-box-metodologia"])}>
-                <img src={icon_ejercicio} alt="icono haciendo enercicio " />
+                <img
+                  src={icon_ejercicio}
+                  alt="icono haciendo enercicio "
+                  className={clsx(styles["styles-icons"])}
+                />
                 <div>
                   <h2 className={styles["style-tittle-card"]}>
                     Aprende desde cualquier lugar
@@ -137,7 +141,11 @@ export default function Nosotros() {
                 </div>
               </div>
               <div className={clsx(styles["container-box-metodologia"])}>
-                <img src={icon_corazon} alt="icono haciendo enercicio " />
+                <img
+                  src={icon_corazon}
+                  alt="icono haciendo enercicio "
+                  className={clsx(styles["styles-icons"])}
+                />
                 <div>
                   <h2 className={styles["style-tittle-card"]}>
                     Desarrollar hábitos saludables para el mundo de hoy.
@@ -155,7 +163,11 @@ export default function Nosotros() {
             </div>
             <div className={clsx("mt-5", styles["container-metodologia-wrap"])}>
               <div className={clsx(styles["container-box-metodologia"])}>
-                <img src={icon_estudiado} alt="icono haciendo enercicio " />
+                <img
+                  src={icon_estudiado}
+                  alt="icono haciendo enercicio "
+                  className={clsx(styles["styles-icons"])}
+                />
                 <div>
                   <h2 className={styles["style-tittle-card"]}>
                     Entrenarse con maestros en cada área.
@@ -172,7 +184,11 @@ export default function Nosotros() {
                 </div>
               </div>
               <div className={clsx(styles["container-box-metodologia"])}>
-                <img src={icon_ganador} alt="icono haciendo enercicio " />
+                <img
+                  src={icon_ganador}
+                  alt="icono haciendo enercicio "
+                  className={clsx(styles["styles-icons"])}
+                />
                 <div>
                   <h2 className={styles["style-tittle-card"]}>
                     Avanzar paso a paso.

@@ -1,13 +1,18 @@
 import clsx from "clsx";
 import styles from "../CardSocial/CardSocial.module.scss";
 import Star from "../Star/Star";
+import perfilPhoto from "../../imagenes/perfil.jpeg";
 
 export default function CardSocial({ comentSocial }) {
   return (
     <div className={clsx(styles["container-wrap"])}>
       <div className={clsx(styles["container-box"])}>
         <div className={clsx(styles["container-foto"])}>
-          <img src="" alt="" />
+          <img
+            src={perfilPhoto}
+            alt="foto-social-perfil"
+            className={clsx(styles["styles-img-social"])}
+          />
         </div>
         <div>
           <Star

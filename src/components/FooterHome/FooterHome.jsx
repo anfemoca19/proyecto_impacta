@@ -58,20 +58,35 @@ export default function FooterHome() {
           >
             <div className={clsx(styles["container-wrappers-links"])}>
               <TbPoint fontSize={"20px"} color={"#fff"} />
-              <Link className={clsx(styles["style-upload-link"])}>
+              <Link
+                className={clsx(styles["style-upload-link"])}
+                to="/home/politicasPrivacidad"
+              >
                 Politica de privacidad
               </Link>
             </div>
             <div className={clsx(styles["container-wrappers-links"])}>
               <TbPoint fontSize={"20px"} color={"#fff"} />
-              <Link className={clsx(styles["style-upload-link"])}>
+              <Link
+                className={clsx(styles["style-upload-link"])}
+                to="/home/terminosCodiciones"
+              >
                 Terminos y condiciones
               </Link>
             </div>
-            <div className={clsx(styles["container-wrappers-links"])}>
+            {/* <div className={clsx(styles["container-wrappers-links"])}>
               <TbPoint fontSize={"20px"} color={"#fff"} />
               <Link className={clsx(styles["style-upload-link"])}>
                 Preguntas frecuentes
+              </Link>
+            </div> */}
+            <div className={clsx(styles["container-wrappers-links"])}>
+              <TbPoint fontSize={"20px"} color={"#fff"} />
+              <Link
+                className={clsx(styles["style-upload-link"])}
+                to="/home/cookies"
+              >
+                Política de Cookies
               </Link>
             </div>
           </div>

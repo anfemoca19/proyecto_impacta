@@ -17,6 +17,9 @@ import CoursesTemplate from "./components/CoursesTemplate/courseTemplate";
 import Home from "./pages/home/home";
 import Nosotros from "./pages/Nosotros/nosotros";
 import CursosHome from "./pages/CursosHome/cursosHome";
+import Politicas from "./pages/politicaPrivacidad/politicaPrivacidad";
+import Terminos from "./pages/TerminosCondiciones/terminosCondiciones";
+import Cookies from "./pages/Cookies/cookies";
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           path="/courses/coursesTemplate/:id"
           element={<CoursesTemplate />}
         />
+        <Route path="/home/cookies" element={<Cookies />} />
+        <Route path="/home/terminosCodiciones" element={<Terminos />} />
+        <Route path="/home/politicasPrivacidad" element={<Politicas />} />
         <Route path="/home/cursos" element={<CursosHome />} />
         <Route path="home/nosotros" element={<Nosotros />} />
         <Route path="/categories" element={<CategoriasPages />} />

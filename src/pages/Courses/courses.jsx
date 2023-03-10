@@ -6,7 +6,7 @@ import GraphUsers from "../../components/GraphUsers/graphUsers";
 import Header from "../../components/Header/header";
 import Layout from "../../components/Layout";
 import Navbar from "../../components/Navbar/navbar";
-// import CardCurses from "../../components/CardCurses/CardCurses";
+import CardCurses from "../../components/CardCurses/CardCurses";
 import icon_edit from "../../imagenes/icono-editar.png";
 import { cursesData, USER_PERMISSIONS } from "../../constants/user_const";
 import clsx from "clsx";
@@ -38,11 +38,11 @@ export default function Courses() {
         <Categorias className={"style-inline"} />
         {/* Card
          */}
-        {/* <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
           {cursesData.map((curses, index) => {
             return <CardCurses key={index} cursesData={curses} />;
           })}
-        </div> */}
+        </div>
 
         <table className={clsx("table mt-4")}>
           <thead>

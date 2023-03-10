@@ -126,7 +126,10 @@ export default function HeaderHome() {
                     [styles.active]: location.pathname === "/planes",
                   })}
                 >
-                  <Link to={"/planes"} className={clsx(styles["nav-link"])}>
+                  <Link
+                    to={"#sesion-contactame"}
+                    className={clsx(styles["nav-link"])}
+                  >
                     Planes
                   </Link>
                 </li>

@@ -20,7 +20,7 @@
   
   .title-style-curses-web{
     color: #7929e2;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     margin-top: 10px;
   } 
@@ -34,9 +34,13 @@
   }
 
     ///Styles tabla
-  th {text-align: center;}
+  th {
+    text-align: center;
+    font-size: 12px;
+  }
   td{
     text-align: center;
+    font-size: 13px;
   } 
   table>tbody {
     vertical-align: middle !important;
@@ -76,6 +80,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 98px;
+    height: 70px;
   }
 }

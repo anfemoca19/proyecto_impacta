@@ -49,6 +49,9 @@
   .style-upload-link{
     color: white;
     font-size: 10px;
+    &:hover{
+      color: #afdb00;
+    }
   }
 
   ///derechos
@@ -113,6 +116,9 @@
     .style-upload-link{
       color: white;
       font-size: 15px;
+      &:hover{
+        color: #afdb00;
+      }
     }
   
     ///derechos
@@ -179,6 +185,9 @@
     .style-upload-link{
       color: white;
       font-size: 20px;
+      &:hover{
+        color: #afdb00;
+      }
     }
     ///derechos
     .container-derechos{

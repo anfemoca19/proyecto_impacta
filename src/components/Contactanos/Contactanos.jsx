@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 import Input from "../UI/Input/input";
 export default function ContactanosFomr() {
   return (
-    <div className={clsx("row")}>
+    <div className={clsx("row")} id={"sesion-contactame"}>
       <div
         className={clsx(
           "container p-4 col",

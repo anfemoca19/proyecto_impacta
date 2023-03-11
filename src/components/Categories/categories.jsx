@@ -144,7 +144,7 @@ export default function Categorias({ className, isHome }) {
                   isHome && [styles.fontSizeHome]
                 )}
               >
-                Finanzas
+                Bienestar Financiero
               </span>
             </Link>
           </div>

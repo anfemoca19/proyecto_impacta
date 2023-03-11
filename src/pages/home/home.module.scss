@@ -47,13 +47,14 @@ div.containerSocial {
     padding: 10px;
   }
 
-  .container-text-imgtree{
+  .container-text-imgthree{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 10px 50px;
   }
   .container-tu-marca{
     font-size: 20px;
@@ -65,22 +66,45 @@ div.containerSocial {
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     height: 60px;
     gap: 5px;
     justify-content: flex-end;
-    font-weight: bold;
     &:hover{
       background-color: #afdb00;
       color: black;
     }
+    .style-upload-link{
+      color: #f9f9f9;
+      gap: 5px;
+      font-weight:bold ;
+      font-size: 15px;
+      &:hover{
+        color: black;
+      }
+      .arrow-btn-icon{
+        font-size: 40px;
+        color: #afdb00;
+        &:hover{
+          color: #f9f9f9;
+        }
+      }
+      .styles-btn-arrow{
+        color: #f9f9f9;
+        &:hover{
+          color: #f9f9f9;
+        }
+        
+      }
+    }
+  
   }
 
   .container-btn-arrow-white{
     background-color: white;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 15px;
     color: black;
     height: 60px;
     gap: 8px;
@@ -88,8 +112,24 @@ div.containerSocial {
     font-weight: bold;
     &:hover{
       background-color: #afdb00;
-      color: black;
+      color: #7929e2;
+      font-weight: bold;
     }
+    .style-upload-link-white{
+      color: black;
+      gap: 5px;
+      &:hover{
+        color:  #7929e2;
+      }
+    }
+    .arrow-btn-icon{
+      font-size: 40px;
+      color: black;
+      &:hover{
+        color: #7929e2;
+      }
+    }
+    
   }
 
   .style-title-bold{
@@ -97,6 +137,9 @@ div.containerSocial {
   }
   .styles-text{
     color: #7929e2;
+  }
+  .container-carrusel-home{
+    padding: 10px 50px;
   }
 
   .style-upload-link{
@@ -109,10 +152,6 @@ div.containerSocial {
     }
   }
 
-  .icon-upload {
-    height: 30px;
-    
-  }
 
   .style-imagen-one{
     width: 100%;
@@ -159,14 +198,11 @@ div.containerSocial {
 
   .style-text-white{
     color: white;
-    font-size: 20px;
+    font-size: 14px;
   }
 
 
-  .style-upload-link-white{
-    color: black;
-    gap: 5px;
-  }
+
   .container-wrap{
     text-align:center ;
   }
@@ -178,9 +214,6 @@ div.containerSocial {
   .container-title-social{
     text-align: center;
   }
-
-
-
 
    //Estilos footer home
 
@@ -227,7 +260,10 @@ div.containerSocial {
     text-align: center;
   }
 
-
+  .style-imagen-mockup{
+    width: 100%;
+    height: 300px;
+  }
 }
 
 
@@ -273,13 +309,14 @@ div.containerSocial {
     text-align: center;
   }
 
-  .container-text-imgtree{
+  .container-text-imgthree{
       display: flex;
       flex-direction: column;
       align-items: center;
       flex-wrap: nowrap;
       justify-content: center;
       margin-bottom: 10px;
+      padding: 10px 50px;
   }
 
   .container-tu-marca{
@@ -300,11 +337,36 @@ div.containerSocial {
       background-color: #afdb00;
       color: black;
     }
+    .style-upload-link{
+      color: #f9f9f9;
+      gap: 5px;
+      font-weight:bold ;
+      font-size: 15px;
+      &:hover{
+        color: black;
+      }
+      .arrow-btn-icon{
+        font-size: 40px;
+        color: #afdb00;
+        &:hover{
+          color: #f9f9f9;
+        }
+      }
+      .styles-btn-arrow{
+        color: #f9f9f9;
+        &:hover{
+          color: #f9f9f9;
+        }
+        
+      }
+    }
+  
   }
+
   .container-btn-arrow-white{
     background-color: white;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     height: 60px;
     gap: 8px;
@@ -315,6 +377,21 @@ div.containerSocial {
       color: #7929e2;
       font-weight: bold;
     }
+    .style-upload-link-white{
+      color: black;
+      gap: 5px;
+      &:hover{
+        color:  #7929e2;
+      }
+    }
+    .arrow-btn-icon{
+      font-size: 40px;
+      color: black;
+      &:hover{
+        color: #7929e2;
+      }
+    }
+    
   }
   .style-title-bold{
     font-weight: bold;
@@ -342,6 +419,7 @@ div.containerSocial {
   }
   .style-imagen-one{
     width: 100%;
+    height: 650px;
   }
   .container-styles-description{
     display: flex;
@@ -357,6 +435,7 @@ div.containerSocial {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 50px;
   }
 
   .container-categorias{
@@ -383,6 +462,7 @@ div.containerSocial {
     color: #afdb00;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
   }
 
   //Seccion aprende
@@ -391,21 +471,17 @@ div.containerSocial {
 
   .style-text-white{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
   }
 
-  .style-upload-link-white{
-    color: black;
-    gap: 5px;
-    
-  }
+
 
 
 
 
   //desepeño
   .container-wrap{
-    text-align:center ;
+    padding: 10px 50px;
   }
 
 
@@ -451,6 +527,13 @@ div.containerSocial {
     font-size: 20px;
     font-weight: bold;
   }
+  .style-imagen-mockup{
+    width: 100%;
+    height: 400px;
+  }
+  .title-center-home-mobile{
+    padding: 10px 50px;
+  }
 }
 
 
@@ -462,9 +545,6 @@ div.containerSocial {
   .cardVioletContainer,
 div.containerSocial {
   display: flex;
-  // flex-wrap: nowrap;
-  // overflow: hidden;
-  // overflow-x: auto;
   width: 100%;
   gap: 35px;
   padding: 20px 10px;
@@ -473,7 +553,6 @@ div.containerSocial {
   padding: 137px 80px 30px;
 }
 .container-violet {
-  padding: 10px 40px 40px;
   background-color: #7929e2;
   .title {
     color: #fff;
@@ -496,6 +575,7 @@ div.containerSocial {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 10px 120px;
   }
 
   .container-wrap{
@@ -516,7 +596,7 @@ div.containerSocial {
   
   .style-imagen-one{
     width: 100%;
-    height: 500px;
+    height: 400px;
   }
 
   .styles-background{
@@ -535,6 +615,30 @@ div.containerSocial {
       background-color: #afdb00;
       color: black;
     }
+    .style-upload-link{
+      color: #f9f9f9;
+      gap: 5px;
+      font-weight:bold ;
+      font-size: 15px;
+      &:hover{
+        color: black;
+      }
+      .arrow-btn-icon{
+        font-size: 40px;
+        color: #afdb00;
+        &:hover{
+          color: #f9f9f9;
+        }
+      }
+      .styles-btn-arrow{
+        color: #f9f9f9;
+        &:hover{
+          color: #f9f9f9;
+        }
+        
+      }
+    }
+  
   }
 
   .container-btn-arrow-white{
@@ -551,27 +655,38 @@ div.containerSocial {
       color: #7929e2;
       font-weight: bold;
     }
+    .style-upload-link-white{
+      color: black;
+      gap: 5px;
+      &:hover{
+        color:  #7929e2;
+      }
+    }
+    .arrow-btn-icon{
+      font-size: 40px;
+      color: black;
+      &:hover{
+        color: #7929e2;
+      }
+    }
+    
   }
+  
+  
+
+
   .style-title-bold{
     font-weight: bold;
   }
   .styles-text{
     color: #7929e2;
   }
-
-  .style-upload-link{
-    color: #f9f9f9;
-    gap: 5px;
-    font-weight:bold ;
-    font-size: 15px;
-    &:hover{
-      color: black;
-    }
+  .container-carrusel-home{
+    padding: 10px 120px;
   }
 
-  .icon-upload {
-    height: 30px;
-  }
+
+
   
   .container-styles-description{
     display: flex;
@@ -586,6 +701,7 @@ div.containerSocial {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 120px;
   }
 
   .container-categorias{
@@ -599,6 +715,9 @@ div.containerSocial {
       display: flex;
       flex-direction: column;
       align-items: center;
+  }
+  .container-title-social{
+    padding: 10px 120px;
   }
 
   .container-descripcion-number{
@@ -620,23 +739,21 @@ div.containerSocial {
 
   .style-text-white{
     color: white;
-    font-size: 30px;
-  }
-
-
-  .style-upload-link-white{
-    color: black;
-    gap: 5px;
+    font-size: 20px;
   }
 
 
 
-  .container-text-imgtree{
+
+
+
+  .container-text-imgthree{
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+    padding:10px 120px;
   }
   
   .container-tu-marca{
@@ -687,7 +804,7 @@ div.containerSocial {
     width: 150px;
     height: 80px;
   }
- 
+
   .container-social-media{
     display: flex;
     justify-content: center;
@@ -719,5 +836,11 @@ div.containerSocial {
     border: none;
     cursor: pointer;
   }
+  .style-imagen-mockup{
+    width: 100%;
+    height: 400px;
+  }
+  
+
 }
 

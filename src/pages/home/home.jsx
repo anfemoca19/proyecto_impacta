@@ -4,8 +4,7 @@ import HeaderHome from "../../components/HeaderHome/HeaderHome";
 import styles from "../home/home.module.scss";
 import imagen_one from "../../imagenes/imagen-1-web-movil.png";
 import imagen_two from "../../imagenes/imagen-2-web-movil.png";
-import imagen_tree from "../../imagenes/imagen-3-web-movil.png";
-import icono_siguiente from "../../imagenes/icono-siguiente.png";
+import imagen_three from "../../imagenes/imagen-3-web-movil.png";
 import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
 import { cursesData } from "../../constants/user_const";
@@ -13,12 +12,13 @@ import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import Articules from "../../components/Articules/Articules";
 import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
+import { BsArrowRightShort } from "react-icons/bs";
 
 export default function Home() {
   return (
     <>
       <HeaderHome />
-      <div className={clsx("mt-4 p-4", styles["container-grey"])}>
+      <div className={clsx("mt-4", styles["container-grey"])}>
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
             <div className={clsx("mt-3 p-5", styles["container-box"])}>
@@ -40,12 +40,10 @@ export default function Home() {
                 )}
                 to=""
               >
-                <span>Haz un tour por la plataforma</span>
-                <img
-                  src={icono_siguiente}
-                  alt="arro-raight"
-                  className={clsx(styles["icon-upload"])}
-                />
+                <span className={clsx(styles["styles-btn-arrow"])}>
+                  Haz un tour por la plataforma
+                </span>
+                <BsArrowRightShort className={clsx(styles["arrow-btn-icon"])} />
               </Link>
             </div>
           </div>
@@ -58,7 +56,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={clsx("mb-4 p-4", styles["container-wrappers"])}>
+      <div className={clsx("mb-4 ", styles["container-wrappers"])}>
         <div className={clsx(styles["container-categorias"])}>
           {" "}
           <Categorias isHome className={"style-container-home"} />
@@ -68,7 +66,7 @@ export default function Home() {
             <h4 className={clsx("mt-3 mb-4")}>
               Impacta tu vida, es la primera{" "}
               <span className={clsx(styles["styles-text"])}>
-                agencia de bienestar integral
+                plataforma de bienestar integral
               </span>{" "}
               para empresas.
             </h4>
@@ -112,16 +110,28 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={clsx("p-4", styles["container-violet"])}>
+      <div className={clsx(styles["container-violet"])}>
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
             <div>
               <h4 className={clsx("mt-3", styles["styles-green-text"])}>
-                Aprende cuando y donde quieras.{" "}
+                ¿Que te ofrece Impacta tu vida?{" "}
               </h4>
-              <span className={clsx(styles["style-text-white"])}>
+              {/* <span className={clsx(styles["style-text-white"])}>
                 ¡Desarrolla tu mejor versión!
-              </span>{" "}
+              </span>{" "} */}
+              <div className={clsx("p-4", styles["style-text-white"])}>
+                <ul className="list-group">
+                  <li className="">Acceso durante todo el año.</li>
+                  <li className=""> Múltiples categorías de bienestar.</li>
+                  <li className="">Asequible para todos tus colaboradores.</li>
+                  <li className="">Evaluación integrada de hábitos.</li>
+                  <li className="">
+                    Clases prácticas, concretas y especializadas en cada
+                    categoría.
+                  </li>
+                </ul>{" "}
+              </div>
             </div>
             <div
               className={clsx(
@@ -136,12 +146,10 @@ export default function Home() {
                 )}
                 to=""
               >
-                <span>Haz un tour por la plataforma</span>
-                <img
-                  src={icono_siguiente}
-                  alt="arro-raight"
-                  className={clsx(styles["icon-upload"])}
-                />
+                <span className={clsx(styles["styles-btn-arrow"])}>
+                  Haz un tour por la plataforma
+                </span>
+                <BsArrowRightShort className={clsx(styles["arrow-btn-icon"])} />
               </Link>
             </div>
           </div>
@@ -154,13 +162,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={clsx("p-4", styles["container-grey"])}>
-        <div className={clsx("mt-4", styles["container-text-imgtree"])}>
+      <div className={clsx(styles["container-grey"])}>
+        <div className={clsx(styles["container-text-imgthree"])}>
           <div className={clsx("mb-3", styles["container-img-one"])}>
             <img
-              src={imagen_tree}
-              alt=""
-              className={clsx(styles["style-imagen-one"])}
+              src={imagen_three}
+              alt="mockup-cel-pc
+              "
+              className={clsx(styles["style-imagen-mockup"])}
             />
           </div>
           <div className={clsx(styles["container-wrap"])}>
@@ -184,30 +193,32 @@ export default function Home() {
       </div>
       <div
         className={clsx(
-          "mt-3 p-4 container-fluid",
+          "mt-3  container-fluid",
           styles["title-center-home-mobile"]
         )}
       >
-        <span
-          className={clsx(
-            styles["styles-text-title-social"],
-            styles["style-title-sidebar"],
-            styles["title-center-home-mobile"]
-          )}
-        >
-          Programas de bienestar en distintas áreas
-        </span>
-        <p
-          className={clsx(
-            "mt-4",
-            styles["style-title-sidebar"],
-            styles["title-center-home-mobile"]
-          )}
-        >
-          Desarrollar tus capacidades y habilidades relacionadas con nutricióny
-          más, para tener bienestar integral
-        </p>
-        <CarrucelCard cursesData={cursesData} limitSlider={4} />
+        <div className={clsx(styles["container-carrusel-home"])}>
+          <span
+            className={clsx(
+              styles["styles-text-title-social"],
+              styles["style-title-sidebar"],
+              styles["title-center-home-mobile"]
+            )}
+          >
+            Programas de bienestar en distintas áreas
+          </span>
+          <p
+            className={clsx(
+              "mt-4",
+              styles["style-title-sidebar"],
+              styles["title-center-home-mobile"]
+            )}
+          >
+            Desarrollar tus capacidades y habilidades relacionadas con
+            nutricióny más, para tener bienestar integral
+          </p>
+          <CarrucelCard cursesData={cursesData} limitSlider={4} />
+        </div>
       </div>
       <div className={clsx("p-4", styles["container-grey"])}>
         <div className={clsx("mb-2", styles["container-title-social"])}>
@@ -226,8 +237,8 @@ export default function Home() {
         </div>
       </div>
       <Articules />
-      <div className={clsx("p-4", styles["container-grey"])}>
-        <div className={clsx("mt-4", styles["container-text-imgtree"])}>
+      <div className={clsx(styles["container-grey"])}>
+        <div className={clsx("mt-4", styles["container-text-imgthree"])}>
           <div className={clsx(styles["container-tu-marca"])}>
             <p>
               Tu marca<span className={clsx(styles["styles-text"])}> +</span>{" "}

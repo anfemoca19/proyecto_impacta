@@ -8,7 +8,7 @@
   /// styles-video
   .styles-video{
     width: 100%;
-    height: 325px;
+    // height: 325px;
   }
 
    //Estilos del modulo principal
@@ -24,7 +24,9 @@
   .styles-subttitle{
     color:  #afdb00;
   }
-
+  .container-instructor{
+    text-align: center;
+  }
   .container-acerca-instructor{
     display:flex;
     color: white;
@@ -74,6 +76,32 @@
   }
   .container-wrap-tab{
     display: flex;
+  }
+
+  .container-btn-next{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 3px;
+  }
+
+  .container-icon-btn{
+    display: flex;
+    align-items: center;
+    background-color: #7929e2;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 4px;
+  }
+  .styles-next-btn{
+    background-color: #7929e2;
+    border: none;
+    font-size: 10px;
+    color: #f9f9f9;
+  }
+  .styles-icon{
+    height: 20px;
+    width: 20px;
   }
 
 }
@@ -145,17 +173,67 @@
   .container-wrap{
     display: none;
   }
+
+
+  .container-btn-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 5px
+  }
+
+  .container-icon-btn{
+    display: flex;
+    align-items: center;
+    background-color: #7929e2;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 4px;
+  }
+  .styles-next-btn{
+    background-color: #7929e2;
+    border: none;
+    font-size: 10px;
+    color: #f9f9f9;
+  }
+  .styles-icon{
+    height: 20px;
+    width: 20px;
+  }
 }
 
 //web
 @media only screen and (min-width: 1000px) {
-  .icon-impacta{
-    height: 125px;
-    width: 280px;
+  .style-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+  .container-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon-impacta{
+    height: 80px;
+    width: 180px;
+  }
+  //Estilos del modulo principal
+  .container-title{
+    color:white;
+    border-bottom: 1px solid white;
+  }
+
+  .styles-tittle-curso{
+    font-size: 40px;
+  }
+
 //sidebar
+
   .banner-styles{
     height:60px ;
+    width: 100%;
     border-radius: 10px;
   }
 //container elementos de sidebar
@@ -214,15 +292,6 @@
     font-size: 10px;
   }
 
-  //Estilos del modulo principal
-  .container-title{
-    color:white;
-    border-bottom: 1px solid white;
-  }
-
-  .styles-tittle-curso{
-    font-size: 50px;
-  }
 
   .container-video{
     display: flex;
@@ -238,7 +307,7 @@
   .container-acerca-instructor{
     display:flex;
     color: white;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .container-foto-perfil {
     margin-left: 5px;
@@ -264,7 +333,8 @@
   .styles-tittle-instructor{
       font-size: 20px;
       margin-bottom: 10px;
-      color:  #7929e2;
+      color:  #f9f9f9;
+      font-weight: 600;
   }
 
   .container-beneficios-all{
@@ -312,17 +382,32 @@
     gap: 10px;
   }
 
+
+  .container-btn-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 5px
+  }
+
   .container-icon-btn{
     display: flex;
     align-items: center;
     background-color: #7929e2;
     border-radius: 10px;
     gap: 5px;
+    padding: 4px;
   }
-
+  .styles-next-btn{
+    background-color: #7929e2;
+    border: none;
+    font-size: 15px;
+    color: #f9f9f9;
+  }
   .styles-icon{
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
   .container-wrap-tab{
     display: none;

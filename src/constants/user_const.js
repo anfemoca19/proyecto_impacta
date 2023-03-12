@@ -7,7 +7,7 @@ export const USER_PERMISSIONS = {
 export const cursesData = [
   {
     id: 1,
-    nombre: "Nutricón Consciente",
+    nombre: "Nutrición Consciente",
     creado: "Maria Isabel Valderrama",
     descripcion_creador:"Nutricionista dietista, por más de 10 años fue presentadora y realizadora de de programas de nutrición y gastronomía, le apasiona ser fuente de bienestar.",
     descripcion_curso:"Existe evidencia sólida que demuestra que comer una alimentación balanceada y saludable puede reducir el riesgo de obesidad y  enfermedades tales como diabetes, cardiopatía, accidentescerebro-vasculares, osteoporosis y algunos tipos de cáncer.   El programa de nutrición consciente esta diseñado para mostarte elcamino hacia una alimentación adecuada, suficiente, variada,equilibrada y enriquecida con alimentos nutritivos. Aprende dela mano de Maria Isabel Valderrama, nutricionista dietista, laimportancia de una alimentación saludable. 'Aliméntate bien y vive mejor'.",

@@ -1,0 +1,21 @@
+//mobile
+@media only screen and  (max-width: 480px) {
+  .styles-btn{
+    font-size: 13px;
+    height: 20px;
+  }
+  .styles-body{
+    color: black;
+    font-size: 11px;
+  }
+}
+@media only screen and  (min-width:480px) and (max-width:1000px){
+  .styles-btn{
+    font-size: 16px;
+    height: 40px;
+  }
+  .styles-body{
+    color: black;
+    font-size: 14px;
+  }
+}

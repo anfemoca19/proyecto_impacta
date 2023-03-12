@@ -2,6 +2,15 @@
 .tabWrapper {
   color: white;
 }
+
+.tab {
+  display: none;
+  margin-top: 20px;
+  color: white;
+  &.active {
+    display: block;
+  }
+}
 .tabItems {
   margin: 0;
   padding: 0;
@@ -19,14 +28,6 @@
       color: #afdb00;
       border-bottom: 3px solid #afdb00;
     }
-  }
-}
-.tab {
-  display: none;
-  margin-top: 20px;
-  color: white;
-  &.active {
-    display: block;
   }
 }
 
@@ -58,4 +59,54 @@
     background-color: #428bca;
     padding : 5px 15px;
   }
+  .tabItems {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5%;
+    border-bottom: 1px solid white;
+    .tabItem {
+      color: white;
+      font-size: 8px;
+      list-style-type: none;
+      padding-bottom: 10px;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      &.activeItem {
+        color: #afdb00;
+        border-bottom: 3px solid #afdb00;
+      }
+    }
+  }
+
+
+}
+
+//tablet
+@media only screen and  (min-width:480px) and (max-width:1000px){
+
+  .tabItems {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 5%;
+    border-bottom: 1px solid white;
+    .tabItem {
+      color: white;
+      font-size: 16px;
+      list-style-type: none;
+      padding-bottom: 10px;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      &.activeItem {
+        color: #afdb00;
+        border-bottom: 3px solid #afdb00;
+      }
+    }
+  }
+
+}
+//web
+@media only screen and (min-width: 1000px) {
+
 }

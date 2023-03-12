@@ -11,9 +11,16 @@ import icon_edit from "../../imagenes/icono-editar.png";
 import { cursesData, USER_PERMISSIONS } from "../../constants/user_const";
 import clsx from "clsx";
 import { FaEye, FaPlus, FaList, FaTrash } from "react-icons/fa";
+import { Navigate, useNavigate } from "react-router-dom";
 
 let dataUserResgitrados = ["200"];
+
 export default function Courses() {
+  const navigate = useNavigate();
+
+  const handleClick = (key) => {
+    navigate("/courses/coursesTemplate/" + `${cursesData[key].id}` + "/");
+  };
   return (
     <>
       <Header />
@@ -36,11 +43,11 @@ export default function Courses() {
           Categorias
         </span>
         <Categorias className={"style-inline"} />
-        <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        {/* <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
           {cursesData.map((curses, index) => {
             return <CardCurses key={index} cursesData={curses} />;
           })}
-        </div>
+        </div> */}
 
         <table className={clsx("table mt-4")}>
           <thead>
@@ -59,7 +66,7 @@ export default function Courses() {
           </thead>
 
           <tbody>
-            {cursesData.map((curses) => {
+            {cursesData.map((curses, key) => {
               return (
                 <tr>
                   <th scope="row">{curses.posicion}</th>
@@ -98,27 +105,32 @@ export default function Courses() {
                   </td>
                   <td className={clsx(styles["container-accions"])}>
                     <a
-                      class="dropdown-item"
-                      href="#"
+                      className="dropdown-item"
+                      // href={
+                      //   "/courses/coursesTemplate/" + `${cursesData.id}` + "/"
+                      // }
                       placeholder="Ver curso"
                       title="Ver curso"
+                      onClick={(e) => {
+                        handleClick(key);
+                      }}
                     >
                       <FaEye color="#c3c3c3" style={{ fontSize: "15px" }} />
                     </a>
-                    <a class="dropdown-item" href="#" title="Saber Más">
+                    <a className="dropdown-item" href="#" title="Saber Más">
                       <FaPlus color="#c3c3c3" style={{ fontSize: "15px" }} />
                     </a>
-                    <a class="dropdown-item" href="#" title="Contenido">
+                    <a className="dropdown-item" href="#" title="Contenido">
                       <FaList color="#c3c3c3" style={{ fontSize: "15px" }} />
                     </a>
-                    <a class="dropdown-item" href="#" title="Editar">
+                    <a className="dropdown-item" href="#" title="Editar">
                       <img
                         src={icon_edit}
                         alt="icon-editar"
                         className={clsx(styles["img-icon-edit"])}
                       />
                     </a>
-                    <a class="dropdown-item" href="#" title="Borrar">
+                    <a className="dropdown-item" href="#" title="Borrar">
                       <FaTrash color="#ff000066" style={{ fontSize: "15px" }} />
                     </a>
                   </td>

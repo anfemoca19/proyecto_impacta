@@ -3,6 +3,7 @@ import clsx from "clsx";
 import styles from "./MenuTabs.module.scss";
 import { BsCheckCircle } from "react-icons/bs";
 import AcordionComponent from "../AcordionModule/AcordionModule";
+
 export default function MenuTab({ courseDetails }) {
   const [activeTab, setActiveTab] = useState("temario");
   console.log("rueba", courseDetails);
@@ -49,6 +50,15 @@ export default function MenuTab({ courseDetails }) {
           onClick={() => handlerTab({ tab: "requerimientos" })}
         >
           Requerimientos
+        </li>
+        <li
+          className={clsx(
+            styles.tabItem,
+            activeTab === "descargables" && styles.activeItem
+          )}
+          onClick={() => handlerTab({ tab: "descargables" })}
+        >
+          Descargables
         </li>
       </ul>
       <div className={styles.tabContainer}>

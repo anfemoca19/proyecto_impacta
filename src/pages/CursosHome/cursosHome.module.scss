@@ -16,7 +16,12 @@
     background-color: #f9fafb;
     padding: 5px;
   };
-
+  .container-wrapper-categories{
+    padding: 10px 40px;
+  }
+  .container-cursos{
+    padding: 10px 40px;
+  }
   .title-center-home-mobile{
     text-align: center;
   }
@@ -26,6 +31,7 @@
 
   .container-title-social{
     text-align: center;
+    padding: 10px 40px;
   }
   .container-box-cursos{
     border-radius: 30px;
@@ -60,7 +66,6 @@
 
   .container-violet {
     background-color: #7929e2;
-    padding: 10px 40px 40px;
     .title {
       color: #fff;
       margin: 35px 0 45px 0;
@@ -71,7 +76,6 @@
   }
 
   .style-title-sidebar{
-    font-size: 25px;
     font-weight: bold;
   }
 
@@ -100,6 +104,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 10px 40px;
   }
   .styles-text-title-social{
     color: #7929e2;
@@ -112,26 +117,29 @@
 
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
-.cardVioletContainer,
-div.containerSocial {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  // overflow-x: auto;
-  width: 100%;
-  gap: 35px;
-  padding: 20px 10px;
-}
-div.containerSocial {
-  padding: 140px 80px 30px;
-}
+  .cardVioletContainer,
+  div.containerSocial {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    gap: 35px;
+    padding: 20px 10px;
+  }
+  div.containerSocial {
+    padding: 140px 80px 30px;
+  }
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
   };
-  .title-center-home-mobile{
-    text-align: center;
+  .container-wrapper-categories{
+    padding: 10px 40px;
   }
+  .container-cursos{
+    padding: 10px 120px;
+  }
+
   .title-style-curses-web {
     display: none;
   }
@@ -152,6 +160,7 @@ div.containerSocial {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 10px 40px;
   }
 
   .container-tu-marca{
@@ -174,7 +183,6 @@ div.containerSocial {
 
   //Seccion aprende
   .container-violet {
-    padding: 10px 40px 40px;
     .title {
       color: #fff;
       margin: 35px 0 45px 0;
@@ -190,7 +198,7 @@ div.containerSocial {
 
   //silider
   .style-title-sidebar{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
   }
   .styles-text-login{
@@ -211,7 +219,9 @@ div.containerSocial {
     color: #7929e2;
     font-size: 20px; 
   }
-
+  .container-title-social{
+   padding: 10px 40px;
+  }
 }
 
 
@@ -238,7 +248,12 @@ div.containerSocial {
     width: 100%;
   };
 
-
+  .container-wrapper-categories{
+    padding: 10px 120px;
+  }
+  .container-cursos{
+    padding: 10px 120px;
+  }
   .style-title-sidebar{
     font-size: 20px;
     font-weight: bold;
@@ -253,6 +268,9 @@ div.containerSocial {
     text-align: center;
     width: 80%;
   }
+  .fixPossition{
+    padding: 10px 120px;
+  }
 
   .container-text-imgOne{
     display: flex;
@@ -261,7 +279,13 @@ div.containerSocial {
     flex-wrap: nowrap;
     justify-content: center;
   }
-
+  .container-title-social{
+    padding: 10px 120px;
+  }
+  .container-articulos{
+    background-color: #7929e2;
+    padding: 10px 120px;
+  }
   .container-wrap{
     display: flex;
     flex-direction: column;
@@ -283,8 +307,8 @@ div.containerSocial {
     gap: 5px;
   }
   .container-violet {
-    padding: 10px 40px 40px;
     background-color: #7929e2;
+    padding: 10px 120px;
     .title {
       color: #fff;
       margin: 35px 0 45px 0;
@@ -317,6 +341,7 @@ div.containerSocial {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 10px 120px;
   }
   
   .container-tu-marca{

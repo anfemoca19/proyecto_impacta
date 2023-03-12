@@ -15,7 +15,7 @@ export default function CursosHome() {
     <>
       <HeaderHome />
 
-      <div className={clsx("mt-4 p-4", styles["container-wrapper-categories"])}>
+      <div className={clsx("mt-4 ", styles["container-wrapper-categories"])}>
         <span
           className={clsx(
             "mt-2",
@@ -32,7 +32,9 @@ export default function CursosHome() {
         <span></span>
         <p></p>
       </div>
-      <div className={clsx("mt-3 p-4 container-fluid", styles.fixPosition)}>
+      <div
+        className={clsx("mt-3  container-fluid", styles["container-cursos"])}
+      >
         <span
           className={clsx(
             styles["styles-text-title-social"],
@@ -66,7 +68,7 @@ export default function CursosHome() {
           <div className={"col-1"}></div>
         </div>
       </div>
-      <div className={clsx("p-4", styles["container-grey"])}>
+      <div className={clsx(styles["container-grey"])}>
         <div className={clsx("mb-4", styles["container-title-social"])}>
           <span
             className={clsx(
@@ -82,8 +84,11 @@ export default function CursosHome() {
           <CardSocialComponent limitSlider={6} />
         </div>
       </div>
-      <Articules />
-      <div className={clsx("p-4", styles["container-grey"])}>
+      <div className={clsx("mb-4", styles["container-articulos"])}>
+        <Articules />
+      </div>
+
+      <div className={clsx(styles["container-grey"])}>
         <div className={clsx("mt-4", styles["container-text-imgtree"])}>
           <div className={clsx(styles["container-tu-marca"])}>
             <p>

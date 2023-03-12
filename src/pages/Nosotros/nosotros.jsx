@@ -4,8 +4,7 @@ import HeaderHome from "../../components/HeaderHome/HeaderHome";
 import styles from "../Nosotros/nosotros.module.scss";
 import imagen_for from "../../imagenes/imagen-4-web-movil.png";
 import imagen_five from "../../imagenes/imagen-5-web-movil.png";
-import imagen_six from "../../imagenes/imagen-6-web-movil.png";
-import icono_siguiente from "../../imagenes/icono-siguiente.png";
+import imagen_six from "../../imagenes/imagen-6-web-movil.jpg";
 import icon_ejercicio from "../../imagenes/icono-aprende-desde-cualquier-lugar.png";
 import icon_corazon from "../../imagenes/icono-desarrollar-habitos-saludables.png";
 import icon_estudiado from "../../imagenes/icono-entrenarse.png";
@@ -13,12 +12,13 @@ import icon_ganador from "../../imagenes/icono-avanzar-paso-a-paso.png";
 import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import CardSocialComponent from "../../components/CardSocialComponent/CardSocialComponent";
+import { BsArrowRightShort } from "react-icons/bs";
 
 export default function Nosotros() {
   return (
     <>
       <HeaderHome />
-      <div className={clsx("mt-4 p-4", styles["container-grey"])}>
+      <div className={clsx("mt-4 ", styles["container-grey"])}>
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
             <div className={clsx("mt-3 p-5", styles["container-box"])}>
@@ -44,12 +44,10 @@ export default function Nosotros() {
                 )}
                 to=""
               >
-                <span>Haz un tour por la plataforma</span>
-                <img
-                  src={icono_siguiente}
-                  alt="arro-raight"
-                  className={clsx(styles["icon-upload"])}
-                />
+                <span className={clsx(styles["styles-btn-arrow"])}>
+                  Haz un tour por la plataforma
+                </span>
+                <BsArrowRightShort className={clsx(styles["arrow-btn-icon"])} />
               </Link>
             </div>
           </div>
@@ -62,14 +60,17 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div className={clsx(" p-4", styles["container-grey"])}>
-        <div className="d-flex row text-center">
+      <div className={clsx(styles["container-grey"])}>
+        <div
+          className={clsx(
+            "d-flex row text-center ",
+            styles["container-impulsa-text"]
+          )}
+        >
           <div className={clsx("mt-4 mb-4")}>
             <h2 className={styles["style-title-bold"]}>
               Impulsamos la cultura{" "}
-              <span className={clsx(styles["styles-text"])}>
-                del aprendizaje
-              </span>
+              <span className={clsx(styles["styles-text"])}>del bienestar</span>
             </h2>
           </div>
           <div className={clsx()}>
@@ -85,7 +86,7 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div className={clsx("p-4", styles["container-violet"])}>
+      <div className={clsx(styles["container-violet"])}>
         <div className={clsx(styles["container-text-imgOne"])}>
           <div className={clsx(styles["container-wrap"])}>
             <div>
@@ -106,7 +107,7 @@ export default function Nosotros() {
           </div>
         </div>
       </div>
-      <div className={clsx("p-4", styles["container-grey"])}>
+      <div className={clsx(styles["container-grey"])}>
         <div className={clsx("mt-4", styles["container-text-imgtree"])}>
           <div className={styles["container-metodologia"]}>
             <div className={clsx("", styles["container-title-metodologia"])}>
@@ -118,90 +119,92 @@ export default function Nosotros() {
                 </span>
               </span>
             </div>
-            <div className={clsx(styles["container-metodologia-wrap"])}>
-              <div className={clsx(styles["container-box-metodologia"])}>
-                <img
-                  src={icon_ejercicio}
-                  alt="icono haciendo enercicio "
-                  className={clsx(styles["styles-icons"])}
-                />
-                <div>
-                  <h2 className={styles["style-tittle-card"]}>
-                    Aprende desde cualquier lugar
-                  </h2>
-                  <p className={clsx(styles["styles-paragraph-card"])}>
-                    Comenzar a practicar y aprender{" "}
-                    <span className={clsx(styles["styles-text"])}>
-                      {" "}
-                      desde cualquier lugar 24/7,
-                    </span>
-                    y empezar a mejorar tu calidad de vida y la salud de tus
-                    colaboradores.
-                  </p>
+            <div className={clsx(styles["container-format-cards"])}>
+              <div className={clsx(styles["container-metodologia-wrap"])}>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img
+                    src={icon_ejercicio}
+                    alt="icono haciendo enercicio "
+                    className={clsx(styles["styles-icons"])}
+                  />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Aprende desde cualquier lugar
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      Aprender y practica{" "}
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        desde cualquier lugar 24/7,
+                      </span>
+                      y empezar a mejorar tu calidad de vida y la salud de tus
+                      colaboradores.
+                    </p>
+                  </div>
+                </div>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img
+                    src={icon_corazon}
+                    alt="icono haciendo enercicio "
+                    className={clsx(styles["styles-icons"])}
+                  />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Desarrollar hábitos saludables para el mundo de hoy.
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      Integrarse al bienestar, elevar la energía, prevenir
+                      enfermedades y mejorar el autoestima,{" "}
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        es crucial para ganar el juego en la vida actual.
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className={clsx(styles["container-box-metodologia"])}>
-                <img
-                  src={icon_corazon}
-                  alt="icono haciendo enercicio "
-                  className={clsx(styles["styles-icons"])}
-                />
-                <div>
-                  <h2 className={styles["style-tittle-card"]}>
-                    Desarrollar hábitos saludables para el mundo de hoy.
-                  </h2>
-                  <p className={clsx(styles["styles-paragraph-card"])}>
-                    Integrarse al bienestar, elevar la energía, prevenir
-                    enfermedades y mejorar el autoestima,{" "}
-                    <span className={clsx(styles["styles-text"])}>
-                      {" "}
-                      es crucial para ganar el juego en la vida actual.
-                    </span>
-                  </p>
+              <div className={clsx(styles["container-metodologia-wrap"])}>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img
+                    src={icon_estudiado}
+                    alt="icono haciendo enercicio "
+                    className={clsx(styles["styles-icons"])}
+                  />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Entrenarse con maestros en cada área.
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      La información de alta calidad proviene de
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        coach, mentores y especialistas en cada área.
+                      </span>
+                      Todos nuestros maestros enseñan prácticas que han
+                      funcionado para sus vidas.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className={clsx("mt-5", styles["container-metodologia-wrap"])}>
-              <div className={clsx(styles["container-box-metodologia"])}>
-                <img
-                  src={icon_estudiado}
-                  alt="icono haciendo enercicio "
-                  className={clsx(styles["styles-icons"])}
-                />
-                <div>
-                  <h2 className={styles["style-tittle-card"]}>
-                    Entrenarse con maestros en cada área.
-                  </h2>
-                  <p className={clsx(styles["styles-paragraph-card"])}>
-                    La información de alta calidad proviene de
-                    <span className={clsx(styles["styles-text"])}>
-                      {" "}
-                      coach, mentores y especialistas en cada área.
-                    </span>
-                    Todos nuestros maestros enseñan prácticas que han funcionado
-                    para sus vidas.
-                  </p>
-                </div>
-              </div>
-              <div className={clsx(styles["container-box-metodologia"])}>
-                <img
-                  src={icon_ganador}
-                  alt="icono haciendo enercicio "
-                  className={clsx(styles["styles-icons"])}
-                />
-                <div>
-                  <h2 className={styles["style-tittle-card"]}>
-                    Avanzar paso a paso.
-                  </h2>
-                  <p className={clsx(styles["styles-paragraph-card"])}>
-                    Los programas son diversos y están{" "}
-                    <span className={clsx(styles["styles-text"])}>
-                      {" "}
-                      disponibles para poderlos ver y repetir las veces que se
-                      requieran,
-                    </span>
-                    hasta apropiarlos y comprenderlos plenamente.
-                  </p>
+                <div className={clsx(styles["container-box-metodologia"])}>
+                  <img
+                    src={icon_ganador}
+                    alt="icono haciendo enercicio "
+                    className={clsx(styles["styles-icons"])}
+                  />
+                  <div>
+                    <h2 className={styles["style-tittle-card"]}>
+                      Avanzar paso a paso.
+                    </h2>
+                    <p className={clsx(styles["styles-paragraph-card"])}>
+                      Diversos programas{" "}
+                      <span className={clsx(styles["styles-text"])}>
+                        {" "}
+                        disponibles para poderlos ver y repetir las veces que se
+                        requieran,
+                      </span>
+                      hasta apropiarlos y comprenderlos plenamente.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -210,7 +213,7 @@ export default function Nosotros() {
       </div>
 
       {/* container violeta */}
-      <div className={clsx("p-4", styles["container-violet"])}>
+      <div className={clsx(styles["container-violet"])}>
         <div className={styles["container-wrap-info-violeta"]}>
           <div
             className={clsx(
@@ -274,12 +277,10 @@ export default function Nosotros() {
               )}
               to=""
             >
-              <span>Agenda demostración</span>
-              <img
-                src={icono_siguiente}
-                alt="arro-raight"
-                className={clsx(styles["icon-upload"])}
-              />
+              <span className={clsx(styles["styles-btn-arrow"])}>
+                Agenda demostración
+              </span>
+              <BsArrowRightShort className={clsx(styles["arrow-btn-icon"])} />
             </Link>
           </div>
           <div className={clsx(styles["container-paragrap"])}>
@@ -293,7 +294,7 @@ export default function Nosotros() {
         </div>
       </div>
       {/*  */}
-      <div className={clsx("p-4", styles["container-grey"])}>
+      <div className={clsx(styles["container-grey"])}>
         <div className={clsx("mb-2", styles["container-title-social"])}>
           <span
             className={clsx(

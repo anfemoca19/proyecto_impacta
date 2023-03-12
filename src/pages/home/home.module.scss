@@ -47,6 +47,9 @@ div.containerSocial {
     padding: 10px;
   }
 
+.container-text-imgOne{
+  padding: 10px 40px;
+}
   .container-text-imgthree{
     display: flex;
     flex-direction: column;
@@ -54,7 +57,7 @@ div.containerSocial {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
-    padding: 10px 50px;
+    padding: 10px 40px;
   }
   .container-tu-marca{
     font-size: 20px;
@@ -139,7 +142,7 @@ div.containerSocial {
     color: #7929e2;
   }
   .container-carrusel-home{
-    padding: 10px 50px;
+    padding: 10px 40px;
   }
 
   .style-upload-link{
@@ -297,9 +300,11 @@ div.containerSocial {
 }
   .container-grey{
     background-color: #f9fafb;
-    padding: 5px;
   };
 
+  .container-text-imgOne{
+    padding: 10px 40px;
+  }
   .container-box{
     border-radius: 30px;
     background-color: #f9fafb;
@@ -377,7 +382,7 @@ div.containerSocial {
       color: #7929e2;
       font-weight: bold;
     }
-    .style-upload-link-white{
+    .style-upload-link-violet{
       color: black;
       gap: 5px;
       &:hover{
@@ -435,7 +440,7 @@ div.containerSocial {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 50px;
+    padding: 10px 40px;
   }
 
   .container-categorias{
@@ -466,18 +471,10 @@ div.containerSocial {
   }
 
   //Seccion aprende
-
-
-
   .style-text-white{
     color: white;
     font-size: 20px;
   }
-
-
-
-
-
 
   //desepeño
   .container-wrap{
@@ -734,18 +731,10 @@ div.containerSocial {
     font-weight: bold;
   }
     //Seccion aprende
-
-  
-
   .style-text-white{
     color: white;
     font-size: 20px;
   }
-
-
-
-
-
 
   .container-text-imgthree{
     display: flex;

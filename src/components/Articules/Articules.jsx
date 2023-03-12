@@ -12,7 +12,7 @@ export default function Articules() {
 
   return (
     <div className={clsx(styles["container-violet"])}>
-      <h3 className={styles.title}>Articulos de interes</h3>
+      <span className={styles.title}>Articulos de interes</span>
       <div ref={containerRef} className={styles.cardVioletContainer}>
         <CardArticules />
         <CardArticules />

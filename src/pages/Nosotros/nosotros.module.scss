@@ -12,10 +12,6 @@
     gap: 35px;
     padding: 10px;
   }
-  .container-grey{
-    background-color: #f9fafb;
-    padding: 5px;
-  };
 
   div.containerSocial {
     transform: translateX(30px);
@@ -41,6 +37,9 @@
     text-align: center;
     padding: 10px;
   }
+  .container-text-imgOne{
+    padding: 10px 40px;
+  }
 
   .container-text-imgtree{
     display: flex;
@@ -49,6 +48,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
+    padding: 10px 40px;
   }
 
 
@@ -79,6 +79,9 @@
     font-size: 20px;
   }
 
+.container-format-cards{gap: 30px;
+  display: flex;
+  flex-direction: column;}
   .container-metodologia-wrap{
     display: flex;
     flex-direction: column;
@@ -147,7 +150,7 @@
   height: 120px;
   position: absolute;
   top:-50px;
-  left: 20%;
+  left: 16%;
   color:black
 }
 .styles-number{
@@ -160,20 +163,7 @@
   margin-bottom: 15px;
 }
 
-.container-btn-arrow-green{
-  background-color: #afdb00;
-  border-radius: 15px;
-  font-size: 16px;
-  color: black;
-  height: 60px;
-  gap: 5px;
-  justify-content: flex-end;
-  font-weight: 600;
-  &:hover{
-    background-color: #fff;
-    color: black;
-  }
-}
+
 
 .container-paragrap{
   color: #fff;
@@ -182,6 +172,7 @@
 
 .container-title-social{
   text-align: center;
+  padding: 10px 40px;
 }
 .container-web{
   display: flex;
@@ -199,24 +190,74 @@
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     height: 60px;
     gap: 5px;
     justify-content: flex-end;
-    font-weight: bold;
     &:hover{
       background-color: #afdb00;
       color: black;
     }
+    .style-upload-link{
+      color: #f9f9f9;
+      gap: 5px;
+      font-weight:bold ;
+      font-size: 15px;
+      &:hover{
+        color: black;
+      }
+      .arrow-btn-icon{
+        font-size: 40px;
+        color: #afdb00;
+        &:hover{
+          color: #f9f9f9;
+        }
+      }
+      .styles-btn-arrow{
+        color: #f9f9f9;
+        &:hover{
+          color: #f9f9f9;
+        }
+        
+      }
+    }
+  }
+  .container-btn-arrow-green{
+    background-color: #afdb00;
+    border-radius: 15px;
+    font-size: 16px;
+    height: 60px;
+    justify-content: flex-end;
+    font-weight: 600;
+    &:hover{
+      background-color: #f9f9f9;
+      color: #7929e2;
+      font-weight: bold;
+    }
+    .styles-btn-arrow{
+      color: #7929e2;
+      &:hover{
+        color:  #afdb00;
+      }
+    }
+    .arrow-btn-icon{
+      font-size: 40px;
+      color: #f9f9f9;
+      &:hover{
+        color:  #afdb00;
+      }
+    }
   }
 
+  
   //
   .styles-text-title-social{
     color: #7929e2;
     font-size: 20px; 
   }
   //
+  
   .container-empleados-felices{
     display: flex;
     flex-wrap: nowrap;
@@ -228,6 +269,7 @@
     flex-direction: column;
     align-items: center;
   }
+
   .container-violet-operators{
     border-radius: 30px;
     background-color: #7929e2;
@@ -243,7 +285,7 @@
   }
 
   .styles-simbol{
-    font-size: 70px;
+    font-size: 55px;
     color: #afdb00;
     font-weight: bold;
   }
@@ -261,9 +303,6 @@
     color: #7929e2;
   }
 
-  .style-upload-link{
-    color: #f9f9f9;
-  }
 
   .icon-upload {
     height: 30px;
@@ -271,7 +310,7 @@
   }
   .style-text-white{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .style-imagen-one{
@@ -309,7 +348,7 @@
 
   .styles-green-text{
     color: #afdb00;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
   }
 
@@ -317,27 +356,9 @@
 
   .container-violet{
     background-color: #7929e2;
-    padding-right: 0;
+    padding: 30px 40px;
   }
 
-  .container-btn-arrow-white{
-    background-color: white;
-    border-radius: 15px;
-    font-size: 15px;
-    color: black;
-    height: 60px;
-    gap: 8px;
-    justify-content: flex-end;
-    &:hover{
-      background-color: #afdb00;
-      color: black;
-    }
-  }
-
-  .style-upload-link-white{
-    color: black;
-    gap: 5px;
-  }
   .container-wrap{
     text-align:center ;
   }
@@ -378,9 +399,7 @@
     width: 110px;
     height: 50px;
   }
-  .style-upload-link{
-    font-size: 12px;
-  }
+
   .container-social-media{
     display: flex;
     justify-content: center;
@@ -420,6 +439,9 @@
     font-weight: bold;
   }
 
+  .container-impulsa-text{
+    padding: 10px 40px
+  }
 }
 
 
@@ -427,18 +449,18 @@
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
   .cardVioletContainer,
-div.containerSocial {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  // overflow-x: auto;
-  width: 100%;
-  gap: 35px;
-  padding: 20px 10px;
-}
-div.containerSocial {
-  padding: 137px 80px 30px;
-}
+  div.containerSocial {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    // overflow-x: auto;
+    width: 100%;
+    gap: 35px;
+    padding: 20px 10px;
+  }
+  div.containerSocial {
+    padding: 137px 80px 30px;
+  }
 
   .container-grey{
     background-color: #f9fafb;
@@ -454,6 +476,9 @@ div.containerSocial {
     text-align: center;
   }
 
+  .container-text-imgOne{
+    padding: 10px 40px;
+  }
   .container-text-imgtree{
     display: flex;
     flex-direction: column;
@@ -461,17 +486,7 @@ div.containerSocial {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 10px;
-  }
-
-  .container-box-metodologia{
-    border-radius: 30px;
-    background-color: #f9fafb;
-    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
-    font-size: 30px;
-    text-align: center;
-    width: 300px;
-    height: 350px;
-    padding: 10px;
+    padding: 10px 40px;
   }
 
   .container-metodologia{
@@ -484,17 +499,34 @@ div.containerSocial {
     margin-bottom: 50px;
     font-size: 20px;
   }
-
-  .container-metodologia-wrap{
+  .container-format-cards{
     display: flex;
     flex-direction: row;
+  }
+  .container-metodologia-wrap{
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     padding: 0px;
     width: 100%;
     justify-content: center;
+    align-items: center;      
   }
+
+  .container-box-metodologia{
+    border-radius: 30px;
+    background-color: #f9fafb;
+    box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
+    font-size: 15px;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+  }
+
+
   .styles-icons{
-    height: 120px;
+    height: 80px;
   }
   .style-tittle-card{
     font-size: 16px;
@@ -503,7 +535,7 @@ div.containerSocial {
   }
 
   .styles-paragraph-card{
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 25px;
   }
   ////
@@ -530,11 +562,10 @@ div.containerSocial {
     width: 85%;
     justify-content: center;
     padding: 10px;
-    height: 310px;
-  }
-  .container-elemento-violeta{
+    height: 210px;
     position: relative;
   }
+
 
   .container-interior-green{
     border-radius: 20px;
@@ -547,8 +578,8 @@ div.containerSocial {
     width: 130px;
     height: 90px;
     position: absolute;
-    top:-30px;
-    left: 14%;
+    top:-20px;
+    left: 22%;
     color: black;
   }
 
@@ -572,10 +603,8 @@ div.containerSocial {
       color: black;
     }
   }
-
-  .style-upload-link-violet{
-    color: black;
-    font-size: 20px;
+  .container-title-social{
+    padding: 10px 40px;
   }
   
   .container-paragrap{
@@ -594,9 +623,6 @@ div.containerSocial {
   }
   ///
 
-
-
-
   .container-tu-marca{
     text-align: center;
     font-size: 40px;
@@ -606,21 +632,67 @@ div.containerSocial {
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     height: 60px;
     gap: 5px;
     justify-content: flex-end;
-    font-weight: bold;
     &:hover{
       background-color: #afdb00;
       color: black;
     }
+    .style-upload-link{
+      color: #f9f9f9;
+      gap: 5px;
+      font-weight:bold ;
+      font-size: 15px;
+      &:hover{
+        color: black;
+      }
+      .arrow-btn-icon{
+        font-size: 40px;
+        color: #afdb00;
+        &:hover{
+          color: #f9f9f9;
+        }
+      }
+      .styles-btn-arrow{
+        color: #f9f9f9;
+        &:hover{
+          color: #f9f9f9;
+        }
+        
+      }
+    }
+  }
+  .container-btn-arrow-green{
+    background-color: #afdb00;
+    border-radius: 15px;
+    font-size: 16px;
+    height: 60px;
+    justify-content: flex-end;
+    font-weight: 600;
+    &:hover{
+      background-color: #f9f9f9;
+      color: #7929e2;
+      font-weight: bold;
+    }
+    .styles-btn-arrow{
+      color: #7929e2;
+      &:hover{
+        color:  #afdb00;
+      }
+    }
+    .arrow-btn-icon{
+      font-size: 40px;
+      color: #f9f9f9;
+      &:hover{
+        color:  #afdb00;
+      }
+    }
   }
 
-  .style-upload-link{
-    color: #f9f9f9;
-  }
+
 
 
   .styles-text-paragraph{
@@ -629,7 +701,7 @@ div.containerSocial {
 
   .styles-text-title-social{
     color: #7929e2;
-    font-size: 25px; 
+    font-size: 20px; 
   }
 
 
@@ -651,6 +723,12 @@ div.containerSocial {
     font-size: 30px;
     font-weight: bold;
   }
+    // //Seccion aprende
+    .container-violet{
+      background-color: #7929e2;
+      padding-right: 0;
+      padding: 10px 40px;
+    }
   .container-violet-operators{
     border-radius: 30px;
     background-color: #7929e2;
@@ -659,13 +737,14 @@ div.containerSocial {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 220px;
+    height: 300px;
+    width: 400px;
     color: #fff;
     padding: 10px;
   }
 
   .styles-simbol{
-    font-size: 70px;
+    font-size: 60px;
     color: #afdb00;
     font-weight: bold;
   }
@@ -677,14 +756,8 @@ div.containerSocial {
     border-radius: 5px;
   }
 
- 
-  
-
   .styles-text{
     color: #7929e2;
-  }
-  .style-upload-link{
-    color: #f9f9f9;
   }
   .icon-upload {
     height: 30px;
@@ -695,11 +768,7 @@ div.containerSocial {
 
 
   
-  // //Seccion aprende
-  .container-violet{
-    background-color: #7929e2;
-    padding-right: 0;
-  }
+
 
 
   .container-tu-marca{
@@ -748,9 +817,6 @@ div.containerSocial {
     height: 80px;
   }
 
-  .style-upload-link{
-    font-size: 12px;
-  }
 
   .container-social-media{
     display: flex;
@@ -788,6 +854,9 @@ div.containerSocial {
   .style-title-bold{
     font-weight: bold;
   }
+  .container-impulsa-text{
+    padding: 10px 40px
+  }
 }
 
 
@@ -811,8 +880,11 @@ div.containerSocial {
   .container-grey{
     background-color: #f9fafb;
     padding: 5px;
-    width: 100%;
+    width: 100%
   };
+  .container-impulsa-text{
+    padding: 10px 120px
+  }
 
   .container-text-imgOne{
     display: flex;
@@ -820,6 +892,7 @@ div.containerSocial {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 10px 120px;
   }
 
 
@@ -852,15 +925,63 @@ div.containerSocial {
   .container-btn-arrow {
     background-color: #7929e2;
     border-radius: 15px;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     height: 60px;
     gap: 5px;
     justify-content: flex-end;
-    font-weight: bold;
     &:hover{
       background-color: #afdb00;
       color: black;
+    }
+    .style-upload-link{
+      color: #f9f9f9;
+      gap: 5px;
+      font-weight:bold ;
+      font-size: 15px;
+      &:hover{
+        color: black;
+      }
+      .arrow-btn-icon{
+        font-size: 40px;
+        color: #afdb00;
+        &:hover{
+          color: #f9f9f9;
+        }
+      }
+      .styles-btn-arrow{
+        color: #f9f9f9;
+        &:hover{
+          color: #f9f9f9;
+        }
+        
+      }
+    }
+  }
+  .container-btn-arrow-green{
+    background-color: #afdb00;
+    border-radius: 15px;
+    font-size: 16px;
+    height: 60px;
+    justify-content: flex-end;
+    font-weight: 600;
+    &:hover{
+      background-color: #f9f9f9;
+      color: #7929e2;
+      font-weight: bold;
+    }
+    .styles-btn-arrow{
+      color: #7929e2;
+      &:hover{
+        color:  #afdb00;
+      }
+    }
+    .arrow-btn-icon{
+      font-size: 40px;
+      color: #f9f9f9;
+      &:hover{
+        color:  #afdb00;
+      }
     }
   }
 
@@ -868,10 +989,6 @@ div.containerSocial {
     color: #7929e2;
   }
 
-  .style-upload-link{
-    color: #f9f9f9;
-    gap: 5px;
-  }
 
   .icon-upload {
     height: 30px;
@@ -879,6 +996,9 @@ div.containerSocial {
   
   .styles-text-paragraph{
     font-size: 25px;
+  }
+  .container-title-social{
+    padding: 10px 120px;
   }
   .container-empleados-felices{
     display: flex;
@@ -901,7 +1021,7 @@ div.containerSocial {
     border-radius: 30px;
     background-color: #7929e2;
     box-shadow: 5px 4px 18px 5px rgb(56 56 56 / 71%);
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -911,7 +1031,7 @@ div.containerSocial {
   }
 
   .styles-simbol{
-    font-size: 95px;
+    font-size: 70px;
     color: #afdb00;
     font-weight: bold;
   }
@@ -936,26 +1056,12 @@ div.containerSocial {
 
   .container-violet{
     background-color: #7929e2;
+    padding: 10px 120px;
   }
 
   .style-text-white{
     color: white;
     font-size: 30px;
-  }
-
-  .container-btn-arrow-white{
-    background-color: white;
-    border-radius: 15px;
-    font-size: 15px;
-    color: black;
-    height: 60px;
-    gap: 8px;
-    justify-content: flex-end;
-  }
-
-  .style-upload-link-white{
-    color: black;
-    gap: 5px;
   }
 
   //Contañe desempeño
@@ -971,30 +1077,36 @@ div.containerSocial {
     align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 10px 120px;
   }
   
 
-//
+
 .container-box-metodologia{
     border-radius: 30px;
     background-color: #f9fafb;
     box-shadow: 0px 1px 4px 3px rgb(230 230 232 / 71%);
     font-size: 20px;
     text-align: center;
-    width: 300px;
+    width: 250px;
     height: 350px;
     padding: 10px;
   }
 
   .container-metodologia{
     text-align: center;
-    
   }
 
   .container-title-metodologia{
     font-weight: bold;
     margin-bottom: 50px;
     font-size: 25px;
+  }
+    
+  .container-format-cards{
+    display: flex;
+    gap: 30px;
+
   }
 
   .container-metodologia-wrap{
@@ -1007,7 +1119,7 @@ div.containerSocial {
   }
 
   .styles-icons{
-    height: 120px;
+    height: 90px;
   }
   .style-tittle-card{
     font-size: 16px;
@@ -1016,13 +1128,10 @@ div.containerSocial {
   }
 
   .styles-paragraph-card{
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 25px;
   }
 
-  //
-
-   ////
 
   .container-wrap-info-violeta{
     display: flex;
@@ -1062,25 +1171,7 @@ div.containerSocial {
     font-size: 20px;
     margin-bottom: 15px;
   }
-  
-  .container-btn-arrow-green{
-    background-color: #afdb00;
-    border-radius: 15px;
-    font-size: 16px;
-    color: black;
-    height: 60px;
-    gap: 5px;
-    justify-content: flex-end;
-    font-weight: 600;
-    &:hover{
-      background-color: #fff;
-      color: black;
-    }
-  }
-  .style-upload-link-violet{
-    color: black;
-    font-size: 20px;
-  }
+
   .container-paragrap{
     color: #fff;
     text-align: center;
@@ -1165,9 +1256,6 @@ div.containerSocial {
     height: 80px;
   }
 
-  .style-upload-link{
-    font-size: 15px;
-  }
 
   .container-social-media{
     display: flex;
@@ -1201,7 +1289,7 @@ div.containerSocial {
 
   .styles-text-title-social{
     color: #7929e2;
-    font-size: 25px; 
+    font-size: 20px; 
   }
   .style-title-bold{
     font-weight: bold;

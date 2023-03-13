@@ -4,7 +4,7 @@ import HeaderHome from "../../components/HeaderHome/HeaderHome";
 import styles from "../Nosotros/nosotros.module.scss";
 import imagen_for from "../../imagenes/imagen-4-web-movil.png";
 import imagen_five from "../../imagenes/imagen-5-web-movil.png";
-import imagen_six from "../../imagenes/imagen-6-web-movil.jpg";
+import imagen_six from "../../imagenes/imagen-6-web-movil.png";
 import icon_ejercicio from "../../imagenes/icono-aprende-desde-cualquier-lugar.png";
 import icon_corazon from "../../imagenes/icono-desarrollar-habitos-saludables.png";
 import icon_estudiado from "../../imagenes/icono-entrenarse.png";

@@ -3,12 +3,20 @@
   .title-style-curses-web{
     display: none;
   }
+   ///Styles tabla
+  .categorias-tablet{
+    display: none;
+  }
+
 }
 
 // Tablet
 @media only screen and  (min-width:481px) and (max-width:1000px){
 
   .title-style-curses-web {
+    display: none;
+  }
+  .container-categories-card{
     display: none;
   }
     ///Styles tabla
@@ -69,11 +77,14 @@
   
   .title-style-curses-web{
     color: #7929e2;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
   } 
 
+  .container-categories-card{
+    display: none;
+  }
 
   .styles-background-categories{
     height: 230px;

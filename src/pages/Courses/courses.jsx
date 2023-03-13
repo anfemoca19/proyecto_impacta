@@ -43,13 +43,18 @@ export default function Courses() {
           Categorias
         </span>
         <Categorias className={"style-inline"} />
-        {/* <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+        <div
+          className={clsx(
+            "row row-cols-1 row-cols-md-3 g-4 mt-5",
+            styles["container-categories-card"]
+          )}
+        >
           {cursesData.map((curses, index) => {
             return <CardCurses key={index} cursesData={curses} />;
           })}
-        </div> */}
+        </div>
 
-        <table className={clsx("table mt-4")}>
+        <table className={clsx("table mt-4", styles["categorias-tablet"])}>
           <thead>
             <tr>
               <th scope="col">#</th>

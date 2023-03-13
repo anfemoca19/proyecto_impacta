@@ -93,6 +93,21 @@ export default function EditCategories({
                       />
                     </Link>
                   </li>
+                  <li
+                    className={clsx(
+                      "nav-item text-center",
+                      styles["container-li"]
+                    )}
+                  >
+                    <Link className={clsx(styles["style-nav"])}>
+                      Borrar
+                      <img
+                        className={clsx("me-2", styles["icon-edit-style"])}
+                        src={ico_editar}
+                        alt=""
+                      />
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>

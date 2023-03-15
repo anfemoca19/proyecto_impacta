@@ -1,9 +1,7 @@
 import clsx from "clsx";
 import styles from "../FooterHome/FooterHome.module.scss";
 import logo_blanco from "../../imagenes/logo-en-blanco.png";
-import icon_facebook from "../../imagenes/icono-facebook-blanco.png";
-import icon_instagram from "../../imagenes/icono-instagram-blanco.png";
-import icon_youtube from "../../imagenes/icono-you-tube-blanco.png";
+import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 // import icon_twiter from "../../imagenes/icono-twiter-blanco.png";
 import { TbPoint } from "react-icons/tb";
 import { Link } from "react-router-dom";
@@ -34,21 +32,9 @@ export default function FooterHome() {
               styles["container-social-media"]
             )}
           >
-            <img
-              src={icon_facebook}
-              alt="icon-facebook"
-              className={clsx(styles["styles-icon-social"])}
-            />
-            <img
-              src={icon_instagram}
-              alt="icon-instagram"
-              className={clsx(styles["styles-icon-social"])}
-            />
-            <img
-              src={icon_youtube}
-              alt="icon-youtube"
-              className={clsx(styles["styles-icon-social"])}
-            />
+            <FaFacebook className={clsx(styles["styles-icon-social"])} />
+            <FaInstagram className={clsx(styles["styles-icon-social"])} />
+            <FaYoutube className={clsx(styles["styles-icon-social"])} />
           </div>
           <div
             className={clsx(

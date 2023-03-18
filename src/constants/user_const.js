@@ -1,5 +1,6 @@
 import banner_comida_saludable from '../imagenes/banner_comida_saludable.jpeg'
 import foto_perfil from "../imagenes/foto-perfil.jpg";
+import img_curse_nutrition from "../imagenes/nutricion_conciente.jpeg";
 export const USER_PERMISSIONS = {
   isAdmin: true,
 }
@@ -227,51 +228,107 @@ export const userData = [
 export const socialComment =[
   {
     id:0,
-    nombre: "Naomi Smith",
-    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    nombre: "Andrea Villamizar ",
+    cargo:"Presidente GSH",
+    comentario: "Cuidar y fortalecer a los colaboradores es crear una ventaja competitiva como compañía. Impacta tu vida se convirtió en un aliado clave para obtener una propuesta de valor que impacte la vida de nuestra gente y sus familias y estamos felices por ello.",
     calificacion: 3,
   },
   {
     id:1,
-    nombre: "Naomi Smith",
-    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    nombre: "Alejandro Gonzalez",
+    cargo:"Ceo Guia - Grupo de Inversión Inmobiliaria",
+    comentario: "Implementar programas de bienestar integral para nuestro equipo de trabajo nos ha permitido ver a nuestros colaboradores más activos y con más energía.",
     calificacion: 3,
   },
   {
     id:2,
-    nombre: "Naomi Smith",
-    comentario: "El contenido que descubri en estos cursos, son geniales.",
+    nombre: "Ana Cecilia Suarez",
+    comentario: "Para nosotros lo más importante es nuestra gente y su bienestar. Sabemos que su desempeño es el reflejo de cómo se sienten. Impacta tu Vida nos dio la oportunidad de descubrir la importancia de estar atentos a la prevención y salud de nuestros empleados.",
+    cargo: "Ceo Surez & Martinez asociados",
     calificacion: 3,
   },
   {
     id:3,
     nombre: "Naomi Smith",
     comentario: "El contenido que descubri en estos cursos, son geniales.",
+    cargo:"",
     calificacion: 3,
   },
   {
     id:4,
     nombre: "Naomi Smith",
     comentario: "El contenido que descubri en estos cursos, son geniales.",
+    cargo:"Ejemplo",
     calificacion: 3,
   },
   {
     id:5,
     nombre: "Naomi Smith",
     comentario: "El contenido que descubri en estos cursos, son geniales.",
+    cargo:"Ejemplo",
     calificacion: 3,
   },
   {
     id:6,
     nombre: "Naomi Smith",
     comentario: "El contenido que descubri en estos cursos, son geniales.",
+    cargo:"Ejemplo",
     calificacion: 3,
   },
   {
     id:7,
     nombre: "Naomi Smith",
     comentario: "El contenido que descubri en estos cursos, son geniales.",
+    cargo:"Ejemplo",
     calificacion: 3,
   }
 ]
 
+export const articules = [
+  {
+    id:"1",
+    nombre:" Beneficios del salario emoconual y Cómo implementarlos",
+    parrafo:"El salario emocional es una de las mejores estrategias a las que pueden apostar actualmente las empresas para retener a su capital humano.",
+    link:"https://www.bancolombia.com/negocios/actualizate/tendencias/beneficios-salario-emocional-y-como-implementarlo",
+    imagen:{img_curse_nutrition}
+  },
+  {
+
+    id:"2",
+    nombre:"Oficinas wellness ",
+    parrafo:"Una Tendencia global",
+    link:"https://www.portafolio.co/tendencias/oficinas-wellness-una-tendencia-global-535619",
+    imagen:{img_curse_nutrition}
+  },
+  {
+
+    id:"3",
+    nombre:"El bienestar organizacional ",
+    parrafo:"Una inversión valiosa para el éxito empresarial",
+    link:"https://rhsaludable.com/el-bienestar-organizacional-una-inversion-valiosa-para-el-exito-empresarial",
+    imagen:{img_curse_nutrition}
+  },
+  {
+    id:"4",
+    nombre:" Beneficios del salario emoconual y Cómo implementarlos",
+    parrafo:"El salario emocional es una de las mejores estrategias a las que pueden apostar actualmente las empresas para retener a su capital humano.",
+    link:"https://www.bancolombia.com/negocios/actualizate/tendencias/beneficios-salario-emocional-y-como-implementarlo",
+    imagen:{img_curse_nutrition}
+  },
+  {
+
+    id:"5",
+    nombre:"Oficinas wellness ",
+    parrafo:"Una Tendencia global",
+    link:"https://www.portafolio.co/tendencias/oficinas-wellness-una-tendencia-global-535619",
+    imagen:{img_curse_nutrition}
+  },
+  {
+
+    id:"6",
+    nombre:"El bienestar organizacional ",
+    parrafo:"Una inversión valiosa para el éxito empresarial",
+    link:"https://rhsaludable.com/el-bienestar-organizacional-una-inversion-valiosa-para-el-exito-empresarial",
+    imagen:{img_curse_nutrition}
+  },
+]

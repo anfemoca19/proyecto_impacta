@@ -22,9 +22,12 @@ export default function CardSocial({ comentSocial }) {
             fontSize={"20px"}
           />
         </div>
-        <div>
+        <div className={clsx(styles["container-data-social"])}>
           <span className={clsx(styles["style-name"])}>
             {comentSocial.nombre}
+          </span>
+          <span className={clsx(styles["style-text-cargos"])}>
+            {comentSocial.cargo}
           </span>
         </div>
         <div>

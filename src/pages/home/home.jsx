@@ -7,7 +7,7 @@ import imagen_two from "../../imagenes/imagen-2-web-movil.png";
 import imagen_three from "../../imagenes/imagen-3-web-movil.png";
 import Categorias from "../../components/Categories/categories";
 import CarrucelCard from "../../components/Carrucel/Carrucel";
-import { cursesData } from "../../constants/user_const";
+import { articules, cursesData } from "../../constants/user_const";
 import FooterHome from "../../components/FooterHome/FooterHome";
 import ContactanosFomr from "../../components/Contactanos/Contactanos";
 import Articules from "../../components/Articules/Articules";
@@ -79,9 +79,9 @@ export default function Home() {
                 styles["styles-line"]
               )}
             >
-              <span className={clsx(styles["styles-green-text"])}>3000</span>
+              <span className={clsx(styles["styles-green-text"])}>75%</span>
               <span className={clsx(styles["text-disable-mobile"])}>
-                Empleados
+                De nuestros miembros ven mínimo 1 programa por mes.
               </span>
             </div>
             <div
@@ -91,9 +91,9 @@ export default function Home() {
                 styles["styles-line"]
               )}
             >
-              <span className={clsx(styles["styles-green-text"])}>2550</span>
+              <span className={clsx(styles["styles-green-text"])}>21</span>
               <span className={clsx(styles["text-disable-mobile"])}>
-                Consultas
+                Días promedio que un miembro participa por mes
               </span>
             </div>
             <div
@@ -102,10 +102,11 @@ export default function Home() {
                 styles["container-elements-information"]
               )}
             >
-              <span className={clsx(styles["styles-green-text"])}>
-                $214.200
+              <span className={clsx(styles["styles-green-text"])}>81%</span>
+              <span className={clsx(styles["text-disable-mobile"])}>
+                De los empleados tienen el deseo de aprender nuevos hábitos
+                saludables
               </span>
-              <span className={clsx(styles["text-disable-mobile"])}>USD</span>
             </div>
           </div>
         </div>
@@ -236,7 +237,7 @@ export default function Home() {
           <CardSocialComponent limitSlider={6} />
         </div>
       </div>
-      <Articules />
+      <Articules limitSlider={articules.length} articulesData={articules} />
       <div className={clsx(styles["container-grey"])}>
         <div className={clsx("mt-4", styles["container-text-imgthree"])}>
           <div className={clsx(styles["container-tu-marca"])}>

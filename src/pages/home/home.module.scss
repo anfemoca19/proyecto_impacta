@@ -195,6 +195,9 @@ div.containerSocial {
     font-weight: bold;
   }
 
+  .text-disable-mobile{
+    font-size: 12px;
+  }
 
     //Seccion aprende
 
@@ -453,6 +456,7 @@ div.containerSocial {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 5px;
   }
 
   .container-descripcion-number{
@@ -468,6 +472,10 @@ div.containerSocial {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+  }
+
+  .text-disable-mobile{
+      font-size: 13px;
   }
 
   //Seccion aprende
@@ -712,6 +720,7 @@ div.containerSocial {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 5px;
   }
   .container-title-social{
     padding: 10px 120px;
@@ -729,6 +738,9 @@ div.containerSocial {
     color: #afdb00;
     font-size: 30px;
     font-weight: bold;
+  }
+  .text-disable-mobile{
+    font-size: 15px;
   }
     //Seccion aprende
   .style-text-white{

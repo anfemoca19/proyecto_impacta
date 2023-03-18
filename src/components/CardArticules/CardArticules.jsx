@@ -4,7 +4,10 @@ import img_curse_nutrition from "../../imagenes/nutricion_conciente.jpeg";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsChatLeftText } from "react-icons/bs";
 
-export default function CardArticules() {
+export default function CardArticules(props) {
+  console.log(props.articuloData.link);
+  console.log();
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.card}>
@@ -25,19 +28,26 @@ export default function CardArticules() {
             </div>
           </header>
           <img
+            // src={props.articuloData.imagen}
             src={img_curse_nutrition}
             className={clsx("", styles["styles-img-curse"])}
-            alt="..."
+            alt="Imagen del articulo"
           />
-          <footer className="card-body">
+          <footer className={clsx("card-body", styles["style-footer-card"])}>
             <h5 className={clsx(styles.title, styles["textEllipsis"])}>
-              nombre
+              {props.articuloData.nombre}
             </h5>
-            <p className={styles["card-text"]}>
-              when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book.
-            </p>
-            <footer className={styles.footer}></footer>
+            <p className={styles["card-text"]}>{props.articuloData.parrafo}</p>
+            {/* <footer className={styles.footer}> */}
+            {/* <link href={props.articuloData.link}>Ver articulo</link> */}
+            <a
+              className={clsx(styles["style-link-articule"])}
+              rel="stylesheet"
+              href={props.articuloData.link}
+            >
+              Ver articulo
+            </a>
+            {/* </footer> */}
           </footer>
         </div>
       </div>

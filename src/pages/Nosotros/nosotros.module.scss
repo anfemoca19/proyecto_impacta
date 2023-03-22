@@ -154,7 +154,9 @@
   color:black
 }
 .styles-number{
-  font-size:30px;
+  font-size:20px;
+  font-weight: 600;
+  
 }
 
 .container-texto-violet{
@@ -579,7 +581,7 @@
     height: 90px;
     position: absolute;
     top:-20px;
-    left: 22%;
+    left: 21%;
     color: black;
   }
 
@@ -768,7 +770,10 @@
 
 
   
-
+  .styles-number{
+    font-size:25px;
+    font-weight: 600;
+  }
 
 
   .container-tu-marca{
@@ -1089,7 +1094,7 @@
     font-size: 20px;
     text-align: center;
     width: 250px;
-    height: 350px;
+    height: 380px;
     padding: 10px;
   }
 
@@ -1293,6 +1298,10 @@
   }
   .style-title-bold{
     font-weight: bold;
+  }
+  .styles-number{
+    font-size:30px;
+    font-weight: 600;
   }
 }
 

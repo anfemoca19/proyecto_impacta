@@ -70,7 +70,9 @@ export default function Nosotros() {
           <div className={clsx("mt-4 mb-4")}>
             <h2 className={styles["style-title-bold"]}>
               Impulsamos la cultura{" "}
-              <span className={clsx(styles["styles-text"])}>del bienestar</span>
+              <span className={clsx(styles["styles-text"])}>
+                del bienestar laboral
+              </span>
             </h2>
           </div>
           <div className={clsx()}>
@@ -137,8 +139,8 @@ export default function Nosotros() {
                         {" "}
                         desde cualquier lugar 24/7,
                       </span>
-                      y empezar a mejorar tu calidad de vida y la salud de tus
-                      colaboradores.
+                      {"  "}y empezar a mejorar tu calidad de vida y la salud de
+                      tus colaboradores.
                     </p>
                   </div>
                 </div>
@@ -178,7 +180,7 @@ export default function Nosotros() {
                       La información de alta calidad proviene de
                       <span className={clsx(styles["styles-text"])}>
                         {" "}
-                        coach, mentores y especialistas en cada área.
+                        coaches, mentores y especialistas en cada área.
                       </span>
                       Todos nuestros maestros enseñan prácticas que han
                       funcionado para sus vidas.
@@ -222,11 +224,11 @@ export default function Nosotros() {
             )}
           >
             <div className={clsx(styles["container-interior-green"])}>
-              <span className={clsx(styles["styles-number"])}>3000</span>
-              <span>Empleados</span>
+              <span className={clsx(styles["styles-number"])}>75%</span>
+              {/* <span>Empleados</span> */}
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
-              <span>Empleados felices y productivos.</span>
+              <span>De nuestros miembros ven mínimo 1 programa por mes.</span>
             </div>
           </div>
           <div
@@ -236,14 +238,11 @@ export default function Nosotros() {
             )}
           >
             <div className={clsx(styles["container-interior-green"])}>
-              <span className={clsx(styles["styles-number"])}>2550</span>
-              <span>Consultas</span>
+              <span className={clsx(styles["styles-number"])}>21</span>
+              {/* <span>Consultas</span> */}
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
-              <span>
-                Utilizan el beneficio de atención médica, psicologica y de
-                nutrición en un mes.
-              </span>
+              <span>Días promedio que un miembro participa por mes.</span>
             </div>
           </div>
           <div
@@ -253,12 +252,13 @@ export default function Nosotros() {
             )}
           >
             <div className={clsx(styles["container-interior-green"])}>
-              <span className={clsx(styles["styles-number"])}>$214.200</span>
-              <span>USD</span>
+              <span className={clsx(styles["styles-number"])}>81%</span>
+              {/* <span>USD</span> */}
             </div>
             <div className={clsx(styles["container-texto-violet"])}>
               <span>
-                Ahorro estimado por reduccion de ausentismo laboral en un año.
+                De los empleados tienen el deseo de aprender nuevos hábitos
+                saludables.
               </span>
             </div>
           </div>

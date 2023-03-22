@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import styles from "../CardSocial/CardSocial.module.scss";
-import Star from "../Star/Star";
-import perfilPhoto from "../../imagenes/perfil.jpeg";
+// import Star from "../Star/Star";
+// import perfilPhoto from "../../imagenes/perfil.jpeg";
 
 export default function CardSocial({ comentSocial }) {
   return (
     <div className={clsx(styles["container-wrap"])}>
       <div className={clsx(styles["container-box"])}>
-        <div className={clsx(styles["container-foto"])}>
+        {/* <div className={clsx(styles["container-foto"])}>
           <img
             src={perfilPhoto}
             alt="foto-social-perfil"
@@ -21,7 +21,7 @@ export default function CardSocial({ comentSocial }) {
             colorRelleno={"#afdb00"}
             fontSize={"20px"}
           />
-        </div>
+        </div> */}
         <div className={clsx(styles["container-data-social"])}>
           <span className={clsx(styles["style-name"])}>
             {comentSocial.nombre}
